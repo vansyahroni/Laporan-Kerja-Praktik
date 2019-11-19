@@ -1,0 +1,28 @@
+\BOOKMARK [0][-]{chapter*.1}{HALAMAN PENGESAHAN}{}% 1
+\BOOKMARK [0][-]{chapter*.2}{KATA PENGANTAR}{}% 2
+\BOOKMARK [0][-]{chapter*.3}{DAFTAR ISI}{}% 3
+\BOOKMARK [0][-]{chapter*.4}{DAFTAR TABEL}{}% 4
+\BOOKMARK [0][-]{chapter*.5}{DAFTAR GAMBAR}{}% 5
+\BOOKMARK [0][-]{chapter*.6}{Intisari}{}% 6
+\BOOKMARK [0][-]{chapter*.7}{Abstract}{}% 7
+\BOOKMARK [0][-]{chapter.1}{PENDAHULUAN}{}% 8
+\BOOKMARK [1][-]{section.1.1}{Latar Belakang Masalah}{chapter.1}% 9
+\BOOKMARK [1][-]{section.1.2}{Tujuan Penelitian}{chapter.1}% 10
+\BOOKMARK [2][-]{subsection.1.2.1}{Tujuan Umum}{section.1.2}% 11
+\BOOKMARK [2][-]{subsection.1.2.2}{Tujuan Khusus}{section.1.2}% 12
+\BOOKMARK [1][-]{section.1.3}{Batasan Penelitian}{chapter.1}% 13
+\BOOKMARK [1][-]{section.1.4}{Metode Kerja Praktik}{chapter.1}% 14
+\BOOKMARK [1][-]{section.1.5}{Sistematika Penulisan}{chapter.1}% 15
+\BOOKMARK [0][-]{chapter.2}{LANDASAN TEORI}{}% 16
+\BOOKMARK [1][-]{section.2.1}{SCARA Robot}{chapter.2}% 17
+\BOOKMARK [1][-]{section.2.2}{Motor servo}{chapter.2}% 18
+\BOOKMARK [1][-]{section.2.3}{Kinematika model elbow planar Denavit-Hartenberg}{chapter.2}% 19
+\BOOKMARK [1][-]{section.2.4}{LabVIEW}{chapter.2}% 20
+\BOOKMARK [1][-]{section.2.5}{Microcontroller}{chapter.2}% 21
+\BOOKMARK [0][-]{chapter.3}{PERANCANGAN SISTEM}{}% 22
+\BOOKMARK [1][-]{section.3.1}{Metode Perancangan sistem}{chapter.3}% 23
+\BOOKMARK [2][-]{subsection.3.1.1}{Perancangan Elektronis}{section.3.1}% 24
+\BOOKMARK [2][-]{subsection.3.1.2}{Pemrograman Kontroller \046 Implementasi PID}{section.3.1}% 25
+\BOOKMARK [2][-]{subsection.3.1.3}{Perancangan Antar Muka \046 Inplementasi Invers Kinematic}{section.3.1}% 26
+\BOOKMARK [0][-]{chapter.4}{PENUTUP}{}% 27
+\BOOKMARK [0][-]{chapter*.13}{DAFTAR PUSTAKA}{}% 28

@@ -281,7 +281,7 @@
     \MakeUppercase{\normalfont\bfseries\expandafter{LAPORAN KERJA PRAKTIK}}\\
     \vspace{1.0cm}
     Diajukan Sebagai Salah Satu Syarat Kelulusan Program Kerja Praktik Laboratorium Instrumentasi dan Kendali\\
-Pada Program Studi \@degree \ \@faculty \\
+    Pada Pada Program Studi \@degree \ \@faculty \\
     \@university
 
     \vspace{1.0cm}
@@ -297,11 +297,11 @@ Pada Program Studi \@degree \ \@faculty \\
 
     \begin{singlespace}
     \begin{tabular}{ccc}
-      Ketua Program Studi Teknologi Listrik & & Dosen Pembimbing \\
+      Ketua Program Studi Teknologi Instrumentasi & & Dosen Pembimbing \\
       \vspace{1cm} & \vspace{1cm} & \vspace{1cm}\\
       \textbf{\underline{\@firstsupervisor}}& &
       \textbf{\underline{\@secondsupervisor}} \\
-      \bfseries NIP \@firstnip & & \bfseries NIP \@secondnip    
+      \bfseries NIP. \@firstnip & & \bfseries NIP. \@secondnip    
     \end{tabular}
     \end{singlespace}
 

@@ -1,0 +1,106 @@
+	\documentclass{DTEDI_KP}
+
+\usepackage[titles]{tocloft}
+\renewcommand\cftfigpresnum{Gambar\ }
+\renewcommand\cfttabpresnum{Tabel\  }
+
+\usepackage{hyperref}
+\newlength{\mylenf}
+\settowidth{\mylenf}{\cftfigpresnum}
+\setlength{\cftfignumwidth}{\dimexpr\mylenf+2em}
+\setlength{\cfttabnumwidth}{\dimexpr\mylenf+2em}
+
+\usepackage[labelfont=bf]{caption}
+
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{textcomp}
+\usepackage{amsmath}
+
+\titleind{RANCANG BANGUN KENDALI KINEMATIKA DAN ANTAR MUKA ROBOT SERPENT-1 BERBASIS LABVIEW}
+
+\fullname {ALIM SATRIA FI'I WIJAYA KUSUMA}
+
+\idnum {17/415484/SV/13349}
+
+\approvaldate {2 Agustus 2019}
+
+\degree {Teknologi Instrumentasi}
+
+\yearsubmit {2019}
+
+\program {Teknologi Instrumenasi}
+
+\dept {Departemen Elektronika dan Informatika}
+
+\secondsupervisor {Fahmizal,S.T.,M.Sc.}
+
+\secondnip {111198807201609101}
+
+\firstsupervisor {Ariesta Martiningtyas H, S.Si.,M.Cs.}
+
+\firstnip {111198703201105201}
+
+\begin{document}
+	
+	\cover
+	
+	\approvalpage
+	
+	\preface
+	
+	Puji syukur penulis panjatkan kehadirat Tuhan Yang Maha Esa karena hanya dengan rahmat dan hidayah-Nya, Laporan Kerja Praktik ini dapat diselesaikan tanpa halangan yang berarti. Keberhasilan dalam menyusun Laporan Kerja Praktik ini tidak lepas dari bantuan berbagai pihak yang mana dengan tulus dan ikhlas memberikan masukan guna sempurnanya laporan kerja praktik ini. Oleh karena itu dalam kesempatan ini, dengan kerendahan hati penulis mengucap terimakasih kepada :
+	
+	\begin{enumerate}
+		\item Ibu Ariesta Martiningtyas H, S.Si.,M.Cs. selaku Ketua Program Diploma Teknologi Instrumentasi Departemen Teknik Elektro dan Informatika Sekolah Vokasi Universitas Gadjah Mada,
+		\item  Bapak Fahmizal,S.T.,M.Sc. selaku dosen pembimbing yang telah memberi banyak bantuan, bimbingan, serta arahan dalam penyusunan Laporan ini,
+		\item Seluruh Dosen di Program Studi Diploma Teknologi Instrumentasi Departemen Teknik Elektro dan Informatika Sekolah Vokasi Universitas Gadjah Mada, yang tidak bisa disebutkan satu-satu, atas ilmu dan bimbingannya saat penulis belajar di DTEDI,
+		\item Saudara Ivan Syahroni dari Program Studi Teknologi Listrik angkatan 2017 selaku partner dalam penelitian robot Serpent-1.
+	\end{enumerate}
+
+penulis menyadari bahwa penyusunan Laporan Kerja Praktik ini jauh dari sempurna. Kritik dan saran dapat ditujukan langsung pada e-mail saya. Akhir kata, penulis mohon maaf apabila terdapat kekeliruan dalam penulisan Laporan Kerja praktik ini.
+
+\vspace{0.1cm}
+
+Terimakasih
+
+	\begin{tabular}{p{7.5cm}c}
+	&Yogyakarta, 2 Agustus 2019\\
+	&\\
+	&\\
+	&\\
+	&\\
+	&\textbf{Penulis}
+	\end{tabular}
+
+\tableofcontents
+\addcontentsline{toc}{chapter}{DAFTAR ISI}
+\listoftables
+\addcontentsline{toc}{chapter}{DAFTAR TABEL}
+\listoffigures
+\addcontentsline{toc}{chapter}{DAFTAR GAMBAR}
+
+\begin{abstractind}
+	%harus diisi nanti
+\end{abstractind}
+
+\begin{abstracteng}
+	%diisi nanti
+\end{abstracteng}
+
+\newpage
+\setcounter{page}{1}
+\pagenumbering{arabic}
+
+\include{BAB_1}
+\include{BAB_2}
+\include{BAB_3}
+\include{BAB_4}
+\include{BAB_5}
+
+\bibliography{IEEEabrv,references}
+\addcontentsline{toc}{chapter}{DAFTAR PUSTAKA}
+
+\end{document}

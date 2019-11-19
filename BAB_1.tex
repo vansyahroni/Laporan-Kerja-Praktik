@@ -1,0 +1,72 @@
+%BAB-1 Laporan KP
+
+\chapter{PENDAHULUAN}
+
+\section{Latar Belakang Masalah}
+
+	Robotika merupakan salah satu bidang ilmu yang mempelajari desain, modeling, dan kendali robot. Saat ini robot memiliki peranan yang sangat penting dalam kehidupan untuk membantu pekerjaan manusia. Pemanfaatan robot sangat beragam dalam berbagai bidang mulai dari industri samapi dengan eksplorasi ruang angkasa. Dalam bidang industri, robot memiliki peran yang sangat penting dalam proses manufaktur. penggunaan robot dalam manufaktur sangat beragam meliputi proses pengelasan, \textit{spray painting}, perakitan, \textit{milling} dan \textit{drilling}\cite{Alshamasin2011}.Serpent-1 merupakan salah satu robot SCARA atau Selective Compilance Assembly Robot Arm. Dalam dunia industri, robot SCARA digunakan untuk menangani proses penempatan komponen elektronik\cite{Das2005}.\\
+	
+	Untuk menggerakkan robot Serpent-1 secara optimal dan efisien. dibutuhkan sebuah persamaan kinematika. persamaan kinematika tersebut dapat diperoleh dari analisis Denavit-Hartenberg. pada penelitian ini digunakan persamaan \textit{inverse kinematic} dengan input berupa titik koordinat kartesius \textit{($x_{1}$,$y_{2}$)} dan output berupa nilai sudut untuk mengendalikan servo pada \textit{shoulder} dan \textit{elbow}\cite{Spong2006}.\\
+	
+	Dalam membangun sebuah sistem kendali dibutuhkan \textit{platfrom} antar muka sebagai jembatan antara \textit{user} dengan \textit{hardware} pada Serpent-1. Dalam penelitian ini program antar muka dirancang menggunakan \textit{software} LabVIEW. Software ini memiliki beberapa kelebihan yang membuatnya sesuai untuk digunakan sebagai \textit{platform} antar muka untuk Serpent-1. Software ini juga telah digunakan secara luas dibidang industri dan pendidikan sebagai salah satu standar untuk mendesain sistem kendali. Selain itu, LabVIEW memiliki sistem untuk instrumentasi dan data analisis yang \textit{powerful} dan \textit{flexible}\cite{Kaleli2013}.\\
+	
+	Oleh Karena itu, pada program kerja praktik kali ini akan dilakukan analisis robot Serpent-1 dengan model \textit{elbow planar manipulator} Denavit-Hartenberg dan perancangan antar muka berbasis LabVIEW yang bertujuan untuk membangun sistem kendali kinematika dan antar muka pada robot Serpent-1. Atas dasar tersebut penulis membuat laporan kerja praktik berjudul "\textbf{Rancang Bangun Kendali Kinematika dan Antar Muka Robot Serpent-1 Berbasis LabVIEW}" guna memberikan inovasi dan pengembangan pada sistem kendali kinematika pada robot SCARA yang dapat diimplementasikan sebagai sarana belajar sistem kendali di Laboratorium Instrumentasi dan Kendali Sekolah Vokasi Universitas Gadjah Mada.\\
+
+
+\section{Tujuan Penelitian}
+adapun tujuan dalam melaksanakan penelitian terbagi menjadi dua, yaitu tujuan secara umum dan secara khusus sebagai berikut
+
+	\subsection{Tujuan Umum}
+	
+		Untuk memenuhi salah satu syarat kelulusan program kerja praktik program studi Teknologi Instrumentasi Sekolah Vokasi Universitas Gadjah Mada
+		
+	\subsection{Tujuan Khusus}
+	
+	\begin{enumerate}
+		\item Merancang antar muka untuk robot Serpent-1 berbasis LabVIEW
+		\item Mengimplementasikan persamaan kinematika Denavit-Hartenberg pada kinematika robot Serpent-1
+	\end{enumerate}
+	
+\section{Batasan Penelitian}
+	Pembatasan masalah diperlukan untuk mempermudah pelaksanaan penulisan laporan kerja praktik sehingga tidak menyimpang dari judul laporan. Lingkup pembatasan masalah dalam Laporan kerja praktik ini dibatasi pada :
+	
+	\begin{enumerate}
+		
+		\item Komunikasi antara LabVIEW dengan Arduino Menggunakan NI-VISA
+		\item Analisis model \textit{elbow planar manipulator} Denavit-Hartenberg hanya dilakukan pada \textit{Horizontal joint}
+		
+	\end{enumerate}
+
+\section{Metode Kerja Praktik}
+metode yang digunakan dalam pengerjaan proyek dan penyusunan laporan kerja praktik ini dilakukan dengan metode sebagai berikut
+
+\begin{enumerate}
+	\item Metode pustaka\\
+	Metode ini dilakukan dengan membaca dan mempelajari jurnal-jurnal yang memiliki topik seputar SCARA,LabVIEW, dan \textit{invers kinematic}
+	
+	\item Metode perancangan alat\\
+	Metode ini dilakukan dengan membuat desain elektronis, perancangan kinematika robot, serta perancangan software antar muka robot.
+	
+	\item Metode pengujian\\
+	Metode ini dilakukan dengan cara melakukan pengujian terhadap kinerja sensor, kinerja aktuator, dan kinerja sensor dan aktuator secara bersamaan.
+	
+\end{enumerate}
+
+\section{Sistematika Penulisan}
+Penulisan laporan kerja praktik ini dilakukan dengan mengikuti sistematika sebagai berikut :\\
+\noindent
+\textbf{BAB I\hspace*{0.6cm}: PENDAHULUAN}\\
+\noindent
+Memuat latar belakang masalah,tujuan, dan maksud,batasan masalah, metodologi penetilian, dan sistematika penulisan.\\
+\noindent
+\textbf{BAB II\hspace*{0.5cm}: LANDASAN TEORI}\\
+\noindent
+Memuat gambaran umum SCARA, \textit{invers kinematic} dengan analisis Denavit-Hartenberg, Software LabVIEW,dan Arduino Mega 2560.\\
+\textbf{BAB III\hspace*{0.375cm}:  PERANCANGAN SISTEM}\\
+\noindent
+Memuat perancangan sistem secara umum, meliputi perancangan dari segi elektronis dan software dari robot Serpent-1.\\
+\textbf{BAB IV\hspace*{0.4cm}: PENGUJIAN SISTEM}\\
+\noindent
+Memuat pengujian dan analisis kerja dari sistem aktuator dan sensor dari Serpent, serta pengujian sistem secara keseluruhan.\\
+\textbf{BAB V\hspace*{0.6cm}: PENUTUP}\\
+Memuat kesimpulan dari perancangan, pembuatan, pengujian, dan analisis kerja robot Serpent-1, serta berisi saran-saran untuk pengembangan lebih lanjut.\\
