@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7050 64-bit) (preloaded format=pdflatex 2019.7.18)  23 NOV 2019 14:07
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7050 64-bit) (preloaded format=pdflatex 2019.7.18)  23 NOV 2019 14:28
 entering extended mode
 **./Laporan_KP.tex
 (Laporan_KP.tex
@@ -827,7 +827,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 57--99
 
  (BAB_2.tex
 BAB II.
-<gambar/scara.png, id=255, 853.1875pt x 700.6175pt>
+<gambar/scara.png, id=251, 853.1875pt x 700.6175pt>
 File: gambar/scara.png Graphic file (type png)
 <use gambar/scara.png>
 Package pdftex.def Info: gambar/scara.png  used on input line 8.
@@ -853,7 +853,7 @@ i-ga bu-ah sen-sor \T1/ptm/m/it/12 f\T1/ptm/m/n/12 eedback
  []
 
 [5]
-<gambar/logo_processing.png, id=272, 1027.84pt x 1027.84pt>
+<gambar/logo_processing.png, id=268, 1027.84pt x 1027.84pt>
 File: gambar/logo_processing.png Graphic file (type png)
 <use gambar/logo_processing.png>
 Package pdftex.def Info: gambar/logo_processing.png  used on input line 64.
@@ -863,12 +863,12 @@ Package pdftex.def Info: gambar/logo_processing.png  used on input line 64.
 
  (BAB_3.tex
 BAB III.
-<gambar/diagram_blok.jpg, id=279, 703.12688pt x 69.25874pt>
+<gambar/diagram_blok.jpg, id=275, 703.12688pt x 69.25874pt>
 File: gambar/diagram_blok.jpg Graphic file (type jpg)
 <use gambar/diagram_blok.jpg>
 Package pdftex.def Info: gambar/diagram_blok.jpg  used on input line 12.
 (pdftex.def)             Requested size: 406.87448pt x 40.07709pt.
-<gambar/flowchart.png, id=280, 237.13594pt x 472.76625pt>
+<gambar/flowchart.png, id=276, 237.13594pt x 472.76625pt>
 File: gambar/flowchart.png Graphic file (type png)
 <use gambar/flowchart.png>
 Package pdftex.def Info: gambar/flowchart.png  used on input line 21.
@@ -878,7 +878,7 @@ Package pdftex.def Info: gambar/flowchart.png  used on input line 21.
 
 
  <./gambar/diagram_blok.jpg>] [8 <./gambar/flowchart.png>]
-<gambar/driver_motor.jpg, id=291, 318.18875pt x 231.86626pt>
+<gambar/driver_motor.jpg, id=287, 318.18875pt x 231.86626pt>
 File: gambar/driver_motor.jpg Graphic file (type jpg)
 <use gambar/driver_motor.jpg>
 Package pdftex.def Info: gambar/driver_motor.jpg  used on input line 33.
@@ -912,10 +912,10 @@ Package rerunfilecheck Info: File `Laporan_KP.out' has not changed.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 108.
  ) 
 Here is how much of TeX's memory you used:
- 9849 strings out of 492895
- 148544 string characters out of 3124202
- 260275 words of memory out of 3000000
- 13463 multiletter control sequences out of 15000+200000
+ 9845 strings out of 492895
+ 148488 string characters out of 3124202
+ 260210 words of memory out of 3000000
+ 13461 multiletter control sequences out of 15000+200000
  35368 words of font info for 57 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  36i,12n,41p,804b,468s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -932,9 +932,9 @@ AN/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/times/utmb8a.pfb><C:/Users
 sers/IVAN/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/times/utmr8a.pfb><C
 :/Users/IVAN/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/times/utmri8a.pf
 b>
-Output written on Laporan_KP.pdf (21 pages, 617403 bytes).
+Output written on Laporan_KP.pdf (21 pages, 614574 bytes).
 PDF statistics:
- 366 PDF objects out of 1000 (max. 8388607)
- 84 named destinations out of 1000 (max. 500000)
+ 362 PDF objects out of 1000 (max. 8388607)
+ 82 named destinations out of 1000 (max. 500000)
  279 words of extra memory for PDF output out of 10000 (max. 10000000)
 

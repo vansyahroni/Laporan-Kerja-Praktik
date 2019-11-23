@@ -21,17 +21,6 @@
 \providecommand{\BIBdecl}{\relax}
 \BIBdecl
 
-\bibitem{Alshamasin2011}
-M.~S. Alshamasin, F.~Ionescu, and R.~T.~A. Kasasbeh, ``{Modelling and
-  simulation of a SCARA robot using solid dynamics and verification by
-  MATLAB/Simulink},'' \emph{International Journal of Modelling, Identification
-  and Control}, vol.~15, no.~1, p.~28, 2011.
-
-\bibitem{Das2005}
-M.~T. Das and L.~C. D{\"{u}}lger, ``{Mathematical modelling, simulation and
-  experimental verification of a scara robot},'' \emph{Simulation Modelling
-  Practice and Theory}, vol.~13, no.~3, pp. 257--271, 2005.
-
 \bibitem{Younkin2002}
 G.~Younkin, \emph{{Industrial Servo Control Systems: Fundamentals And
   Applications, Revised And Expanded}}.\hskip 1em plus 0.5em minus 0.4em\relax
