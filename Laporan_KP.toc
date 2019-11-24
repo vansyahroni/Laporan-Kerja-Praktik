@@ -15,7 +15,7 @@
 \contentsline {subsection}{\numberline {1.2.1}Secara Umum}{2}{subsection.1.2.1}% 
 \contentsline {subsection}{\numberline {1.2.2}Tujuan Khusus}{2}{subsection.1.2.2}% 
 \contentsline {section}{\numberline {1.3}Batasan Penelitian}{2}{section.1.3}% 
-\contentsline {section}{\numberline {1.4}Metode Kerja Praktik}{2}{section.1.4}% 
+\contentsline {section}{\numberline {1.4}Metode Kerja Praktik}{3}{section.1.4}% 
 \contentsline {section}{\numberline {1.5}Sistematika Penulisan}{3}{section.1.5}% 
 \babel@toc {english}{}
 \babel@toc {bahasa}{}

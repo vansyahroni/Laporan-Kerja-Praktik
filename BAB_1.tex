@@ -18,7 +18,7 @@ Adapun tujuan dalam melaksanakan penelitian "Kinematika dan Antarmuka Robot SCAR
 
 	\subsection{Secara Umum}
 		\begin{enumerate}
-		\item Merancang \emph{ arm manipulator robot} berbasis Arduino Mega 2560
+		\item Merancang \emph{ arm manipulator robot} SCARA berbasis Arduino Mega 2560
 		\item Memahami dan mengimplementasikan anta muka aplikasi Processing Integrated Development Environment (IDE).
 		\item Mengimplementasikan kinematika pada \emph{arm manipulator robot} SCARA.
 	\end{enumerate}
@@ -27,12 +27,14 @@ Adapun tujuan dalam melaksanakan penelitian "Kinematika dan Antarmuka Robot SCAR
 	
 	
 \section{Batasan Penelitian}
-	Pembatasan masalah diperlukan untuk mempermudah pelaksanaan penulisan laporan kerja praktik sehingga tidak menyimpang dari judul laporan. Lingkup pembatasan masalah dalam Laporan kerja praktik ini dibatasi pada :
+	Pembatasan masalah diperlukan untuk mempermudah pelaksanaan penulisan laporan kerja praktik sehingga tidak menyimpang dari judul laporan. Lingkup pembatasan masalah dalam Laporan kerja praktik ini dibatasi pada:
 	
 	\begin{enumerate}
 		
-		\item Komunikasi antara LabVIEW dengan Arduino Menggunakan NI-VISA
-		\item Analisis model \textit{elbow planar manipulator} Denavit-Hartenberg hanya dilakukan pada \textit{Horizontal joint}
+		\item Akurasi dan presisi dari robot lengan dipengaruhi oleh spesifikasi dan torsi dari masing-masing servo pada \textit joint,
+		\item  Rancangan mekanik yang sudah tersusun dari awal sehingga tidak dapat diubah lagi. 
+		\item Motor DC pada setiap sendi dari \textit joint robot memiliki kebutuhan arus yang berbeda – beda. 
+		\item Komunikasi antara Processing IDE dan perangkat menggunakan komunikasi serial.
 		
 	\end{enumerate}
 
