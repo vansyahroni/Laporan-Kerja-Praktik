@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7050 64-bit) (preloaded format=pdflatex 2019.7.18)  23 NOV 2019 14:28
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7050 64-bit) (preloaded format=pdflatex 2019.7.18)  24 NOV 2019 12:00
 entering extended mode
 **./Laporan_KP.tex
 (Laporan_KP.tex
@@ -803,7 +803,7 @@ LaTeX Font Info:    Font shape `T1/ptm/bx/it' in size <14.4> not available
  (BAB_1.tex
 BAB I.
 
-Underfull \hbox (badness 10000) in paragraph at lines 13--15
+Underfull \hbox (badness 10000) in paragraph at lines 13--14
 
  []
 
@@ -812,13 +812,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 13--15
 
 
 ] [2])
-Overfull \hbox (16.78165pt too wide) in paragraph at lines 57--99
+Overfull \hbox (16.78165pt too wide) in paragraph at lines 56--99
 \T1/ptm/m/n/12 Memuat gam-bar-an umum SCA-RA, \T1/ptm/m/it/12 in-vers ki-ne-ma-
 tic \T1/ptm/m/n/12 de-ngan ana-li-sis Denavit-Hartenberg,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 57--99
+Underfull \hbox (badness 10000) in paragraph at lines 56--99
 
  []
 
@@ -932,7 +932,7 @@ AN/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/times/utmb8a.pfb><C:/Users
 sers/IVAN/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/times/utmr8a.pfb><C
 :/Users/IVAN/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/times/utmri8a.pf
 b>
-Output written on Laporan_KP.pdf (21 pages, 614574 bytes).
+Output written on Laporan_KP.pdf (21 pages, 614186 bytes).
 PDF statistics:
  362 PDF objects out of 1000 (max. 8388607)
  82 named destinations out of 1000 (max. 500000)
