@@ -20,18 +20,17 @@
 \babel@toc {english}{}
 \babel@toc {bahasa}{}
 \contentsline {chapter}{\numberline {II}LANDASAN TEORI}{6}{chapter.2}% 
-\contentsline {section}{\numberline {2.1}SCARA Robot}{6}{section.2.1}% 
-\contentsline {subsection}{\numberline {2.1.1}SCARA}{6}{subsection.2.1.1}% 
+\contentsline {section}{\numberline {2.1}Gambaran Umum Robot Lengan}{6}{section.2.1}% 
 \contentsline {section}{\numberline {2.2}Motor servo}{7}{section.2.2}% 
 \contentsline {section}{\numberline {2.3}Kinematika Robot}{8}{section.2.3}% 
 \contentsline {section}{\numberline {2.4}Processing IDE}{8}{section.2.4}% 
-\contentsline {chapter}{\numberline {III}PERANCANGAN SISTEM}{9}{chapter.3}% 
-\contentsline {section}{\numberline {3.1}Metode Perancangan sistem}{9}{section.3.1}% 
-\contentsline {subsection}{\numberline {3.1.1}Diagram Blok Perancangan Sistem}{9}{subsection.3.1.1}% 
-\contentsline {subsection}{\numberline {3.1.2}Flowchart Cara Kerja Sistem}{9}{subsection.3.1.2}% 
-\contentsline {subsection}{\numberline {3.1.3}Perancangan Elektronis}{11}{subsection.3.1.3}% 
-\contentsline {subsection}{\numberline {3.1.4}Perancangan Elektronis}{12}{subsection.3.1.4}% 
-\contentsline {subsection}{\numberline {3.1.5}Pemrograman Kontroller \& Implementasi PID}{12}{subsection.3.1.5}% 
-\contentsline {subsection}{\numberline {3.1.6}Perancangan Antar Muka \& Inplementasi \textit {Invers Kinematic}}{12}{subsection.3.1.6}% 
-\contentsline {chapter}{\numberline {IV}PENUTUP}{13}{chapter.4}% 
-\contentsline {chapter}{DAFTAR PUSTAKA}{14}{chapter*.21}% 
+\contentsline {chapter}{\numberline {III}PERANCANGAN SISTEM}{10}{chapter.3}% 
+\contentsline {section}{\numberline {3.1}Metode Perancangan sistem}{10}{section.3.1}% 
+\contentsline {subsection}{\numberline {3.1.1}Diagram Blok Perancangan Sistem}{10}{subsection.3.1.1}% 
+\contentsline {subsection}{\numberline {3.1.2}Flowchart Cara Kerja Sistem}{10}{subsection.3.1.2}% 
+\contentsline {subsection}{\numberline {3.1.3}Perancangan Elektronis}{12}{subsection.3.1.3}% 
+\contentsline {subsection}{\numberline {3.1.4}Perancangan Elektronis}{13}{subsection.3.1.4}% 
+\contentsline {subsection}{\numberline {3.1.5}Pemrograman Kontroller \& Implementasi PID}{13}{subsection.3.1.5}% 
+\contentsline {subsection}{\numberline {3.1.6}Perancangan Antar Muka \& Inplementasi \textit {Invers Kinematic}}{13}{subsection.3.1.6}% 
+\contentsline {chapter}{\numberline {IV}PENUTUP}{14}{chapter.4}% 
+\contentsline {chapter}{DAFTAR PUSTAKA}{15}{chapter*.21}% 
