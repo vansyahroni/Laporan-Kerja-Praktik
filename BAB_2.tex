@@ -5,14 +5,27 @@
 
 Robot adalah adalah sebuah alat yang terdiri dari gabungan mekanik dan elektronik yang dapat melakukan tugas fisik, baik menggunakan pengawasan dan kendali manusia maupun secara otomatis. Robot dapat melakukan suatu tugas secara berulang tanpa merasa lelah sehingga robot banyak digunakan dalam dunia industri khususnya pada bidang produksi. Salah satu jenis robot yang sering dalam bidang produksi adalah sistem lengan robot.
 
-Robot lengan adalah robot yang memiliki bentuk fisik seperti halnya lengan pada manusia dan memiliki derajat kebebasan (degre of freedom) tertentu bergantung pada jumlah sendi yang digunakan sehingga robot lengan memiliki beberapa jenis. Robot lengan pada bidang industri biasa digunakan sebagai actuator untuk mengambil dan meletakkan suatu objek secara terus menerus.
+Robot lengan adalah robot yang memiliki bentuk fisik seperti halnya lengan pada manusia dan memiliki derajat kebebasan (degre of freedom) tertentu bergantung pada jumlah sendi yang digunakan. Dengan begitu robot lengan terdiri dari beberapa jenis. Robot lengan pada bidang industri biasa digunakan sebagai actuator untuk mengambil dan meletakkan suatu objek secara terus menerus.
 	
-	\begin{figure}[H]
-		\centering
-		\includegraphics[width=10cm]{gambar/joint.png}
-		\caption{Jenis-Jenis \emph Joint}
-	\end{figure}
+
 Pada umumnya struktur robot lengan terdiri dari beberapa bagian.  Bagian utama adalah struktur mekanik (manipulator) yang merupakan susunan kerangka yang tidak dapat digerakkan (rigid) dan lengan (link) yang satu sama lain terhubung oleh sendi (joint). Dengan adanya joint yang menghubungkan dua link menjadi satu kesatuan sehingga joint membentuk satu derajat kebebasan. Jika diibaratkan dengan tubuh manusia, link adalah tulang sedangkan joint adalah sendi-sendinya. Joint memiliki dua pergerakan, yaitu pergerakan revolute joint (gerak berputar) dan prismatic joint (gerak bergeser) seperti yang ditunjukkan oleh Gambar 2.1
+
+	\begin{figure}[H]
+	\centering
+	\includegraphics[width=10cm]{gambar/joint.png}
+	\caption{Jenis-Jenis \emph Joint}
+\end{figure}
+
+Pada ujung pangkal lengan, robot lengan umumnya menggunakan gripper yang dapat dipakai untuk memindahkan suatu objek. Robot lengan dalam menjalankan tugasnya dikontrol menggunakan sensor serta aktuator yang telah dirancang untuk melakukan tugas sesuai dari yang diperintahkan. Perpaduan antara sensor dan aktuator ini yang menyebabkan robot lengan dapat bekerja secara optimal dan presisi.
+
+\subsection{\emph{Degress of Freedom }}
+Degress of freedom (DOF) merupakan sebuah konfigurasi yang dapat meminimalkan spesifikasi dengan menggunakan n parameter yang dapat menyatakan posisi suatu system pada setiap saat. Biasanya, robot lengan mempunyai paling sedikit enam independen derajat kebebasan: tiga derajat kebebasan untuk translasi dan tiga derajat kebebasan untuk rotasi. Umumnya untuk robot lengan paling tidak memiliki tiga derajat kebebasan untuk dapat memiliki workspace yang cukup. Workspace dari sebuah robot lengan merupakan total volume yang dapat dijangkau oleh end effector dari pergerakan semua jointnya dari titik minimum hingga maksimum. 
+
+\subsection{Konfigurasi Robot Lengan}
+Pada dasarnya, berbagai jenis dari robot lengan dapat dibedakan dari konfigurasinya. konfigurasi robot lengan merupakan perpaduan antara pergerakan joint yang dimiliki oleh robot lengan. konfigurasi ini memiliki tipe yang berbeda-beda sehingga \emph workspace yang dimiliki pada tiap robot lengan pasti berbeda.
+
+\subsubsection{Konfigurasi Articulated (Revolute - Revolute - Revolute)}
+Articulated manipulator ini pada dasarnya mempunyai jenis revolute joint pada ketiga joint robot lengan (wrist, shoulder, elbow). Dengan konfigurasi ini, robot lengan dengan konfigurasi Articulated dapat memiliki variasi DOF yang banyak. DOF yang daoat dihasilkan dengan robot lengan dengan konfigurasi seperti ini adalah tiga DOF hingga sampai dengan enam DOF tergantung dari kebutuhan dan fungsi yang akan dilakukan oleh robot lengan. Konfigurasi dari joint revolute ini menjadikan robot lengan jenis ini mempunyai kebebasan yang besar dari pergerakannya dalam ruang yang kecil sehingga menjadikan jenis konfigurasi articulated manipulator ini banyak dipakai dan memiki desain yang populer. Konfigurasi Articulated ini dapat dianalisakan seperti yang ada pada Gambar 2. 2.
 
 SCARA merupakan singkatan dari \emph{Selective Compliant Assembly Robot Arm}. Robot ini pertama kali dibuat oleh perusahaan USA bernama Adept pada 1984 dan diklasifikasikan sebagai robot industri. Sistem penggerak robot SCARA merupakan pergerakan langsung pada lengan tanpa bantuan sistem \emph{belt} keculai pada bagian \emph wirst, sehingga membuat mekanisme gerakannya bekerja cepat, sederhana namun tetap akurat. Robot ini banyak digunakan sebagai robot \emph {aseembly part} dengan ukuran yang kecil degan kecepatan sedang. 
 
