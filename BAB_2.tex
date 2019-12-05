@@ -35,6 +35,15 @@ Konfigurasi spherical merupakan konfigurasi yang mempunyai dua buah joint revolu
 
 Konfigurasi Selective Compliant Articulated Robot for Assembly (SCARA) merupakan konfigurasi yang mempunyai dua buah joint revolute dan satu buah joint prismatic sama seperti konfigurasi Spherical. Meskipun SCARA memiliki struktur joint revolute – revolute – prismatic (RRP) sama seperti konfigurasi yang dimiliki spherical, struktur ini sedikit berbeda dengan konfigurasi spherical dari tampilannya maupun dari jarak workspace nya. Tidak seperti konfigurasi spherical, dimana z0 tegak lurus terhadap 1, dan z1 tegak lurus dengan z2, konfigurasi SCARA memiliki struktur z0, z1, dan z2 yang paralel. Struktur dari konfigurasi SCARA seperti yang ditunjukkan Gambar 2.4
 
+\subsubsection{D. Konfigurasi Cylindrical (Revolute – Prismatic – Prismatic) } 
+
+Konfigurasi Cylindrical merupakan konfigurasi yang mempunyai satu buah joint revolute dan dua buah joint prismatic. Joint revolute menghasilkan pergerakan rotasi di base/ waist, sementara joint prismatic berada di bagian shoulder dan elbow. Struktur dari konfigurasi Cylindrical seperti yang ditunjukkan oleh Gambar 2.5
+
+\subsubsection{E. Konfigurasi Cartesian (Prismatic – Prismatic – Prismatic)  } 
+
+Konfigurasi cartesian mempunyai tiga buah joint prismatic. Variabel joint dari konfigurasi prismatic adalah koordinat cartesian dari end-effector dengan memperhatikan letak base dari robot lengan. Seperti yang diperkirakan kinematika dari jenis konfigurasi ini adalah yang paling sederhana dari semua konfigurasi robot lengan. Konfigurasi cartesian sangat berguna untuk penyusunan suatu barang di bidang datar seperti mesin laser, kargo atau memindahkan barang. Struktur dari konfigurasi Cartesian ditunjukkan pada Gambar 2.6
+
+
 SCARA merupakan singkatan dari \emph{Selective Compliant Assembly Robot Arm}. Robot ini pertama kali dibuat oleh perusahaan USA bernama Adept pada 1984 dan diklasifikasikan sebagai robot industri. Sistem penggerak robot SCARA merupakan pergerakan langsung pada lengan tanpa bantuan sistem \emph{belt} keculai pada bagian \emph wirst, sehingga membuat mekanisme gerakannya bekerja cepat, sederhana namun tetap akurat. Robot ini banyak digunakan sebagai robot \emph {aseembly part} dengan ukuran yang kecil degan kecepatan sedang. 
 
 Robot SCARA yang digunakan pada penelitian ini menggunakan robot SCARA dengan nama Serpent-2. Robot Serpent-2 memiliki dua \textit{horizontal joint} yaitu bagian \textit{shoulder, elbow}dan \textit{wrist} yang dikendalikan oleh motor servo. Sedangkan pada bagian \textit{vertical joint} yang berfungsi sebagai naik turun dan buka tutup dari \emph wirst, dikendalikan oleh pneumatik yang dikontrol oleh \emph {valve relay}. Sehingga, gerakan yang terdapat pada robot SCARA dapat diklasifikasikan sebagai gerakan mengambil dan menempatkan objek. 
