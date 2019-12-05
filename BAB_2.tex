@@ -80,6 +80,39 @@ Dalam suatu rangkaian elektronika dibutuhkan suatu sumber stabil dan sesuai deng
 
 Regulator switching mengatur besarnya nilai tegangan keluaran dengan mensaklar (ON/OFF) tegangan masukan dengan frekuensi berbeda – beda. Kelebihan dari regulator switching adalah mempunyai disipasi daya yang terjadi lebih kecil dibandingkan dengan regulator linear. Sedangkan kekurangan yaitu tegangan keluaranya akan berbentuk gelombang akibat adanya proses switching. Oleh karena itu, regulator jenis ini umumnya membutuhkan induktor, kapasitor , dan dioda untuk memperhalus tegangan keluaran. Regulator switching ada dua jenis yaitu regulator Buck dan regulator Boost. Regulator Buck untuk menghasilkan nilai tegangan keluaran yang lebih kecil dari tegangan masukannya. Sedangkan Regulator Boost untuk menghasilkan nilai tegangan yang lebih besar dari tegangan masukannya. Salah satu jenis dari regulator Buck adalah LM2596 . Bentuk fisik dari regulator Buck seperti yang ditunjukkan pada Gambar 3.2
 
+\section{Arduino}
+Arduino  merupakan papan pengembangan dari mikrokontroler yang menggunakan basis Arduino serta menggunakan microchip At 2560. Arduino  memiliki pin input dan output dengan jumlah yang cukup banyak, yaitu sejumlah 54 buah pin input dan output yang 15 diantaranya merupakan pin pulse with modulation (PWM), 16 diantaranya merupakan pin analog input, dan terdapat empat pin yang digunakan sebagai UART (serial port hardware). Arduino ini sudah dilengkapi dengan oscillator sebesar 16Mhz, sebuah port usb, power jack DC, ICSP header serta tombol reset [17]. Gambar 2.13 Merupakan bentuk fisik Arduino .
+
+Arduino merupakan papan pengembangan dari mikrokontroler yang menggunakan basis Arduino serta menggunakan microchip At 2560. Arduino memiliki beberapa jenis, salah satunya adalah Arduino Mega 2560. Arduino Mega 2560 memiliki 54 buah pin masukan atau keluaran yang 15 diantaranya dapat dijadikan menjadi pin pulse with modulation (PWM), 16 pin masukan analog, dan terdapat empat pin yang digunakan sebagai UART (serial port hardware). 16 MHz kristal osilator, koneksinya menggunakan USB, mempunyai jack power, dan tombol reset. Bentuk fisik dari Arduino Mega 2560 ditunjukkan pada Gambar 2.5
+
+	\begin{figure}[H]
+	\centering
+	\includegraphics[width=5cm]{gambar/arduino_mega.png}
+	\caption{Jenis-Jenis \emph Joint}
+\end{figure}
+
+Arduino Mega 2560 memuat semua yang dibutuhkan untuk mendukung kerja dari sebuah mikrokontroler. Arduino Mega 2560 dapat dengan mudah dioperasikan untuk pengaplikasian ke sebuah sistem kerja karena dapat dihubungkan dengan kabel USB sebagai komunikasinya. Untuk powernya, Arduino Mega 2560 dapat dihidupkan melalui jack DC yang dipunyainya dengan diberi tegangan DC, dapat dengan adapter DC atau baterai dengan nilai tegangan sesuai dengan spesifikasi pada Arduino. Spesifikasi Arduino Mega 2560 ditunjukkan pada Tabel 2.4
+\begin{table}[H]
+	\centering
+	\caption{ Spesifikasi Arduino Mega 2560 }
+	\resizebox{12cm}{!}{%
+		\begin{tabular}{|l|l|}
+		\hline
+		Mikrokontroler     & Atmega2560$$\hspace{2cm} 		\\ \hline
+		Tegangan operasional     & 5 V$$  				\\ \hline
+		Tegangan masukan  & 5-12 V$$  		\\ \hline
+		Pin digital I/O       & 54 (15 pin untuk keluaran PWM) $$   \\\hline
+		Pin analog masukan     & 16$$ 		\\ \hline
+		Arus DC per Pin I/O  & 20 mA $$   				\\ \hline
+		Arus DC untuk Pin 3.3 V & 50 mA $$  				\\ \hline
+		Memori flash    & 256 KB $$ 		\\ \hline
+		Kecepatan clock & 16 MHz $$   				\\ \hline
+		Dimensi & 101.52 x 53.3 mm $$  				\\ \hline
+		
+		\end{tabular}%
+}
+\end{table}
+
 SCARA merupakan singkatan dari \emph{Selective Compliant Assembly Robot Arm}. Robot ini pertama kali dibuat oleh perusahaan USA bernama Adept pada 1984 dan diklasifikasikan sebagai robot industri. Sistem penggerak robot SCARA merupakan pergerakan langsung pada lengan tanpa bantuan sistem \emph{belt} keculai pada bagian \emph wirst, sehingga membuat mekanisme gerakannya bekerja cepat, sederhana namun tetap akurat. Robot ini banyak digunakan sebagai robot \emph {aseembly part} dengan ukuran yang kecil degan kecepatan sedang. 
 
 
