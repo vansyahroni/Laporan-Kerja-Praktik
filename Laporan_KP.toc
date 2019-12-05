@@ -23,10 +23,12 @@
 \contentsline {section}{\numberline {2.1}Gambaran Umum Robot Lengan}{6}{section.2.1}% 
 \contentsline {subsection}{\numberline {2.1.1}\emph {Degress of Freedom }}{7}{subsection.2.1.1}% 
 \contentsline {subsection}{\numberline {2.1.2}Konfigurasi Robot Lengan}{7}{subsection.2.1.2}% 
-\contentsline {subsubsection}{Konfigurasi Articulated (Revolute - Revolute - Revolute)}{7}{section*.10}% 
-\contentsline {section}{\numberline {2.2}Motor servo}{8}{section.2.2}% 
-\contentsline {section}{\numberline {2.3}Kinematika Robot}{9}{section.2.3}% 
-\contentsline {section}{\numberline {2.4}Processing IDE}{9}{section.2.4}% 
+\contentsline {subsubsection}{A. Konfigurasi Articulated (Revolute - Revolute - Revolute)}{7}{section*.10}% 
+\contentsline {subsubsection}{B. Konfigurasi Spherical (Revolute \IeC {\textendash } Revolute \IeC {\textendash } Prismatic) )}{8}{section*.11}% 
+\contentsline {subsubsection}{C. Konfigurasi SCARA (Revolute \IeC {\textendash } Revolute \IeC {\textendash } Prismatic) }{8}{section*.12}% 
+\contentsline {section}{\numberline {2.2}Motor servo}{9}{section.2.2}% 
+\contentsline {section}{\numberline {2.3}Kinematika Robot}{10}{section.2.3}% 
+\contentsline {section}{\numberline {2.4}Processing IDE}{10}{section.2.4}% 
 \contentsline {chapter}{\numberline {III}PERANCANGAN SISTEM}{11}{chapter.3}% 
 \contentsline {section}{\numberline {3.1}Metode Perancangan sistem}{11}{section.3.1}% 
 \contentsline {subsection}{\numberline {3.1.1}Diagram Blok Perancangan Sistem}{11}{subsection.3.1.1}% 
@@ -36,4 +38,4 @@
 \contentsline {subsection}{\numberline {3.1.5}Pemrograman Kontroller \& Implementasi PID}{14}{subsection.3.1.5}% 
 \contentsline {subsection}{\numberline {3.1.6}Perancangan Antar Muka \& Inplementasi \textit {Invers Kinematic}}{14}{subsection.3.1.6}% 
 \contentsline {chapter}{\numberline {IV}PENUTUP}{15}{chapter.4}% 
-\contentsline {chapter}{DAFTAR PUSTAKA}{16}{chapter*.22}% 
+\contentsline {chapter}{DAFTAR PUSTAKA}{16}{chapter*.24}% 
