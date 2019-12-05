@@ -50,6 +50,15 @@ Wirst atau pergelangan tangan merupakan joint diantara lengan dan end-effector. 
 
 End-effector merupakan perangkat atau alat yang terhubung dengan ujung lengan robot. End-effector adalah bagian robot yang berhubungan langsung dengan objek. Struktur, pergerakan, material dari end-effector bergantung pada tugas yang akan dilakukan robot tersebut. Stuktur dan bentuk dari end-effector seperti yang ditunjukkan pada Gambar 2.8
 
+\section{Kinematika}
+Kinematika merupakan pembelajaran pergerakan tubuh tanpa memperhitungkan gaya, torsi maupun momen tertentu yang menyebabkan pergerakan. Terdapat berbagai jenis pergerakan dari kinematika tergantung dari tujuan dari setiap robot. Kinematika yang akan dijelaskan disini adalah kinematika yang khusus mempelajari dan menganalisa pergerakan lengan robot lengan.  
+
+Pada kinematika robot, terdapat dua buah pembahasan kinematika. Pembahasan pertama adalah kinematika maju merupakan proses menghitung orientasi dan posisi dari end-effector berdasarkan sudut-sudut dari joint.  Sedangkan kinematika balik sebaliknya dari kinematika maju, diberikan posisi end-effector, dimana yang akan dicari adalah besaran sudut yang harus diubah untuk tiap joint dalam mencapai posisi end-effector tersebut.Diagram blok sederhana dari pemodelan kinematika ditunjukkan pada Gambar 2.9
+
+\subsection{Kinematika Maju}
+Kinematika maju atau biasa disebut forward kinematics merupakan kinematik untuk mendapatkan hasil akhir berupa koordinat posisi (x, y, z) dengan diketahuinya variabel sudut pada setiap joint dari lengan robot.  Variabel sudut tersebut kemudian dilakukan perhitungan satu sama lain hingga pada akhirnya akan mendapatkan koordinat x, koordinat y, dan koordinat z. Proses dari kinematika maju dapat ditunjukkan pada Gambar 2.10
+
+
 SCARA merupakan singkatan dari \emph{Selective Compliant Assembly Robot Arm}. Robot ini pertama kali dibuat oleh perusahaan USA bernama Adept pada 1984 dan diklasifikasikan sebagai robot industri. Sistem penggerak robot SCARA merupakan pergerakan langsung pada lengan tanpa bantuan sistem \emph{belt} keculai pada bagian \emph wirst, sehingga membuat mekanisme gerakannya bekerja cepat, sederhana namun tetap akurat. Robot ini banyak digunakan sebagai robot \emph {aseembly part} dengan ukuran yang kecil degan kecepatan sedang. 
 
 Robot SCARA yang digunakan pada penelitian ini menggunakan robot SCARA dengan nama Serpent-2. Robot Serpent-2 memiliki dua \textit{horizontal joint} yaitu bagian \textit{shoulder, elbow}dan \textit{wrist} yang dikendalikan oleh motor servo. Sedangkan pada bagian \textit{vertical joint} yang berfungsi sebagai naik turun dan buka tutup dari \emph wirst, dikendalikan oleh pneumatik yang dikontrol oleh \emph {valve relay}. Sehingga, gerakan yang terdapat pada robot SCARA dapat diklasifikasikan sebagai gerakan mengambil dan menempatkan objek. 
