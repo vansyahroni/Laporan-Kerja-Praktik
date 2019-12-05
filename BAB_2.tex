@@ -58,10 +58,26 @@ Pada kinematika robot, terdapat dua buah pembahasan kinematika. Pembahasan perta
 \subsection{Kinematika Maju}
 Kinematika maju atau biasa disebut forward kinematics merupakan kinematik untuk mendapatkan hasil akhir berupa koordinat posisi (x, y, z) dengan diketahuinya variabel sudut pada setiap joint dari lengan robot.  Variabel sudut tersebut kemudian dilakukan perhitungan satu sama lain hingga pada akhirnya akan mendapatkan koordinat x, koordinat y, dan koordinat z. Proses dari kinematika maju dapat ditunjukkan pada Gambar 2.10
 
+\subsection{Kinematika Balik}
+Kinematika Balik Kinematika balik (inverse kinematics) digunakan untuk mencari variabel sudut (joint) robot dalam menentukan posisi dan orientasi dari end-effector. Dalam menentukan koordinat end-effector, kinematika balik mengacu pada penggunaan persamaan kinematika robot untuk menentukan parameter bersama yang memberikan posisi yang diinginkan pada posisi akhir atau end-effector. Kinematika balik mengubah rencana gerak menjadi nilai yang harus diberikan bagi aktuator atau penggerak dalam pergerakan robot.  Dalam pergerakannya , robot dimodelkan dalam bentuk persamaan kinematika. Persamaan ini menentukan konfigurasi robot dalam hal parameter untuk setiap aktuator. Kinematika maju menggunakan parameter untuk menghitung konfigurasi robot, dan kinematika balik membalikkan perhitungan ini untuk menentukan parameter bersama dalam mencapai konfigurasi yang diinginkan. 
+
+Secara garis besar metode kinematika balik akan mencari nilai-nilai parameter yang harus diberikan kepada setiap aktuator untuk mencapai tujuan akhir. Untuk mendapatkan nilai-nilai parameter tersebut, robot harus mengetahui terlebih dahulu manipulator yang dimilikinya, baik ukuran maupun jumlah aktuator serta derajat kebebasan yang ada. Kemudian, robot harus ditanamkan rumus-rumus yang didapat dari berbagai model perhitungan, baik dari segi analisa grafik langsung maupun menggunakan metode-metode dari berbagai penelitian. Proses dari kinematika balik seperti yang ditunjukkan pada Gambar 3.1
+
+\section{Motor DC}
+Motor DC adalah motor listrik yang memerlukan suplai tegangan arus searah pada kumparan medan untuk diubah menjadi energi gerak mekanik. Motor DC mempunyai dua bagian utama, yaitu stator dan rotor. Stator merupakan bagian yang tidak berputar dan rotor merupakan bagian yang berputar dan merupakan kumparan jangkar. Motor DC menghasilkan jumlah putaran dalam setiap satuan waktu yang biasanya dihitung setiap satuan menit (rotations per minute) dan dapat diatur arah putaranya searah jarum jam (clock wise) atau berkebalikan dengan arah jarum jam (counter clock wise) bergantung dengan kutub atau polaritas dari catu daya yang diberikan pada motor DC. Bentuk dari motor DC dapat ditunjukkan pada Gambar 4.1
+	\begin{figure}[H]
+	\centering
+	\includegraphics[width=5cm]{gambar/motorDC.jpeg}
+	\caption{Jenis-Jenis \emph Joint}
+\end{figure}
+
 
 SCARA merupakan singkatan dari \emph{Selective Compliant Assembly Robot Arm}. Robot ini pertama kali dibuat oleh perusahaan USA bernama Adept pada 1984 dan diklasifikasikan sebagai robot industri. Sistem penggerak robot SCARA merupakan pergerakan langsung pada lengan tanpa bantuan sistem \emph{belt} keculai pada bagian \emph wirst, sehingga membuat mekanisme gerakannya bekerja cepat, sederhana namun tetap akurat. Robot ini banyak digunakan sebagai robot \emph {aseembly part} dengan ukuran yang kecil degan kecepatan sedang. 
 
+
 Robot SCARA yang digunakan pada penelitian ini menggunakan robot SCARA dengan nama Serpent-2. Robot Serpent-2 memiliki dua \textit{horizontal joint} yaitu bagian \textit{shoulder, elbow}dan \textit{wrist} yang dikendalikan oleh motor servo. Sedangkan pada bagian \textit{vertical joint} yang berfungsi sebagai naik turun dan buka tutup dari \emph wirst, dikendalikan oleh pneumatik yang dikontrol oleh \emph {valve relay}. Sehingga, gerakan yang terdapat pada robot SCARA dapat diklasifikasikan sebagai gerakan mengambil dan menempatkan objek. 
+
+
 \begin{table}[H]
 	\centering
 	\caption{Spesifikasi Robot Serpent-2}
@@ -105,13 +121,4 @@ Robot SCARA yang digunakan pada penelitian ini menggunakan robot SCARA dengan na
 	}
 \end{table}
 
-\section{Kinematika Robot}
-	Pada bagian motor servo, robot serpent-2 menggunakan tiga buah sensor \emph feedback yang berguna sebagai pemberi nilai posisi pada masing-masing motor servo. Sensor \emph feedback yang digunakan pada robot SCARA ini menggunakan potensiometer yang memberikan nilai analog dan kemudian diproses oleh Arduino Mega 2560. Nilai ini, nantinya untuk memproses gerak kinematika dari robot SCARA tersebut sesuai dengan posisi yang diinginkan.		
 	
-\section{Processing IDE}
-	\begin{figure}[H]
-	\centering
-	\includegraphics[width=4.33cm]{gambar/logo_processing.png}
-	\caption{Processing IDE}
-	\end{figure}
-	\emph{Processing} adalah lingkungan pemrograman sederhana yang dibuat untuk  memudahkan pengembangkan aplikasi yang berorientasi visual dengan penekanan pada animasi dan menyediakan respon balik yang instan kepada pengguna melalui interaksi didalamnnya. Para pengembang menginginkan cara untuk "membuat sketsa" ide dalam kode. Karena kemampuannya telah berkembang selama dekade terakhir, \emph{Processing} telah digunakan untuk pekerjaan tingkat produksi yang lebih maju. Awalnya dibangun sebagai ekstensi khusus domain ke Java yang ditargetkan untuk seniman dan desainer, Processing telah berevolusi menjadi desain penuh dan alat \emph{prototyping} yang digunakan untuk pekerjaan instalasi skala besar, gambar gerak, dan visualisasi data yang kompleks.
