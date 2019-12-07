@@ -70,6 +70,59 @@ Kerja sistem, merupakan bagaimana robot serphent-2 melakukan tugasnya sesuai per
 		
 		
 	\end{enumerate}
+
+
+
+SCARA merupakan singkatan dari \emph{Selective Compliant Assembly Robot Arm}. Robot ini pertama kali dibuat oleh perusahaan USA bernama Adept pada 1984 dan diklasifikasikan sebagai robot industri. Sistem penggerak robot SCARA merupakan pergerakan langsung pada lengan tanpa bantuan sistem \emph{belt} keculai pada bagian \emph wirst, sehingga membuat mekanisme gerakannya bekerja cepat, sederhana namun tetap akurat. Robot ini banyak digunakan sebagai robot \emph {aseembly part} dengan ukuran yang kecil degan kecepatan sedang. 
+
+
+Robot SCARA yang digunakan pada penelitian ini menggunakan robot SCARA dengan nama Serpent-2. Robot Serpent-2 memiliki dua \textit{horizontal joint} yaitu bagian \textit{shoulder, elbow}dan \textit{wrist} yang dikendalikan oleh motor servo. Sedangkan pada bagian \textit{vertical joint} yang berfungsi sebagai naik turun dan buka tutup dari \emph wirst, dikendalikan oleh pneumatik yang dikontrol oleh \emph {valve relay}. Sehingga, gerakan yang terdapat pada robot SCARA dapat diklasifikasikan sebagai gerakan mengambil dan menempatkan objek. 
+
+
+\begin{table}[H]
+	\centering
+	\caption{Spesifikasi Robot Serpent-2}
+	\resizebox{6cm}{!}{%
+		\begin{tabular}{|l|l|}
+			\hline
+			Main arm length      & 360 mm$$\hspace{2cm} 		\\ \hline
+			Fore arm length      & 290 mm$$  				\\ \hline
+			Shoulder movement    & 180 °$$  		\\ \hline
+			Elbow movement       & 200 °$$   		\\ \hline
+			Wrist rotation       & 360 °$$ 		\\ \hline
+			Up \& down movement  & 150 mm$$   				\\ \hline
+			Maximum tip velocity & 3.0 kg$$  				\\ \hline
+			
+			\end{tabular}%
+		}
+		\end{table}
+		
+		Pada bagian motor servo, robot serpent-2 menggunakan tiga buah sensor \emph feedback yang berguna sebagai pemberi nilai posisi pada masing-masing motor servo. Sensor \emph feedback yang digunakan pada robot SCARA ini menggunakan potensiometer yang memberikan nilai analog dan kemudian diproses oleh Arduino Mega 2560. Nilai ini, nantinya untuk memproses gerak kinematika dari robot SCARA tersebut sesuai dengan posisi yang diinginkan.
+		
+		
+		
+		\section{Motor servo}
+		Motor servo merupakan sebuah motor DC yang memiliki sistem \textit{feedback}. \textit{feedback} pada motor servo merupakan koreksi sudut motor DC terhadap sudut referensi \cite{Younkin2002}. pada robot Serpent-1 terdapat tiga buah motor DC, motor DC	 bagian wrist dan elbow merupakan motor DC yang identik.sehingga penulis hanya fokus membandingkan spesifikasi dua motor DC yaitu motor DC yang berada di bagian shoulder (\textit{main arm}) dan motor DC yang berada di bagian elbow (\textit{fore arm}). spesifikasi dua motor DC tersebut dapat dilihat pada tabel 2.2 sebagai berikut
+		
+		\begin{table}[H]
+		\centering
+		\caption{Spesifikasi Motor DC pada robot Serpent-1}
+		\resizebox{11cm}{!}{%
+			\begin{tabular}{|l|l|}
+			\hline
+			Moments of inertia of the main arm ($J_{1}$)    							& $0.0980kgm^{2}$ 				\\ \hline
+			Moments of inertia of the fore arm ($J_{2}$)    							& $0.0115 kgm^{2}$ 				\\ \hline
+			Masses of the main arm	($m_{1}$)											& $1.90kg$   					\\ \hline
+			Masses of the fore arm  ($m_{2}$)     										& $0.93kg$   					\\ \hline
+			Motor and equivalent inertias ($J_{m}$)      								& $3.3*10^{-6}kgm^{2}$ 			\\ \hline
+			Back emf constants for main arm and fore arm motor ($K_{e1}=K_{e2}$)  		& $0.047Nm/A$   				\\ \hline
+			Armature resistance for main arm and fore arm motor($R_{a1}=R_{a2}$)		& $3.5\Omega$  					\\ \hline
+			Armatures inductances for main and fore arm motor  ($L_{a1}=L_{a2}$) 		& $1.3mH$ 						\\ \hline
+			\end{tabular}%
+		}
+		\end{table}
+		%%
+
 	\subsection{Perancangan Elektronis}
 	
 	\subsection{Pemrograman Kontroller \& Implementasi PID}
