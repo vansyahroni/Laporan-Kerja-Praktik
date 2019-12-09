@@ -95,7 +95,7 @@
 %------------------------------------------------------------
 %Redefine chapter and sections
 %------------------------------------------------------------
-\setcounter{secnumdepth}{2}
+\setcounter{secnumdepth}{3}
 \renewcommand \thepart {\@Roman\c@part}
 \renewcommand \thechapter {\@Roman\c@chapter}
 %\renewcommand \thesection {\@arabic\c@section.}
@@ -103,7 +103,7 @@
 %\renewcommand\thesubsection {\@alph\c@subsection.}
 \renewcommand\thesubsection {\@arabic\c@chapter.\@arabic\c@section.\@arabic\c@subsection}
 %\renewcommand\thesubsubsection{\@roman\c@subsubsection.}
-%\renewcommand\thesubsubsection{}
+\renewcommand\thesubsubsection{\@arabic\c@chapter.\@arabic\c@section.\@arabic\c@subsection.\@arabic\c@subsubsection}
 \renewcommand\appendix{\par
   \setcounter{chapter}{0}%
   \setcounter{section}{0}%
@@ -135,18 +135,21 @@
                                    {-3.5ex \@plus -1ex \@minus -.2ex}%
                                    {2.3ex \@plus.2ex}%
                                    {\normalfont\normalsize\bfseries}}
+
 \renewcommand{\subsection}{\@startsection{subsection}{2}{\z@}%
                                      {-3.25ex\@plus -1ex \@minus -.2ex}%
                                      {1.5ex \@plus .2ex}%
                                      {\normalfont\normalsize\bfseries}}
+
 %\renewcommand{\subsubsection}{\@startsection{subsubsection}{3}{\parindent}%
 %                                    {3.25ex \@plus1ex \@minus.2ex}%
 %                                    {-1em}%
 %                                    {\normalfont\normalsize\bfseries}}
 \renewcommand{\subsubsection}{\@startsection{subsubsection}{3}{\z@}%
                                     {3.25ex \@plus1ex \@minus.2ex}%
-                                    {-1em}%
+                                   {1.5ex \@plus .2ex}%
                                     {\normalfont\normalsize\bfseries}}
+
 \renewcommand{\paragraph}{\subparagraph}
 
 \@addtoreset {equation}{chapter}
@@ -281,7 +284,7 @@
     \MakeUppercase{\normalfont\bfseries\expandafter{LAPORAN KERJA PRAKTIK}}\\
     \vspace{1.0cm}
     Diajukan Sebagai Salah Satu Syarat Kelulusan Program Kerja Praktik Laboratorium Instrumentasi dan Kendali\\
-    Pada Pada Program Studi \@degree \ \@faculty \\
+    Pada Program Studi \@degree \ \@faculty \\
     \@university
 
     \vspace{1.0cm}
@@ -301,7 +304,7 @@
       \vspace{1cm} & \vspace{1cm} & \vspace{1cm}\\
       \textbf{\underline{\@firstsupervisor}}& &
       \textbf{\underline{\@secondsupervisor}} \\
-      \bfseries NIP. \@firstnip & & \bfseries NIP. \@secondnip    
+      \bfseries NIP \@firstnip & & \bfseries NIP \@secondnip    
     \end{tabular}
     \end{singlespace}
 
