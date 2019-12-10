@@ -50,12 +50,5 @@
 \contentsline {section}{\numberline {3.1} Diagram Blok Sistem }{24}{section.3.1}% 
 \contentsline {section}{\numberline {3.2} Perancangan Perangkat Keras }{25}{section.3.2}% 
 \contentsline {subsection}{\numberline {3.2.1} Sistem Mekanik }{25}{subsection.3.2.1}% 
-\contentsline {subsection}{\numberline {3.2.2}Diagram Blok Perancangan Sistem}{27}{subsection.3.2.2}% 
-\contentsline {subsection}{\numberline {3.2.3}Flowchart Cara Kerja Sistem}{27}{subsection.3.2.3}% 
-\contentsline {subsection}{\numberline {3.2.4}Perancangan Elektronis}{29}{subsection.3.2.4}% 
-\contentsline {section}{\numberline {3.3}Motor servo}{31}{section.3.3}% 
-\contentsline {subsection}{\numberline {3.3.1}Perancangan Elektronis}{32}{subsection.3.3.1}% 
-\contentsline {subsection}{\numberline {3.3.2}Pemrograman Kontroller \& Implementasi PID}{32}{subsection.3.3.2}% 
-\contentsline {subsection}{\numberline {3.3.3}Perancangan Antar Muka \& Inplementasi \textit {Invers Kinematic}}{32}{subsection.3.3.3}% 
-\contentsline {chapter}{\numberline {IV}PENUTUP}{33}{chapter.4}% 
-\contentsline {chapter}{DAFTAR PUSTAKA}{34}{chapter*.47}% 
+\contentsline {chapter}{\numberline {IV}PENUTUP}{32}{chapter.4}% 
+\contentsline {chapter}{DAFTAR PUSTAKA}{33}{chapter*.44}% 
