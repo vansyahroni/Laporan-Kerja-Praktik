@@ -29,13 +29,15 @@
 \BOOKMARK [2][-]{subsection.2.7.1}{Syntax dalam Processing IDE }{section.2.7}% 29
 \BOOKMARK [2][-]{subsection.2.7.2}{ Library untuk Processing IDE }{section.2.7}% 30
 \BOOKMARK [0][-]{chapter.3}{PERANCANGAN SISTEM}{}% 31
-\BOOKMARK [1][-]{section.3.1}{Metode Perancangan sistem}{chapter.3}% 32
-\BOOKMARK [2][-]{subsection.3.1.1}{Diagram Blok Perancangan Sistem}{section.3.1}% 33
-\BOOKMARK [2][-]{subsection.3.1.2}{Flowchart Cara Kerja Sistem}{section.3.1}% 34
-\BOOKMARK [2][-]{subsection.3.1.3}{Perancangan Elektronis}{section.3.1}% 35
-\BOOKMARK [1][-]{section.3.2}{Motor servo}{chapter.3}% 36
-\BOOKMARK [2][-]{subsection.3.2.1}{Perancangan Elektronis}{section.3.2}% 37
-\BOOKMARK [2][-]{subsection.3.2.2}{Pemrograman Kontroller \046 Implementasi PID}{section.3.2}% 38
-\BOOKMARK [2][-]{subsection.3.2.3}{Perancangan Antar Muka \046 Inplementasi Invers Kinematic}{section.3.2}% 39
-\BOOKMARK [0][-]{chapter.4}{PENUTUP}{}% 40
-\BOOKMARK [0][-]{chapter*.42}{DAFTAR PUSTAKA}{}% 41
+\BOOKMARK [1][-]{section.3.1}{ Diagram Blok Sistem }{chapter.3}% 32
+\BOOKMARK [1][-]{section.3.2}{ Perancangan Perangkat Keras }{chapter.3}% 33
+\BOOKMARK [2][-]{subsection.3.2.1}{ Sistem Mekanik }{section.3.2}% 34
+\BOOKMARK [2][-]{subsection.3.2.2}{Diagram Blok Perancangan Sistem}{section.3.2}% 35
+\BOOKMARK [2][-]{subsection.3.2.3}{Flowchart Cara Kerja Sistem}{section.3.2}% 36
+\BOOKMARK [2][-]{subsection.3.2.4}{Perancangan Elektronis}{section.3.2}% 37
+\BOOKMARK [1][-]{section.3.3}{Motor servo}{chapter.3}% 38
+\BOOKMARK [2][-]{subsection.3.3.1}{Perancangan Elektronis}{section.3.3}% 39
+\BOOKMARK [2][-]{subsection.3.3.2}{Pemrograman Kontroller \046 Implementasi PID}{section.3.3}% 40
+\BOOKMARK [2][-]{subsection.3.3.3}{Perancangan Antar Muka \046 Inplementasi Invers Kinematic}{section.3.3}% 41
+\BOOKMARK [0][-]{chapter.4}{PENUTUP}{}% 42
+\BOOKMARK [0][-]{chapter*.47}{DAFTAR PUSTAKA}{}% 43

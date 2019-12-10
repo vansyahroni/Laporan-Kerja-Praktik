@@ -1,8 +1,50 @@
 %BAB_3 LAPORAN KP
 
 \chapter{PERANCANGAN SISTEM}
+Pada bab ini akan disajikan mekanisme perancangan alat, baik perangkat keras ataupun perangkat lunak untuk mewujudkan sebuah robot lengan. Tahapan perancangan dimulai dari perancangan diagram blok sistem, perancangan perangkat keras, perancangan perangat lunak, perancangan kinematika balik, dan integrasi keseluruhan program. 
+\section{ Diagram Blok Sistem }
+Secara garis besar, pada tahapan implementasi dari kinematika pada \textit{arm manipulator robot} SCARA ini menggunakan output atau penggerak berupa motor DC dengan \textit{feedback} posisi berupa potensiometer dan pada bagian  input yang berasal dari Processing IDE yang mengirimkan sebuah koordinat yang digunakan untuk menentukan pergerakan robot berdasarkan fungsi \textit{inverse kinematic}. Sistem kerja \textit{arm manipulator robot} SCARA ditunjukan pada  Gambar 3.1.
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=12cm]{gambar/Rangkaian_Diagram.png}
+	\caption{Diagram Blok Sistem}
+\end{figure}
+Pada blok diagram yang disajikan pada Gambar 3.1 sistem terdiri dari bagian – bagian yang meliputi bagian masukan, bagian kendali, bagian keluaran, dan bagian penampil. Pada bagian masukan menggunakan GUI yang dirancang pada Processing IDE yang digunakan sebagai \textit{forward kinematic} serta \textit{inverse kinematic} dimana robot akan bergerak menyesuaikan dengan posisi atau sudut yang diinputkan melauli Processing IDE. 
+Pada bagian kontrol menggunakan Arduino Mega 2560 sebagai mikrokontroler yang mengendalikan seluruh operasi dari robot. \textit{Power supply} Arduino sebesar 5 volt DC didapatkan dari regulator tegangan yang menurunkan tegangan dari 12 volt DC ke 5 volt DC. 
 
-\section{Metode Perancangan sistem}
+Pada bagian keluaran, pin pulse with modulation (PWM) pada Arduino Mega 2560 dihubungkan dengan driver motor yang digunakan untuk mengontrol arah pergerakan dari motor DC serta kecepatan pergerakan dari motor DC. Pergerakan arah putaran motor DC bergantung pada \textit{feedback} posisi setiap sendi yang diberikan oleh potensiometer. Tiga buah pin digital ardunio dihubungkan rangkaian \textit{switch} yang menggunakan IC TIP31 yang berfungsi sebagai kontrol dari \textit{End-Effector} dari robot SCARA.
+
+Pada bagian penampil merupakan bentuk dari rancangan GUI yang dirancang dalam Processing IDE melalui sebuah bentuk pemrograman. Dalam tampilan GUI nya, terdapat beberapa \textit{tools} yang dapat untuk mengatur pergerakan robot SCARA. Pada GUI juga dapat menampilkan nilai dari sudut, dan posisi pada kondisi langsung dari pergerakan robot SCARA.
+\section{ Perancangan Perangkat Keras }
+Perancangan perangkat keras pada \textit{arm manipulator robot} SCARA terdiri dari dua bagian yaitu bagian mekanik dan elektronis. Bagian  mekanik merupakan bagian \textit{hardware} yang meliputi desain, bahan dan bentuk dari arm manipulator robot SCARA dan bagian elektronis merupakan bagian \textit{hardware} yang meliputi sistem – sistem yang berkaitan dengan rangkaian pada I SCARA seperti rangkain pada desain \textit{board} serta komponen – komponen elektronis.
+\subsection{ Sistem Mekanik }
+Sistem mekanika dari robot lengan bergantung dari konfigurasi robot lengan. Konfigurasi robot lengan terbagi menjadi enam, yaitu konfigurasi \textit{Articulated}, konfigurasi SCARA, konfigurasi \textit{Spherical}, konfigurasi \textit{Cylindrical}, dan konfigurasi \textit{Cartesian}. Pada tugas ini, konfigurasi robot lengan yang digunakan adalah konfigurasi SCARA, dengan dua joint revolute dan satu \textit{end-effector}. Sistem mekanik dari lengan robot tiga DOF sangat berpengaruh dan mendominasi sistem karena bentuk dan pergerakan dari mekanik akan mempengaruhi elektronis, serta program. Sistem mekanik yang baik sangat mendukung dari pergerakan robot, oleh karena itu perancangan mekanik haruslah proporsional dari panjang setiap lengan, lebar serta tinggi robot. Pada Gambar 3.2 disajikan \textit{free body} dari robot SCARA.
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=7cm]{gambar/scaraa.png}
+	\caption{\textit{Free Body} Robot Scara}
+\end{figure}
+ Struktur \textit{joint} dari robot lengan dengan DOF berjumlah tiga adalah \textit{shoulder}, \textit{elbow}, dan \textit{end-effector}. \textit{Joint} dikendalikan dengan motor DC yang didalamnya terdapat rangakain \textit{gear} agar motor DC dapat bekerja seperti motor servo.  Sedangkan pada \textit{end-effoctor} tidak digunakan motor DC melainkan menggunakan \textit{valve relay pneumatic} dengan sistem kerja translasi yang dikombinasikan dengan desain mekanik sehingga dapat membuat dua buah gerakan, yaitu naik turun dan buka tutup pada \textit{gripper}. Pada \textit{arm manipulator robot} SCARA memiliki spesifikasi yang dijelaskan pada tabel 3.1.
+ 
+\begin{table}[H]
+	\centering
+	\caption{Spesifikasi Robot SCARA}
+	\resizebox{6cm}{!}{%
+		\begin{tabular}{|l|l|}
+			\hline
+			Main arm length      & 360 mm$$\hspace{2cm} 		\\ \hline
+			Fore arm length      & 290 mm$$  				\\ \hline
+			Shoulder movement    & 180 °$$  		\\ \hline
+			Elbow movement       & 200 °$$   		\\ \hline
+			Wrist rotation       & 360 °$$ 		\\ \hline
+			Up \& down movement  & 150 mm$$   				\\ \hline
+			Maximum tip velocity & 3.0 kg$$  				\\ \hline
+			
+			\end{tabular}%
+		}
+		\end{table}
+
+ 
 Perancangan robot serpent-2 ini diawali dengan menentukan metode yang tepat untuk mendesain dan membangun sistem secara keseluruhan meliputi perancangan elektronis,pemrograman pada Arduino Mega 2560, implementasi kinematika robot pada robot serpent-2, serta perancangan antarmuka pada \emph {processing ide}.Metode perancangan sistem meliputi diagram blok, flowchart cara kerja sistem, prinsip kerja dan perancangan tiap segmen-segmen yang dibutuhkan.
 	
 	\subsection{Diagram Blok Perancangan Sistem}

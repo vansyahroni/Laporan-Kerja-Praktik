@@ -80,7 +80,7 @@ Konfigurasi \textit{Cartesian} mempunyai tiga buah \textit{joint prismatic}. Var
 \textit{End-effector} merupakan perangkat atau alat yang terhubung dengan ujung lengan robot. \textit{End-effector} adalah bagian robot yang berhubungan langsung dengan objek. Struktur, pergerakan, material dari \textit{end-effector} bergantung pada tugas yang akan dilakukan robot tersebut. Stuktur dan bentuk dari \textit{end-effector} ditunjukkan pada Gambar 2.8.
 	\begin{figure}[H]
 	\centering
-	\includegraphics[width=6cm]{gambar/.jpg}
+	\includegraphics[width=6cm]{gambar/end_effector.jpg}
 	\caption{Struktur \textit{End-Effector}}
 	\end{figure}
 
@@ -150,7 +150,7 @@ Arduino  merupakan papan pengembangan dari mikrokontroler yang menggunakan basis
 	\centering
 	\includegraphics[width=5cm]{gambar/arduino_mega.jpg}
 	\caption{Arduino Mega 2560}
-\end{figure}
+	\end{figure}
 
 Arduino Mega 2560 memuat semua yang dibutuhkan untuk mendukung kerja dari sebuah mikrokontroler. Arduino Mega 2560 dapat dengan mudah dioperasikan untuk pengaplikasian ke sebuah sistem kerja karena dapat dihubungkan dengan kabel USB sebagai komunikasinya. Untuk dayanya, Arduino Mega 2560 dapat dihidupkan melalui konektor DC yang dipunyainya dengan diberi tegangan DC, dapat dengan adapter DC atau baterai dengan nilai tegangan sesuai dengan spesifikasi pada Arduino. Spesifikasi Arduino Mega 2560 ditunjukkan pada Tabel 2.1
 \begin{table}[H]
@@ -183,25 +183,27 @@ Driver Motor berfungsi sebagai pengontrol dari setiap pergerakan dari motor DC. 
 	\caption{Driver Motor EMS 30A H-Bridge}
 	\end{figure}
 
-Driver Motor EMS 30A H-Bridge merupakan driver motor yang dapat mengoperasikan sebuah Motor DC dengan batasan arus hingga 30 Ampere. Driver ini memiliki 10 buah pin data yang dapat dihubungkan dengan sebuah mikrokontroler. Alokasi pin Driver Motor EMS 30A H-Bridge ini ditunjukkan pada tabel 2.12.
+Driver Motor EMS 30A H-Bridge merupakan driver motor yang dapat mengoperasikan sebuah Motor DC dengan batasan arus hingga 30 Ampere. Driver ini memiliki 10 buah pin data yang dapat dihubungkan dengan sebuah mikrokontroler. Alokasi pin Driver Motor EMS 30A H-Bridge ini ditunjukkan pada Tabel 2.2.
+% Please add the following required packages to your document preamble:
+% \usepackage[normalem]{ulem}
+% \useunder{\uline}{\ul}{}
 \begin{table}[H]
-	\centering
-	\caption{ Pin Driver Motor EMS 30A H-Bridge}
-	\resizebox{12cm}{!}{%
-	\begin{tabular}{|c|c|c|c|}
+		\centering
+	\caption{ Pin pada Driver EMS 30A H-Bridge }
+	\resizebox{14cm}{!}{%
+	\begin{tabular}{|c|c|c|l|}
 		\hline
-		Pin  & Nama & I/O & \multicolumn{1}{c|}{Fungsi}                                                                                                                                             \\ \hline
-		1    & MIN1 & I   & Pin input untuk menentukan output MOUT1                                                                                                                                 \\ \hline
-		2    & MIN2 & I   & Pin input untuk menentukan output MOUT2                                                                                                                                 \\ \hline
-		3    & MEN1 & I/O & \begin{tabular}[c]{@{}l@{}}Pin enable untuk output MOUT1\\ Diberi logika High untuk mengkatifkan half H-Bridge 1, \\ diberi logika Low untuk menonaktifkan\end{tabular} \\ \hline
-		4    & MEN2 & I/O & \begin{tabular}[c]{@{}l@{}}Pin enable untuk output MOUT2\\ Diberi logika High untuk mengkatifkan hal H-Bridge 2,\\ diberi logika Low untuk menonaktifkan\end{tabular}   \\ \hline
-		5    & MSC  & O   & \begin{tabular}[c]{@{}l@{}}Output tegangan analog yang berbanding lurus dengan arus beban\\ (Range output 0-5 V) Tersedia untuk IC VNH2SP30\end{tabular}                \\ \hline
-		6    & MPWM & I   & Pin input untuk mengatur kerja modul H-Bridge secara PWM                                                                                                                \\ \hline
-		7,9  & VCC  & -   & Terhubung ke catu daya untuk input (5 Volt)                                                                                                                             \\ \hline
-		8,10 & PGND & 0   & Titik referensi untuk caru daya input                                                                                                                                   \\ \hline
+		Pin  & Nama & I/O & \multicolumn{1}{c|}{Fungsi}                                                                                                                                                 \\ \hline
+		1    & MIN1 & I   & Pin input untuk menentukan output MOUT1                                                                                                                                     \\ \hline
+		2    & MIN2 & I   & Pin input untuk menentukan output MOUT2                                                                                                                                     \\ \hline
+		3    & MEN1 & I/O & \begin{tabular}[c]{@{}l@{}}Pin enable untuk output MOUT1 \\ diberi logika HIGH untuk mengaktifkan half H-Bridge 1, \\ diberi logika LOW untuk menonaktifkannya\end{tabular} \\ \hline
+		4    & MEN2 & I/O & \begin{tabular}[c]{@{}l@{}}Pin enable untuk output MOUT2 \\ diberi logika HIGH untuk mengaktifkan half H-Bridge 2, \\ diberi logika LOW untuk menonaktifkannya\end{tabular} \\ \hline
+		5    & MSC  & O   & Output tegangan analog yang berbanding lurus dengan arus beban                                                                                                              \\ \hline
+		6    & MPWM & I   & Pin input untuk mengatur kerja modul H-Bridge secara PWM                                                                                                                    \\ \hline
+		7,9  & VCC  & -   & Terhubung ke catu daya untuk input (5 Volt)                                                                                                                                 \\ \hline
+		8,10 & PGND & 0   & Titik referensi untuk caru daya input                                                                                                                                       \\ \hline
 	\end{tabular}}
 \end{table}
-
 
 \section{Processing Integrated Development Environment (IDE)}
 Processing IDE adalah pemrograman sederhana yang diciptakan untuk pengembangan aplikasi yang berorientasi visual atau pencitraan dengan penekanan pada animasi dan memberi pengguna umpan balik melalui interaksi antarmuka. Para developer Processing IDE ini menginginkan sebuah cara untuk "membuat sketsa" gagasan dalam bentuk kode. Karena pemrograman telah berkembang selama beberapa dekade terakhir. Processing IDE telah mulai digunakan untuk pekerjaan tingkat produksi yang lebih maju. Awalnya dibangun sebagai ekstensi khusus domain Java yang ditargetkan untuk seniman dan desainer, Processing IDE telah berkembang menjadi alat desain dan prototipe lengkap dan penuh yang digunakan untuk pekerjaan instalasi skala besar, grafis gerak, dan visualisasi data yang rumit. Tampilan pada Processing IDE ditunjukkan pada gambar 2.17.
@@ -209,7 +211,7 @@ Processing IDE adalah pemrograman sederhana yang diciptakan untuk pengembangan a
 	\centering
 	\includegraphics[width=12cm]{gambar/processing_view.png}
 	\caption{Processing IDE}
-\end{figure}
+	\end{figure}
 
 
 \subsection{Syntax dalam Processing IDE }
@@ -217,39 +219,43 @@ Processing IDE adalah pemrograman sederhana yang diciptakan untuk pengembangan a
 \subsubsection{Mengatur ukuran}
 Ukuran sebuah objek pada processing IDE diatur menggunakan sebuah syntax size() Fungsi size() digunakan untuk menetapkan variabel global lebar dan tinggi dari suatu program. Ukuran untuk panjang dan tinggi tersebut menggunakan ukuran piksel. Lebar diwakili dengan variabel "\textit{width}" dan tinggi diwakili dengan variabel. Untuk objek yang ukurannya tergantung pada layar, selalu gunakan variabel lebar dan tinggi, bukan angka. Ini mencegah masalah saat parameter fungsi size() diubah. Berikut penulisan dari fungsi size() untuk menetapkan lebar dan tinggi suatu program:  size(1000, 1000); 
 
-\subsubsection{Shape}
-Shape adalah \textit{syntax} pada Processing IDE yang berfungsi untuk membuat berbagai macam bentuk, seperti persegi panjang, lingkaran, garis, dan bentuk lainnya yang dapat diatur ukurannya dengan parameter-parameter tertentu. Tabel 2.3 merupakan contoh dari beberapa \textit{syntax} shape. 
-\begin{table}[H]
-	\centering
-	\caption{\textit{Syntax} Shape}
-	\begin{tabular}{|l|l|l|l|}
-		\hline
-		
-		No & Sytax                          & Bentuk & Keterangan                                                                                                                                                                                    \\ \hline
-		1  & ellipse(a,b,c,d)               &        & \begin{tabular}[c]{@{}l@{}}a = koordinatX \\ b = koordinatY \\ c= lebar diameter \\ d= tinggi diameter\end{tabular}                                                                           \\ \hline
-		2  & arc(a,b,c,d,start,st op,moode) &        & \begin{tabular}[c]{@{}l@{}}a = koordinatX \\ b = koordinatY \\ c = lebar diameter \\ d = tinggi diameter \\ start = sudut mulai \\ stop = sudut akhir \\ mode = PIE, CHORD, OPEN\end{tabular} \\ \hline
-		3  & line(x1,y1,x2,y2)              &        & \begin{tabular}[c]{@{}l@{}}x1 = koordinatX1 \\ y1 = koordinatY1 \\ x2 = koordinatX2 \\ y2 = koordinatY2\end{tabular}                                                                          \\ \hline
-		4  & point(x,y)                     &        & \begin{tabular}[c]{@{}l@{}}x = koordinatX \\ y = koordinatY\end{tabular}                                                                                                                      \\ \hline
-		5  & rect(a,b,c,d,r)                &        & \begin{tabular}[c]{@{}l@{}}a = koordinatX1 \\ b = koordinatY1 \\ c = koordinatX2 \\ d= koordinatY1\end{tabular}                                                                               \\ \hline
-	\end{tabular}
-\end{table}
+
 \subsubsection{Transformasi Bentuk Pada Processing IDE }
 Transformasi pada Processing IDE digunakan untuk memindahkan, memutar atau, mengecilkan atau membesarkan suatu objek dan perpindahannya dapat diatur dengan parameter-parameter tertentu di dalam Processing IDE. Transformasi adalah dasar dari pemrograman Processing IDE. Tabel 2.4  adalah adalah contoh penulisan \textit{syntax} dari Transformasi. 
 
 \begin{table}[H]
-		\centering
+	\centering
 	\caption{ \textit{Syntax} Transformasi}
 	\begin{tabular}{|c|l|l|}
 		\hline
 		No & \multicolumn{1}{c|}{\textit{Syntax}} & \multicolumn{1}{c|}{Keterangan}                                                            \\ \hline
 		1  & Translate(x,y)                       & \begin{tabular}[c]{@{}l@{}}x = transisi kiri/kanan \\ y = transisi atas/bawah\end{tabular} \\ \hline
-		2  & Rotate(angle)                        & angle=besar sudut rotasi(radian                                                            \\ \hline
+		2  & Rotate(angle)                        & angle=besar sudut rotasi(radian)                                                            \\ \hline
 		3  & RotateX(angle)                       & angle=besar sudut rotasi(radian)                                                           \\ \hline
 		4  & RotateY(angle)                       & angle=besar sudut rotasi(radian)                                                           \\ \hline
 		5  & Rotatez(angle)                       & angle=besar sudut rotasi(radian)                                                           \\ \hline
-		6  & Scale(S)                             & s = besar pengecilan pembesaran (%)                                                        \\ \hline
+		6  & Scale(S)                             & s = besar pengecilan pembesaran                                                         \\ \hline
 	\end{tabular}
 \end{table}
+\subsubsection{Shape}
+Shape adalah \textit{syntax} pada Processing IDE yang berfungsi untuk membuat berbagai macam bentuk, seperti persegi panjang, lingkaran, garis, dan bentuk lainnya yang dapat diatur ukurannya dengan parameter-parameter tertentu. Tabel 2.3 merupakan contoh dari beberapa \textit{syntax} shape. 
+\begin{table}[H]
+	\centering
+	\caption{\textit{Syntax} Shape}
+	\resizebox{14cm}{!}{%
+	\begin{tabular}{|l|l|l|l|}
+		\hline
+		
+		No & Sytax                          & Bentuk & Keterangan                                                                                                                                                                                    \\ \hline
+		1  & ellipse(a,b,c,d)               &  	\centering \includegraphics[width=3cm]{gambar/bulat.png} 
+& \begin{tabular}[c]{@{}l@{}}a = koordinatX \\ b = koordinatY \\ c= lebar diameter \\ d= tinggi diameter\end{tabular}                                                                           \\ \hline
+		2  & arc(a,b,c,d,start,st op,moode) &  	\includegraphics[width=3cm]{gambar/busur.png}      & \begin{tabular}[c]{@{}l@{}}a = koordinatX \\ b = koordinatY \\ c = lebar diameter \\ d = tinggi diameter \\ start = sudut mulai \\ stop = sudut akhir \\ mode = PIE, CHORD, OPEN\end{tabular} \\ \hline
+		3  & line(x1,y1,x2,y2)              & 	\includegraphics[width=3cm]{gambar/garis.png}       & \begin{tabular}[c]{@{}l@{}}x1 = koordinatX1 \\ y1 = koordinatY1 \\ x2 = koordinatX2 \\ y2 = koordinatY2\end{tabular}                                                                          \\ \hline
+		4  & point(x,y)                     &     	\includegraphics[width=0.5cm]{gambar/point.png}   & \begin{tabular}[c]{@{}l@{}}x = koordinatX \\ y = koordinatY\end{tabular}                                                                                                                      \\ \hline
+		5  & rect(a,b,c,d,r)                &    	\includegraphics[width=3cm]{gambar/kotak.png}    & \begin{tabular}[c]{@{}l@{}}a = koordinatX1 \\ b = koordinatY1 \\ c = koordinatX2 \\ d= koordinatY1\end{tabular}                                                                               \\ \hline
+	\end{tabular}}
+\end{table}
+
 \subsubsection{Akses Koordinat Mouse }
 Processing IDE mempunyai fungsi khusus yaitu dapat melacak posisi mouse baik secara vertical maupun horizontal. Akan tetapi Processing IDE hanya dapat melacak posisi mouse saat sketch dijalankan saja. Nilai default mouseX dan mouseY adalah 0, jadi 0 akan dikembalikan sampai mouse bergerak di depan jendela sketsa. (ini biasanya terjadi saat sketsa dijalankan pertama kali). Setelah mouse bergerak menjauh dari jendela, mouseX akan terus melaporkan posisi terakhirnya. Tabel 2.6  adalah contoh penulisan \textit{syntax} dari mouse. 
 \begin{table}[H]
@@ -281,5 +287,25 @@ Pfont adalah class yang digunakan untuk penggunaan font pada Processing IDE. Unt
 
 
 \subsubsection{ Memuat ControlP5 pada Processing IDE }
-ControlP5 adalah library yang berfungsi sebagai pengontrol untuk membuat antarmuka dengan user, ControlP5 berupa grafis di dalam sketch Processing IDE yang meliputi Slider, Button, Toggles, Knobs, Radiobutton, dan dapat dengan mudah ditambahkan ke sketch pengolahan. ControlP5 ditulis oleh Andreas Schlegel untuk pemrograman Processing IDE. Library ControlP5 bisa diunduh di laman https://github.com/sojamo/controlp5, atau unduh di library Processing IDE secara langsung. 
+ControlP5 adalah library yang berfungsi sebagai pengontrol untuk membuat antarmuka dengan user, ControlP5 berupa grafis di dalam sketch Processing IDE yang meliputi Slider, Button, Toggles, Knobs, Radiobutton, dan dapat dengan mudah ditambahkan ke sketch pengolahan. ControlP5 ditulis oleh Andreas Schlegel untuk pemrograman Processing IDE. Library ControlP5 bisa diunduh di laman https://github.com/sojamo/controlp5, atau unduh di library Processing IDE secara langsung. Beberpa contoh dari pengguanaan ControlP5 ditunjukkan pada Gambar 3.2
+	\begin{figure}[H]
+	\centering
+	\includegraphics[width=8cm]{gambar/controlp5.jpg}
+	\caption{ControlP5}
+\end{figure}
+Setiap \textit{tools} yang ada pada ControlP5 memiliki fungsi yang berbeda-beda sesuai dengan kegunaannya. ControlP5 dapat dipakai atau saling dikombinasikan agar memudahkan dan memaksimalkan dari GUI yang telah dibuat. ControlP5 nantinya akan bekerja sesuai dengan program yang sudah dimasukkan. Pada Tabel 3.3 merupakan beberapa fungsi dari \textit{tools} yang ada pada ControlP5.
+\begin{table}[H]
+		\centering
+	\caption{Fungsi \textit{Tools} ControlP5}
+	\resizebox{14cm}{!}{%
+	\begin{tabular}{|c|l|l|l|}
+		\hline
+		1 & Bang      & Memicu sebuah tindakan ketika ditekan                                                                               & controlP5.addBang("bang1");           \\ \hline
+		2 & Button    & Memicu sebuah tindakan ketika sudah dilepas                                                                         & controlP5.addButton("button1");       \\ \hline
+		3 & Toggle    & \begin{tabular}[c]{@{}l@{}}Memiliki dua status. \\ TRUE meiliki nilai 1 dan FALSE memiliki nilai 0\end{tabular}     & controlP5.addToggle("toggle1")        \\ \hline
+		4 & Slider    & \begin{tabular}[c]{@{}l@{}}Mengatur nilai dengan cara menggeser \\ secara horisontal maupun vertikal\end{tabular}   & controlP5.addSlider("slider2");       \\ \hline
+		5 & Knob      & Mengatur sebuah nilai dengan tombol putaran 360°                                                                    & controlP5.addKnob("knob1");           \\ \hline
+		6 & NumberBox & \begin{tabular}[c]{@{}l@{}}Kotak yang menampilkan angka dan \\ dapat diubah dengan klik di dalam kotak\end{tabular} & controlP5.addNumberbox("numberbox1"); \\ \hline
+	\end{tabular}}
+\end{table}
 
