@@ -5,6 +5,7 @@ A level-1 auxiliary file: BAB_2.aux
 A level-1 auxiliary file: BAB_3.aux
 A level-1 auxiliary file: BAB_4.aux
 A level-1 auxiliary file: BAB_5.aux
+I found no \citation commands---while reading file Laporan_KP.aux
 Database file #1: IEEEabrv.bib
 Database file #2: references.bib
 -- IEEEtran.bst version 1.14 (2015/08/26) by Michael Shell.
@@ -12,3 +13,4 @@ Database file #2: references.bib
 -- See the "IEEEtran_bst_HOWTO.pdf" manual for usage information.
 
 Done.
+(There was 1 error message)
