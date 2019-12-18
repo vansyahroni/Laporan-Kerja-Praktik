@@ -56,6 +56,5 @@
 \contentsline {subsubsection}{\numberline {3.2.2.3}Rangkaian Minimum Sistem Arduino}{34}{subsubsection.3.2.2.3}% 
 \contentsline {subsubsection}{\numberline {3.2.2.4}Rangkaian Catu Daya}{35}{subsubsection.3.2.2.4}% 
 \contentsline {subsection}{\numberline {3.2.3}Perancangan Perangkat Lunak}{36}{subsection.3.2.3}% 
-\contentsline {subsubsection}{\numberline {3.2.3.1}Instalasi Library ControlP5 pada Processing IDE}{36}{subsubsection.3.2.3.1}% 
-\contentsline {chapter}{\numberline {IV}PENUTUP}{37}{chapter.4}% 
+\contentsline {subsubsection}{\numberline {3.2.3.1}ControlP5}{36}{subsubsection.3.2.3.1}% 
 \contentsline {chapter}{DAFTAR PUSTAKA}{38}{chapter*.54}% 

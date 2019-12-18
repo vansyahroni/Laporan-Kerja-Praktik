@@ -141,7 +141,7 @@ Rancangan kendali pada \textit{arm manipulator robot} SCARA ini menggunakan tiga
 \end{figure}
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=7cm]{gambar/relay3.jpg}
+	\includegraphics[width=7cm]{gambar/tip31.png}
 	\caption{Rangkaian Valve Relay dengan Rangkaian TIP31}
 \end{figure}
 \subsubsection{Rangkaian Minimum Sistem Arduino}
@@ -151,42 +151,62 @@ Arduino  2560 digunakan sebagai mikrokontroler utama untuk mengendalikan seluruh
 	\includegraphics[width=15cm]{gambar/skematik.pdf}
 	\caption{Rangkaian Minimum Sistem Arduino}
 \end{figure}
+
 \begin{table}[H]
-	\centering
-	\caption{Pin Arduino Mega 2560}
-	
-	\begin{tabular}{|l|l|}
+		\centering
+	\caption{Pin pada Arduino Mega 2560}
+	\begin{tabular}{|c|c|l|}
 		\hline
-		Main arm length      & 360 mm		\\ \hline
-		Fore arm length      & 290 mm  				\\ \hline
-		Shoulder movement    & 180 °  		\\ \hline
-		Elbow movement       & 200 °   		\\ \hline
-		Wrist rotation       & 360 ° 		\\ \hline
-		Up \& down movement  & 150 mm   				\\ \hline
-		Maximum tip velocity & 3.0 kg  				\\ \hline
-		Maximum tip velocity & 3.0 kg  				\\ \hline
-		Maximum tip velocity & 3.0 kg  				\\ \hline
-		Maximum tip velocity & 3.0 kg  				\\ \hline
-		Maximum tip velocity & 3.0 kg  				\\ \hline
-		Maximum tip velocity & 3.0 kg  				\\ \hline
-		Maximum tip velocity & 3.0 kg  				\\ \hline
-		Maximum tip velocity & 3.0 kg  				\\ \hline
-		Maximum tip velocity & 3.0 kg  				\\ \hline
-		Maximum tip velocity & 3.0 kg  				\\ \hline
-		Maximum tip velocity & 3.0 kg  				\\ \hline
-		Maximum tip velocity & 3.0 kg  				\\ \hline
-		Maximum tip velocity & 3.0 kg  				\\ \hline
-		Maximum tip velocity & 3.0 kg  				\\ \hline
-	\end{tabular} 
+		\rowcolor[HTML]{9B9B9B} 
+		No & \begin{tabular}[c]{@{}c@{}}Pin Arduino\\   Mega 2560\end{tabular} & \multicolumn{1}{c|}{\cellcolor[HTML]{9B9B9B}Fungsi} \\ \hline
+		1  & A1                                                                & Feedback potensiometer shoulder                     \\ \hline
+		2  & A2                                                                & Feedback potensiometer elbow                        \\ \hline
+		3  & A3                                                                & Feedback potensiometer end-effector                 \\ \hline
+		4  & D16, D18                                                          & Kontrol aktif driver motor shoulder                 \\ \hline
+		4  & D20, D22                                                          & Kontrol driver motor shoulder                       \\ \hline
+		5  & D24, D26                                                          & Kontrol aktif driver motor elbow                    \\ \hline
+		6  & D28. D30                                                          & Kontrol driver motor elbow                          \\ \hline
+		7  & D32, D34                                                          & Kontrol aktif driver motor end-effector             \\ \hline
+		8  & D36, D38                                                          & Kontrol driver motor end-effector                   \\ \hline
+		9  & D4                                                                & Kontrol PWM driver motor shoulder                   \\ \hline
+		10 & D5                                                                & Kontrol PWM driver motor elbow                      \\ \hline
+		11 & D6                                                                & Kontrol PWM driver motor end-effector               \\ \hline
+		12 & D7                                                                & Kontrol valve relay naik                            \\ \hline
+		13 & D8                                                                & Kontrol valve relay turun                           \\ \hline
+		14 & D9                                                                & Kontrol valve relay buka-tutup                      \\ \hline
+		15 & D15                                                               & Kontrol LED Shoulder aktif high                     \\ \hline
+		16 & D17                                                               & Kontrol LED elbow aktif high                        \\ \hline
+		17 & D19                                                               & Kontrol LED end-effector naik aktif high            \\ \hline
+		18 & D21                                                               & Kontrol LED end-effector turun aktif high           \\ \hline
+		19 & D23                                                               & Kontrol LED end-effector buka-tutup aktif high      \\ \hline
+		20 & D25                                                               & Buzzer aktif high                                   \\ \hline
+	\end{tabular}
 \end{table}
+
 \subsubsection{Rangkaian Catu Daya}
 Rangkaian catu daya merupakan hal yang sangat penting agar semua kompononen pada robot dapat bekerja sesuai dengan fungsi yang telah dirancang. Pada \textit{arm manipulator robot} SCARA komponennya terdapat tiga buah besar tegangan \textit{supply} yang berbeda. Arduino Mega 2560 dan beberapa sensor membutuhkan tegangan 5 Volt, motor DC membutuhkan tegangan 12 Volt dan \textit{valve relay} membutuhkan 24 Volt. Catu daya diawali dengan tegangan AC 220 Volt dari listrik PLN. Tegangan tersebut kemudian diturunkan menggunakan sebuah trafo 3A menjadi 24 Volt AC. Komponen yang digunakan dalam rangakaian merupakan komponen yang membutuhkan tegangan DC, maka tegangan 24 Volt AC diubah menjadi 24 DC menggunakan rangkaian dioda \textit{bridge}. Tegangan 24 Volt DC diarahkan menuju dua buah regulator \textit{Buck} LM2596 yang masing-masing menghasilkan tegangan 12 Volt dan 5 Volt. Gambar 3.18 merupakan rangkaian catu daya secara keseluruhan.
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=8cm]{gambar/catudayasementara.jpg}
+	\includegraphics[width=8cm]{gambar/catudaya_bb.png}
 	\caption{Rangkaian Catu Daya}
 \end{figure}
 \subsection{Perancangan Perangkat Lunak}
-Perangkat lunak yang digunakan merupakan \textit{software} Processing IDE. Processing IDE diprogram agar mendapatkan sebuah GUI yang cocok sesuai dengan fungsi robot SCARA. Di dalam GUI, terdapat dua bagian yang diantaranaya merupakan bagian kontrol, dan bagian \textit{display}. Pada bagian kontrol nantinya dalam GUI akan mengkontrol mulai dari pergerakan dan posisi dari robot SCARA. Sedangkan pada bagian penampil, GUI menampilkan nilai dari sudut, posisi, serta animasi terkait robot SCARA.
-\subsubsection{Instalasi Library ControlP5 pada Processing IDE}
+Perangkat lunak yang digunakan merupakan \textit{software} Processing IDE. Processing IDE diprogram agar mendapatkan sebuah GUI yang cocok sesuai dengan fungsi robot SCARA. Di dalam GUI terdapat dua bagian yang diantaranaya merupakan bagian kontrol, dan bagian \textit{display}. Pada bagian kontrol nantinya dalam GUI akan mengkontrol mulai dari pergerakan dan posisi dari robot SCARA. Sedangkan pada bagian penampil, GUI menampilkan nilai dari sudut, posisi, serta animasi terkait robot SCARA.
+\subsubsection{ControlP5}
+ControlP5 merupakan salah satu library yang berguna dalam membuat sebuah GUI. Dalam library yang disediakan terdapat banyak pilihan terkait kontrol sistem dengan berbagai jenis pilihan. Kontrol sistem yang disediakan tersedia dua pilihan yaitu untuk menkontrol dan untuk menampilkan sebuah data. Masing-masing kontrol sistem ini dapat digunakan dengan cara memanggilnya pada program yang ditulis.
+
+Pada perancangan kineatika roboto scara ini, menggunakan tiga buah kontrol sistem. Ketiga kontrol sistem yang digunakan merupakan jenis kontrol sistem yang berguna untuk memberikan sebuah data yang dikirimkan pada Arduino Mega 2560. Kontrol sistem tersebut diantaranya:
+\begin{enumerate}
+	\item Slider Control \\
+	Slider Control berupa tampilan GUI yang menggunakan sistem geser dalam memberikan data. Data memiliki batasan atas dan batas bawah yang dimasukkan dalam program. Keuntungan menggunakan kontrol sistem jenis ini karena saat ingin untuk mengubah data yang diberikan menjadi lebih mudah.
+	Gambar 3.12 merupakan bentuk slider control.
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=8cm]{gambar/catudaya_bb.png}
+		\caption{Rangkaian Catu Daya}
+	\end{figure}
+
+	
+	
+\end{enumerate}
 
