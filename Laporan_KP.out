@@ -33,6 +33,11 @@
 \BOOKMARK [1][-]{section.3.2}{ Perancangan Perangkat Keras }{chapter.3}% 33
 \BOOKMARK [2][-]{subsection.3.2.1}{ Sistem Mekanik }{section.3.2}% 34
 \BOOKMARK [2][-]{subsection.3.2.2}{Rangkaian Elektronika}{section.3.2}% 35
-\BOOKMARK [2][-]{subsection.3.2.3}{Perancangan Perangkat Lunak}{section.3.2}% 36
-\BOOKMARK [2][-]{subsection.3.2.4}{Sistem Kinematika}{section.3.2}% 37
-\BOOKMARK [0][-]{chapter*.55}{DAFTAR PUSTAKA}{}% 38
+\BOOKMARK [1][-]{section.3.3}{Perancangan Perangkat Lunak}{chapter.3}% 36
+\BOOKMARK [2][-]{subsection.3.3.1}{ControlP5}{section.3.3}% 37
+\BOOKMARK [2][-]{subsection.3.3.2}{Shape}{section.3.3}% 38
+\BOOKMARK [1][-]{section.3.4}{Sistem Kinematika}{chapter.3}% 39
+\BOOKMARK [2][-]{subsection.3.4.1}{Prinsip Kerja Kinematika Maju}{section.3.4}% 40
+\BOOKMARK [2][-]{subsection.3.4.2}{Prinsip Kerja Kinematika Balik}{section.3.4}% 41
+\BOOKMARK [1][-]{section.3.5}{Perancangan Sistem Keseluruhan}{chapter.3}% 42
+\BOOKMARK [0][-]{chapter*.59}{DAFTAR PUSTAKA}{}% 43

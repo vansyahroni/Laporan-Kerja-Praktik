@@ -190,9 +190,32 @@ Rangkaian catu daya merupakan hal yang sangat penting agar semua kompononen pada
 	\includegraphics[width=8cm]{gambar/catudaya_bb.png}
 	\caption{Rangkaian Catu Daya}
 \end{figure}
-\subsection{Perancangan Perangkat Lunak}
-Perangkat lunak yang digunakan merupakan \textit{software} Processing IDE. Processing IDE diprogram agar mendapatkan sebuah GUI yang cocok sesuai dengan fungsi robot SCARA. Di dalam GUI terdapat dua bagian yang diantaranaya merupakan bagian kontrol, dan bagian \textit{display}. Pada bagian kontrol nantinya dalam GUI akan mengkontrol mulai dari pergerakan dan posisi dari robot SCARA. Sedangkan pada bagian penampil, GUI menampilkan nilai dari sudut, posisi, serta animasi terkait robot SCARA.
-\subsubsection{ControlP5}
+\section{Perancangan Perangkat Lunak}
+Perangkat lunak yang digunakan merupakan \textit{software} Processing IDE. Processing IDE diprogram agar mendapatkan sebuah GUI yang cocok sesuai dengan fungsi robot SCARA. Di dalam GUI terdapat dua bagian yang diantaranaya merupakan bagian kontrol, dan bagian \textit{display}. Pada bagian kontrol nantinya dalam GUI akan mengkontrol mulai dari pergerakan dan posisi dari robot SCARA. Sedangkan pada bagian penampil, GUI menampilkan nilai dari sudut, posisi, serta animasi terkait robot SCARA. Gambar 3.21 merupakan tampilan dari GUI secara keseluruhan. Tabel 3.21 menyajikan setiap komponen yang ditampilan di dalam GUI processing IDE.
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=10cm ]{gambar/catudaya_bb.png}
+	\caption{Tampilan GUI Sistem Kinematika Robot SCARA}
+\end{figure}
+
+\begin{table}[H]
+	\centering
+	\caption{Keterangan Tampilan pada GUI Robot SCARA}
+	\begin{tabular}{|c|c|l|}
+		\hline
+		\rowcolor[HTML]{9B9B9B} 
+		No & \begin{tabular}[c]{@{}c@{}}Pin Arduino\\   Mega 2560\end{tabular} & \multicolumn{1}{c|}{\cellcolor[HTML]{9B9B9B}Fungsi} \\ \hline
+		1  & A1                                                                & Feedback potensiometer shoulder                     \\ \hline
+		2  & A2                                                                & Feedback potensiometer elbow                        \\ \hline
+		3  & A3                                                                & Feedback potensiometer end-effector                 \\ \hline
+		4  & D16, D18                                                          & Kontrol aktif driver motor shoulder                 \\ \hline
+		4  & D20, D22                                                          & Kontrol driver motor shoulder                       \\ \hline
+	
+	\end{tabular}
+\end{table}
+
+
+\subsection{ControlP5}
 ControlP5 merupakan salah satu library yang berguna dalam membuat sebuah GUI. Dalam library yang disediakan terdapat banyak pilihan terkait kontrol sistem dengan berbagai jenis pilihan. Kontrol sistem yang disediakan tersedia dua pilihan yaitu untuk menkontrol dan untuk menampilkan sebuah data. Masing-masing kontrol sistem ini dapat digunakan dengan cara memanggilnya pada program yang ditulis.
 
 Pada perancangan kineatika roboto scara ini, menggunakan empat buah kontrol sistem. Empat kontrol sistem yang digunakan merupakan jenis kontrol sistem yang berguna untuk memberikan sebuah data yang dikirimkan pada Arduino Mega 2560. Kontrol sistem tersebut diantaranya:
@@ -214,16 +237,16 @@ Berbeda dengan kontrol sistem sebelumnya,\textit{ bang control }berupa kotak yan
 Toggle control memiliki sistem kontrol seperti saklar on-off. Pada saat ditekan maka toggle control menyimpan data berupa kondisi pertama dan berubah saat ditekan kembali. 
 
 \end{enumerate}
-\subsubsection{Shape}
+\subsection{Shape}
 Shape pada GUI berfungsi sebagai penampil secara tiga dimensi dari robot SCARA. Robot SCARA dapat ditampilkan dalam berbagai ukuran, letak dan juga dapat bergerak sesuai dengan data yang diberikan. Pergerakan dari robor SCARA merupakan implementasi dari wujud aslinya yang pergerakannya sama.
 
 Dalam pengoperasianya, desain dari robot SCARA yang ditampilkan harus dimasukkan ke dalam folder yang sama dengan program processing IDE. File yang dapat ditampilkan merupakan file dengan jenis obj. yang berarti file objek. Pada program robot SCARa file dari dimensi tiga dari robot SCARA memiliki tiga buah file dimana ketiganya adalah \textit{base, shoulder}, dan \textit{elbow}. 
 
-\subsection{Sistem Kinematika}
+\section{Sistem Kinematika}
 Persamaan kinematika terbagi dua, yaitu kinematika maju dan kinematika balik. Kinematika maju digunakan untuk menentukan posisi dan orientasi \textit{end-effector} apabila variabel sudut \textit{joint}-nya telah diketahui. Kinematika balik digunakan untuk mencari \textit{joint} robot daam menentukan posisi dan orientasi dari \textit{end-effector.}
-\subsubsection{Prinsip Kerja Kinematika Maju}
+\subsection{Prinsip Kerja Kinematika Maju}
 Metode Denavit-Hartenberg merupakan metode yang menggabungkan proses perhitungan rotasi dan translasi menjadi sebuah matriks yang menyertakan nilai-nilai sudut putar dan jarak sendi dari sebuah lengan robot. Dalam beberapa aplikasi, metode Denavit-Hartenberg umumnya digunakan dalam perhitungan \textit{Forward Kinematics}. Dalam penelitian ini dirancang aplikasi yang menggunakan metode Denavit-Hartenberg untuk menghitung sudut-sudut tiap sendi pada \textit{Invers Kinematics} untuk menggerakan sebuah lengan robot. Matrik Denavit-Hartenberg yang berisi perhitungan rotasi dan translasi digunakan untuk mendapatkan nilai nilai sudut untuk menggerakkan tiap motor sendi. Empat Aturan Frame Denavit-Hartenberg yaitu Sumbu Z harus menjadi sumbu rotasi atau translasi dari sebuah joint. Sumbu X harus tegak lurus dari sumbu Z frame sebelumnya. Sumbu X harus memotong atau menyilang dari sumbu Z frame sebelumnya. Sumbu Y harus digambarkan sesuai dengan aturan tangan kanan setelah sumbu X   dan sumbu Z setiap frame digambarkan.
-\subsubsection{Prinsip Kerja Kinematika Balik}
+\subsection{Prinsip Kerja Kinematika Balik}
 Dalam menentukan koordinat \textit{end-effector}, kinematika balik harus disesuaikan dengan batas area kerja \textit{(workspace)} dari jangkauan robot. Kinematika balik adalah perhitungan untuk mencari variabel sudut (\textit{joint}) robot dalam menentukan posisi dan orientasi dari \textit{end-effector}. Penyelesaian kinematika balik ini dapat diselesaikan dengan menggunakan kinematika balik, yang di dalamnya menggunakan hukum \textit{phytagoras} dan aturan \textit{cosinus}. 
 Secara garis besar metode \textit{inverse kinematic} akan mencari nilai-nilai parameter yang harus diberikan kepada setiap aktuator untuk mencapai tujuan akhir. Untuk mendapatkan nilai-nilai parameter tersebut, robot harus mengetahui terlebih dahulu manipulator yang dimilikinya, baik ukuran maupun jumlah aktuator serta derajat kebebasan yang ada. Kemudian, robot harus ditanamkan rumus-rumus yang didapat dari berbagai model perhitungan, baik dari segi analisa grafik langsung maupun menggunakan metode-metode dari berbagai penelitian. 
 
@@ -277,5 +300,50 @@ Pada robot SCARA, sudut dari \textit{joint} yang dicari merupakan \textit{joint}
 	\end{equation}
 	\item  Dengan penyelesaian seperti pada persamaan \ref{cosinus7} besar sudut dari \textit{shoulder} dapat diketahui dengan memasukkan nilai panjang \textit{elbow}, sudut \textit{elbow} dan juga posisi dari \textit{end-effector}.
 \end{enumerate}
+
+Pada dalam penelitian kinematika robot SCARA ini, segala perhitungan kinematika dilakukan di dalam program processing IDE. Di dalam processing IDE terdapat animasi dari bentuk asli robot SCARA dengan dimensi yang sama hanya saja ditampilkan dalam bentuk berskala. Pada posisi \textit{end-effector} didapat posisi x dan y yang diprogram pada dalam processing IDE. Dua buah data sudut yang didapat pada perhitungan sudut \textit{shoulder} dan \textit{elbow} kemudian dikirimkan kepada Arduino Mega 2560 untuk diprores dan diimplemintasikan secara langsung pada robot yang asli.
+
+\section{Perancangan Sistem Keseluruhan}
+Rancangan sistem keseluruhan merupakan gabungan dari perancangan perangkat keras dan perangkat lunak yang diintegrsikan sesuai dengan diagram blok sistem. Gambar 3.20 adalah gambaran tentang perancangan sistem secara keseluruhan. Tabel 3.3  menunjukkan keterangan setiap komponen yang ada di dalam sistem keseluruhan \textit{arm manipulator} robot SCARA. 
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=8cm]{gambar/catudaya_bb.png}
+	\caption{Sistem Secara Keseluruhan}
+	\label{g_ik}
+\end{figure}
+
+\begin{table}[H]
+	\centering
+	\caption{Keterangan Sistem Keseluruhan}
+	\begin{tabular}{|c|c|l|}
+		\hline
+		\rowcolor[HTML]{9B9B9B} 
+		No & \begin{tabular}[c]{@{}c@{}}Pin Arduino\\   Mega 2560\end{tabular} & \multicolumn{1}{c|}{\cellcolor[HTML]{9B9B9B}Fungsi} \\ \hline
+		1  & A1                                                                & Feedback potensiometer shoulder                     \\ \hline
+		2  & A2                                                                & Feedback potensiometer elbow                        \\ \hline
+		3  & A3                                                                & Feedback potensiometer end-effector                 \\ \hline
+		4  & D16, D18                                                          & Kontrol aktif driver motor shoulder                 \\ \hline
+		4  & D20, D22                                                          & Kontrol driver motor shoulder                       \\ \hline
+		5  & D24, D26                                                          & Kontrol aktif driver motor elbow                    \\ \hline
+		6  & D28. D30                                                          & Kontrol driver motor elbow                          \\ \hline
+		7  & D32, D34                                                          & Kontrol aktif driver motor end-effector             \\ \hline
+		8  & D36, D38                                                          & Kontrol driver motor end-effector                   \\ \hline
+		9  & D4                                                                & Kontrol PWM driver motor shoulder                   \\ \hline
+		10 & D5                                                                & Kontrol PWM driver motor elbow                      \\ \hline
+		11 & D6                                                                & Kontrol PWM driver motor end-effector               \\ \hline
+		12 & D7                                                                & Kontrol valve relay naik                            \\ \hline
+		13 & D8                                                                & Kontrol valve relay turun                           \\ \hline
+		14 & D9                                                                & Kontrol valve relay buka-tutup                      \\ \hline
+		15 & D15                                                               & Kontrol LED Shoulder aktif high                     \\ \hline
+		16 & D17                                                               & Kontrol LED elbow aktif high                        \\ \hline
+		17 & D19                                                               & Kontrol LED end-effector naik aktif high            \\ \hline
+		18 & D21                                                               & Kontrol LED end-effector turun aktif high           \\ \hline
+		19 & D23                                                               & Kontrol LED end-effector buka-tutup aktif high      \\ \hline
+		20 & D25                                                               & Buzzer aktif high                                   \\ \hline
+	\end{tabular}
+\end{table}
+
+
+
 
 

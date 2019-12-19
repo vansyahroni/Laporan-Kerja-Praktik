@@ -55,10 +55,11 @@
 \contentsline {subsubsection}{\numberline {3.2.2.2}Rangkaian \textit {Valve Relay Pneumatic}}{32}{subsubsection.3.2.2.2}% 
 \contentsline {subsubsection}{\numberline {3.2.2.3}Rangkaian Minimum Sistem Arduino}{34}{subsubsection.3.2.2.3}% 
 \contentsline {subsubsection}{\numberline {3.2.2.4}Rangkaian Catu Daya}{35}{subsubsection.3.2.2.4}% 
-\contentsline {subsection}{\numberline {3.2.3}Perancangan Perangkat Lunak}{36}{subsection.3.2.3}% 
-\contentsline {subsubsection}{\numberline {3.2.3.1}ControlP5}{36}{subsubsection.3.2.3.1}% 
-\contentsline {subsubsection}{\numberline {3.2.3.2}Shape}{37}{subsubsection.3.2.3.2}% 
-\contentsline {subsection}{\numberline {3.2.4}Sistem Kinematika}{38}{subsection.3.2.4}% 
-\contentsline {subsubsection}{\numberline {3.2.4.1}Prinsip Kerja Kinematika Maju}{38}{subsubsection.3.2.4.1}% 
-\contentsline {subsubsection}{\numberline {3.2.4.2}Prinsip Kerja Kinematika Balik}{38}{subsubsection.3.2.4.2}% 
-\contentsline {chapter}{DAFTAR PUSTAKA}{41}{chapter*.55}% 
+\contentsline {section}{\numberline {3.3}Perancangan Perangkat Lunak}{36}{section.3.3}% 
+\contentsline {subsection}{\numberline {3.3.1}ControlP5}{37}{subsection.3.3.1}% 
+\contentsline {subsection}{\numberline {3.3.2}Shape}{38}{subsection.3.3.2}% 
+\contentsline {section}{\numberline {3.4}Sistem Kinematika}{38}{section.3.4}% 
+\contentsline {subsection}{\numberline {3.4.1}Prinsip Kerja Kinematika Maju}{39}{subsection.3.4.1}% 
+\contentsline {subsection}{\numberline {3.4.2}Prinsip Kerja Kinematika Balik}{39}{subsection.3.4.2}% 
+\contentsline {section}{\numberline {3.5}Perancangan Sistem Keseluruhan}{42}{section.3.5}% 
+\contentsline {chapter}{DAFTAR PUSTAKA}{44}{chapter*.59}% 
