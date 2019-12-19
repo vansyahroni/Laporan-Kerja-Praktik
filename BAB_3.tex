@@ -232,28 +232,50 @@ Analisis persamaan kinematik dapat diselesaikan dengan cara yang paling dasar ya
 	\centering
 	\includegraphics[width=8cm]{gambar/catudaya_bb.png}
 	\caption{Trigonometeri Sisi Atas}
+	\label{g_ik}
 \end{figure}
  
  
-Pada robot SCARA, sudut dari \textit{joint} yang dicari merupakan \textit{joint} dari \textit{shoulder} dan juga \textit{elbow.} Kedua joint tersebut dapat ditemukan dengan melalui persamaan \textit{pythagoras} dan juga hujum \textit{cosinus}. Pada Gambar 3.17 terlihat bahwa sudut shoulder merupakan besar sudut diantara lengan shoulder dan juga sumbu x dan sudut elbow merupakan besar sudut antara lengan elbow dengan garis bantu dari lengan shoulder. Keduanya dapat ditentukan besar nilainya melalui beberapa pesamaan dari cosinus dan juga hukum pyhtagoras.LS merupakan panjang lengan shoulder dan LE merupakan panjang lengan dari elbow. Serta SS merupakan sudut dari shoulder dan SE merupakan sudut dari elbow.  
+Pada robot SCARA, sudut dari \textit{joint} yang dicari merupakan \textit{joint} dari \textit{shoulder} dan juga \textit{elbow.} Kedua \textit{joint} tersebut dapat ditemukan dengan melalui persamaan \textit{pythagoras} dan juga hukum \textit{cosinus}. Pada Gambar 3.17 terlihat bahwa sudut \textit{shoulder} merupakan besar sudut diantara lengan \textit{shoulder} dan juga sumbu x dan sudut elbow merupakan besar sudut antara lengan \textit{elbow} dengan garis bantu dari lengan \textit{shoulder}. Keduanya dapat ditentukan besar nilainya melalui beberapa pesamaan dari \textit{cosinus} dan juga hukum \textit{pyhtagoras}. $l_{1}$ merupakan panjang lengan \textit{shoulder} dan $l_{2}$ merupakan panjang lengan dari \textit{elbow}. Serta $\theta_{1}$ merupakan sudut dari shoulder dan $\theta_{2}$ merupakan sudut dari \textit{elbow}.  
 
 \begin{enumerate}
-	\item Dengan menggunakan hukum cosinus, didapatkan sebuah persamaan \ref{cosinus1}
+	\item Dengan menggunakan hukum \textit{cosinus}, didapatkan sebuah persamaan \ref{cosinus1}
 	\begin{equation}
-	(x^2+y^2)=LS^2+LE^2-2LSLEcos(180-SE)
+	(x^2+y^2)=l_{1}^2+l_{1}^2-2l_{2}l_{2}cos(180-\theta_{2})
 	\label{cosinus1}
 	\end{equation}
-	\item Pada persamaan \ref{cosinus1} terdapat cos(180-SE) yang pada hukum cosinus dapat diubah menjadi -cos(SE), maka persamaan setelahnya ditunjukkan pada persamaan \ref{cosinus2}
+	\item Pada persamaan \ref{cosinus2} terdapat $\cos$ yang dapat diubah sesuai dengan prinsip dari hukum \textit{cosinus} menjadi seperti pada persamaan \ref{cosinus2}
 	\begin{equation}
-	(x^2+y^2)=LS^2LE^2+2LSLEcos(SE)
+	(x^2+y^2)=l_{1}^2l_{2}^2+2l_{2}l_{2}cos(\theta_{2})
 	\label{cosinus2}
 	\end{equation}
-	\item Merujuk pada persamaan \ref{cosinus2} maka dapat dikelompokkan agar SE dapat diketahui menjadi seperti persamaan \ref{cosinus3}
+	\item Pada persamaan \ref{cosinus2} mencari sebuah nilai dari $\theta_{2}$ untuk memmudahkannya maka persamaan menjadi seperti pada persamaan \ref{cosinus3}
 	\begin{equation}
-	cos(SE)=(x^2+y^2-LS^2-LE^2)/(2LSLE)
+	cos(\theta_{2})=\frac{x^2+y^2-l_{1}^2-l_{2}^2}{2_{1}l_{2}}
 	\label{cosinus3}
 	\end{equation}
-	
+	\item Nilai dari $\theta_{2}$ dapat dengan mudah diketahui dengan melanjutkan seperti pada persamaan \ref{cosinus4}
+	\begin{equation}
+	\theta_{2}=arccos(\frac{x^2+y^2-l_{1}^2-l_{2}^2}{2_{1}l_{2}})
+		\label{cosinus4}
+	\end{equation}
+	Dengan persamaan \ref*{cosinus4} maka nilai dari $\theta_{2}$ atau sudut dari \textit{elbow} dapat diketahui dengan cara memasukkan nilai posisi x, posisi y, serta panjang dari \textit{shoulder} dan \textit{elbow} ke dalam persamaan. Nilai posisi x dan posisi y merupakan posisi akhir dari \textit{end-effector}. 
+	\item Dalam menentukan sudut lainnya yaitu sudut \textit{shoulder} yang ditandai dengan simbol $\theta_{1}$ menggunakan persamaan \textit{cosinus} yang dituliskan pada persamaan \ref{cosinus5}
+	\begin{equation}
+	\frac{sin(\beta)}{l_{2}} = \frac{sin(\gamma)}{\sqrt{x^2+y^2}} ; \alpha=\arctan(\frac{y}{x})
+	\label{cosinus5}
+	\end{equation}
+	\item Pada persamaan \ref{cosinus5} $\sin(\gamma)=\sin(180-\theta_{2})=\sin(\theta_{2})$ dengan mengubah $\sin(\gamma)$ menjadi $\sin(\theta_{2})$ maka akan persamaan menjadi seperi yang ditunjukkan pada persamaan \ref{cosinus6}
+	\begin{equation}
+	\beta=\arcsin(\frac{l_{2}\sin(\theta_{2})}{\sqrt{x^2+y^2}})
+	\label{cosinus6}
+	\end{equation}
+	\item Jika dilihat pada persamaan \ref{g_ik} makan besar dari sudut \textit{shoulder} yang ditandakan dengan $\theta_{1}$ yang berarti $\theta_{1}=\beta+\alpha$ maka dapat diselesaikan dengan persamaan \ref{cosinus7}
+	\begin{equation}
+	\theta_{1}=\arcsin(\frac{l_{2}\sin(\theta_{2})}{\sqrt{x^2+y^2}}+\arctan(\frac{y}{x})
+	\label{cosinus7}
+	\end{equation}
+	\item  Dengan penyelesaian seperti pada persamaan \ref{cosinus7} besar sudut dari \textit{shoulder} dapat diketahui dengan memasukkan nilai panjang \textit{elbow}, sudut \textit{elbow} dan juga posisi dari \textit{end-effector}.
 \end{enumerate}
 
 
