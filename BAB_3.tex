@@ -315,35 +315,32 @@ Rancangan sistem keseluruhan merupakan gabungan dari perancangan perangkat keras
 \begin{table}[H]
 	\centering
 	\caption{Keterangan Sistem Keseluruhan}
-	\begin{tabular}{|c|c|l|}
-		\hline
-		\rowcolor[HTML]{9B9B9B} 
-		No & \begin{tabular}[c]{@{}c@{}}Pin Arduino\\   Mega 2560\end{tabular} & \multicolumn{1}{c|}{\cellcolor[HTML]{9B9B9B}Fungsi} \\ \hline
-		1  & A1                                                                & Feedback potensiometer shoulder                     \\ \hline
-		2  & A2                                                                & Feedback potensiometer elbow                        \\ \hline
-		3  & A3                                                                & Feedback potensiometer end-effector                 \\ \hline
-		4  & D16, D18                                                          & Kontrol aktif driver motor shoulder                 \\ \hline
-		4  & D20, D22                                                          & Kontrol driver motor shoulder                       \\ \hline
-		5  & D24, D26                                                          & Kontrol aktif driver motor elbow                    \\ \hline
-		6  & D28. D30                                                          & Kontrol driver motor elbow                          \\ \hline
-		7  & D32, D34                                                          & Kontrol aktif driver motor end-effector             \\ \hline
-		8  & D36, D38                                                          & Kontrol driver motor end-effector                   \\ \hline
-		9  & D4                                                                & Kontrol PWM driver motor shoulder                   \\ \hline
-		10 & D5                                                                & Kontrol PWM driver motor elbow                      \\ \hline
-		11 & D6                                                                & Kontrol PWM driver motor end-effector               \\ \hline
-		12 & D7                                                                & Kontrol valve relay naik                            \\ \hline
-		13 & D8                                                                & Kontrol valve relay turun                           \\ \hline
-		14 & D9                                                                & Kontrol valve relay buka-tutup                      \\ \hline
-		15 & D15                                                               & Kontrol LED Shoulder aktif high                     \\ \hline
-		16 & D17                                                               & Kontrol LED elbow aktif high                        \\ \hline
-		17 & D19                                                               & Kontrol LED end-effector naik aktif high            \\ \hline
-		18 & D21                                                               & Kontrol LED end-effector turun aktif high           \\ \hline
-		19 & D23                                                               & Kontrol LED end-effector buka-tutup aktif high      \\ \hline
-		20 & D25                                                               & Buzzer aktif high                                   \\ \hline
-	\end{tabular}
+
+		\begin{tabular}{|c|l|}
+			\hline
+			\rowcolor[HTML]{9B9B9B} 
+			No & \multicolumn{1}{c|}{\cellcolor[HTML]{9B9B9B}Keterangan} \\ \hline
+			1  & Robot Lengan SCARA                                      \\ \hline
+			2  & Box Panel                                               \\ \hline
+			3  & Arduino Mega 2560                                       \\ \hline
+			4  & Personal Computer                                       \\ \hline
+			5  & GUI Processing IDE                                      \\ \hline
+			6  & Workspace Robot SCARA                                   \\ \hline
+			7  & Kompresor                                               \\ \hline
+			8  & Objek                                                   \\ \hline
+		\end{tabular}
+
 \end{table}
+Processing IDE merupakan piranti yang digunakan sebagai masukan. Masukan dari Processing IDE adalah hasil dari perhitungan kinematika maju dan atau kinematika balik yang dimasukkan melalui GUI. Objek berada dalam cakupan \textit{workspace} yang telah ditentukan luasnya yang ditinjau dari cangkupan dari \textit{end-effector}. GUI dari processing IDE ini diproses menggunakan komputer personal.  
 
+Processing IDE juga menampilan nilai derajat setiap \textit{joint}, koordinat x dan y dari \textit{end-effector}. Koordinat x dan y yang telah didapatkan dari processing IDE diolah dalam perhitungan kinematika balik sehingga dapat ditemukan nilai besar derajat sudut setiap joint. Setelah nilai besar derajat sudut setiap \textit{joint} didapatkan, Processing IDE akan mengirimkan nilai-nilai tersebut ke Arduino IDE melewati komunikasi Serial. Arduino IDE akan mengirimkan nilai-nilai tersebut sesuai dengan pin motor DC yang tersambung dengan Arduino Mega 2560, lalu nilai-nilai \textit{joint}  tersebut dikirimkan Arduino Mega 2560 kembali ke processing IDE melaluo koneksi langsung menggunakan kabel USB.  
 
+Arduino Mega 2560 merupakan mikrokotroler yang menggerakkan setiap motor DC sesuai dengan besaran nilai yang telah didapatkan. Setelah itu, robot lengan SCARA akan mencapai koordinat x dan y dari objek, lalu mencengkram objek tersebut dengan \textit{Gripper}.
+
+\chapter{PENGUJIAN DAN PEMBAHASAN}
+Pada bab pengujian dan pembahasan ini, penulis akan melakukan pengujian sistem kendali\textit{ arm manipulator} robot SCARA berdasarkan spesifikasi sistem yang telah dijelaskan pada bab sebelumnya. Tujuan pengujian ini adalah untuk membuktikan apakah sistem yang diimplementasikan telah memenuhi spesifikasi dan rancangan yang sudah direncanakan sebelumnya. Hasil dari pengujian akan dimanfaatkan untuk menyempurnakan kinerja dari sistem dan sekaligus digunakan dalam pengembangan sistem lebih lanjut. Metode pengujian dipilih berdasarkan fungsionalitas dan beberapa parameter yang ingin diketahui dari sistem tersebut. Data yang diperoleh dari metode pengujian yang dipilih tersebut dapat memberikan informasi yang cukup dan dapat digunakan untuk penyempurnaan dan pengembangan sistem.
+   
+Metode pengujian menggunakan dua macam metode, yaitu pengujian fungsionalitas dari setiap komponen dan pengujian sistem secara keseluruhan. Pengujian fungsionalitas digunakan untuk membuktikan apakah sistem yang diimplementasikan dapat memenuhi persyaratan dari fungsi operasional yang telah dirancang dan direncanakan sebelumnya. Sedangkan pengujian sistem secara keseluruhan bertujuan untuk memperoleh beberapa parameter yang dapat menunjukkan kemampuan dan keandalan dari sistem secara keseluruhan dalam menjalankan fungsi operasionalnya. Pada \textit{sistem arm manipulator} robot SCARA dilakukan terlebih dahulu pengujian terhadap fungsional dari beberapa komponen seperti bagian \textit{DC to DC converter}, arah gerakan motor DC, \textit{feedback} potensiometer, fungsi rangkaian \textit{switching} pada \textit{valve pneumatic} dan keakuratan setiap \textit{joint} untuk bergerak sesuai sudut yang diinginkan berdasarkan kinematika balik maupun kinematika maju dengan menggunakan kontrol dari GUI.  Kemudian setelah pengujian fungsionalitas terpenuhi maka dilakukan pengujian sistem secara keseluruhan untuk mengetahui keakuratan dan keandalan dari sistem \textit{arm manipulator} robot SCARA.
 
 
 
