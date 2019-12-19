@@ -19,4 +19,6 @@
 \contentsline {table}{\numberline {3.4}{\ignorespaces Keterangan Tampilan pada GUI Robot SCARA\relax }}{37}{table.caption.55}% 
 \contentsline {table}{\numberline {3.5}{\ignorespaces Keterangan Sistem Keseluruhan\relax }}{42}{table.caption.58}% 
 \addvspace {10\p@ }
-\addvspace {10\p@ }
+\contentsline {table}{\numberline {4.1}{\ignorespaces Hasil Tegangan Keluaran Dari Tegangan DC-DC Converter\relax }}{45}{table.caption.59}% 
+\contentsline {table}{\numberline {4.2}{\ignorespaces Hasil Tegangan Keluaran Dari Tegangan DC-DC \textit {Converter}\relax }}{46}{table.caption.60}% 
+\contentsline {table}{\numberline {4.3}{\ignorespaces Hasil Pengujian \textit {Driver} Motor H-\textit {Bridge}\relax }}{47}{table.caption.61}% 

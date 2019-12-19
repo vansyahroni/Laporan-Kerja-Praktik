@@ -1,8 +1,83 @@
-%!TEX root = ./template-skripsi.tex
-%-------------------------------------------------------------------------------
-%                            BAB IV
-%               		HASIL DAN PEMBAHASAN
-%-------------------------------------------------------------------------------
 
 \chapter{PENGUJIAN DAN PEMBAHASAN}
+Pada bab pengujian dan pembahasan ini, penulis akan melakukan pengujian sistem kendali\textit{ arm manipulator} robot SCARA berdasarkan spesifikasi sistem yang telah dijelaskan pada bab sebelumnya. Tujuan pengujian ini adalah untuk membuktikan apakah sistem yang diimplementasikan telah memenuhi spesifikasi dan rancangan yang sudah direncanakan sebelumnya. Hasil dari pengujian akan dimanfaatkan untuk menyempurnakan kinerja dari sistem dan sekaligus digunakan dalam pengembangan sistem lebih lanjut. Metode pengujian dipilih berdasarkan fungsionalitas dan beberapa parameter yang ingin diketahui dari sistem tersebut. Data yang diperoleh dari metode pengujian yang dipilih tersebut dapat memberikan informasi yang cukup dan dapat digunakan untuk penyempurnaan dan pengembangan sistem.
 
+Metode pengujian menggunakan dua macam metode, yaitu pengujian fungsionalitas dari setiap komponen dan pengujian sistem secara keseluruhan. Pengujian fungsionalitas digunakan untuk membuktikan apakah sistem yang diimplementasikan dapat memenuhi persyaratan dari fungsi operasional yang telah dirancang dan direncanakan sebelumnya. Sedangkan pengujian sistem secara keseluruhan bertujuan untuk memperoleh beberapa parameter yang dapat menunjukkan kemampuan dan keandalan dari sistem secara keseluruhan dalam menjalankan fungsi operasionalnya. Pada \textit{sistem arm manipulator} robot SCARA dilakukan terlebih dahulu pengujian terhadap fungsional dari beberapa komponen seperti bagian \textit{DC to DC converter}, arah gerakan motor DC, \textit{feedback} potensiometer, fungsi rangkaian \textit{switching} pada \textit{valve pneumatic} dan keakuratan setiap \textit{joint} untuk bergerak sesuai sudut yang diinginkan berdasarkan kinematika balik maupun kinematika maju dengan menggunakan kontrol dari GUI.  Kemudian setelah pengujian fungsional terpenuhi maka dilakukan pengujian sistem secara keseluruhan untuk mengetahui keakuratan dan keandalan dari sistem \textit{arm manipulator} robot SCARA.
+
+\section{Pengujian Fungsional}
+Pengujian fungsional digunakan untuk menguji bagian – bagian dari sistem yang terdiri dari\textit{DC to DC converter}, arah gerakan motor DC, \textit{feedback} potensiometer, fungsi rangkaian \textit{switching} pada \textit{valve pneumatic} dan keakuratan setiap \textit{joint}, pengujian GUI Processing dan pengujian program. 
+
+\subsection{Pengujian DC - to - DC Converter}
+Pengujian DC – to – DC \textit{converter} dilakukan untuk mengetahui tegangan masukan pada Arduino Mega 2560, sensor \textit{potensiometer}, motor DC dan juga sumber tegangan untuk\textit{ valve pneumatic}. Tegangan masukan dari catu daya utama sebesar 24 Volt DC yang nantinya dibagi ke tiga buah nilai tegangan. Tabel 4.1 merupakan tegangan keluaran DC – to - DC.
+
+\begin{table}[H]
+	\centering
+	\caption{Hasil Tegangan Keluaran Dari Tegangan DC-DC Converter}
+	
+	\begin{tabular}{|c|l|}
+		\hline
+		\rowcolor[HTML]{9B9B9B} 
+		No & \multicolumn{1}{c|}{\cellcolor[HTML]{9B9B9B}Keterangan} \\ \hline
+		1  & Robot Lengan SCARA                                      \\ \hline
+		2  & Box Panel                                               \\ \hline
+		3  & Arduino Mega 2560                                       \\ \hline
+		4  & Personal Computer                                       \\ \hline
+		5  & GUI Processing IDE                                      \\ \hline
+		6  & Workspace Robot SCARA                                   \\ \hline
+		7  & Kompresor                                               \\ \hline
+		8  & Objek                                                   \\ \hline
+	\end{tabular}
+	
+\end{table} 
+
+Pada saat mengubbah besar tegangan keluaran yang dilakukan oleh Regulator \textit{Buck} LM2596 dilakukan dengan cara memutar \textit{potensiometer} yang terdapat pada Regulator \textit{Buck}. Diputar searah dengan jarum jam sesuai hingga pada teganangan yang diinginkan.
+\subsection{Pengujian Motor DC}
+Pengujian motor DC dilakukan untuk mengetahui apakah motor DC dalam keaadaan baik atau tidak. Pengujian dilakukan dengan memberikan tegangan kerja pada motor DC yang ada pada \textit{shoulder}, \textit{elbow}, dan juga \textit{end-effector} yang nantinya diukur arus yang dihasilkan pada masing-masing motor DC. Tabel \ref{tbl.motordc} merupakan hasil dari pengujian pada masin-masing motor DC.
+
+\begin{table}[H]
+	\centering
+	\caption{Hasil Tegangan Keluaran Dari Tegangan DC-DC \textit{Converter}}
+	
+	\begin{tabular}{|c|l|}
+		\hline
+		\rowcolor[HTML]{9B9B9B} 
+		\label{tbl.motordc}
+		No & \multicolumn{1}{c|}{\cellcolor[HTML]{9B9B9B}Keterangan} \\ \hline
+		1  & Robot Lengan SCARA                                      \\ \hline
+		2  & Box Panel                                               \\ \hline
+		3  & Arduino Mega 2560                                       \\ \hline
+		4  & Personal Computer                                       \\ \hline
+		5  & GUI Processing IDE                                      \\ \hline
+		6  & Workspace Robot SCARA                                   \\ \hline
+		7  & Kompresor                                               \\ \hline
+		8  & Objek                                                   \\ \hline
+	\end{tabular}
+	
+\end{table} 
+
+Pada hasil yang ditunjukkan oleh tabel \ref{tbl.motordc} menujukkan bahwa setiap motor DC mempunyai nilai arus yang berbeda-beda. Motor DC yang terletak pada \textit{end-effcetor} merupakan motor DC yang menghasilkan arus paling besar. Hal ini disebabkan karena motor DC yang terpasang pada \textit{end-effector} dibantu dengan bantuan \textit{belt} untuk menyalurkan putaran pada\textit{ end-effector}. Dengan begitu penggunaan \textit{belt} pada motor DC ini menyebabkan beban yang dikerjakan oleh motor DC pada \textit{end-effector} menjadi lebih besar dari pada motor DC yang lain yang langsung menggerakkan pada masing-masing \textit{joint}.
+
+\subsection{Pengujian \textit{Driver} Motor H – \textit{Bridge}}
+Pengujian \textit{driver} motor H – \textit{bridge} dilakukan untuk mengetahui keberfungsian dari \textit{driver} motor apakah sesuai dengan perancangan atau tidak. Pada \textit{driver} motor juga dilakukan pengujian untuk melihat direksi dari arah pergerakan motor DC dari \textit{output} \textit{driver} ketika diberikan masukan berupa sinyal \textit{high} dan \textit{low} pada arduino. Tabel \ref{tbl.drivermotor} menunjukkan hasil dari pengujian \textit{driver} motor H-\textit{Bridge}. 
+\begin{table}[H]
+	\centering
+	\caption{Hasil Pengujian \textit{Driver} Motor H-\textit{Bridge}}
+		\label{tbl.drivermotor}
+	\begin{tabular}{|c|l|}
+		\hline
+		\rowcolor[HTML]{9B9B9B} 
+	
+		No & \multicolumn{1}{c|}{\cellcolor[HTML]{9B9B9B}Keterangan} \\ \hline
+		1  & Robot Lengan SCARA                                      \\ \hline
+		2  & Box Panel                                               \\ \hline
+		3  & Arduino Mega 2560                                       \\ \hline
+		4  & Personal Computer                                       \\ \hline
+		5  & GUI Processing IDE                                      \\ \hline
+		6  & Workspace Robot SCARA                                   \\ \hline
+		7  & Kompresor                                               \\ \hline
+		8  & Objek                                                   \\ \hline
+	\end{tabular}
+	
+\end{table} 
+
+ Pada \textit{driver} motor H-\textit{Bridge} EMS 30A sinyal digital \textit{high} dan \textit{low} dihubungkan pada pin MEN1 dan MEN2. Dari hasil pengujian \textit{driver} motor H-\textit{Bridge} seperti yang ditunjukkan pada tabel \ref{tbl.drivermotor} terlihat bahwa ketika sinyal \textit{high} diberikan pada MEN1 dan \textit{low} diberikan MEN2 maka pergerakan motor akan berputar searah dengan arah jarum jam dan sebaliknya jika diberikan \textit{low} pada MEN1 dan \textit{high} pada MEN2 maka arah pergerakan motor akan berlawanan arah. Pada tabel \ref{tbl.drivermotor}juga terlihat bahwa nilai arus dapat dialirkan pada driver motor beragam dari 1 Ampere hingga 1.5 Ampere. Terbukti bahwa \textit{driver} motor dapat mengoperasikan driver motor dengan baik.
