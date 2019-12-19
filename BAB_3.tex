@@ -195,18 +195,65 @@ Perangkat lunak yang digunakan merupakan \textit{software} Processing IDE. Proce
 \subsubsection{ControlP5}
 ControlP5 merupakan salah satu library yang berguna dalam membuat sebuah GUI. Dalam library yang disediakan terdapat banyak pilihan terkait kontrol sistem dengan berbagai jenis pilihan. Kontrol sistem yang disediakan tersedia dua pilihan yaitu untuk menkontrol dan untuk menampilkan sebuah data. Masing-masing kontrol sistem ini dapat digunakan dengan cara memanggilnya pada program yang ditulis.
 
-Pada perancangan kineatika roboto scara ini, menggunakan tiga buah kontrol sistem. Ketiga kontrol sistem yang digunakan merupakan jenis kontrol sistem yang berguna untuk memberikan sebuah data yang dikirimkan pada Arduino Mega 2560. Kontrol sistem tersebut diantaranya:
+Pada perancangan kineatika roboto scara ini, menggunakan empat buah kontrol sistem. Empat kontrol sistem yang digunakan merupakan jenis kontrol sistem yang berguna untuk memberikan sebuah data yang dikirimkan pada Arduino Mega 2560. Kontrol sistem tersebut diantaranya:
 \begin{enumerate}
-	\item Slider Control \\
-	Slider Control berupa tampilan GUI yang menggunakan sistem geser dalam memberikan data. Data memiliki batasan atas dan batas bawah yang dimasukkan dalam program. Keuntungan menggunakan kontrol sistem jenis ini karena saat ingin untuk mengubah data yang diberikan menjadi lebih mudah.
-	Gambar 3.12 merupakan bentuk slider control.
-	\begin{figure}[H]
-		\centering
-		\includegraphics[width=8cm]{gambar/catudaya_bb.png}
-		\caption{Rangkaian Catu Daya}
-	\end{figure}
+	\item \textit{Slider Control} \\
+	\textit{Slider Control} berupa tampilan kontrol GUI yang menggunakan sistem geser dalam memberikan data. Data memiliki batasan atas dan batas bawah yang dimasukkan dalam program. Keuntungan menggunakan kontrol sistem jenis ini karena saat ingin untuk mengubah data yang diberikan menjadi lebih mudah.
 
+
+	\item \textit{Textfield Control} \\
+\textit{Textfield control} berupa tampila kontrol GUI yang menggunakan masukan nilai data sesuai apa yang dituliskan atau diketikkan secara langsung. Kelebihan menggunakan kontrol sistem jenis ini karena dapat memasukkan nilai data lebih spesifik secara langsung sesuai keiinginan.
 	
+	\item \textit{Textfield Control} \\
+\textit{Bang control}
+Berbeda dengan kontrol sistem sebelumnya,\textit{ bang control }berupa kotak yang bekerja pada saat mulai ditekan. Saat bang mulai ditekan data akan dikirimkan sesuai dengan nilai yang sudah dimasukan kedalam program. 
+	
+
+	\item \textit{Textfield Control} \\
+\textit{Toggle control}
+Toggle control memiliki sistem kontrol seperti saklar on-off. Pada saat ditekan maka toggle control menyimpan data berupa kondisi pertama dan berubah saat ditekan kembali. 
+
+\end{enumerate}
+\subsubsection{Shape}
+Shape pada GUI berfungsi sebagai penampil secara tiga dimensi dari robot SCARA. Robot SCARA dapat ditampilkan dalam berbagai ukuran, letak dan juga dapat bergerak sesuai dengan data yang diberikan. Pergerakan dari robor SCARA merupakan implementasi dari wujud aslinya yang pergerakannya sama.
+
+Dalam pengoperasianya, desain dari robot SCARA yang ditampilkan harus dimasukkan ke dalam folder yang sama dengan program processing IDE. File yang dapat ditampilkan merupakan file dengan jenis obj. yang berarti file objek. Pada program robot SCARa file dari dimensi tiga dari robot SCARA memiliki tiga buah file dimana ketiganya adalah \textit{base, shoulder}, dan \textit{elbow}. 
+
+\subsection{Sistem Kinematika}
+Persamaan kinematika terbagi dua, yaitu kinematika maju dan kinematika balik. Kinematika maju digunakan untuk menentukan posisi dan orientasi \textit{end-effector} apabila variabel sudut \textit{joint}-nya telah diketahui. Kinematika balik digunakan untuk mencari \textit{joint} robot daam menentukan posisi dan orientasi dari \textit{end-effector.}
+\subsubsection{Prinsip Kerja Kinematika Maju}
+Metode Denavit-Hartenberg merupakan metode yang menggabungkan proses perhitungan rotasi dan translasi menjadi sebuah matriks yang menyertakan nilai-nilai sudut putar dan jarak sendi dari sebuah lengan robot. Dalam beberapa aplikasi, metode Denavit-Hartenberg umumnya digunakan dalam perhitungan \textit{Forward Kinematics}. Dalam penelitian ini dirancang aplikasi yang menggunakan metode Denavit-Hartenberg untuk menghitung sudut-sudut tiap sendi pada \textit{Invers Kinematics} untuk menggerakan sebuah lengan robot. Matrik Denavit-Hartenberg yang berisi perhitungan rotasi dan translasi digunakan untuk mendapatkan nilai nilai sudut untuk menggerakkan tiap motor sendi. Empat Aturan Frame Denavit-Hartenberg yaitu Sumbu Z harus menjadi sumbu rotasi atau translasi dari sebuah joint. Sumbu X harus tegak lurus dari sumbu Z frame sebelumnya. Sumbu X harus memotong atau menyilang dari sumbu Z frame sebelumnya. Sumbu Y harus digambarkan sesuai dengan aturan tangan kanan setelah sumbu X   dan sumbu Z setiap frame digambarkan.
+\subsubsection{Prinsip Kerja Kinematika Balik}
+Dalam menentukan koordinat \textit{end-effector}, kinematika balik harus disesuaikan dengan batas area kerja \textit{(workspace)} dari jangkauan robot. Kinematika balik adalah perhitungan untuk mencari variabel sudut (\textit{joint}) robot dalam menentukan posisi dan orientasi dari \textit{end-effector}. Penyelesaian kinematika balik ini dapat diselesaikan dengan menggunakan kinematika balik, yang di dalamnya menggunakan hukum \textit{phytagoras} dan aturan \textit{cosinus}. 
+Secara garis besar metode \textit{inverse kinematic} akan mencari nilai-nilai parameter yang harus diberikan kepada setiap aktuator untuk mencapai tujuan akhir. Untuk mendapatkan nilai-nilai parameter tersebut, robot harus mengetahui terlebih dahulu manipulator yang dimilikinya, baik ukuran maupun jumlah aktuator serta derajat kebebasan yang ada. Kemudian, robot harus ditanamkan rumus-rumus yang didapat dari berbagai model perhitungan, baik dari segi analisa grafik langsung maupun menggunakan metode-metode dari berbagai penelitian. 
+
+Analisis persamaan kinematik dapat diselesaikan dengan cara yang paling dasar yaitu menggunakan trigonometri dengan bantuan grafik. Pada penelitian ini karena menggunakan sebuah GUI yang didalamnya terdapat animasi dari bentuk fisik robot SCARA maka koordinat didapat dari processing IDE. Robot SCARA yang terdapat di dalam processing IDE menggunakan skala tertentu agar menarik dalam tampilan dan tetap sesuai dari dimensi aslinya. Penyelesaian kinematika dalam robot SCARA cukup diselesaiakan menggunakan satu sisi, yaitu sisi atas (\textit{top view}) dari struktur robot lengan. Pada sisi atas derajat sudut \textit{joint} \textit{shoulder}, dan sudut \textit{joint elbow} dapat ditemukan. Persamaan kinematika balik untuk sisi atas dapat dilihat pada Gambar 3.17.
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=8cm]{gambar/catudaya_bb.png}
+	\caption{Trigonometeri Sisi Atas}
+\end{figure}
+ 
+ 
+Pada robot SCARA, sudut dari \textit{joint} yang dicari merupakan \textit{joint} dari \textit{shoulder} dan juga \textit{elbow.} Kedua joint tersebut dapat ditemukan dengan melalui persamaan \textit{pythagoras} dan juga hujum \textit{cosinus}. Pada Gambar 3.17 terlihat bahwa sudut shoulder merupakan besar sudut diantara lengan shoulder dan juga sumbu x dan sudut elbow merupakan besar sudut antara lengan elbow dengan garis bantu dari lengan shoulder. Keduanya dapat ditentukan besar nilainya melalui beberapa pesamaan dari cosinus dan juga hukum pyhtagoras.LS merupakan panjang lengan shoulder dan LE merupakan panjang lengan dari elbow. Serta SS merupakan sudut dari shoulder dan SE merupakan sudut dari elbow.  
+
+\begin{enumerate}
+	\item Dengan menggunakan hukum cosinus, didapatkan sebuah persamaan \ref{cosinus1}
+	\begin{equation}
+	(x^2+y^2)=LS^2+LE^2-2LSLEcos(180-SE)
+	\label{cosinus1}
+	\end{equation}
+	\item Pada persamaan \ref{cosinus1} terdapat cos(180-SE) yang pada hukum cosinus dapat diubah menjadi -cos(SE), maka persamaan setelahnya ditunjukkan pada persamaan \ref{cosinus2}
+	\begin{equation}
+	(x^2+y^2)=LS^2LE^2+2LSLEcos(SE)
+	\label{cosinus2}
+	\end{equation}
+	\item Merujuk pada persamaan \ref{cosinus2} maka dapat dikelompokkan agar SE dapat diketahui menjadi seperti persamaan \ref{cosinus3}
+	\begin{equation}
+	cos(SE)=(x^2+y^2-LS^2-LE^2)/(2LSLE)
+	\label{cosinus3}
+	\end{equation}
 	
 \end{enumerate}
+
 

@@ -57,4 +57,8 @@
 \contentsline {subsubsection}{\numberline {3.2.2.4}Rangkaian Catu Daya}{35}{subsubsection.3.2.2.4}% 
 \contentsline {subsection}{\numberline {3.2.3}Perancangan Perangkat Lunak}{36}{subsection.3.2.3}% 
 \contentsline {subsubsection}{\numberline {3.2.3.1}ControlP5}{36}{subsubsection.3.2.3.1}% 
-\contentsline {chapter}{DAFTAR PUSTAKA}{38}{chapter*.54}% 
+\contentsline {subsubsection}{\numberline {3.2.3.2}Shape}{37}{subsubsection.3.2.3.2}% 
+\contentsline {subsection}{\numberline {3.2.4}Sistem Kinematika}{38}{subsection.3.2.4}% 
+\contentsline {subsubsection}{\numberline {3.2.4.1}Prinsip Kerja Kinematika Maju}{38}{subsubsection.3.2.4.1}% 
+\contentsline {subsubsection}{\numberline {3.2.4.2}Prinsip Kerja Kinematika Balik}{38}{subsubsection.3.2.4.2}% 
+\contentsline {chapter}{DAFTAR PUSTAKA}{41}{chapter*.55}% 
