@@ -75,4 +75,6 @@
 \contentsline {subsubsection}{\numberline {4.1.6.3}Pengujian \textit {Joint Shoulder}}{53}{subsubsection.4.1.6.3}% 
 \contentsline {subsubsection}{\numberline {4.1.6.4}Pengujian \textit {Joint Elbow}}{54}{subsubsection.4.1.6.4}% 
 \contentsline {subsection}{\numberline {4.1.7}Pengujian GUI}{55}{subsection.4.1.7}% 
-\contentsline {chapter}{DAFTAR PUSTAKA}{58}{chapter*.76}% 
+\contentsline {section}{\numberline {4.2}Pengujian Keseluruhan}{57}{section.4.2}% 
+\contentsline {subsection}{\numberline {4.2.1}Pengujian Akurasi Robot Lengan}{57}{subsection.4.2.1}% 
+\contentsline {chapter}{DAFTAR PUSTAKA}{59}{chapter*.78}% 

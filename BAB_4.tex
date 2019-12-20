@@ -310,3 +310,37 @@ Pada hasil yang ditunjukkan oleh Tabel \ref{tbl.jointshoulder} dan Gambar \ref{p
 	\label{pic.pengujiangui3}
 \end{figure}
 Dari hasil yang ditunjukkan oleh Gambar \ref{pic.pengujiangui1}, Gambar \ref{pic.pengujiangui2}, dan Gambar \ref{pic.pengujiangui3} terlihat bahwa perbedaan posisi dari robot SCARA aktual dan pada Processing IDE hanya beberapa dan dapat ditoleransi, Terlihat bahwa posisi yang ditunjukkan oleh robot SCARA aktual dan robot SCARA processing IDE selalu sama. Sudut dari \textit{shoulder} dan \textit{elbow} yang masing-masing ditunjukkan terlihat sama meskipun ada sedikit perbedaan yang masih dapat ditoleransi.
+
+\section{Pengujian Keseluruhan}
+Setelah semua komponen sistem yang diuji dapat bekerja dengan baik, pengujian selanjutnya adalah pengujian sistem secara keseluruhan dengan beberapa parameter uji yang diberikan. Parameter uji tersebut diantaranya adalah pengujian akurasi robot lengan, dan simulasi robot lengan. 
+
+\subsection{Pengujian Akurasi Robot Lengan}
+Pada pengujian akurasi robot lengan dilakukan pengujian dengan memberikan posisi koordinat X dan Y dan melihat kembali posisi X dan Y secara aktual, melihat besar sudut pada masing-masing joint dengan perbandingan perhitungan kinematika. Pengujian akurasi robot lengan ini akan menghasilkan sebuah hasil secara luas dan dapat ditarik untuk sebuah kesimpulan yang menentukan robot SCARA dapat bekerja baik atau buruk secara keseluruhan. Tabel \ref{tbl.akurasikeseluruhan} merupakan hasil dari pengujian akurasi robot lengan secara keseluruhan. Gambar \ref{pic.akurasikeseluruhan} merupakan grafik dari hasil pengujian akurasi robot lengan secara keseluruhan.
+
+\begin{table}[H]
+	\centering
+	\caption{Hasil Pengujian Akurasi Robot Secara Keseluruhan}
+	\label{tbl.akurasikeseluruhan}
+	\begin{tabular}{|c|l|}
+		\hline
+		\rowcolor[HTML]{9B9B9B} 
+		
+		No & \multicolumn{1}{c|}{\cellcolor[HTML]{9B9B9B}Keterangan} \\ \hline
+		1  & Robot Lengan SCARA                                      \\ \hline
+		2  & Box Panel                                               \\ \hline
+		3  & Arduino Mega 2560                                       \\ \hline
+		4  & Personal Computer                                       \\ \hline
+		5  & GUI Processing IDE                                      \\ \hline
+		6  & Workspace Robot SCARA                                   \\ \hline
+		7  & Kompresor                                               \\ \hline
+		8  & Objek                                                   \\ \hline
+	\end{tabular}
+	
+\end{table} 
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=8cm]{gambar/controlp5.jpg}
+	\caption{Grafik Pengujian Akurasi Robot Secara Keseluruhan}
+	\label{pic.akurasikeseluruhan}
+\end{figure}
+
