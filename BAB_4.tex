@@ -165,5 +165,33 @@ Dalam pengujian ini, pengujian terdiri dari pengujian posisi koordinat posisi \t
 	\label{pic.koordinatx}
 \end{figure}
 
+Dari hasil pengujian yang ditampilkan pada Tabel \ref{tbl.koordinatx} dan juga Gambar \ref{pic.koordinatx} terlihat bahwa posisib \textit{end-effector} yang dihasilkan pada robot SCARA dibandingkan dengan data sesuai perhitungan kinematika memiliki sedikit perbedaan pada beberapa data. Perbedaan data ini dapat ditolerasi karena dengan \textit{sampling} koordinat X yang diuji hanya kurang dari lima persen nilai data yang berbeda. Pada hasil yang ditunjukkan diketahui bahwa posisi \textit{end-effector} memiliki batas minimum dan juga maksimum. Batas minimum posisi \textit{end-effector} pada sumbu X yaitu 10 cm dari titik pusat dan batas maksimum posisi \textit{end-effector} pada posisi sumbu X adalah 60 cm yang merupakan panjang dari lengan \textit{shoulder} dan juga lengan \textit{elbow}. 
 
- 
+\subsubsection{Pengujian Koordinat Y}
+Pengujian koordinat Y dilakukan untuk mengetahui batas minimal dan batas maksimal \textit{end-effector} dari \textit{arm manipulator} robot SCARA relatif terhadap sumbu Y. Pengujian koordinat Y dilakukan dengan cara mengujicobakan setiap titik dari 0 cm sampai dengan total panjang \textit{shoulder} dan \textit{elbow} yaitu 60 cm menggunakan perhitungan kinematika balik. Perhitungan posisi Y diujicobakan menggunakan program Processing IDE, sementara untuk pengukuran posisi diukur secara faktual dari posisi \textit{end-effector} dengan membuat sebuah diagram kartesius. Tabel \ref{tbl.koordinaty} menunjukkan pengujian koordinat Y dan Gambar \ref{pic.koordinaty} menunjukkan grafik dari sampling koordinat Y.
+ \begin{table}[H]
+ 	\centering
+ 	\caption{Hasil Pengujian Koordinat X}
+ 	\label{tbl.koordinaty}
+ 	\begin{tabular}{|c|l|}
+ 		\hline
+ 		\rowcolor[HTML]{9B9B9B} 
+ 		
+ 		No & \multicolumn{1}{c|}{\cellcolor[HTML]{9B9B9B}Keterangan} \\ \hline
+ 		1  & Robot Lengan SCARA                                      \\ \hline
+ 		2  & Box Panel                                               \\ \hline
+ 		3  & Arduino Mega 2560                                       \\ \hline
+ 		4  & Personal Computer                                       \\ \hline
+ 		5  & GUI Processing IDE                                      \\ \hline
+ 		6  & Workspace Robot SCARA                                   \\ \hline
+ 		7  & Kompresor                                               \\ \hline
+ 		8  & Objek                                                   \\ \hline
+ 	\end{tabular}
+ 	
+ \end{table} 
+ \begin{figure}[H]
+ 	\centering
+ 	\includegraphics[width=8cm]{gambar/controlp5.jpg}
+ 	\caption{Grafik Pengujian Koordinat X}
+ 	\label{pic.koordinaty}
+ \end{figure}
