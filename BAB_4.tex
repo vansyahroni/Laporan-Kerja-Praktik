@@ -81,3 +81,29 @@ Pengujian \textit{driver} motor H – \textit{bridge} dilakukan untuk mengetahui
 \end{table} 
 
  Pada \textit{driver} motor H-\textit{Bridge} EMS 30A sinyal digital \textit{high} dan \textit{low} dihubungkan pada pin MEN1 dan MEN2. Dari hasil pengujian \textit{driver} motor H-\textit{Bridge} seperti yang ditunjukkan pada tabel \ref{tbl.drivermotor} terlihat bahwa ketika sinyal \textit{high} diberikan pada MEN1 dan \textit{low} diberikan MEN2 maka pergerakan motor akan berputar searah dengan arah jarum jam dan sebaliknya jika diberikan \textit{low} pada MEN1 dan \textit{high} pada MEN2 maka arah pergerakan motor akan berlawanan arah. Pada tabel \ref{tbl.drivermotor}juga terlihat bahwa nilai arus dapat dialirkan pada driver motor beragam dari 1 Ampere hingga 1.5 Ampere. Terbukti bahwa \textit{driver} motor dapat mengoperasikan driver motor dengan baik.
+
+\subsection{Pengujian Nilai\textit{ Analog Potensiometer}}
+Pengujian nilai \textit{analog potensiometer} berfungsi untuk mengetahui apakah \textit{potensiometer} bekerja dengan baik dan nilai yang diberikan dalam keadaan yang normal. Pada \textit{potensiometer} nilai data yang dikirimkan berupa data analog yang dihasilkan oleh pembagian tegangan yang diatur pada setiap putaran resistornya. Tegangan yang diberikan awal yaitu 5 Volt kemudian akan dikirimkan kurang dari 5 Volt sesuai dengan posisi pada \textit{potensiometer}. Dengan begitu, posisi ini dapat diimplemantasikan kepada \textit{joint} pada robot SCARA dengan cara mengatur batasan minimal dan maksimal melalui program arduino. Pada hasil akhirnya nilai data yang dikirimkan oleh \textit{potensiometer} kemudian dilakukan \textit{mapping} data sesuai besaran sudut yang dapat dilakukan oleh \textit{joint} yaitu dari 0-360 derajat. Pada tabel \ref{tbl.potensio}  merupakan hasil pengujian dari \textit{potensiometer}.
+
+\begin{table}[H]
+	\centering
+	\caption{Hasil Pengujian \textit{Potensiometer}}
+	\label{tbl.potensiometer}
+	\begin{tabular}{|c|l|}
+		\hline
+		\rowcolor[HTML]{9B9B9B} 
+		
+		No & \multicolumn{1}{c|}{\cellcolor[HTML]{9B9B9B}Keterangan} \\ \hline
+		1  & Robot Lengan SCARA                                      \\ \hline
+		2  & Box Panel                                               \\ \hline
+		3  & Arduino Mega 2560                                       \\ \hline
+		4  & Personal Computer                                       \\ \hline
+		5  & GUI Processing IDE                                      \\ \hline
+		6  & Workspace Robot SCARA                                   \\ \hline
+		7  & Kompresor                                               \\ \hline
+		8  & Objek                                                   \\ \hline
+	\end{tabular}
+	
+\end{table} 
+
+Pada hasil pengujian yang ditunjukkan oleh Tabel \ref{tbl.potensiometer} terlihat bahwa pada saat nilai-niali tertentu, \textit{potensiometer} belum dapat mengirimkan nilai data analog yang berubah-ubah. Hal tersebut dipengaruhi oleh pembacaan \textit{potensiometer} yang belum stabil. Untuk membuat data analog yang dikirimkan oleh \textit{potensiometer} menjadi lebih stabil maka pada program arduino ditambahkan program \textit{moving avarage}. \textit{Moving avarage} berfungi untuk membuat rata-rata nilai dari hasil data pembacaan nilai data pada \textit{potensiometer} yang menyebabkan nilai menjadi lebih stabil.

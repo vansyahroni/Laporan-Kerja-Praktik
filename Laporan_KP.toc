@@ -67,4 +67,5 @@
 \contentsline {subsection}{\numberline {4.1.1}Pengujian DC - to - DC Converter}{45}{subsection.4.1.1}% 
 \contentsline {subsection}{\numberline {4.1.2}Pengujian Motor DC}{45}{subsection.4.1.2}% 
 \contentsline {subsection}{\numberline {4.1.3}Pengujian \textit {Driver} Motor H \IeC {\textendash } \textit {Bridge}}{46}{subsection.4.1.3}% 
-\contentsline {chapter}{DAFTAR PUSTAKA}{48}{chapter*.62}% 
+\contentsline {subsection}{\numberline {4.1.4}Pengujian Nilai\textit { Analog Potensiometer}}{47}{subsection.4.1.4}% 
+\contentsline {chapter}{DAFTAR PUSTAKA}{49}{chapter*.63}% 
