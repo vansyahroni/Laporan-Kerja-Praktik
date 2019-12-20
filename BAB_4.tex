@@ -345,3 +345,19 @@ Pada pengujian akurasi robot lengan dilakukan pengujian dengan memberikan posisi
 \end{figure}
 
 Pada hasil pengujian yang ditunjukkan pada Tabel \ref{tbl.akurasikeseluruhan} dan Gambar \ref{pic.akurasikeseluruhan} terlihat bahwa pengujian mendapat beberapa data yang beragam. Terlihat bahwa nilai kekeliriuan paling banyak terdapat pada bagian posisi koordinat X dan Y dan ekeliuran paling sedikit pada bagian sudut shoulder. Sedangkan untuk sistem keseluruhan kekeliruan total pada akurasi robot memiliki nilai ... persen. Nilai sebesar ini merupakan nilai yang cukup baik bagi sebuah sistem. Dengan nilai tersebut maka sistem kinematika robot SCARA ini dapat dikatakan baik. 
+\subsection{Pengujian Simulasi Robot Lengan}
+Pada pengujian ini, dilakukan serangkaian simulasi robot lengan untuk melakukan pergerakan sesuai dengan data yang diberikan melalui GUI yang telah dibuat. Simulasi ini menggunakan semua komponen yang ada di dalam perancangan, diantaranya robot SCARA, \textit{workspace}, catu daya, komputer personal, GUI Processing IDE, dan objek.
+
+Pertama, robot SCARA berada posisi normal yang berarti pada posisi lurus serah dengan sumbu Y. Robot SCARA akan mulai bergerak pada saat nilai data pada Processing IDE telah didapatkan dan kemudian dikirimkan ke Arduino Mega 2560. Proses pemilihan data pada Processing IDE dilalui pada sebuah GUI yang telah dibuat sesuai dengan fungsi dari robot SCARA. Pada GUI terdapat beberapa pilihan dalam memberikan sebuah nilai masukan. 
+
+Kedua, robot SCARA akan mulai bergerak menuju posisi seperti data yang dimasukkan dan kemudian berhenti pada posisi tersebut dan mengambil objek yang dibawa oleh \textit{end-effector} pada posisi akhir.  Pergerakan \textit{end-effector} ditenagai oleh tekanan udara pada sebuah kompresor yang dikontrol oleh\textit{ valve pneumatic} yang diotaki oleh TIP31. Posisi akhir merupakan posisi dimana semua objek dikumpulkan. Setelah melakukan satu pekerjaan tersebut, robot SCARA kembali pada posisi normal dan menunggu data yang diberikan kembali oleh Processing IDE.  Gambar \ref{pic.simulasiakhir} merupakan simulasi robot lengan SCARA menggunakan masukan pada GUI yang telah dibuat.
+ \begin{figure}[H]
+ 	\centering
+ 	\includegraphics[width=8cm]{gambar/controlp5.jpg}
+ 	\caption{Simulasi Robot Lengan Menggunakan GUI }
+ 	\label{pic.simulasiakhir}
+ \end{figure}
+
+
+
+
