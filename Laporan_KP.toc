@@ -74,4 +74,5 @@
 \contentsline {subsubsection}{\numberline {4.1.6.2}Pengujian Koordinat Y}{51}{subsubsection.4.1.6.2}% 
 \contentsline {subsubsection}{\numberline {4.1.6.3}Pengujian \textit {Joint Shoulder}}{53}{subsubsection.4.1.6.3}% 
 \contentsline {subsubsection}{\numberline {4.1.6.4}Pengujian \textit {Joint Elbow}}{54}{subsubsection.4.1.6.4}% 
-\contentsline {chapter}{DAFTAR PUSTAKA}{56}{chapter*.73}% 
+\contentsline {subsection}{\numberline {4.1.7}Pengujian GUI}{55}{subsection.4.1.7}% 
+\contentsline {chapter}{DAFTAR PUSTAKA}{58}{chapter*.76}% 
