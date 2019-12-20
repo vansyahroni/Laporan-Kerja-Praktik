@@ -199,5 +199,68 @@ Pengujian koordinat Y dilakukan untuk mengetahui batas minimal dan batas maksima
 
 Dari hasil pengujian yang ditampilkan pada Tabel \ref{tbl.koordinaty} dan juga Gambar \ref{pic.koordinaty} terlihat bahwa posisi \textit{end-effector} yang dihasilkan pada robot SCARA dibandingkan dengan data sesuai perhitungan kinematika memiliki sedikit perbedaan pada beberapa data. Perbedaan data ini dapat ditolerasi karena dengan \textit{sampling} koordinat Y yang diuji hanya kurang dari lima persen nilai data yang berbeda. Pada hasil yang ditunjukkan diketahui bahwa posisi \textit{end-effector} memiliki batas minimum dan juga maksimum. Batas minimum posisi \textit{end-effector} pada sumbu Y yaitu 0 cm dari titik pusat dan batas maksimum posisi \textit{end-effector} pada posisi sumbu X adalah 60 cm yang merupakan panjang dari lengan \textit{shoulder} dan juga lengan \textit{elbow}. 
 
-\subsubsection{Pengujian Joint Shoulder}
+\subsubsection{Pengujian \textit{Joint Shoulder}}
 Pengujian \textit{joint shoulder} dilakukan dengan membandingkan nilai sudut yang dihasilkan oleh perhitungan kinematika yang ada pada program processing IDE dengan sudut yang dihasilkan dalam aktual robot SCARA. Pengujian dilakukan dengan cara memberikan sebuah posisi koordinat X dan Y dengan nilai yang bervariasi. Nilai tersebut dimasukkan ke dalam sebuah perhitungan kinematika balik yang ada pada program Processing IDE. Hasil yang dihasilkan oleh perhitungan merupakan nilai sudut dari \textit{joint shoulder} dan juga \textit{elbow}. Perhitungan aktual dilakukan dengan cara mengukur sudut pada setiap \textit{joint} menggunakan bantuan busur atau \textit{software} sensor kemiringan yang di-\textit{install} pada smartphone. Tabel \ref{tbl.jointshoudler} merupakan hasil pengujian dari \textit{joint shoulder} berdasarkan \textit{sampling} posisi yang diambil. Gambar \ref{pic.jointshoulder} merupakan grafik hubungan dari sudut aktual dan sudut berdasarkan perhitungan kinematika. 
+
+\begin{table}[H]
+	\centering
+	\caption{Hasil Pengujian \textit{Joint Shoulder}}
+	\label{tbl.jointshoulder}
+	\begin{tabular}{|c|l|}
+		\hline
+		\rowcolor[HTML]{9B9B9B} 
+		
+		No & \multicolumn{1}{c|}{\cellcolor[HTML]{9B9B9B}Keterangan} \\ \hline
+		1  & Robot Lengan SCARA                                      \\ \hline
+		2  & Box Panel                                               \\ \hline
+		3  & Arduino Mega 2560                                       \\ \hline
+		4  & Personal Computer                                       \\ \hline
+		5  & GUI Processing IDE                                      \\ \hline
+		6  & Workspace Robot SCARA                                   \\ \hline
+		7  & Kompresor                                               \\ \hline
+		8  & Objek                                                   \\ \hline
+	\end{tabular}
+	
+\end{table} 
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=8cm]{gambar/controlp5.jpg}
+	\caption{Grafik Pengujian \textit{Joint Shoulder}}
+	\label{pic.jointshoulder}
+\end{figure}
+
+Pada hasil yang ditunjukkan oleh Tabel \ref{tbl.jointshoulder} dan Gambar \ref{pic.jointshoulder} terlihat bahwa secara keseleuruhan nilai sudut yang dihasilkan oleh aktual pada robot SCARA dibandingkan dengan perhitungan kinematika oleh Processing IDE tidak begitu terdapat perbedaan. Terlihat bahwa nilai error
+ memiliki nilai minimum .... persen dan nilai maksimum ... persen. Persentase error didapat dari data yang tidak sesuai dibagi oleh keleluruhan data yang diuji coba. 
+ 
+ \subsubsection{Pengujian \textit{Joint Elbow}}
+ Pengujian \textit{joint elbow} dilakukan dengan membandingkan nilai sudut yang dihasilkan oleh perhitungan kinematika yang ada pada program processing IDE dengan sudut yang dihasilkan dalam aktual robot SCARA. Pengujian dilakukan dengan cara memberikan sebuah posisi koordinat X dan Y dengan nilai yang bervariasi. Nilai tersebut dimasukkan ke dalam sebuah perhitungan kinematika balik yang ada pada program Processing IDE. Hasil yang dihasilkan oleh perhitungan merupakan nilai sudut dari \textit{joint shoulder} dan juga \textit{elbow}. Perhitungan aktual dilakukan dengan cara mengukur sudut pada setiap \textit{joint} menggunakan bantuan busur atau \textit{software} sensor kemiringan yang di-\textit{install} pada smartphone. Tabel \ref{tbl.jointelbow} merupakan hasil pengujian dari \textit{joint elbow} berdasarkan \textit{sampling} posisi yang diambil. Gambar \ref{pic.jointelbow} merupakan grafik hubungan dari sudut aktual dan sudut berdasarkan perhitungan kinematika. 
+ 
+ \begin{table}[H]
+ 	\centering
+ 	\caption{Hasil Pengujian \textit{Joint Elbow}}
+ 	\label{tbl.jointelbow}
+ 	\begin{tabular}{|c|l|}
+ 		\hline
+ 		\rowcolor[HTML]{9B9B9B} 
+ 		
+ 		No & \multicolumn{1}{c|}{\cellcolor[HTML]{9B9B9B}Keterangan} \\ \hline
+ 		1  & Robot Lengan SCARA                                      \\ \hline
+ 		2  & Box Panel                                               \\ \hline
+ 		3  & Arduino Mega 2560                                       \\ \hline
+ 		4  & Personal Computer                                       \\ \hline
+ 		5  & GUI Processing IDE                                      \\ \hline
+ 		6  & Workspace Robot SCARA                                   \\ \hline
+ 		7  & Kompresor                                               \\ \hline
+ 		8  & Objek                                                   \\ \hline
+ 	\end{tabular}
+ 	
+ \end{table} 
+ \begin{figure}[H]
+ 	\centering
+ 	\includegraphics[width=8cm]{gambar/controlp5.jpg}
+ 	\caption{Grafik Pengujian \textit{Joint Elbow}}
+ 	\label{pic.jointelbow}
+ \end{figure}
+ 
+ Pada hasil yang ditunjukkan oleh Tabel \ref{tbl.jointelbow} dan Gambar \ref{pic.jointelbow} terlihat bahwa secara keseleuruhan nilai sudut yang dihasilkan oleh aktual pada robot SCARA dibandingkan dengan perhitungan kinematika oleh Processing IDE tidak begitu terdapat perbedaan. Terlihat bahwa nilai error
+ memiliki nilai minimum .... persen dan nilai maksimum ... persen. Persentase error didapat dari data yang tidak sesuai dibagi oleh keleluruhan data yang diuji coba. 
