@@ -33,8 +33,8 @@ Adapun tujuan dalam melaksanakan penelitian "Kinematika dan Antarmuka Robot SCAR
 		
 		\item Akurasi dari robot lengan dipengaruhi oleh spesifikasi dan torsi dari masing-masing motor DC pada \emph{ joint.}
 		\item  Rancangan mekanik yang sudah tersusun dari awal sehingga tidak dapat diubah lagi. 
-		\item Motor DC pada setiap sendi dari \emph{joint} robot memiliki kebutuhan arus yang berbeda – beda. 
-		\item Komunikasi antara Processing IDE dan perangkat menggunakan komunikasi serial.
+		\item Besar objek yang dapat dibawa oleh \textit{gripper} robot tidak dapat diubah.
+		\item Komunikasi antara Processing IDE dan \textit{hardware} menggunakan komunikasi serial yang dihubungkan dengan kabel USB.
 		
 	\end{enumerate}
 
@@ -46,30 +46,31 @@ Metodologi adalah suatu cara yang digunakan untuk memperoleh data yang akurat, b
 	Penelitian dilakukan di Labolatorium Instrumentasi dan Kendali Diploma Teknik Elektro Sekolah Vokasi Universitas Gadjah Mada pada bulan Juli sampai bulan Agustus 20189.
 	
 	\item Alat dan Bahan \\
-	Peralatan yang digunakan dalam Kerja Praktik adalah personal komputer, Arduino Mega 2560, AC-to-DC Converter 12V, modul DC-to-DC Converter LM2596, IC TIP 31, multimeter, Relay Pneumatik, Driver Motor EMS 30A dan catu daya. Sedangkan bahan yang digunakan adalah Motor DC yang terpasang di setiap \emph {joint} robot lengan.
+	Peralatan yang digunakan dalam Kerja Praktik adalah personal komputer, Arduino Mega 2560, transformator AC 5A, \textit{Converter} AC to DC, modul DC-to-DC \textit{converter} LM2596, IC TIP 31, multimeter,\textit{ valve pneumatic}, \textit{Driver} Motor EMS 30A dan catu daya AC 220 Volt. Sedangkan bahan yang digunakan adalah Motor DC yang terpasang di setiap \emph {joint} robot lengan.
 	
 	\item  Pengumpulan Data \\
-	Studi pustaka dilakukan dengan cara mengumpulkan buku-buku, dokumen, serta jurnal-jurnal berbentuk \emph{e-book} yang berkaitan dengan robot lengan. Selain itu, \emph{datasheet} dari setiap komponen juga ditinjau. Data-data tersebut menjadi referensi untuk merancang, membuat dan menguji alat. 
+	Studi pustaka dilakukan dengan cara mengumpulkan buku-buku, dokumen, serta jurnal-jurnal berbentuk \emph{e-book} yang berkaitan dengan robot lengan. Selain itu \emph{datasheet} dari setiap komponen juga ditinjau. Data-data tersebut menjadi referensi untuk merancang, membuat dan menguji alat. 
 	
 	Konsultasi dilakukan untuk mengumpulkan data melalui tanya jawab atau berdiskusi dengan pihak yang mengetahui dan menguasai segala permasalahan yang dihadapi dalam merancang, membuat, dan menguji robot lengan SCARA. Dalam metode ini penulis berdiskusi dengan dosen pembimbing Kerja Praktik. 
 	
 	\item Metode Penelitian \\
-	Metode penelitian yang dilakukan meliputi: Pengujian keluaran tegangan catu daya, pengujian kinerja motor DC, pengujian konfigurasi driver motor H – Bridge, pengujian \emph{Graphical User Interface }(GUI) pada Processing IDE, pengujian perhitungan kinematika balik, pengujian kinematika maju,  serta pengambilan data dan analisa data.
+	Metode penelitian yang dilakukan meliputi: Pengujian tegangan DC to DC \textit{converter}, pengujian motor DC, pengujian \textit{Driver} Motor DC EMS 30A, pengujian rangkaian \textit{switching valve pneumatic}, pengujian kinematika balik, pengujian \textit{Graphical User Interface} (GUI) pada Processing IDE, serta pengambilan data dan analisa data.
 	
 	\item Prosedur Penelitian\\
-	Prosedur penelitian adalah langkah-langkah dalam menyelesaikan kerja praktik yang akan disajikan dalam bentuk diagram alir. Berikut adalah gambar diagram alir prosedur penelitian yang disajikan pada Gambar 1.1.
+	Prosedur penelitian adalah langkah-langkah dalam menyelesaikan Kerja Praktik yang akan disajikan dalam bentuk diagram alir. Gambar \ref{pic.diagramalir} merupakan diagram alir prosedur penelitian.
 	
 	\begin{figure}[H]
 		\centering
 		\includegraphics[width=7cm]{gambar/flowchart.png}
-		\caption{\emph Flowchart Prosedur Penelitian}
+		\caption{ Diagram Alir Prosedur Penelitian}
+		\label{pic.diagramalir}
 	\end{figure}
 	
 	
 \end{enumerate}
 
 \section{Sistematika Penulisan}
-Penulisan laporan kerja praktik ini dilakukan dengan mengikuti sistematika sebagai berikut:\\
+Penulisan laporan Kerja Praktik ini dilakukan dengan mengikuti sistematika sebagai berikut:\\
 \noindent
 \textbf{BAB I\hspace*{0.6cm}: PENDAHULUAN}\\
 \noindent
@@ -77,12 +78,12 @@ Merupakan pendahuluan dari laporan kerja praktik yang menjelaskan latar belakang
 \noindent
 \textbf{BAB II\hspace*{0.5cm}: LANDASAN TEORI}\\
 \noindent
-Memuat gambaran umum robot lengan, \emph {Degress of Freedom}, konfigurasi robot lengan, \emph{wrist} dan end-effector, kinematika, pengertian dan prinsip kerja Processing IDE sebagai antarmuka robot lengan, dan prinsip kerja setiap piranti yang digunakan dalam pembuatan robot lengan. \\
+Memuat gambaran umum robot lengan, \emph {Degress of Freedom}, konfigurasi robot lengan, \emph{wrist} dan \textit{end-effector}, kinematika, pengertian dan prinsip kerja Processing IDE sebagai antarmuka robot lengan, dan prinsip kerja setiap piranti yang digunakan dalam pembuatan robot lengan. \\
 \textbf{BAB III\hspace*{0.375cm}:  PERANCANGAN SISTEM}\\
 \noindent
 Memuat perancangan sistem secara umum, perancangan perangkat keras berupa elektronis dari robot lengan, perancangan perangkat lunak berupa pengolahan \textit{Graphical User Interface} (GUI) menggunakan Processing IDE, sistem kinematika balik untuk robot lengan, dan integrasi keseluruhan program. \\
 \textbf{BAB IV\hspace*{0.4cm}:  PENGUJIAN DAN ANALISA KERJA SISTEM }\\
 \noindent
-Memuat pengujian dan analisis kerja motor DC yang berfungsi sebagai \emph {joint} dari robot lengan, pengujian umpan balik melalui GUI Processing IDE serta pengujian sistem secara menyeluruh.\\
+Memuat pengujian tegangan DC to DC \textit{converter}, pengujian motor DC, pengujian \textit{Driver} Motor DC EMS 30A, pengujian rangkaian \textit{switching valve pneumatic}, pengujian kinematika balik, pengujian \textit{Graphical User Interface} (GUI) pada Processing IDE, serta pengambilan data dan analisa data hingga pada pengujian menyeluruh.\\
 \textbf{BAB V\hspace*{0.6cm}: PENUTUP}\\
 Memuat tentang kesimpulan dari perancangan, pengujian dan analisis dari sistem kerja robot, serta berisi saran – saran untuk mengembangkan penelitian \emph{ arm manipulator robot} SCARA lebih lanjut. \\

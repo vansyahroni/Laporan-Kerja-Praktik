@@ -23,15 +23,15 @@
 \BOOKMARK [2][-]{subsection.2.2.2}{Kinematika Balik}{section.2.2}% 23
 \BOOKMARK [1][-]{section.2.3}{Motor DC}{chapter.2}% 24
 \BOOKMARK [1][-]{section.2.4}{Regulator}{chapter.2}% 25
-\BOOKMARK [1][-]{section.2.5}{Arduino}{chapter.2}% 26
-\BOOKMARK [1][-]{section.2.6}{Driver Motor H}{chapter.2}% 27
+\BOOKMARK [1][-]{section.2.5}{Arduino Mega 2560}{chapter.2}% 26
+\BOOKMARK [1][-]{section.2.6}{Driver Motor H-Bridge EMS 30A}{chapter.2}% 27
 \BOOKMARK [1][-]{section.2.7}{Processing Integrated Development Environment \(IDE\)}{chapter.2}% 28
 \BOOKMARK [2][-]{subsection.2.7.1}{Syntax dalam Processing IDE }{section.2.7}% 29
 \BOOKMARK [2][-]{subsection.2.7.2}{ Library untuk Processing IDE }{section.2.7}% 30
 \BOOKMARK [0][-]{chapter.3}{PERANCANGAN SISTEM}{}% 31
 \BOOKMARK [1][-]{section.3.1}{ Diagram Blok Sistem }{chapter.3}% 32
 \BOOKMARK [1][-]{section.3.2}{ Perancangan Perangkat Keras }{chapter.3}% 33
-\BOOKMARK [2][-]{subsection.3.2.1}{ Sistem Mekanik }{section.3.2}% 34
+\BOOKMARK [2][-]{subsection.3.2.1}{ Sistem Mekanis }{section.3.2}% 34
 \BOOKMARK [2][-]{subsection.3.2.2}{Rangkaian Elektronika}{section.3.2}% 35
 \BOOKMARK [1][-]{section.3.3}{Perancangan Perangkat Lunak}{chapter.3}% 36
 \BOOKMARK [2][-]{subsection.3.3.1}{ControlP5}{section.3.3}% 37

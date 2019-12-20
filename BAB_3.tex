@@ -1,41 +1,44 @@
 %BAB_3 LAPORAN KP
 
 \chapter{PERANCANGAN SISTEM}
-Pada bab ini akan disajikan mekanisme perancangan alat, baik perangkat keras ataupun perangkat lunak untuk mewujudkan sebuah robot lengan. Tahapan perancangan dimulai dari perancangan diagram blok sistem, perancangan perangkat keras, perancangan perangat lunak, perancangan kinematika balik, dan integrasi keseluruhan program. 
+Pada bab ini akan disajikan mekanisme perancangan alat, baik perangkat keras ataupun perangkat lunak untuk mewujudkan sebuah robot lengan. Tahapan perancangan dimulai dari perancangan diagram blok sistem, perancangan perangkat keras, perancangan perangat lunak, perancangan kinematika balik, perancangan GUI, dan integrasi keseluruhan program. 
 \section{ Diagram Blok Sistem }
-Secara garis besar, pada tahapan implementasi dari kinematika pada \textit{arm manipulator robot} SCARA ini menggunakan output atau penggerak berupa motor DC dengan \textit{feedback} posisi berupa potensiometer dan pada bagian  input yang berasal dari Processing IDE yang mengirimkan sebuah koordinat yang digunakan untuk menentukan pergerakan robot berdasarkan fungsi \textit{inverse kinematic}. Sistem kerja \textit{arm manipulator robot} SCARA ditunjukan pada  Gambar 3.1.
+Secara garis besar pada tahapan implementasi dari kinematika pada \textit{arm manipulator robot} SCARA ini menggunakan \textit{output} atau penggerak berupa motor DC dengan \textit{feedback} posisi berupa \textit{potensiometer} sedangkan pada bagian  \textit{input} yang berasal dari GUI yang dibuat pada Processing IDE mengirimkan sebuah koordinat yang digunakan untuk menentukan pergerakan robot berdasarkan fungsi \textit{inverse kinematic}. Gambar \ref{pic.diagram.bloksistem} merupakan diagram blok sistem secara keseluruhan.
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=12cm]{gambar/Rangkaian_Diagram.png}
+	\includegraphics[width=13cm]{gambar/Rangkaian_Diagram.png}
 	\caption{Diagram Blok Sistem}
+	\label{pic.diagram.bloksistem}
 \end{figure}
-Pada blok diagram yang disajikan pada Gambar 3.1 sistem terdiri dari bagian – bagian yang meliputi bagian masukan, bagian kendali, bagian keluaran, dan bagian penampil. Pada bagian masukan menggunakan GUI yang dirancang pada Processing IDE yang digunakan sebagai \textit{forward kinematic} serta \textit{inverse kinematic} dimana robot akan bergerak menyesuaikan dengan posisi atau sudut yang diinputkan melauli Processing IDE. 
-Pada bagian kontrol menggunakan Arduino Mega 2560 sebagai mikrokontroler yang mengendalikan seluruh operasi dari robot. \textit{Power supply} Arduino sebesar 5 volt DC didapatkan dari regulator tegangan yang menurunkan tegangan dari 12 volt DC ke 5 volt DC. 
+Pada blok diagram yang disajikan pada Gambar \ref{pic.diagram.bloksistem} sistem terdiri dari bagian – bagian yang meliputi bagian masukan, bagian kendali, bagian keluaran, dan bagian penampil. Pada bagian masukan menggunakan GUI yang dirancang pada Processing IDE yang digunakan sebagai \textit{forward kinematic} serta \textit{inverse kinematic} dimana robot akan bergerak menyesuaikan dengan posisi atau sudut yang diinputkan melauli Processing IDE. 
+Pada bagian kontrol menggunakan Arduino Mega 2560 sebagai mikrokontroler yang mengendalikan seluruh operasi dari robot. \textit{Power supply} Arduino sebesar 5 volt DC didapatkan dari regulator tegangan yang menurunkan tegangan dari 24 volt DC ke 5 volt DC. 
 
-Pada bagian keluaran, pin pulse with modulation (PWM) pada Arduino Mega 2560 dihubungkan dengan driver motor yang digunakan untuk mengontrol arah pergerakan dari motor DC serta kecepatan pergerakan dari motor DC. Pergerakan arah putaran motor DC bergantung pada \textit{feedback} posisi setiap sendi yang diberikan oleh potensiometer. Tiga buah pin digital ardunio dihubungkan rangkaian \textit{switch} yang menggunakan IC TIP31 yang berfungsi sebagai kontrol dari \textit{End-Effector} dari robot SCARA.
+Pada bagian keluaran, pin \textit{Pulse With Modulation} (PWM) pada Arduino Mega 2560 dihubungkan dengan \textit{driver} motor yang digunakan untuk mengontrol arah pergerakan dari motor DC serta kecepatan pergerakan dari motor DC. Pergerakan arah putaran motor DC bergantung pada \textit{feedback} posisi setiap sendi yang diberikan oleh \textit{potensiometer}. Tiga buah pin digital ardunio dihubungkan pada rangkaian \textit{switch} yang menggunakan IC TIP31 yang berfungsi sebagai kontrol dari \textit{End-Effector} yang dioperasikan menggunakan tekanan udara yang dikontrol oleh \textit{valve pneumatic.}
 
-Pada bagian penampil merupakan bentuk dari rancangan GUI yang dirancang dalam Processing IDE melalui sebuah bentuk pemrograman. Dalam tampilan GUI nya, terdapat beberapa \textit{tools} yang dapat untuk mengatur pergerakan robot SCARA. Pada GUI juga dapat menampilkan nilai dari sudut, dan posisi pada kondisi langsung dari pergerakan robot SCARA.
+Pada bagian penampil merupakan bentuk dari rancangan GUI yang dirancang dalam Processing IDE melalui sebuah bentuk pemrograman. Dalam tampilan GUI terdapat beberapa \textit{tools} yang dapat untuk mengatur pergerakan robot SCARA. Pada GUI menampilkan nilai dari sudut, dan posisi serta animasi robot SCARA pada kondisi langsung dari pergerakan robot SCARA.
 \section{ Perancangan Perangkat Keras }
-Perancangan perangkat keras pada \textit{arm manipulator robot} SCARA terdiri dari dua bagian yaitu bagian mekanik dan elektronis. Bagian  mekanik merupakan bagian \textit{hardware} yang meliputi desain, bahan dan bentuk dari arm manipulator robot SCARA dan bagian elektronis merupakan bagian \textit{hardware} yang meliputi sistem – sistem yang berkaitan dengan rangkaian pada I SCARA seperti rangkain pada desain \textit{board} serta komponen – komponen elektronis.
-\subsection{ Sistem Mekanik }
-Sistem mekanika dari robot lengan bergantung dari konfigurasi robot lengan. Konfigurasi robot lengan terbagi menjadi enam, yaitu konfigurasi \textit{Articulated}, konfigurasi SCARA, konfigurasi \textit{Spherical}, konfigurasi \textit{Cylindrical}, dan konfigurasi \textit{Cartesian}. Pada tugas ini, konfigurasi robot lengan yang digunakan adalah konfigurasi SCARA, dengan dua joint revolute dan satu \textit{end-effector}. Sistem mekanik dari lengan robot tiga DOF sangat berpengaruh dan mendominasi sistem karena bentuk dan pergerakan dari mekanik akan mempengaruhi elektronis, serta program. Sistem mekanik yang baik sangat mendukung dari pergerakan robot, oleh karena itu perancangan mekanik haruslah proporsional dari panjang setiap lengan, lebar serta tinggi robot. Pada Gambar 3.2 disajikan \textit{free body} dari robot SCARA dan Gambar 3.3 merupakan bentuk fisik dari robot SCARA yang digunakan pada penelitian kali ini.
+Perancangan perangkat keras pada \textit{arm manipulator robot} SCARA terdiri dari dua bagian yaitu bagian mekanis dan elektronis. Bagian  mekanis merupakan bagian \textit{hardware} yang meliputi desain, bahan dan bentuk dari\textit{ arm manipulator robot} SCARA. Bagian elektronis merupakan bagian \textit{hardware} yang meliputi sistem – sistem yang berkaitan dengan rangkaian pada robot SCARA seperti rangkaian pada desain \textit{board} serta komponen – komponen elektronis pendukung.
+\subsection{ Sistem Mekanis }
+Sistem mekanika dari robot lengan bergantung dari konfigurasi robot lengan. Konfigurasi robot lengan terbagi menjadi enam, yaitu konfigurasi \textit{Articulated}, konfigurasi SCARA, konfigurasi \textit{Spherical}, konfigurasi \textit{Cylindrical}, dan konfigurasi \textit{Cartesian}. Pada Kerja Praktik ini konfigurasi robot lengan yang digunakan adalah konfigurasi SCARA dengan dua \textit{joint} \textit{revolute} dan satu \textit{end-effector}. Sistem mekanik dari lengan robot tiga DOF sangat berpengaruh dan mendominasi sistem karena bentuk dan pergerakan dari mekanik akan mempengaruhi elektronis serta program. Sistem mekanik yang baik sangat mendukung dari pergerakan robot, oleh karena itu perancangan mekanik harus proporsional dari panjang setiap lengan, lebar serta tinggi robot. Gambar \ref{pic.freebodyscara} merupakan \textit{free body} dari robot SCARA. Gambar \ref{pic.fisikscara} merupakan bentuk fisik dari robot SCARA yang digunakan pada penelitian kali ini.
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=7cm]{gambar/scaraa.png}
 	\caption{\textit{Free Body} Robot SCARA}
+	\label{pic.freebodyscara}
 \end{figure}
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=7cm]{gambar/3dscara.png}
 	\caption{Bentuk Fisik Robot SCARA}
+	\label{pic.fisikscara}
 \end{figure}
-Robot SCARA merupakan robot yang meiliki tiga buah derajar kebebasan (DOF) yang terletak pada \textit{shoulder}, \textit{elbow}, dan pada \textit{end-effector}. Pada \textit{shoulder} dan \textit{elbow} menggunakan sebuah motor DC dan pada \textit{end-effector} menggunakan bantuan angin yang dikontrol penggunakan \textit{valve pneumatic.} Pergerakan pada masing-masing \textit{joint} memiliki jangkauan maksimum yang berbeda-beda. Jangkauan juga dipengaruhi oleh panjangnya lengan yang dimiliki oleh robot SCARA tersebut. Tabel 3.1 merupakan spesifikasi dari robot SCARA yang digunakan.
+Robot SCARA merupakan robot yang meiliki tiga buah derajar kebebasan (DOF) yang terletak pada \textit{shoulder}, \textit{elbow}, dan pada \textit{end-effector}. Seluruh derajat kebebasan menggunakan sebuah motor DC yang didalamnya terdapat\textit{ gear box} untuk motor DC yang ada pada \textit{shoulder} dan \textit{elbow} untuk melakukan pergerakan. Sedangkan motor DC pada \textit{end-effector} dibantu oleh sebuah \textit{belt} untuk menyalurkan putaran dari motor yang terletak pada \textit{shoulder}. Pergerakan pada masing-masing \textit{joint} memiliki jangkauan maksimum yang berbeda-beda. Jangkauan juga dipengaruhi oleh panjangnya lengan yang dimiliki oleh robot SCARA tersebut. Tabel \ref{tbl.spesifikasiscara} merupakan spesifikasi dari robot SCARA yang digunakan.
 
 
 \begin{table}[H]
 	\centering
 	\caption{Spesifikasi Robot SCARA}
-	
+	\label{tbl.spesifikasiscara}
 		\begin{tabular}{|l|l|}
 			\hline
 			Main arm length      & 360 mm		\\ \hline
@@ -47,18 +50,20 @@ Robot SCARA merupakan robot yang meiliki tiga buah derajar kebebasan (DOF) yang 
 			Maximum tip velocity & 3.0 kg  				\\ \hline
 		\end{tabular} 
 	\end{table}
-Desain pada\textit{ arm manipulator robot} SCARA berbahan besi dengan tebal 2mm dengan tiga derajat kebebasan yang meliputi bagian \textit{shoulder}, \textit{elbow}, serta \textit{end-effector}. Pada desainnya robot SCARA terbagi menjadi dua bagian. Bagian utama adalah box panel yang berisi sistem elektronis utama dan pada bagian yang lain merupakan lengan dari robot SCARA sendiri. Terdapat juga tiga buah selang yang berfungsi untuk mentransformasikan angin untuk pergerakan dari \textit{end-effector} yang berasal dari sebuah kompresor.  Dalam komunikasinya dengan komputer personal, robot SCARA dihubungkan dengan konektor USB. Gambar 3.4 merupakan bentuk fisik dari box panel pada Robot SCARA.
+Desain pada\textit{ arm manipulator robot} SCARA berbahan besi dengan tebal 2 mm dengan tiga derajat kebebasan yang meliputi bagian \textit{shoulder}, \textit{elbow} serta \textit{end-effector}. Desain robot SCARA terbagi menjadi dua bagian. Bagian utama adalah \textit{box} panel yang berisi sistem elektronis utama dan pada bagian yang lain merupakan lengan dari robot SCARA sendiri. Terdapat juga tiga buah saluran udara yang berfungsi untuk mentransformasikan tekanan udara untuk pergerakan vertikal dari \textit{end-effector} yang berasal dari sebuah kompresor.  Dalam komunikasinya dengan komputer personal, robot SCARA dihubungkan dengan konektor USB. Gambar \ref{pic.boxpanel} merupakan bentuk fisik dari box panel pada Robot SCARA.
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=5cm]{gambar/potsementara.jpg}
 	\caption{Box Panel Robot SCARA}
+	\label{pic.boxpanel}
 \end{figure}
 
-Pada \textit{arm manipulator robot} SCARA menggunakan penggerak berupa motor DC 12 Volt dengan diberikan \textit{gearbox} sehingga mampu mengangkat beban berat karena torsi pada motor bertambah besar. Motor DC dikontrol dari driver motor EMS 30A H-Bridge melalui mikrokontroler Arduino Mega 2560. Tabel 3.2 merupakan spesifikasi dari motor DC yang digunakan pada robot SCARA. 
+Pada \textit{arm manipulator robot} SCARA menggunakan penggerak berupa motor DC 12 Volt dengan \textit{gearbox} sehingga mampu mengangkat beban berat karena torsi pada motor bertambah besar. Motor DC dikontrol oleh \textit{Driver} Motor EMS 30A H-\textit{Bridge} melalui mikrokontroler Arduino Mega 2560. Tabel \ref{tbl.spesifikasimotordc} merupakan spesifikasi dari motor DC yang digunakan pada robot SCARA. 
 
 	\begin{table}[H]
 	\centering
 	\caption{Spesifikasi Motor DC pada Robot SCARA}
+	\label{tbl.spesifikasimotordc}
 	\resizebox{15cm}{!}{%
 		\begin{tabular}{|l|l|}
 			\hline
@@ -74,87 +79,101 @@ Pada \textit{arm manipulator robot} SCARA menggunakan penggerak berupa motor DC 
 	}
 \end{table}
 %%
-Pada bagian \textit{gearbox} pada masing-masing motor DC terdapat \textit{potensiometer} sebagai sensor posisi. \textit{Potensiometer} ditempatkan pada bawah motor DC yang terhubung langsung. Setiap pergerakan dari motor DC, \textit{potensiometer} akan secara otomatis juga ikut bergerak dan kemudian mengirimkan nilai data analog ke Arduino Mega. Nilai ini dalam Arduino Mega dilakukan sebuah perhitungan untuk menghasilkan sebuah posisi berupa besar sudut dari setiap motor DC saat dioperasikan. Gambar 3.5 merupakan bentuk fisik dari motor DC serta pemasangan \textit{potensiometer}.
+Pada bagian \textit{gearbox} pada masing-masing motor DC terdapat \textit{potensiometer} sebagai sensor posisi. \textit{Potensiometer} ditempatkan pada bawah motor DC yang terhubung langsung. Setiap pergerakan dari motor DC, \textit{potensiometer} secara otomatis ikut bergerak dan kemudian mengirimkan nilai data analog ke Arduino Mega. Data yang berhasil diterima oleh Arduino Mega 2560 kemudian diolah dan mendapatkan hasil berupa besar sudut pada pergerakan \textit{joint} tersebut. Gambar \ref{pic.potensiometer} merupakan bentuk fisik dari motor DC serta pemasangan \textit{potensiometer}.
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=5cm]{gambar/potsementara.jpg}
-	\caption{Motor DC dengan Potensiometer}
+	\caption{Motor DC dengan \textit{Potensiometer}}
+	\label{pic.potensiometer}
 \end{figure}
 
-Pada bagian \textit{end-effetor} menggunakan pergerakan translasi. Pergerakan translasi merupakan pergerakan garis lurus dengan sebuah sumbu. Pada robot SCARA pergerakan ini ada pada bagian \textit{end-effector} yang bergerak secara vertikal atau naik turun. Dengan pergerakan ini, posisi \textit{end-effector} mengalami perubahan pada posisi tingginya. Pergerakan translasi juga terdapat pada bagian \textit{end-effector} yang menyebabkan sebuah\textit{ end-effector} dapat membuka dan menutup karena sebuah sistem mekanik yang telah ada. Selain dari pergerakan translasi, pergerakan pada end-effector juga terdapat rotasi. Pergerakan ini dilakukan oleh satu buah motor DC yang ditempatkan pada bagian base dengan dihubungkan melalui sebuauh belt. Pengoperasian pada motor DC ini juga dilakukan oleh driver motor EMS 30A H-Bridge. Gambar 3.6 merupakan bentuk fisik dari \textit{end-effector}. 
+Pada bagian \textit{end-effetor} menggunakan pergerakan translasi. Pergerakan translasi pada robot \textit{end-effector} merupakan gerak translasi pada sumbu Y. Pada robot SCARA pergerakan ini ada pada bagian \textit{end-effector} yang bergerak secara vertikal atau naik turun. Dengan pergerakan ini posisi \textit{end-effector} mengalami perubahan pada posisi tingginya. Pergerakan translasi juga terdapat pada bagian \textit{end-effector} yang menyebabkan sebuah \textit{gripper }\textit{ end-effector} dapat membuka dan menutup karena sebuah sistem mekanik yang telah ada di dalamnya. Selain dari pergerakan translasi, pergerakan pada end-effector juga terdapat rotasi. Pergerakan ini dilakukan oleh satu buah motor DC yang ditempatkan pada bagian \textit{shoulder} dengan dihubungkan melalui sebuauh \textit{belt}. Pengoperasian pada motor DC ini juga dilakukan oleh \textit{Driver} Motor EMS 30A H-\textit{Bridge}. Gambar \ref{pic.endeffectorfisik} merupakan bentuk fisik dari \textit{end-effector} pada robot SCARA yang digunakan. 
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=5cm]{gambar/capitsementara.jpg}
-	\caption{End-Effector Robot SCARA}
+	\caption{\textit{End-Effector} Robot SCARA}
+	\label{pic.endeffectorfisik}
+	
 \end{figure}
-Semua pergerakan pada \textit{end-effector} ditenagai oleh sebuah tekanan udara yang bersumber dari sebuah kompresor. Tekanan udara diaplikasikan pada sebuah \textit{pneumatic} dengan sistem kerja translasi yang dapat menyebabkan sebuah objek dapat bergerak pada sebuah garis lurus. Gambar 3.7 merupakan bentuk fisik dari pneumatic yang digunakan pada robot SCARA. 
+Semua pergerakan pada \textit{end-effector} ditenagai oleh sebuah tekanan udara yang bersumber dari sebuah kompresor. Tekanan udara diaplikasikan pada sebuah \textit{pneumatic} dengan sistem kerja translasi yang dapat menyebabkan sebuah objek dapat bergerak pada sebuah garis lurus. Gambar \ref{pic.pneumatic} merupakan bentuk fisik dari \textit{pneumatic} yang digunakan pada robot SCARA. 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=5cm]{gambar/penuamticsementara.jpg}
-	\caption{Bentuk Fisik Pneumatic}
+	\includegraphics[height=6cm]{gambar/penuamticsementara.jpg}
+	\caption{Bentuk Fisik \textit{Pneumatic}}
+	\label{pic.pneumatic}
 \end{figure}
-Kompresor yang digunakan untuk menghasilkan sebuah tekanan udara merupakan sebuah kompresor listrik dengan kapasitas 8 bar. Kompresor ini dioperasikan menggunakan sumber tegangan AC. Ketika kapasitas udara sudah terpenuhi, kompresor ini dapat digunakan tanpa menggunakan sumber tegangan tetapi hanya sebatas kapasitas udara yang disimpan. Gambar 3.8 merupakan bentuk kompresor yang digunakan.
+Kompresor yang digunakan untuk menghasilkan sebuah tekanan udara merupakan sebuah kompresor listrik dengan kapasitas 8 bar. Kompresor ini dioperasikan menggunakan sumber tegangan AC 220 Volt. Ketika kapasitas udara sudah terpenuhi kompresor ini dapat digunakan tanpa menggunakan sumber tegangan tetapi hanya sebatas kapasitas udara yang disimpan. Gambar \ref{pic.kompresor} merupakan bentuk fisik dari kompresor yang digunakan.
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=5cm]{gambar/penuamticsementara.jpg}
+	\includegraphics[height=6cm]{gambar/penuamticsementara.jpg}
 	\caption{Bentuk Fisik Kompresor}
+	\label{pic.kompresor}
 \end{figure}
 
-Rancangan robot secara keseluruhan ditampilan pada Gambar 3.9 yang merupakan rancangan tampak samping, Gambar 3.10 merupakan rancangan tampak atas dan Gambar 3.11 merupakan rancangan dimensi robot. 
+Rancangan robot secara keseluruhan ditampilan pada Gambar \ref{pic.scarasamping} yang merupakan rancangan tampak samping, Gambar \ref{pic.scaraatas} merupakan rancangan tampak atas dan Gambar \ref{pic.scaradimensi} merupakan rancangan dimensi robot. 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=5cm]{gambar/penuamticsementara.jpg}
+	\includegraphics[height=6cm]{gambar/penuamticsementara.jpg}
 	\caption{Rancangan Tampak Samping}
+	\label{pic.scarasamping}
 \end{figure}
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=5cm]{gambar/penuamticsementara.jpg}
+	\includegraphics[height=6cm]{gambar/penuamticsementara.jpg}
 	\caption{Rancangan Tampak Atas}
+	\label{pic.scaraatas}
 \end{figure}
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=5cm]{gambar/penuamticsementara.jpg}
+	\includegraphics[height=6cm]{gambar/penuamticsementara.jpg}
 	\caption{Dimensi Robot}
+	\label{pic.scaradimensi}
 \end{figure}
 
 \subsection{Rangkaian Elektronika}
 \subsubsection{Rangkaian Motor DC}
-Rancangan kendali pada \textit{arm manipulator robot} SCARA ini menggunakan tiga buah motor DC dengan masing – masing dilengkapi dengan \textit{gearbox} untuk memperkuat torsi yang dihasilkan oleh motor DC. Pada  \textit{gearbox} masing – masing motor  DC diberikan sensor \textit{potensiometer} sebagai \textit{feedback} untuk memberikan posisi motor DC pada keseluruhan sistem. Motor DC diletakkan pada \textit{base} untuk \textit{end-effector} satu buah, pada \textit{shoulder} satu buah, dan pada \textit{elbow} satu buah. Ketiga motor DC tersebut masing-masing menggunakan driver motor EMS 30A H-Bridge dalam sistem kerjanya. Pada masing – masing motor DC membutuhkan catu daya antara 12 Volt DC. Rangkaian driver motor mendapat sumber tegangan DC 12V untuk disalurkan ke pada motor nya dan 5V untuk kerja dari driver motor sendiri. 12V di dapat dari tegangan keluaran yang dihasilkan oleh regulator \textit{Buck} yang berseumber dari tegangan DC 24V. Ragkaian utama driver motor EMS 30A H-Bridge ditunjukkan pada Gambar 3.12 dan pada Gambar 3.13 merupakan rangkaian antara motor DC, driver motor, dan Arduino Mega.  
+Rancangan kendali pada \textit{arm manipulator robot} SCARA ini menggunakan tiga buah motor DC dengan masing – masing dilengkapi dengan \textit{gearbox} untuk memperkuat torsi yang dihasilkan oleh motor DC. Pada  \textit{gearbox} masing – masing motor  DC diberikan sensor \textit{potensiometer} sebagai \textit{feedback} untuk memberikan posisi motor DC pada keseluruhan sistem. Motor DC diletakkan pada \textit{shoulder} untuk \textit{end-effector} satu buah yang dihubungkan melalui \textit{belt}, pada \textit{shoulder} satu buah, dan pada \textit{elbow} satu buah. Ketiga motor DC tersebut masing-masing menggunakan \textit{Driver} Motor EMS 30A H-\textit{Bridge} dalam sistem kerjanya. Pada masing – masing motor DC membutuhkan catu daya 12 Volt DC. Rangkaian \textit{driver} motor mendapat sumber tegangan DC 12V untuk disalurkan ke pada motor DC dan 5 Volt untuk kerja dari driver motor sendiri. 12 Volt didapat dari tegangan keluaran yang dihasilkan oleh regulator \textit{Buck} yang berseumber dari tegangan DC 24 Volt setelah dilakukan \textit{converter} AC to DC. Ragkaian utama \textit{Driver} Motor EMS 30A H-\textit{Bridge} ditunjukkan pada Gambar \ref{pic.drivermotor} dan pada Gambar \ref{pic.motordcdriver} merupakan rangkaian antara motor DC, driver motor, dan Arduino Mega.  
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=10cm]{gambar/rangakaiandriver.jpg}
-	\caption{Rangkaian Utama Driver Motor EMS 30A H-Bridge}
+	\caption{Rangkaian Utama \textit{Driver} Motor EMS 30A H-\textit{Bridge}}
+	\label{pic.drivermotor}
 \end{figure}
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=10cm]{gambar/drivermotor.jpg}
-	\caption{Rangkaian Arduino antara Driver Motor dan Motor DC}
+	\caption{Rangkaian Arduino antara \textit{Driver} Motor dan Motor DC}
+	\label{pic.motordcdriver}
 \end{figure}
-\subsubsection{Rangkaian \textit{Valve Relay Pneumatic}}
-\textit{End-Effector} menggunakan tekanan udara dalam melakukan pergerakannya. Tekanan udara ini dikontrol menggunakan sebuah\textit{valve relay}. \textit{Valve relay} yang digunakan dapat mengkontrol tekanan udara hingga delapan bar. \textit{Valve relay} dapat bekerja pada tegangan DC 24 Volt. Tegangan 24 Volt pada \textit{valve relay} didapat dari keluaran dari rangkaian AC-DC yang dilakukan oleh dioda bridge dengan masukan awalnya adalah tegangan AC 24 Volt yang diberikan oleh sebuah trafo. Dengan besaran tegangan 24 Volt maka sebuah arduino tidak dapat mengkontrolnya. Oleh karena itu, diberi sebuah rangkaian pembantu yang prinsipinya bekerja seperti saklar. Rangkaian tersebut diotaki oleh IC TIP31A yang nantinya akan menerima sinyal data digital dari Arduino dan akan membuka jalur untuk tegangan 24Volt. Gambar 3.14 merupakan bentuk fisik dari \textit{valve relay} yang digunaakan dan Gambar 3.15 merupakan rangkaian dari valve relay dengan rangkaian TIP31A.
+\subsubsection{Rangkaian \textit{Valve Pneumatic}}
+\textit{End-Effector} menggunakan tekanan udara dalam melakukan pergerakannya. Tekanan udara ini dikontrol menggunakan sebuah\textit{valve relay}. \textit{Valve relay} yang digunakan dapat mengkontrol tekanan udara hingga delapan bar. \textit{Valve relay} dapat bekerja pada tegangan DC 24 Volt. Tegangan 24 Volt pada \textit{valve relay} didapat dari keluaran dari rangkaian AC-DC yang dilakukan oleh dioda \textit{bridge} dengan masukan awalnya adalah tegangan AC 24 Volt yang diberikan oleh sebuah tranformator. Dengan besaran tegangan 24 Volt maka sebuah arduino tidak dapat mengkontrolnya. Oleh karena itu, diberi sebuah rangkaian pembantu yang prinsipinya bekerja seperti saklar. Rangkaian tersebut diotaki oleh IC TIP31 yang nantinya akan menerima sinyal data digital dari Arduino Mega 2560 dan akan membuka jalur untuk tegangan 24 Volt. Gambar \ref{pic.fisikvalve} merupakan bentuk fisik dari \textit{valve relay} yang digunaakan dan Gambar \ref{pic.skematikvalve} merupakan rangkaian dari \textit{valve pneuamtic} dengan rangkaian TIP31.
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=7cm]{gambar/relay.jpg}
-	\caption{Bentuk Fisik dari Valve Relay}
+	\includegraphics[width=5cm]{gambar/relay.jpg}
+	\caption{Bentuk Fisik dari \textit{Valve Pneumatic}}
+	\label{pic.fisikvalve}
 \end{figure}
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=7cm]{gambar/tip31.png}
-	\caption{Rangkaian Valve Relay dengan Rangkaian TIP31}
+	\includegraphics[width=5cm]{gambar/tip31.png}
+	\caption{Rangkaian \textit{Valve Pneumatic} dengan Rangkaian TIP31}
+	\label{pic.skematikvalve}
 \end{figure}
 \subsubsection{Rangkaian Minimum Sistem Arduino}
-Arduino  2560 digunakan sebagai mikrokontroler utama untuk mengendalikan seluruh sistem pada arm manipulator robot SCARA. Arduino  2560 memiliki banyak pin keluaran dan masukan digital dan analog yang dapat digunakan sebagai pengendali fungsi – fungsi dari setiap komponen. Pin pada Arduino  2560 dapat mencukupi kebutuhan masukan dan keluaran untuk sistem kerja robot. Pin analog yang pada Arduino  digunakan untuk menerima feedback masukkan dari potensio yang ada pada setiap motor robot. Beberapa pin digital pada Arduino  2560 juga  memiliki fungsi lain yaitu sebagai pin pulse with modulation (PWM) yang dapat digunakan sebagai keluaran analog sehingga dapat digunakan untuk mengatur nilai tegangan kaluaran dari Arduino  2560. Pin PWM yang cukup digunakan untuk kontrol kecepatan pada driver motor, selain itu pin PWM pada Arduino  2560 digunakan untuk memberikan kontrol direksi pada driver motor untuk memberikan masukan arah putar kanan ataupun putar kiri. Rangkaian minimum sistem arduino ditunjukkan pada Gambar 3.16 dan fungsi dari masing – masing pin Arduino  2560 dijelaskan pada tabel Tabel 3.2. 
+Arduino Mega 2560 digunakan sebagai mikrokontroler utama untuk mengendalikan seluruh sistem pada \textit{arm manipulator robot} SCARA. Arduino  2560 memiliki banyak pin keluaran dan masukan digital dan analog yang dapat digunakan sebagai pengendali fungsi – fungsi dari setiap komponen. Pin pada Arduino  2560 dapat mencukupi kebutuhan masukan dan keluaran untuk sistem kerja robot. Pin analog yang pada Arduino  digunakan untuk menerima \textit{feedback} masukkan dari potensio yang ada pada setiap motor robot. Beberapa pin digital pada Arduino Mega 2560 juga  memiliki fungsi lain yaitu sebagai pin \textit{Pulse With Modulation} (PWM) yang dapat digunakan sebagai keluaran analog sehingga dapat digunakan untuk mengatur nilai tegangan kaluaran dari Arduino  2560. Pin PWM yang cukup digunakan untuk kontrol kecepatan pada \textit{driver} motor. Selain itu pin PWM pada Arduino Mega 2560 digunakan untuk memberikan kontrol direksi pada \textit{driver} motor untuk memberikan masukan arah putar kanan ataupun putar kiri. Gambar \ref{pic.sisminarduino} merupakan rangkaian sistem minimum Arduino Mega 2560 pada robot SCARA ini. Tabel \ref{tbl.pinarduino} merupakan fungsi dari masing-masing pin yang ada pada Arduino Mega 2560.
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=15cm]{gambar/skematik.pdf}
+	\includegraphics[width=15cm, height=10cm]{gambar/skematik1.png}
 	\caption{Rangkaian Minimum Sistem Arduino}
+	\label{pic.sisminarduino}
 \end{figure}
 
 \begin{table}[H]
 		\centering
 	\caption{Pin pada Arduino Mega 2560}
+	\label{tbl.pinarduino}
 	\begin{tabular}{|c|c|l|}
 		\hline
 		\rowcolor[HTML]{9B9B9B} 
@@ -184,11 +203,12 @@ Arduino  2560 digunakan sebagai mikrokontroler utama untuk mengendalikan seluruh
 \end{table}
 
 \subsubsection{Rangkaian Catu Daya}
-Rangkaian catu daya merupakan hal yang sangat penting agar semua kompononen pada robot dapat bekerja sesuai dengan fungsi yang telah dirancang. Pada \textit{arm manipulator robot} SCARA komponennya terdapat tiga buah besar tegangan \textit{supply} yang berbeda. Arduino Mega 2560 dan beberapa sensor membutuhkan tegangan 5 Volt, motor DC membutuhkan tegangan 12 Volt dan \textit{valve relay} membutuhkan 24 Volt. Catu daya diawali dengan tegangan AC 220 Volt dari listrik PLN. Tegangan tersebut kemudian diturunkan menggunakan sebuah trafo 3A menjadi 24 Volt AC. Komponen yang digunakan dalam rangakaian merupakan komponen yang membutuhkan tegangan DC, maka tegangan 24 Volt AC diubah menjadi 24 DC menggunakan rangkaian dioda \textit{bridge}. Tegangan 24 Volt DC diarahkan menuju dua buah regulator \textit{Buck} LM2596 yang masing-masing menghasilkan tegangan 12 Volt dan 5 Volt. Gambar 3.18 merupakan rangkaian catu daya secara keseluruhan.
+Rangkaian catu daya merupakan hal yang sangat penting dalam sebuah sistem. Pada \textit{arm manipulator robot} SCARA terdapat tiga buah bilai tegangan \textit{supply} yang berbeda. Tegangan yang ditujukkan untuk Arduino Mega 2560 dan beberapa sensor membutuhkan tegangan 5 Volt, motor DC membutuhkan tegangan 12 Volt dan \textit{valve pneumatic} membutuhkan tegangan 24 Volt. Catu daya diawali dengan tegangan AC 220 Volt dari listrik PLN. Tegangan tersebut kemudian diturunkan menggunakan sebuah trafo 3A menjadi 24 Volt AC. Komponen yang digunakan dalam rangakaian merupakan komponen yang membutuhkan tegangan DC, maka tegangan 24 Volt AC diubah menjadi 24 DC menggunakan rangkaian dioda \textit{bridge}. Tegangan 24 Volt DC diarahkan menuju dua buah regulator \textit{Buck} LM2596 yang masing-masing menghasilkan tegangan 12 Volt dan 5 Volt. Gambar \ref{pic.skematikcatu} merupakan rangkaian catu daya secara keseluruhan.
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=8cm]{gambar/catudaya_bb.png}
 	\caption{Rangkaian Catu Daya}
+	\label{pic.skematikcatu}
 \end{figure}
 \section{Perancangan Perangkat Lunak}
 Perangkat lunak yang digunakan merupakan \textit{software} Processing IDE. Processing IDE diprogram agar mendapatkan sebuah GUI yang cocok sesuai dengan fungsi robot SCARA. Di dalam GUI terdapat dua bagian yang diantaranaya merupakan bagian kontrol, dan bagian \textit{display}. Pada bagian kontrol nantinya dalam GUI akan mengkontrol mulai dari pergerakan dan posisi dari robot SCARA. Sedangkan pada bagian penampil, GUI menampilkan nilai dari sudut, posisi, serta animasi terkait robot SCARA. Gambar 3.21 merupakan tampilan dari GUI secara keseluruhan. Tabel 3.21 menyajikan setiap komponen yang ditampilan di dalam GUI processing IDE.

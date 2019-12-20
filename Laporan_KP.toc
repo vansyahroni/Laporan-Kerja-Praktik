@@ -34,25 +34,25 @@
 \contentsline {subsection}{\numberline {2.2.2}Kinematika Balik}{13}{subsection.2.2.2}% 
 \contentsline {section}{\numberline {2.3}Motor DC}{13}{section.2.3}% 
 \contentsline {section}{\numberline {2.4}Regulator}{15}{section.2.4}% 
-\contentsline {section}{\numberline {2.5}Arduino}{15}{section.2.5}% 
-\contentsline {section}{\numberline {2.6}Driver Motor H}{17}{section.2.6}% 
-\contentsline {section}{\numberline {2.7}Processing Integrated Development Environment (IDE)}{18}{section.2.7}% 
-\contentsline {subsection}{\numberline {2.7.1}Syntax dalam Processing IDE }{18}{subsection.2.7.1}% 
-\contentsline {subsubsection}{\numberline {2.7.1.1}Mengatur ukuran}{18}{subsubsection.2.7.1.1}% 
-\contentsline {subsubsection}{\numberline {2.7.1.2}Transformasi Bentuk Pada Processing IDE }{19}{subsubsection.2.7.1.2}% 
+\contentsline {section}{\numberline {2.5}Arduino Mega 2560}{15}{section.2.5}% 
+\contentsline {section}{\numberline {2.6}\textit {Driver} Motor H-\textit {Bridge} EMS 30A}{17}{section.2.6}% 
+\contentsline {section}{\numberline {2.7}Processing \textit {Integrated Development Environment} (IDE)}{18}{section.2.7}% 
+\contentsline {subsection}{\numberline {2.7.1}\textit {Syntax} dalam Processing IDE }{18}{subsection.2.7.1}% 
+\contentsline {subsubsection}{\numberline {2.7.1.1}Mengatur Ukuran}{18}{subsubsection.2.7.1.1}% 
+\contentsline {subsubsection}{\numberline {2.7.1.2}Transformasi Bentuk dalam Processing IDE }{19}{subsubsection.2.7.1.2}% 
 \contentsline {subsubsection}{\numberline {2.7.1.3}Shape}{19}{subsubsection.2.7.1.3}% 
 \contentsline {subsubsection}{\numberline {2.7.1.4}Akses Koordinat Mouse }{20}{subsubsection.2.7.1.4}% 
-\contentsline {subsubsection}{\numberline {2.7.1.5} Compile Sketch }{21}{subsubsection.2.7.1.5}% 
-\contentsline {subsection}{\numberline {2.7.2} \textit {Library} untuk Processing IDE }{22}{subsection.2.7.2}% 
-\contentsline {subsubsection}{\numberline {2.7.2.1} Memuat Huruf (\textit {Font}) pada Processing IDE }{22}{subsubsection.2.7.2.1}% 
+\contentsline {subsubsection}{\numberline {2.7.1.5} \textit {Compile Sketch} }{21}{subsubsection.2.7.1.5}% 
+\contentsline {subsection}{\numberline {2.7.2} \textit {Library} untuk Processing IDE }{21}{subsection.2.7.2}% 
+\contentsline {subsubsection}{\numberline {2.7.2.1} Memuat Huruf (\textit {Font}) pada Processing IDE }{21}{subsubsection.2.7.2.1}% 
 \contentsline {subsubsection}{\numberline {2.7.2.2} Memuat ControlP5 pada Processing IDE }{22}{subsubsection.2.7.2.2}% 
 \contentsline {chapter}{\numberline {III}PERANCANGAN SISTEM}{24}{chapter.3}% 
 \contentsline {section}{\numberline {3.1} Diagram Blok Sistem }{24}{section.3.1}% 
 \contentsline {section}{\numberline {3.2} Perancangan Perangkat Keras }{25}{section.3.2}% 
-\contentsline {subsection}{\numberline {3.2.1} Sistem Mekanik }{25}{subsection.3.2.1}% 
+\contentsline {subsection}{\numberline {3.2.1} Sistem Mekanis }{25}{subsection.3.2.1}% 
 \contentsline {subsection}{\numberline {3.2.2}Rangkaian Elektronika}{31}{subsection.3.2.2}% 
 \contentsline {subsubsection}{\numberline {3.2.2.1}Rangkaian Motor DC}{31}{subsubsection.3.2.2.1}% 
-\contentsline {subsubsection}{\numberline {3.2.2.2}Rangkaian \textit {Valve Relay Pneumatic}}{32}{subsubsection.3.2.2.2}% 
+\contentsline {subsubsection}{\numberline {3.2.2.2}Rangkaian \textit {Valve Pneumatic}}{33}{subsubsection.3.2.2.2}% 
 \contentsline {subsubsection}{\numberline {3.2.2.3}Rangkaian Minimum Sistem Arduino}{34}{subsubsection.3.2.2.3}% 
 \contentsline {subsubsection}{\numberline {3.2.2.4}Rangkaian Catu Daya}{35}{subsubsection.3.2.2.4}% 
 \contentsline {section}{\numberline {3.3}Perancangan Perangkat Lunak}{36}{section.3.3}% 
