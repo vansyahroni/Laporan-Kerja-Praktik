@@ -134,3 +134,36 @@ Pengujian kinematika balik pada \textit{arm manipulator} robot SCARA dilakukan d
 
  Pengujian ini dilakukan bertujuan untuk mengetahui \textit{workspace} dari arm manipulator robot SCARA dan juga mengetahui akurasi dari posisi \textit{end-effector} dengan perhitungan kinematika yang ada.
 Dalam pengujian ini, pengujian terdiri dari pengujian posisi koordinat posisi \textit{end-effector}, dan juga hasil keluaran sudut apakah sesuai dengan posisi \textit{end-effector} yang diberikan. Sudut yang terdiri dari sudut \textit{shoulder} dan sudut \textit{elbow} yang dibandingkan dari pergerakan aslinya dan juga pergerakan pada processing IDE.  
+
+\subsubsection{Pengujian Koordinat X}
+ Pengujian koordinat X dilakukan untuk mengetahui batas minimal dan batas maksimal \textit{end-effector} dari \textit{arm manipulator} robot SCARA relatif terhadap sumbu X. Pengujian koordinat X dilakukan dengan cara mengujicobakan setiap titik dari 0 cm sampai dengan total panjang \textit{shoulder} dan \textit{elbow} yaitu 60 cm menggunakan perhitungan kinematika balik. Perhitungan posisi X diujicobakan menggunakan program Processing IDE, sementara untuk pengukuran posisi diukur secara faktual dari posisi \textit{end-effector} dengan membuat sebuah diagram kartesius. Tabel \ref{tbl.koordinatx} menunjukkan pengujian koordinat X dan Gambar \ref{pic.koordinatx} menunjukkan grafik dari sampling koordinat X.
+ 
+ \begin{table}[H]
+ 	\centering
+ 	\caption{Hasil Pengujian Koordinat X}
+ 	\label{tbl.koordinatx}
+ 	\begin{tabular}{|c|l|}
+ 		\hline
+ 		\rowcolor[HTML]{9B9B9B} 
+ 		
+ 		No & \multicolumn{1}{c|}{\cellcolor[HTML]{9B9B9B}Keterangan} \\ \hline
+ 		1  & Robot Lengan SCARA                                      \\ \hline
+ 		2  & Box Panel                                               \\ \hline
+ 		3  & Arduino Mega 2560                                       \\ \hline
+ 		4  & Personal Computer                                       \\ \hline
+ 		5  & GUI Processing IDE                                      \\ \hline
+ 		6  & Workspace Robot SCARA                                   \\ \hline
+ 		7  & Kompresor                                               \\ \hline
+ 		8  & Objek                                                   \\ \hline
+ 	\end{tabular}
+ 	
+ \end{table} 
+	\begin{figure}[H]
+	\centering
+	\includegraphics[width=8cm]{gambar/controlp5.jpg}
+	\caption{Grafik Pengujian Koordinat X}
+	\label{pic.koordinatx}
+\end{figure}
+
+
+ 
