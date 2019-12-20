@@ -129,6 +129,31 @@ Pada hasil pengujian yang ditunjukkan oleh Tabel \ref{tbl.potensiometer} terliha
 	
 \end{table} 
 
+\subsection{Pengujian Rangkaian Switching Valve Pneumatic}
+Pengujian rangkaian \textit{switching} berfungsi untuk mengetahui apakah rangkaian dapat bekerja dengan baik. Fungsi utama dari rangkaian \textit{switching} yang diperuntukkan untuk \textit{valve pneumatic} yaitu sebagai saklar penghubung dan pemutus daya yang masuk untuk \textit{valve pneumatic}. Rangkaian dapat memutus dan menghubungkan daya dengan \textit{trigger} dari sinyal data yang diberikan kepada \textit{Gate} yang berupa sinyal digital \textit{High} dan \textit{Low} dari Arduino Mega 2560. Pengujian dilakukan dengan mengukur keberhasilan rangkaian sebagai rangkaian \textit{switching} dengan variasi tegangan yang dilewatkan. Tabel \ref{tbl.rangkaiantip} merupakan hasil pengujian dari rangkaian \textit{switching} yang diotaki oleh TIP31.
+\begin{table}[H]
+	\centering
+	\caption{Hasil Pengujian Rangkaian \textit{Switching Vavle Pnemuatic}}
+	\label{tbl.rangkaiantip}
+	\begin{tabular}{|c|l|}
+		\hline
+		\rowcolor[HTML]{9B9B9B} 
+		
+		No & \multicolumn{1}{c|}{\cellcolor[HTML]{9B9B9B}Keterangan} \\ \hline
+		1  & Robot Lengan SCARA                                      \\ \hline
+		2  & Box Panel                                               \\ \hline
+		3  & Arduino Mega 2560                                       \\ \hline
+		4  & Personal Computer                                       \\ \hline
+		5  & GUI Processing IDE                                      \\ \hline
+		6  & Workspace Robot SCARA                                   \\ \hline
+		7  & Kompresor                                               \\ \hline
+		8  & Objek                                                   \\ \hline
+	\end{tabular}
+	
+\end{table} 
+
+Pada hasil pengujian yang ditunjukkan pada tabel \ref{tbl.rangkaiantip}terlihat bahwa rangkaian dapat berfungsi dengan baik dan dapat menghubungkan daya menuju \textit{valve pneumatic}. Terlihat bahwa jika sinyal \textit{HIGH} diberikan pada \textit{Gate} TIP31 maka rangkaian \textit{switching} akan menjadi rangkaian tertutup dan daya dapat dialirkan yang berarti \textit{valve pneumatic} menjadi hidup dan siap beroprasi. Sebaliknya, jika pada \textit{gate} TIP31 diberikan sinyal \textit{LOW} maka rangkaian \textit{switching} menjadi rangkaian terbuka dan \textit{valve pneumatic} tidak dapat bekerja.
+
 \subsection{Pengujian Kinematika Balik}
 Pengujian kinematika balik pada \textit{arm manipulator} robot SCARA dilakukan dengan cara membandingkan posisi koordinat x, dan y yang aktual dengan jarak koordinat x dan y yang ada di dalam program Processing IDE. Setiap koordinat dimasukkan ke dalam perhitungan kinematika balik di dalam Processing IDE dan menghasilkan keluaran titik koordinat x dan y pada \textit{end-effector}. Motor DC akan menggerakan lengan \textit{shoulder} dan \textit{elbow} menuju posisi koordinat x dan y sesuai dari yang diperintahkan dalam program.
 
