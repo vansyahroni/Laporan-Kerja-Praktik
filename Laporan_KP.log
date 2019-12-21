@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7050 64-bit) (preloaded format=pdflatex 2019.7.18)  21 DEC 2019 00:24
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7050 64-bit) (preloaded format=pdflatex 2019.7.18)  21 DEC 2019 10:58
 entering extended mode
 **./Laporan_KP.tex
 (Laporan_KP.tex
@@ -633,9 +633,6 @@ LaTeX Info: Redefining \] on input line 2845.
 
 LaTeX Warning: Label `pic.drivermotor' multiply defined.
 
-
-LaTeX Warning: Label `g_ik' multiply defined.
-
 ) (BAB_4.aux) (BAB_5.aux))
 \openout1 = `Laporan_KP.aux'.
 
@@ -747,7 +744,7 @@ Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <14> not available
 (Font)              Font shape `T1/ptm/b/n' tried instead on input line 48.
-<gambar/logougm.png, id=235, 110.5731pt x 112.2594pt>
+<gambar/logougm.png, id=239, 110.5731pt x 112.2594pt>
 File: gambar/logougm.png Graphic file (type png)
 <use gambar/logougm.png>
 Package pdftex.def Info: gambar/logougm.png  used on input line 48.
@@ -827,7 +824,7 @@ o-nal kom-pu-ter, Ardu-
  []
 
 [3]
-<gambar/flowchart.png, id=515, 323.2075pt x 743.77875pt>
+<gambar/flowchart.png, id=520, 323.2075pt x 743.77875pt>
 File: gambar/flowchart.png Graphic file (type png)
 <use gambar/flowchart.png>
 Package pdftex.def Info: gambar/flowchart.png  used on input line 64.
@@ -842,7 +839,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 73--99
 
  (BAB_2.tex
 BAB II.
-<gambar/joint.png, id=528, 320.69812pt x 127.97812pt>
+<gambar/joint.png, id=533, 320.69812pt x 127.97812pt>
 File: gambar/joint.png Graphic file (type png)
 <use gambar/joint.png>
 Package pdftex.def Info: gambar/joint.png  used on input line 15.
@@ -852,35 +849,35 @@ Package pdftex.def Info: gambar/joint.png  used on input line 15.
 
 
  <./gambar/joint.png>]
-<gambar/articulated.jpg, id=535, 13.42157pt x 9.80807pt>
+<gambar/articulated.jpg, id=540, 13.42157pt x 9.80807pt>
 File: gambar/articulated.jpg Graphic file (type jpg)
 <use gambar/articulated.jpg>
 Package pdftex.def Info: gambar/articulated.jpg  used on input line 31.
 (pdftex.def)             Requested size: 227.62204pt x 166.52872pt.
  [7]
-<gambar/spherical.jpg, id=542, 11.20377pt x 9.44481pt>
+<gambar/spherical.jpg, id=547, 11.20377pt x 9.44481pt>
 File: gambar/spherical.jpg Graphic file (type jpg)
 <use gambar/spherical.jpg>
 Package pdftex.def Info: gambar/spherical.jpg  used on input line 40.
 (pdftex.def)             Requested size: 227.62204pt x 191.89635pt.
-<gambar/scara.jpg, id=544, 14.12898pt x 9.44481pt>
+<gambar/scara.jpg, id=549, 14.12898pt x 9.44481pt>
 File: gambar/scara.jpg Graphic file (type jpg)
 <use gambar/scara.jpg>
 Package pdftex.def Info: gambar/scara.jpg  used on input line 51.
 (pdftex.def)             Requested size: 227.62204pt x 152.20091pt.
  [8 <./gambar/articulated.jpg> <./gambar/spherical.jpg>]
-<gambar/cylindrical.jpg, id=552, 8.27855pt x 9.8272pt>
+<gambar/cylindrical.jpg, id=557, 8.27855pt x 9.8272pt>
 File: gambar/cylindrical.jpg Graphic file (type jpg)
 <use gambar/cylindrical.jpg>
 Package pdftex.def Info: gambar/cylindrical.jpg  used on input line 61.
 (pdftex.def)             Requested size: 142.26378pt x 169.14009pt.
  [9 <./gambar/scara.jpg> <./gambar/cylindrical.jpg>]
-<gambar/cartesian.jpg, id=560, 13.7466pt x 10.63019pt>
+<gambar/cartesian.jpg, id=565, 13.7466pt x 10.63019pt>
 File: gambar/cartesian.jpg Graphic file (type jpg)
 <use gambar/cartesian.jpg>
 Package pdftex.def Info: gambar/cartesian.jpg  used on input line 71.
 (pdftex.def)             Requested size: 170.71652pt x 132.13129pt.
-<gambar/wirst.jpg, id=562, 8.01088pt x 7.20789pt>
+<gambar/wirst.jpg, id=567, 8.01088pt x 7.20789pt>
 File: gambar/wirst.jpg Graphic file (type jpg)
 <use gambar/wirst.jpg>
 Package pdftex.def Info: gambar/wirst.jpg  used on input line 81.
@@ -893,25 +890,25 @@ end-effector\T1/ptm/m/n/12 .
  []
 
 [10 <./gambar/cartesian.jpg>]
-<gambar/end_effector.jpg, id=569, 451.6875pt x 489.32813pt>
+<gambar/end_effector.jpg, id=574, 451.6875pt x 489.32813pt>
 File: gambar/end_effector.jpg Graphic file (type jpg)
 <use gambar/end_effector.jpg>
 Package pdftex.def Info: gambar/end_effector.jpg  used on input line 90.
 (pdftex.def)             Requested size: 170.71652pt x 184.94609pt.
-<gambar/kinematika_diagram.png, id=571, 463.7325pt x 162.6075pt>
+<gambar/kinematika_diagram.png, id=576, 463.7325pt x 162.6075pt>
 File: gambar/kinematika_diagram.png Graphic file (type png)
 <use gambar/kinematika_diagram.png>
 Package pdftex.def Info: gambar/kinematika_diagram.png  used on input line 102.
 
 (pdftex.def)             Requested size: 341.43306pt x 119.72473pt.
  [11 <./gambar/wirst.jpg> <./gambar/end_effector.jpg>]
-<gambar/Kinematika_maju.png, id=577, 388.45125pt x 122.4575pt>
+<gambar/Kinematika_maju.png, id=582, 388.45125pt x 122.4575pt>
 File: gambar/Kinematika_maju.png Graphic file (type png)
 <use gambar/Kinematika_maju.png>
 Package pdftex.def Info: gambar/Kinematika_maju.png  used on input line 111.
 (pdftex.def)             Requested size: 341.43306pt x 107.63773pt.
  [12 <./gambar/kinematika_diagram.png> <./gambar/Kinematika_maju.png>]
-<gambar/kinematika_balik.png, id=585, 388.45125pt x 122.4575pt>
+<gambar/kinematika_balik.png, id=590, 388.45125pt x 122.4575pt>
 File: gambar/kinematika_balik.png Graphic file (type png)
 <use gambar/kinematika_balik.png>
 Package pdftex.def Info: gambar/kinematika_balik.png  used on input line 124.
@@ -921,19 +918,19 @@ Package pdftex.def Info: gambar/kinematika_balik.png  used on input line 124.
 LaTeX Warning: Reference `[pic.motordc' on page 13 undefined on input line 130.
 
 
-<gambar/motorDC.jpeg, id=586, 803.0pt x 803.0pt>
+<gambar/motorDC.jpeg, id=591, 803.0pt x 803.0pt>
 File: gambar/motorDC.jpeg Graphic file (type jpg)
 <use gambar/motorDC.jpeg>
 Package pdftex.def Info: gambar/motorDC.jpeg  used on input line 133.
 (pdftex.def)             Requested size: 113.81102pt x 113.80379pt.
 [13 <./gambar/kinematika_balik.png>]
-<gambar/prinsipDC.jpg, id=593, 610.73239pt x 407.15492pt>
+<gambar/prinsipDC.jpg, id=598, 610.73239pt x 407.15492pt>
 File: gambar/prinsipDC.jpg Graphic file (type jpg)
 <use gambar/prinsipDC.jpg>
 Package pdftex.def Info: gambar/prinsipDC.jpg  used on input line 143.
 (pdftex.def)             Requested size: 113.81102pt x 75.86919pt.
  [14 <./gambar/motorDC.jpeg> <./gambar/prinsipDC.jpg>]
-<gambar/lm2596.jpg, id=599, 545.78906pt x 264.99pt>
+<gambar/lm2596.jpg, id=604, 545.78906pt x 264.99pt>
 File: gambar/lm2596.jpg Graphic file (type jpg)
 <use gambar/lm2596.jpg>
 Package pdftex.def Info: gambar/lm2596.jpg  used on input line 156.
@@ -943,57 +940,57 @@ Package pdftex.def Info: gambar/lm2596.jpg  used on input line 156.
 LaTeX Warning: Reference `pic.arduinomega' on page 15 undefined on input line 1
 62.
 
-<gambar/arduino_mega.jpg, id=600, 602.25pt x 292.09125pt>
+<gambar/arduino_mega.jpg, id=605, 602.25pt x 292.09125pt>
 File: gambar/arduino_mega.jpg Graphic file (type jpg)
 <use gambar/arduino_mega.jpg>
 Package pdftex.def Info: gambar/arduino_mega.jpg  used on input line 165.
 (pdftex.def)             Requested size: 142.26378pt x 68.998pt.
 [15 <./gambar/lm2596.jpg>] [16 <./gambar/arduino_mega.jpg>]
-<gambar/driver_motor.jpg, id=612, 469.755pt x 342.5297pt>
+<gambar/driver_motor.jpg, id=617, 469.755pt x 342.5297pt>
 File: gambar/driver_motor.jpg Graphic file (type jpg)
 <use gambar/driver_motor.jpg>
 Package pdftex.def Info: gambar/driver_motor.jpg  used on input line 198.
 (pdftex.def)             Requested size: 142.26378pt x 103.73184pt.
-<gambar/processing_view.png, id=615, 894.34125pt x 586.19pt>
+<gambar/processing_view.png, id=620, 894.34125pt x 586.19pt>
 File: gambar/processing_view.png Graphic file (type png)
 <use gambar/processing_view.png>
 Package pdftex.def Info: gambar/processing_view.png  used on input line 230.
 (pdftex.def)             Requested size: 341.43306pt x 223.79207pt.
  [17 <./gambar/driver_motor.jpg>] [18 <./gambar/processing_view.png>]
-<gambar/bulat.png, id=628, 79.04532pt x 63.98906pt>
+<gambar/bulat.png, id=633, 79.04532pt x 63.98906pt>
 File: gambar/bulat.png Graphic file (type png)
 <use gambar/bulat.png>
 Package pdftex.def Info: gambar/bulat.png  used on input line 277.
 (pdftex.def)             Requested size: 85.35826pt x 69.1042pt.
-<gambar/busur.png, id=629, 79.04532pt x 76.78688pt>
+<gambar/busur.png, id=634, 79.04532pt x 76.78688pt>
 File: gambar/busur.png Graphic file (type png)
 <use gambar/busur.png>
 Package pdftex.def Info: gambar/busur.png  used on input line 277.
 (pdftex.def)             Requested size: 85.35826pt x 82.92506pt.
-<gambar/garis.png, id=630, 65.49469pt x 41.4047pt>
+<gambar/garis.png, id=635, 65.49469pt x 41.4047pt>
 File: gambar/garis.png Graphic file (type png)
 <use gambar/garis.png>
 Package pdftex.def Info: gambar/garis.png  used on input line 277.
 (pdftex.def)             Requested size: 85.35826pt x 53.96379pt.
-<gambar/point.png, id=631, 10.53937pt x 9.78656pt>
+<gambar/point.png, id=636, 10.53937pt x 9.78656pt>
 File: gambar/point.png Graphic file (type png)
 <use gambar/point.png>
 Package pdftex.def Info: gambar/point.png  used on input line 277.
 (pdftex.def)             Requested size: 14.22636pt x 13.21053pt.
-<gambar/kotak.png, id=632, 81.30376pt x 60.97781pt>
+<gambar/kotak.png, id=637, 81.30376pt x 60.97781pt>
 File: gambar/kotak.png Graphic file (type png)
 <use gambar/kotak.png>
 Package pdftex.def Info: gambar/kotak.png  used on input line 277.
 (pdftex.def)             Requested size: 85.35826pt x 64.02391pt.
  [19] [20 <./gambar/bulat.png> <./gambar/busur.png> <./gambar/garis.png> <./gam
 bar/point.png> <./gambar/kotak.png>]
-<gambar/compile.jpg, id=651, 170.13562pt x 123.46124pt>
+<gambar/compile.jpg, id=656, 170.13562pt x 123.46124pt>
 File: gambar/compile.jpg Graphic file (type jpg)
 <use gambar/compile.jpg>
 Package pdftex.def Info: gambar/compile.jpg  used on input line 302.
 (pdftex.def)             Requested size: 142.26378pt x 103.2414pt.
  [21 <./gambar/compile.jpg>]
-<gambar/controlp5.jpg, id=660, 381.425pt x 306.14375pt>
+<gambar/controlp5.jpg, id=665, 381.425pt x 306.14375pt>
 File: gambar/controlp5.jpg Graphic file (type jpg)
 <use gambar/controlp5.jpg>
 Package pdftex.def Info: gambar/controlp5.jpg  used on input line 316.
@@ -1009,7 +1006,7 @@ File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
 
  (BAB_3.tex
 BAB III.
-<gambar/Rangkaian_Diagram.png, id=672, 742.775pt x 524.96124pt>
+<gambar/Rangkaian_Diagram.png, id=677, 742.775pt x 524.96124pt>
 File: gambar/Rangkaian_Diagram.png Graphic file (type png)
 <use gambar/Rangkaian_Diagram.png>
 Package pdftex.def Info: gambar/Rangkaian_Diagram.png  used on input line 9.
@@ -1019,19 +1016,19 @@ Package pdftex.def Info: gambar/Rangkaian_Diagram.png  used on input line 9.
 
 
  <./gambar/Rangkaian_Diagram.png>]
-<gambar/scaraa.png, id=681, 853.1875pt x 700.6175pt>
+<gambar/scaraa.png, id=686, 853.1875pt x 700.6175pt>
 File: gambar/scaraa.png Graphic file (type png)
 <use gambar/scaraa.png>
 Package pdftex.def Info: gambar/scaraa.png  used on input line 25.
 (pdftex.def)             Requested size: 199.16928pt x 163.55469pt.
  [25]
-<gambar/3dscara.png, id=686, 407.75494pt x 223.65663pt>
+<gambar/3dscara.png, id=691, 407.75494pt x 223.65663pt>
 File: gambar/3dscara.png Graphic file (type png)
 <use gambar/3dscara.png>
 Package pdftex.def Info: gambar/3dscara.png  used on input line 31.
 (pdftex.def)             Requested size: 199.16928pt x 109.2446pt.
  [26 <./gambar/scaraa.png> <./gambar/3dscara.png>]
-<gambar/potsementara.jpg, id=695, 1284.8pt x 1284.8pt>
+<gambar/potsementara.jpg, id=700, 1284.8pt x 1284.8pt>
 File: gambar/potsementara.jpg Graphic file (type jpg)
 <use gambar/potsementara.jpg>
 Package pdftex.def Info: gambar/potsementara.jpg  used on input line 56.
@@ -1045,13 +1042,13 @@ File: gambar/potsementara.jpg Graphic file (type jpg)
 <use gambar/potsementara.jpg>
 Package pdftex.def Info: gambar/potsementara.jpg  used on input line 85.
 (pdftex.def)             Requested size: 142.26378pt x 142.24985pt.
-<gambar/capitsementara.jpg, id=704, 625.33624pt x 499.8675pt>
+<gambar/capitsementara.jpg, id=709, 625.33624pt x 499.8675pt>
 File: gambar/capitsementara.jpg Graphic file (type jpg)
 <use gambar/capitsementara.jpg>
 Package pdftex.def Info: gambar/capitsementara.jpg  used on input line 93.
 (pdftex.def)             Requested size: 142.26378pt x 113.71622pt.
 [28]
-<gambar/penuamticsementara.jpg, id=714, 229.8186pt x 485.6544pt>
+<gambar/penuamticsementara.jpg, id=719, 229.8186pt x 485.6544pt>
 File: gambar/penuamticsementara.jpg Graphic file (type jpg)
 <use gambar/penuamticsementara.jpg>
 Package pdftex.def Info: gambar/penuamticsementara.jpg  used on input line 101.
@@ -1085,30 +1082,30 @@ File: gambar/penuamticsementara.jpg Graphic file (type jpg)
 Package pdftex.def Info: gambar/penuamticsementara.jpg  used on input line 130.
 
 (pdftex.def)             Requested size: 80.78488pt x 170.71652pt.
-<gambar/rangakaiandriver.jpg, id=729, 568.37344pt x 452.4403pt>
+<gambar/rangakaiandriver.jpg, id=734, 568.37344pt x 452.4403pt>
 File: gambar/rangakaiandriver.jpg Graphic file (type jpg)
 <use gambar/rangakaiandriver.jpg>
 Package pdftex.def Info: gambar/rangakaiandriver.jpg  used on input line 140.
 (pdftex.def)             Requested size: 284.52756pt x 226.50266pt.
 
 [31]
-<gambar/drivermotor.jpg, id=735, 876.36884pt x 327.11684pt>
+<gambar/drivermotor.jpg, id=740, 876.36884pt x 327.11684pt>
 File: gambar/drivermotor.jpg Graphic file (type jpg)
 <use gambar/drivermotor.jpg>
 Package pdftex.def Info: gambar/drivermotor.jpg  used on input line 146.
 (pdftex.def)             Requested size: 284.52756pt x 106.20189pt.
-<gambar/relay.jpg, id=738, 360.59718pt x 289.83281pt>
+<gambar/relay.jpg, id=743, 360.59718pt x 289.83281pt>
 File: gambar/relay.jpg Graphic file (type jpg)
 <use gambar/relay.jpg>
 Package pdftex.def Info: gambar/relay.jpg  used on input line 154.
 (pdftex.def)             Requested size: 142.26378pt x 114.34338pt.
  [32 <./gambar/rangakaiandriver.jpg> <./gambar/drivermotor.jpg>]
-<gambar/tip31.png, id=743, 656.4525pt x 846.16125pt>
+<gambar/tip31.png, id=748, 656.4525pt x 846.16125pt>
 File: gambar/tip31.png Graphic file (type png)
 <use gambar/tip31.png>
 Package pdftex.def Info: gambar/tip31.png  used on input line 160.
 (pdftex.def)             Requested size: 142.26378pt x 183.38011pt.
-<gambar/skematik1.png, id=746, 593.21625pt x 361.35pt>
+<gambar/skematik1.png, id=751, 593.21625pt x 361.35pt>
 File: gambar/skematik1.png Graphic file (type png)
 <use gambar/skematik1.png>
 Package pdftex.def Info: gambar/skematik1.png  used on input line 168.
@@ -1120,7 +1117,7 @@ Overfull \hbox (19.93314pt too wide) in paragraph at lines 168--169
 
 [33 <./gambar/relay.jpg> <./gambar/tip31.png>] [34 <./gambar/skematik1.png (PNG
  copy)>]
-<gambar/catudaya_bb.png, id=760, 1096.095pt x 695.59875pt>
+<gambar/catudaya_bb.png, id=765, 1096.095pt x 695.59875pt>
 File: gambar/catudaya_bb.png Graphic file (type png)
 <use gambar/catudaya_bb.png>
 Package pdftex.def Info: gambar/catudaya_bb.png  used on input line 209.
@@ -1133,15 +1130,21 @@ Package pdftex.def Info: gambar/catudaya_bb.png  used on input line 217.
  [36 <./gambar/catudaya_bb.png>] [37] [38]
 File: gambar/catudaya_bb.png Graphic file (type png)
 <use gambar/catudaya_bb.png>
-Package pdftex.def Info: gambar/catudaya_bb.png  used on input line 276.
+Package pdftex.def Info: gambar/catudaya_bb.png  used on input line 278.
 (pdftex.def)             Requested size: 227.62204pt x 144.4455pt.
- [39] [40] [41]
+ [39] [40]
+Overfull \hbox (12.75954pt too wide) in paragraph at lines 313--314
+[]\T1/ptm/m/n/12 Pada per-sa-ma-an []3.5[] be-be-ra-pa da-pat di-u-bah se-su-ai
+ de-ngan hu-kum \T1/ptm/m/it/12 co-si-nus $[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 
+\OT1/cmr/m/n/12 ) =
+ []
+
+[41]
 File: gambar/catudaya_bb.png Graphic file (type png)
 <use gambar/catudaya_bb.png>
-Package pdftex.def Info: gambar/catudaya_bb.png  used on input line 330.
+Package pdftex.def Info: gambar/catudaya_bb.png  used on input line 332.
 (pdftex.def)             Requested size: 227.62204pt x 144.4455pt.
- [42])
-[43]
+ [42]) [43]
 \openout2 = `BAB_4.aux'.
 
  (BAB_4.tex
@@ -1157,35 +1160,35 @@ LaTeX Warning: Reference `tbl.potensio' on page 47 undefined on input line 86.
 [47] [48] [49]
 File: gambar/controlp5.jpg Graphic file (type jpg)
 <use gambar/controlp5.jpg>
-Package pdftex.def Info: gambar/controlp5.jpg  used on input line 188.
+Package pdftex.def Info: gambar/controlp5.jpg  used on input line 193.
 (pdftex.def)             Requested size: 227.62204pt x 182.69733pt.
  [50]
 File: gambar/controlp5.jpg Graphic file (type jpg)
 <use gambar/controlp5.jpg>
-Package pdftex.def Info: gambar/controlp5.jpg  used on input line 219.
+Package pdftex.def Info: gambar/controlp5.jpg  used on input line 224.
 (pdftex.def)             Requested size: 227.62204pt x 182.69733pt.
  [51]
 
 LaTeX Warning: Reference `tbl.jointshoudler' on page 52 undefined on input line
- 228.
+ 233.
 
 [52]
 File: gambar/controlp5.jpg Graphic file (type jpg)
 <use gambar/controlp5.jpg>
-Package pdftex.def Info: gambar/controlp5.jpg  used on input line 252.
+Package pdftex.def Info: gambar/controlp5.jpg  used on input line 257.
 (pdftex.def)             Requested size: 227.62204pt x 182.69733pt.
  [53]
 File: gambar/controlp5.jpg Graphic file (type jpg)
 <use gambar/controlp5.jpg>
-Package pdftex.def Info: gambar/controlp5.jpg  used on input line 285.
+Package pdftex.def Info: gambar/controlp5.jpg  used on input line 290.
 (pdftex.def)             Requested size: 227.62204pt x 182.69733pt.
  [54]
 File: gambar/controlp5.jpg Graphic file (type jpg)
 <use gambar/controlp5.jpg>
-Package pdftex.def Info: gambar/controlp5.jpg  used on input line 296.
+Package pdftex.def Info: gambar/controlp5.jpg  used on input line 301.
 (pdftex.def)             Requested size: 227.62204pt x 182.69733pt.
 
-Overfull \hbox (1.52719pt too wide) in paragraph at lines 293--299
+Overfull \hbox (1.52719pt too wide) in paragraph at lines 298--304
 []\T1/ptm/m/n/12 Pengujian GUI di-la-kuk-an un-tuk mem-ban-dingk-an po-si-si da
 -ri ak-tu-al ro-bot SCA-
  []
@@ -1193,21 +1196,21 @@ Overfull \hbox (1.52719pt too wide) in paragraph at lines 293--299
 [55]
 File: gambar/controlp5.jpg Graphic file (type jpg)
 <use gambar/controlp5.jpg>
-Package pdftex.def Info: gambar/controlp5.jpg  used on input line 302.
+Package pdftex.def Info: gambar/controlp5.jpg  used on input line 307.
 (pdftex.def)             Requested size: 227.62204pt x 182.69733pt.
 File: gambar/controlp5.jpg Graphic file (type jpg)
 <use gambar/controlp5.jpg>
-Package pdftex.def Info: gambar/controlp5.jpg  used on input line 308.
+Package pdftex.def Info: gambar/controlp5.jpg  used on input line 313.
 (pdftex.def)             Requested size: 227.62204pt x 182.69733pt.
  [56] [57]
 File: gambar/controlp5.jpg Graphic file (type jpg)
 <use gambar/controlp5.jpg>
-Package pdftex.def Info: gambar/controlp5.jpg  used on input line 342.
+Package pdftex.def Info: gambar/controlp5.jpg  used on input line 347.
 (pdftex.def)             Requested size: 227.62204pt x 182.69733pt.
  [58]
 File: gambar/controlp5.jpg Graphic file (type jpg)
 <use gambar/controlp5.jpg>
-Package pdftex.def Info: gambar/controlp5.jpg  used on input line 356.
+Package pdftex.def Info: gambar/controlp5.jpg  used on input line 361.
 (pdftex.def)             Requested size: 227.62204pt x 182.69733pt.
 ) [59]
 \openout2 = `BAB_5.aux'.
@@ -1234,7 +1237,7 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 108.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 108.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 108.
 Package rerunfilecheck Info: File `Laporan_KP.out' has not changed.
-(rerunfilecheck)             Checksum: 6591F98169D0950AB5115C487BC13183;3967.
+(rerunfilecheck)             Checksum: D464D0C35BECAA13C2B9B17B6165385B;4047.
 
 
 LaTeX Warning: There were undefined references.
@@ -1245,10 +1248,10 @@ LaTeX Warning: There were multiply-defined labels.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 108.
  ) 
 Here is how much of TeX's memory you used:
- 10284 strings out of 492895
- 156157 string characters out of 3124202
- 267897 words of memory out of 3000000
- 13687 multiletter control sequences out of 15000+200000
+ 10291 strings out of 492895
+ 156286 string characters out of 3124202
+ 268258 words of memory out of 3000000
+ 13693 multiletter control sequences out of 15000+200000
  35368 words of font info for 57 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  36i,18n,41p,1354b,470s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -1266,9 +1269,9 @@ fb><C:/Users/IVAN/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/times/utmbi
 8a.pfb><C:/Users/IVAN/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/times/u
 tmr8a.pfb><C:/Users/IVAN/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/time
 s/utmri8a.pfb>
-Output written on Laporan_KP.pdf (71 pages, 1691305 bytes).
+Output written on Laporan_KP.pdf (71 pages, 1695175 bytes).
 PDF statistics:
- 1047 PDF objects out of 1200 (max. 8388607)
- 262 named destinations out of 1000 (max. 500000)
- 655 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1061 PDF objects out of 1200 (max. 8388607)
+ 263 named destinations out of 1000 (max. 500000)
+ 663 words of extra memory for PDF output out of 10000 (max. 10000000)
 

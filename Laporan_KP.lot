@@ -17,7 +17,7 @@
 \contentsline {table}{\numberline {3.2}{\ignorespaces Spesifikasi Motor DC pada Robot SCARA\relax }}{28}{table.caption.39}% 
 \contentsline {table}{\numberline {3.3}{\ignorespaces Pin pada Arduino Mega 2560\relax }}{35}{table.caption.52}% 
 \contentsline {table}{\numberline {3.4}{\ignorespaces Keterangan Tampilan pada GUI Robot SCARA\relax }}{37}{table.caption.55}% 
-\contentsline {table}{\numberline {3.5}{\ignorespaces Keterangan Sistem Keseluruhan\relax }}{42}{table.caption.58}% 
+\contentsline {table}{\numberline {3.5}{\ignorespaces Keterangan Sistem Keseluruhan\relax }}{43}{table.caption.58}% 
 \addvspace {10\p@ }
 \contentsline {table}{\numberline {4.1}{\ignorespaces Hasil Tegangan Keluaran Dari Tegangan DC-DC Converter\relax }}{45}{table.caption.59}% 
 \contentsline {table}{\numberline {4.2}{\ignorespaces Hasil Tegangan Keluaran Dari Tegangan DC-DC \textit {Converter}\relax }}{46}{table.caption.60}% 
@@ -26,7 +26,7 @@
 \contentsline {table}{\numberline {4.5}{\ignorespaces Hasil Pengujian \textit {Potensiometer} Menggunakan Program \textit {Moving Avarage}\relax }}{48}{table.caption.63}% 
 \contentsline {table}{\numberline {4.6}{\ignorespaces Hasil Pengujian Rangkaian \textit {Switching Vavle Pnemuatic}\relax }}{49}{table.caption.64}% 
 \contentsline {table}{\numberline {4.7}{\ignorespaces Hasil Pengujian Koordinat X\relax }}{50}{table.caption.65}% 
-\contentsline {table}{\numberline {4.8}{\ignorespaces Hasil Pengujian Koordinat X\relax }}{52}{table.caption.67}% 
+\contentsline {table}{\numberline {4.8}{\ignorespaces Hasil Pengujian Koordinat Y\relax }}{52}{table.caption.67}% 
 \contentsline {table}{\numberline {4.9}{\ignorespaces Hasil Pengujian \textit {Joint Shoulder}\relax }}{53}{table.caption.69}% 
 \contentsline {table}{\numberline {4.10}{\ignorespaces Hasil Pengujian \textit {Joint Elbow}\relax }}{55}{table.caption.71}% 
 \contentsline {table}{\numberline {4.11}{\ignorespaces Hasil Pengujian Akurasi Robot Secara Keseluruhan\relax }}{58}{table.caption.76}% 

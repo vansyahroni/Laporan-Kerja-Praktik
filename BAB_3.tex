@@ -203,7 +203,7 @@ Arduino Mega 2560 digunakan sebagai mikrokontroler utama untuk mengendalikan sel
 \end{table}
 
 \subsubsection{Rangkaian Catu Daya}
-Rangkaian catu daya merupakan hal yang sangat penting dalam sebuah sistem. Pada \textit{arm manipulator robot} SCARA terdapat tiga buah bilai tegangan \textit{supply} yang berbeda. Tegangan yang ditujukkan untuk Arduino Mega 2560 dan beberapa sensor membutuhkan tegangan 5 Volt, motor DC membutuhkan tegangan 12 Volt dan \textit{valve pneumatic} membutuhkan tegangan 24 Volt. Catu daya diawali dengan tegangan AC 220 Volt dari listrik PLN. Tegangan tersebut kemudian diturunkan menggunakan sebuah trafo 3A menjadi 24 Volt AC. Komponen yang digunakan dalam rangakaian merupakan komponen yang membutuhkan tegangan DC, maka tegangan 24 Volt AC diubah menjadi 24 DC menggunakan rangkaian dioda \textit{bridge}. Tegangan 24 Volt DC diarahkan menuju dua buah regulator \textit{Buck} LM2596 yang masing-masing menghasilkan tegangan 12 Volt dan 5 Volt. Gambar \ref{pic.skematikcatu} merupakan rangkaian catu daya secara keseluruhan.
+Rangkaian catu daya merupakan hal yang sangat penting dalam sebuah sistem. Pada \textit{arm manipulator robot} SCARA terdapat tiga buah bilai tegangan \textit{supply} yang berbeda. Tegangan yang ditujukkan untuk Arduino Mega 2560 dan beberapa sensor membutuhkan tegangan 5 Volt, motor DC membutuhkan tegangan 12 Volt dan \textit{valve pneumatic} membutuhkan tegangan 24 Volt. Catu daya diawali dengan tegangan AC 220 Volt dari listrik PLN. Tegangan tersebut kemudian diturunkan menggunakan sebuah trafo 3A menjadi 24 Volt AC. Komponen yang digunakan dalam rangakaian merupakan komponen yang membutuhkan tegangan DC, maka tegangan 24 Volt AC diubah menjadi 24 Volt DC menggunakan rangkaian dioda \textit{bridge}. Tegangan 24 Volt DC diarahkan menuju dua buah regulator \textit{Buck} LM2596 yang masing-masing menghasilkan tegangan 12 Volt dan 5 Volt. Gambar \ref{pic.skematikcatu} merupakan rangkaian catu daya secara keseluruhan.
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=8cm]{gambar/catudaya_bb.png}
@@ -211,16 +211,18 @@ Rangkaian catu daya merupakan hal yang sangat penting dalam sebuah sistem. Pada 
 	\label{pic.skematikcatu}
 \end{figure}
 \section{Perancangan Perangkat Lunak}
-Perangkat lunak yang digunakan merupakan \textit{software} Processing IDE. Processing IDE diprogram agar mendapatkan sebuah GUI yang cocok sesuai dengan fungsi robot SCARA. Di dalam GUI terdapat dua bagian yang diantaranaya merupakan bagian kontrol, dan bagian \textit{display}. Pada bagian kontrol nantinya dalam GUI akan mengkontrol mulai dari pergerakan dan posisi dari robot SCARA. Sedangkan pada bagian penampil, GUI menampilkan nilai dari sudut, posisi, serta animasi terkait robot SCARA. Gambar 3.21 merupakan tampilan dari GUI secara keseluruhan. Tabel 3.21 menyajikan setiap komponen yang ditampilan di dalam GUI processing IDE.
+Perangkat lunak yang digunakan merupakan \textit{software} Processing IDE. Processing IDE diprogram agar menghasilkan sebuah GUI yang cocok sesuai dengan fungsi robot SCARA. Di dalam GUI terdapat dua bagian yang diantaranaya merupakan bagian kontrol, dan bagian \textit{display}. Pada bagian kontrol pada GUI berfungsi untuk mengkontrol mulai dari pergerakan dan posisi dari robot SCARA. Sedangkan pada bagian penampil, GUI menampilkan nilai dari sudut, posisi, serta animasi terkait robot SCARA. Gambar \ref{pic.gui} merupakan tampilan dari GUI secara keseluruhan. Tabel \ref{tbl.gui} menyajikan setiap komponen yang ditampilan di dalam GUI processing IDE.
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=10cm ]{gambar/catudaya_bb.png}
 	\caption{Tampilan GUI Sistem Kinematika Robot SCARA}
+	\label{pic.gui}
 \end{figure}
 
 \begin{table}[H]
 	\centering
 	\caption{Keterangan Tampilan pada GUI Robot SCARA}
+	\label{tbl.gui}
 	\begin{tabular}{|c|c|l|}
 		\hline
 		\rowcolor[HTML]{9B9B9B} 
@@ -236,50 +238,50 @@ Perangkat lunak yang digunakan merupakan \textit{software} Processing IDE. Proce
 
 
 \subsection{ControlP5}
-ControlP5 merupakan salah satu library yang berguna dalam membuat sebuah GUI. Dalam library yang disediakan terdapat banyak pilihan terkait kontrol sistem dengan berbagai jenis pilihan. Kontrol sistem yang disediakan tersedia dua pilihan yaitu untuk menkontrol dan untuk menampilkan sebuah data. Masing-masing kontrol sistem ini dapat digunakan dengan cara memanggilnya pada program yang ditulis.
+ControlP5 merupakan salah satu \textit{library} yang berguna dalam membuat sebuah GUI. Dalam \textit{library} yang disediakan terdapat banyak pilihan terkait kontrol sistem dengan berbagai jenis pilihan. Kontrol sistem yang disediakan tersedia dua pilihan yaitu untuk menkontrol dan untuk menampilkan sebuah data. Masing-masing kontrol sistem ini dapat digunakan dengan cara memanggilnya pada program yang ditulis.
 
-Pada perancangan kineatika roboto scara ini, menggunakan empat buah kontrol sistem. Empat kontrol sistem yang digunakan merupakan jenis kontrol sistem yang berguna untuk memberikan sebuah data yang dikirimkan pada Arduino Mega 2560. Kontrol sistem tersebut diantaranya:
+Pada perancangan kineatika robot SCARA ini, menggunakan empat buah kontrol sistem. Empat kontrol sistem yang digunakan merupakan jenis kontrol sistem yang berguna untuk memberikan sebuah data yang dikirimkan pada Arduino Mega 2560. Kontrol sistem tersebut diantaranya:
 \begin{enumerate}
 	\item \textit{Slider Control} \\
-	\textit{Slider Control} berupa tampilan kontrol GUI yang menggunakan sistem geser dalam memberikan data. Data memiliki batasan atas dan batas bawah yang dimasukkan dalam program. Keuntungan menggunakan kontrol sistem jenis ini karena saat ingin untuk mengubah data yang diberikan menjadi lebih mudah.
+	\textit{Slider Control} berupa tampilan kontrol GUI yang menggunakan sistem geser dalam memberikan data. Data memiliki batasan atas dan batas bawah yang dimasukkan dalam program. Keuntungan menggunakan kontrol sistem jenis ini adalah mudahnya dalam memberikan sebuah data yang berbeda.
 
 
 	\item \textit{Textfield Control} \\
 \textit{Textfield control} berupa tampila kontrol GUI yang menggunakan masukan nilai data sesuai apa yang dituliskan atau diketikkan secara langsung. Kelebihan menggunakan kontrol sistem jenis ini karena dapat memasukkan nilai data lebih spesifik secara langsung sesuai keiinginan.
 	
-	\item \textit{Textfield Control} \\
+	\item \textit{Bang Control} \\
 \textit{Bang control}
-Berbeda dengan kontrol sistem sebelumnya,\textit{ bang control }berupa kotak yang bekerja pada saat mulai ditekan. Saat bang mulai ditekan data akan dikirimkan sesuai dengan nilai yang sudah dimasukan kedalam program. 
+Berbeda dengan kontrol sistem sebelumnya,\textit{ bang control }berupa kotak yang bekerja pada saat mulai ditekan. Saat \textit{bang} mulai ditekan data akan dikirimkan sesuai dengan nilai yang sudah dimasukan kedalam program. 
 	
 
-	\item \textit{Textfield Control} \\
+	\item \textit{Toggle Control} \\
 \textit{Toggle control}
-Toggle control memiliki sistem kontrol seperti saklar on-off. Pada saat ditekan maka toggle control menyimpan data berupa kondisi pertama dan berubah saat ditekan kembali. 
+\textit{Toggle control} memiliki sistem kontrol seperti saklar on-off. Pada saat ditekan maka \textit{toggle control} menyimpan data berupa kondisi pertama dan berubah saat ditekan kembali. 
 
 \end{enumerate}
-\subsection{Shape}
-Shape pada GUI berfungsi sebagai penampil secara tiga dimensi dari robot SCARA. Robot SCARA dapat ditampilkan dalam berbagai ukuran, letak dan juga dapat bergerak sesuai dengan data yang diberikan. Pergerakan dari robor SCARA merupakan implementasi dari wujud aslinya yang pergerakannya sama.
+\subsection{\textit{Shape}}
+\textit{Shape} pada GUI berfungsi sebagai penampil animasi tiga dimensi dari robot SCARA. Robot SCARA dapat ditampilkan dalam berbagai ukuran, letak dan juga dapat bergerak sesuai dengan data yang diberikan. Pergerakan dari robot SCARA merupakan implementasi dari wujud aslinya dengan pergerakan yang sama.
 
-Dalam pengoperasianya, desain dari robot SCARA yang ditampilkan harus dimasukkan ke dalam folder yang sama dengan program processing IDE. File yang dapat ditampilkan merupakan file dengan jenis obj. yang berarti file objek. Pada program robot SCARa file dari dimensi tiga dari robot SCARA memiliki tiga buah file dimana ketiganya adalah \textit{base, shoulder}, dan \textit{elbow}. 
+Dalam pengoperasianya, desain dari robot SCARA yang ditampilkan harus dimasukkan ke dalam folder yang sama dengan program processing IDE. File yang dapat ditampilkan merupakan file dengan jenis obj. yang berarti file objek. Pada program robot SCARA file dari dimensi tiga dari robot SCARA memiliki tiga buah file dimana ketiganya adalah \textit{base, shoulder}, dan \textit{elbow}. 
 
 \section{Sistem Kinematika}
-Persamaan kinematika terbagi dua, yaitu kinematika maju dan kinematika balik. Kinematika maju digunakan untuk menentukan posisi dan orientasi \textit{end-effector} apabila variabel sudut \textit{joint}-nya telah diketahui. Kinematika balik digunakan untuk mencari \textit{joint} robot daam menentukan posisi dan orientasi dari \textit{end-effector.}
+Persamaan kinematika terbagi dua, yaitu kinematika maju dan kinematika balik. Kinematika maju digunakan untuk menentukan posisi dan orientasi \textit{end-effector} apabila variabel sudut \textit{joint}-nya telah diketahui. Kinematika balik digunakan untuk mencari \textit{joint} robot dalam menentukan posisi dan orientasi dari \textit{end-effector.}
 \subsection{Prinsip Kerja Kinematika Maju}
 Metode Denavit-Hartenberg merupakan metode yang menggabungkan proses perhitungan rotasi dan translasi menjadi sebuah matriks yang menyertakan nilai-nilai sudut putar dan jarak sendi dari sebuah lengan robot. Dalam beberapa aplikasi, metode Denavit-Hartenberg umumnya digunakan dalam perhitungan \textit{Forward Kinematics}. Dalam penelitian ini dirancang aplikasi yang menggunakan metode Denavit-Hartenberg untuk menghitung sudut-sudut tiap sendi pada \textit{Invers Kinematics} untuk menggerakan sebuah lengan robot. Matrik Denavit-Hartenberg yang berisi perhitungan rotasi dan translasi digunakan untuk mendapatkan nilai nilai sudut untuk menggerakkan tiap motor sendi. Empat Aturan Frame Denavit-Hartenberg yaitu Sumbu Z harus menjadi sumbu rotasi atau translasi dari sebuah joint. Sumbu X harus tegak lurus dari sumbu Z frame sebelumnya. Sumbu X harus memotong atau menyilang dari sumbu Z frame sebelumnya. Sumbu Y harus digambarkan sesuai dengan aturan tangan kanan setelah sumbu X   dan sumbu Z setiap frame digambarkan.
 \subsection{Prinsip Kerja Kinematika Balik}
-Dalam menentukan koordinat \textit{end-effector}, kinematika balik harus disesuaikan dengan batas area kerja \textit{(workspace)} dari jangkauan robot. Kinematika balik adalah perhitungan untuk mencari variabel sudut (\textit{joint}) robot dalam menentukan posisi dan orientasi dari \textit{end-effector}. Penyelesaian kinematika balik ini dapat diselesaikan dengan menggunakan kinematika balik, yang di dalamnya menggunakan hukum \textit{phytagoras} dan aturan \textit{cosinus}. 
+Kinematika balik adalah perhitungan untuk mencari variabel sudut (\textit{joint}) robot dalam menentukan posisi dan orientasi dari \textit{end-effector}. Dalam menentukan koordinat \textit{end-effector}, kinematika balik harus disesuaikan dengan batas area kerja \textit{(workspace)} dari jangkauan robot. Penyelesaian kinematika balik ini dapat diselesaikan dengan menggunakan persamaan kinematika balik yang di dalamnya menggunakan hukum \textit{phytagoras} dan aturan \textit{cosinus}. 
 Secara garis besar metode \textit{inverse kinematic} akan mencari nilai-nilai parameter yang harus diberikan kepada setiap aktuator untuk mencapai tujuan akhir. Untuk mendapatkan nilai-nilai parameter tersebut, robot harus mengetahui terlebih dahulu manipulator yang dimilikinya, baik ukuran maupun jumlah aktuator serta derajat kebebasan yang ada. Kemudian, robot harus ditanamkan rumus-rumus yang didapat dari berbagai model perhitungan, baik dari segi analisa grafik langsung maupun menggunakan metode-metode dari berbagai penelitian. 
 
-Analisis persamaan kinematik dapat diselesaikan dengan cara yang paling dasar yaitu menggunakan trigonometri dengan bantuan grafik. Pada penelitian ini karena menggunakan sebuah GUI yang didalamnya terdapat animasi dari bentuk fisik robot SCARA maka koordinat didapat dari processing IDE. Robot SCARA yang terdapat di dalam processing IDE menggunakan skala tertentu agar menarik dalam tampilan dan tetap sesuai dari dimensi aslinya. Penyelesaian kinematika dalam robot SCARA cukup diselesaiakan menggunakan satu sisi, yaitu sisi atas (\textit{top view}) dari struktur robot lengan. Pada sisi atas derajat sudut \textit{joint} \textit{shoulder}, dan sudut \textit{joint elbow} dapat ditemukan. Persamaan kinematika balik untuk sisi atas dapat dilihat pada Gambar 3.17.
+Analisis persamaan kinematik dapat diselesaikan dengan cara yang paling dasar yaitu menggunakan trigonometri dengan bantuan grafik. Pada penelitian ini karena menggunakan sebuah GUI yang didalamnya terdapat animasi dari bentuk fisik robot SCARA maka koordinat didapat dari Processing IDE. Robot SCARA yang terdapat di dalam Processing IDE menggunakan skala tertentu agar tetap sesuai dari dimensi aslinya. Penyelesaian kinematika dalam robot SCARA cukup diselesaiakan menggunakan satu sisi, yaitu sisi atas (\textit{top view}) dari struktur robot lengan. Pada sisi atas derajat sudut \textit{joint} \textit{shoulder}, dan sudut \textit{joint elbow} dapat ditemukan. Gambar \ref{pic.perskinematikabalik} merupakan gambaran untuk mendapatkan sebuah persamaan yang akan menghasilkan nilai sudut pada setiap \textit{joint.}
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=8cm]{gambar/catudaya_bb.png}
 	\caption{Trigonometeri Sisi Atas}
-	\label{g_ik}
+	\label{pic.perskinematikabalik}
 \end{figure}
  
  
-Pada robot SCARA, sudut dari \textit{joint} yang dicari merupakan \textit{joint} dari \textit{shoulder} dan juga \textit{elbow.} Kedua \textit{joint} tersebut dapat ditemukan dengan melalui persamaan \textit{pythagoras} dan juga hukum \textit{cosinus}. Pada Gambar 3.17 terlihat bahwa sudut \textit{shoulder} merupakan besar sudut diantara lengan \textit{shoulder} dan juga sumbu x dan sudut elbow merupakan besar sudut antara lengan \textit{elbow} dengan garis bantu dari lengan \textit{shoulder}. Keduanya dapat ditentukan besar nilainya melalui beberapa pesamaan dari \textit{cosinus} dan juga hukum \textit{pyhtagoras}. $l_{1}$ merupakan panjang lengan \textit{shoulder} dan $l_{2}$ merupakan panjang lengan dari \textit{elbow}. Serta $\theta_{1}$ merupakan sudut dari shoulder dan $\theta_{2}$ merupakan sudut dari \textit{elbow}.  
+Pada robot SCARA, sudut dari \textit{joint} yang dicari merupakan \textit{joint} dari \textit{shoulder} dan juga \textit{elbow.} Kedua \textit{joint} tersebut dapat ditemukan dengan melalui persamaan \textit{pythagoras} dan juga hukum \textit{cosinus}. Pada Gambar \ref{pic.perskinematikabalik} terlihat bahwa sudut \textit{shoulder} merupakan besar sudut diantara lengan \textit{shoulder} dan juga sumbu $x$ dan sudut \textit{elbow} merupakan besar sudut antara lengan \textit{elbow} dengan garis bantu dari lengan \textit{shoulder}. Keduanya dapat ditentukan besar nilainya melalui beberapa pesamaan dari \textit{cosinus} dan juga hukum \textit{pyhtagoras}. $l_{1}$ merupakan panjang lengan \textit{shoulder} dan $l_{2}$ merupakan panjang lengan dari \textit{elbow}. Serta $\theta_{1}$ merupakan sudut dari \textit{shoulder} dan $\theta_{2}$ merupakan sudut dari \textit{elbow}.  
 
 \begin{enumerate}
 	\item Dengan menggunakan hukum \textit{cosinus}, didapatkan sebuah persamaan \ref{cosinus1}
@@ -292,7 +294,7 @@ Pada robot SCARA, sudut dari \textit{joint} yang dicari merupakan \textit{joint}
 	(x^2+y^2)=l_{1}^2l_{2}^2+2l_{2}l_{2}cos(\theta_{2})
 	\label{cosinus2}
 	\end{equation}
-	\item Pada persamaan \ref{cosinus2} mencari sebuah nilai dari $\theta_{2}$ untuk memmudahkannya maka persamaan menjadi seperti pada persamaan \ref{cosinus3}
+	\item Inti persamaan akan mencari sebuah nilai dari $\theta_{2}$, maka untuk memmudahkannya maka persamaan menjadi seperti pada persamaan \ref{cosinus3}
 	\begin{equation}
 	cos(\theta_{2})=\frac{x^2+y^2-l_{1}^2-l_{2}^2}{2_{1}l_{2}}
 	\label{cosinus3}
@@ -302,18 +304,18 @@ Pada robot SCARA, sudut dari \textit{joint} yang dicari merupakan \textit{joint}
 	\theta_{2}=arccos(\frac{x^2+y^2-l_{1}^2-l_{2}^2}{2_{1}l_{2}})
 		\label{cosinus4}
 	\end{equation}
-	Dengan persamaan \ref*{cosinus4} maka nilai dari $\theta_{2}$ atau sudut dari \textit{elbow} dapat diketahui dengan cara memasukkan nilai posisi x, posisi y, serta panjang dari \textit{shoulder} dan \textit{elbow} ke dalam persamaan. Nilai posisi x dan posisi y merupakan posisi akhir dari \textit{end-effector}. 
+	Dengan persamaan \ref{cosinus4} maka nilai dari $\theta_{2}$ atau sudut dari \textit{elbow} dapat diketahui dengan cara memasukkan nilai posisi $x$, posisi $y$ serta panjang dari \textit{shoulder} dan \textit{elbow} ke dalam persamaan. Nilai posisi $x$ dan posisi $y$ merupakan posisi akhir dari \textit{end-effector}. 
 	\item Dalam menentukan sudut lainnya yaitu sudut \textit{shoulder} yang ditandai dengan simbol $\theta_{1}$ menggunakan persamaan \textit{cosinus} yang dituliskan pada persamaan \ref{cosinus5}
 	\begin{equation}
 	\frac{sin(\beta)}{l_{2}} = \frac{sin(\gamma)}{\sqrt{x^2+y^2}} ; \alpha=\arctan(\frac{y}{x})
 	\label{cosinus5}
 	\end{equation}
-	\item Pada persamaan \ref{cosinus5} $\sin(\gamma)=\sin(180-\theta_{2})=\sin(\theta_{2})$ dengan mengubah $\sin(\gamma)$ menjadi $\sin(\theta_{2})$ maka akan persamaan menjadi seperi yang ditunjukkan pada persamaan \ref{cosinus6}
+	\item Pada persamaan \ref{cosinus5} beberapa dapat diubah sesuai dengan hukum \textit{cosinus} $\sin(\gamma)=\sin(180-\theta_{2})=\sin(\theta_{2})$ dengan mengubah $\sin(\gamma)$ menjadi $\sin(\theta_{2})$ maka akan persamaan menjadi seperi yang ditunjukkan pada persamaan \ref{cosinus6}
 	\begin{equation}
 	\beta=\arcsin(\frac{l_{2}\sin(\theta_{2})}{\sqrt{x^2+y^2}})
 	\label{cosinus6}
 	\end{equation}
-	\item Jika dilihat pada persamaan \ref{g_ik} makan besar dari sudut \textit{shoulder} yang ditandakan dengan $\theta_{1}$ yang berarti $\theta_{1}=\beta+\alpha$ maka dapat diselesaikan dengan persamaan \ref{cosinus7}
+	\item Jika dilihat pada gambar \ref{pic.perskinematikabalik} maka besar dari sudut \textit{shoulder} yang ditandakan dengan $\theta_{1}$ yang artinya $\theta_{1}=\beta+\alpha$ maka dapat diselesaikan dengan persamaan \ref{cosinus7}
 	\begin{equation}
 	\theta_{1}=\arcsin(\frac{l_{2}\sin(\theta_{2})}{\sqrt{x^2+y^2}}+\arctan(\frac{y}{x})
 	\label{cosinus7}
@@ -321,21 +323,21 @@ Pada robot SCARA, sudut dari \textit{joint} yang dicari merupakan \textit{joint}
 	\item  Dengan penyelesaian seperti pada persamaan \ref{cosinus7} besar sudut dari \textit{shoulder} dapat diketahui dengan memasukkan nilai panjang \textit{elbow}, sudut \textit{elbow} dan juga posisi dari \textit{end-effector}.
 \end{enumerate}
 
-Pada dalam penelitian kinematika robot SCARA ini, segala perhitungan kinematika dilakukan di dalam program processing IDE. Di dalam processing IDE terdapat animasi dari bentuk asli robot SCARA dengan dimensi yang sama hanya saja ditampilkan dalam bentuk berskala. Pada posisi \textit{end-effector} didapat posisi x dan y yang diprogram pada dalam processing IDE. Dua buah data sudut yang didapat pada perhitungan sudut \textit{shoulder} dan \textit{elbow} kemudian dikirimkan kepada Arduino Mega 2560 untuk diprores dan diimplemintasikan secara langsung pada robot yang asli.
+Dalam penelitian kinematika robot SCARA ini, segala perhitungan kinematika dilakukan di dalam program processing IDE. Di dalam processing IDE terdapat animasi dari bentuk asli robot SCARA dengan dimensi yang sama hanya saja ditampilkan dalam bentuk berskala. Pada posisi \textit{end-effector} didapat posisi $x$ dan $y$ yang diprogram pada dalam processing IDE. Dua buah data sudut yang didapat pada perhitungan merupakan sudut \textit{shoulder} dan \textit{elbow} kemudian dikirimkan kepada Arduino Mega 2560 untuk diprores dan diimplemintasikan secara langsung pada robot lengan.
 
 \section{Perancangan Sistem Keseluruhan}
-Rancangan sistem keseluruhan merupakan gabungan dari perancangan perangkat keras dan perangkat lunak yang diintegrsikan sesuai dengan diagram blok sistem. Gambar 3.20 adalah gambaran tentang perancangan sistem secara keseluruhan. Tabel 3.3  menunjukkan keterangan setiap komponen yang ada di dalam sistem keseluruhan \textit{arm manipulator} robot SCARA. 
+Rancangan sistem keseluruhan merupakan gabungan dari perancangan perangkat keras dan perangkat lunak yang diintegrsikan sesuai dengan diagram blok sistem. Gambar \ref{pic.sistemkeseluruhan} adalah gambaran tentang perancangan sistem secara keseluruhan. Tabel \ref{tbl.sistemkeseluruhan}  menunjukkan keterangan setiap komponen yang ada di dalam sistem keseluruhan \textit{arm manipulator} robot SCARA. 
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=8cm]{gambar/catudaya_bb.png}
 	\caption{Sistem Secara Keseluruhan}
-	\label{g_ik}
+	\label{pic.sistemkeseluruhan}
 \end{figure}
 
 \begin{table}[H]
 	\centering
 	\caption{Keterangan Sistem Keseluruhan}
-
+\label{tbl.sistemkeseluruhan}
 		\begin{tabular}{|c|l|}
 			\hline
 			\rowcolor[HTML]{9B9B9B} 
@@ -351,8 +353,8 @@ Rancangan sistem keseluruhan merupakan gabungan dari perancangan perangkat keras
 		\end{tabular}
 
 \end{table}
-Processing IDE merupakan piranti yang digunakan sebagai masukan. Masukan dari Processing IDE adalah hasil dari perhitungan kinematika maju dan atau kinematika balik yang dimasukkan melalui GUI. Objek berada dalam cakupan \textit{workspace} yang telah ditentukan luasnya yang ditinjau dari cangkupan dari \textit{end-effector}. GUI dari processing IDE ini diproses menggunakan komputer personal.  
+Processing IDE merupakan piranti yang digunakan sebagai masukan data. Masukan dari Processing IDE adalah hasil dari perhitungan kinematika maju dan atau kinematika balik yang dimasukkan melalui GUI. Objek berada dalam cakupan \textit{workspace} yang telah ditentukan luasnya yang ditinjau dari cangkupan dari \textit{end-effector}. GUI dari Processing IDE ini diproses menggunakan komputer personal.  
 
-Processing IDE juga menampilan nilai derajat setiap \textit{joint}, koordinat x dan y dari \textit{end-effector}. Koordinat x dan y yang telah didapatkan dari processing IDE diolah dalam perhitungan kinematika balik sehingga dapat ditemukan nilai besar derajat sudut setiap joint. Setelah nilai besar derajat sudut setiap \textit{joint} didapatkan, Processing IDE akan mengirimkan nilai-nilai tersebut ke Arduino IDE melewati komunikasi Serial. Arduino IDE akan mengirimkan nilai-nilai tersebut sesuai dengan pin motor DC yang tersambung dengan Arduino Mega 2560, lalu nilai-nilai \textit{joint}  tersebut dikirimkan Arduino Mega 2560 kembali ke processing IDE melaluo koneksi langsung menggunakan kabel USB.  
+Processing IDE juga menampilan nilai derajat setiap \textit{joint}, koordinat $x$ dan $y$ dari \textit{end-effector}. Koordinat $x$ dan $y$ yang telah didapatkan dari processing IDE diolah dalam perhitungan kinematika balik sehingga dapat ditemukan nilai besar derajat sudut setiap \textit{joint}. Setelah nilai besar derajat sudut setiap \textit{joint} didapatkan, Processing IDE akan mengirimkan nilai-nilai tersebut ke Arduino IDE melewati komunikasi Serial. Arduino Mega 2560 mengirimkan nilai-nilai tersebut sesuai dengan pin motor DC yang tersambung dengan Arduino Mega 2560 melalui \textit{Driver} Motor H-\textit{Bridge} EMS 30A, kemudian nilai-nilai \textit{joint}  tersebut dikirimkan Arduino Mega 2560 kembali ke Processing IDE melalui koneksi langsung menggunakan kabel USB.  
 
-Arduino Mega 2560 merupakan mikrokotroler yang menggerakkan setiap motor DC sesuai dengan besaran nilai yang telah didapatkan. Setelah itu, robot lengan SCARA akan mencapai koordinat x dan y dari objek, lalu mencengkram objek tersebut dengan \textit{Gripper}.
+Arduino Mega 2560 merupakan mikrokotroler yang menggerakkan setiap motor DC sesuai dengan besaran nilai yang telah didapatkan. Robot lengan SCARA akan mencapai koordinat $x$ dan $y$ dari objek, lalu mencengkram objek tersebut menggunakan \textit{Gripper}.
