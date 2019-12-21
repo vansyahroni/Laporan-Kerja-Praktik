@@ -150,27 +150,66 @@ Dalam pengujian ini, pengujian terdiri dari pengujian posisi koordinat posisi \t
 
 \subsubsection{Pengujian Koordinat X}
  Pengujian koordinat $x$ dilakukan untuk mengetahui batas minimal dan batas maksimal \textit{end-effector} dari \textit{arm manipulator} robot SCARA relatif terhadap sumbu $x$. Pengujian koordinat $x$ dilakukan dengan cara mengujicobakan setiap titik dari ? cm sampai dengan total panjang \textit{shoulder} dan \textit{elbow} yaitu ? cm menggunakan perhitungan kinematika balik. Perhitungan posisi $x$ diujicobakan menggunakan program Processing IDE, sementara untuk pengukuran posisi diukur secara faktual dari posisi \textit{end-effector} dengan membuat sebuah diagram kartesius. Tabel \ref{tbl.koordinatx} menunjukkan pengujian koordinat $x$ dan Gambar \ref{pic.koordinatx} menunjukkan grafik dari \textit{sampling} koordinat $x$.
- 
- \begin{table}[H]
- 	\centering
- 	\caption{Hasil Pengujian Koordinat X}
+ % Please add the following required packages to your document preamble:
+ % \usepackage{multirow}
+ % \usepackage[table,xcdraw]{xcolor}
+ % If you use beamer only pass "xcolor=table" option, i.e. \documentclass[xcolor=table]{beamer}
+ % Please add the following required packages to your document preamble:
+ % \usepackage{multirow}
+ % \usepackage[table,xcdraw]{xcolor}
+ % If you use beamer only pass "xcolor=table" option, i.e. \documentclass[xcolor=table]{beamer}
+ \begin{table}[]
+ 	\caption{Pengujian Koordinat X}
  	\label{tbl.koordinatx}
- 	\begin{tabular}{|c|l|}
+ 	\centering
+ 	\begin{tabular}{|c|c|c|c|c|c|}
  		\hline
  		\rowcolor[HTML]{9B9B9B} 
- 		
- 		No & \multicolumn{1}{c|}{\cellcolor[HTML]{9B9B9B}Keterangan} \\ \hline
- 		1  & Robot Lengan SCARA                                      \\ \hline
- 		2  & Box Panel                                               \\ \hline
- 		3  & Arduino Mega 2560                                       \\ \hline
- 		4  & Personal Computer                                       \\ \hline
- 		5  & GUI Processing IDE                                      \\ \hline
- 		6  & Workspace Robot SCARA                                   \\ \hline
- 		7  & Kompresor                                               \\ \hline
- 		8  & Objek                                                   \\ \hline
- 	\end{tabular}
- 	
- \end{table} 
+ 		\cellcolor[HTML]{9B9B9B}                     & \multicolumn{2}{c|}{\cellcolor[HTML]{9B9B9B}Koordinat Masukan (cm)} & \multicolumn{2}{c|}{\cellcolor[HTML]{9B9B9B}Koordinat Terukur (cm)} & \cellcolor[HTML]{9B9B9B}                            \\ \cline{2-5}
+ 		\rowcolor[HTML]{9B9B9B} 
+ 		\multirow{-2}{*}{\cellcolor[HTML]{9B9B9B}No} & X                                & Y                                & X                                & Y                                & \multirow{-2}{*}{\cellcolor[HTML]{9B9B9B}Error} \\ \hline
+ 			1                                            & 1                                & 0                                &                                  &                                  &                                                     \\ \hline
+ 			2                                            &                                  & 0                                &                                  &                                  &                                                     \\ \hline
+ 			3                                            &                                  & 0                                &                                  &                                  &                                                     \\ \hline
+ 			4                                            &                                  & 0                                &                                  &                                  &                                                     \\ \hline
+ 			5                                            &                                  & 0                                &                                  &                                  &                                                     \\ \hline
+ 			6                                            &                                  & 0                                &                                  &                                  &                                                     \\ \hline
+ 			7                                            &                                  & 0                                &                                  &                                  &                                                     \\ \hline
+ 			8                                            &                                  & 0                                &                                  &                                  &                                                     \\ \hline
+ 			9                                            &                                  & 0                                &                                  &                                  &                                                     \\ \hline
+ 			10                                           &                                  & 0                                &                                  &                                  &                                                     \\ \hline
+ 			11                                           &                                  & 0                                &                                  &                                  &                                                     \\ \hline
+ 			12                                           &                                  & 0                                &                                  &                                  &                                                     \\ \hline
+ 			13                                           &                                  & 0                                &                                  &                                  &                                                     \\ \hline
+ 			14                                           &                                  & 0                                &                                  &                                  &                                                     \\ \hline
+ 			15                                           &                                  & 0                                &                                  &                                  &                                                     \\ \hline
+ 			16                                           &                                  & 0                                &                                  &                                  &                                                     \\ \hline
+ 			17                                           &                                  & 0                                &                                  &                                  &                                                     \\ \hline
+ 			18                                           &                                  & 0                                &                                  &                                  &                                                     \\ \hline
+ 			19                                           &                                  & 0                                &                                  &                                  &                                                     \\ \hline
+ 			20                                           &                                  & 0                                &                                  &                                  &                                                     \\ \hline
+ 			21                                           &                                  & 0                                &                                  &                                  &                                                     \\ \hline
+ 			22                                           &                                  & 0                                &                                  &                                  &                                                     \\ \hline
+ 			23                                           &                                  & 0                                &                                  &                                  &                                                     \\ \hline
+ 			24                                           &                                  & 0                                &                                  &                                  &                                                     \\ \hline
+ 			25                                           &                                  & 0                                &                                  &                                  &                                                     \\ \hline
+ 			26                                           &                                  & 0                                &                                  &                                  &                                                     \\ \hline
+ 			27                                           &                                  & 0                                &                                  &                                  &                                                     \\ \hline
+ 			28                                           &                                  & 0                                &                                  &                                  &                                                     \\ \hline
+ 			29                                           &                                  & 0                                &                                  &                                  &                                                     \\ \hline
+ 			30                                           &                                  & 0                                &                                  &                                  &                                                     \\ \hline
+ 			31                                           &                                  & 0                                &                                  &                                  &                                                     \\ \hline
+ 			32                                           &                                  & 0                                &                                  &                                  &                                                     \\ \hline
+ 			33                                           &                                  & 0                                &                                  &                                  &                                                     \\ \hline
+ 			34                                           &                                  & 0                                &                                  &                                  &                                                     \\ \hline
+ 			35                                           &                                  & 0                                &                                  &                                  &                                                     \\ \hline
+ 			36                                           &                                  & 0                                &                                  &                                  &                                                     \\ \hline
+ 			37                                           &                                  & 0                                &                                  &                                  &                                                     \\ \hline
+ 			38                                           &                                  & 0                                &                                  &                                  &                                                     \\ \hline
+ 			39                                           &                                  & 0                                &                                  &                                  &                                                     \\ \hline
+ 			40                                           &                                  & 0                                &                                  &                                  &                                                     \\ \hline
+ 		\end{tabular}
+ 	\end{table}
 	\begin{figure}[H]
 	\centering
 	\includegraphics[width=8cm]{gambar/controlp5.jpg}
@@ -182,23 +221,56 @@ Dari hasil pengujian yang ditampilkan pada Tabel \ref{tbl.koordinatx} dan juga G
 
 \subsubsection{Pengujian Koordinat Y}
 Pengujian koordinat $y$ dilakukan untuk mengetahui batas minimal dan batas maksimal \textit{end-effector} dari \textit{arm manipulator} robot SCARA relatif terhadap sumbu $y$. Pengujian koordinat $y$ dilakukan dengan cara mengujicobakan setiap titik dari ? cm sampai dengan total panjang \textit{shoulder} dan \textit{elbow} yaitu ? cm menggunakan perhitungan kinematika balik. Perhitungan posisi $y$ diujicobakan menggunakan program Processing IDE, sementara untuk pengukuran posisi diukur secara faktual dari posisi \textit{end-effector} dengan membuat sebuah diagram kartesius. Tabel \ref{tbl.koordinaty} menunjukkan pengujian koordinat $y$ dan Gambar \ref{pic.koordinaty} menunjukkan grafik dari \textit{sampling} koordinat $y$.
- \begin{table}[H]
+ \begin{table}[]
  	\centering
  	\caption{Hasil Pengujian Koordinat Y}
  	\label{tbl.koordinaty}
- 	\begin{tabular}{|c|l|}
+ 	\begin{tabular}{|c|c|c|c|c|c|}
  		\hline
  		\rowcolor[HTML]{9B9B9B} 
- 		
- 		No & \multicolumn{1}{c|}{\cellcolor[HTML]{9B9B9B}Keterangan} \\ \hline
- 		1  & Robot Lengan SCARA                                      \\ \hline
- 		2  & Box Panel                                               \\ \hline
- 		3  & Arduino Mega 2560                                       \\ \hline
- 		4  & Personal Computer                                       \\ \hline
- 		5  & GUI Processing IDE                                      \\ \hline
- 		6  & Workspace Robot SCARA                                   \\ \hline
- 		7  & Kompresor                                               \\ \hline
- 		8  & Objek                                                   \\ \hline
+ 		\cellcolor[HTML]{9B9B9B}                     & \multicolumn{2}{c|}{\cellcolor[HTML]{9B9B9B}Koordinat Masukan (cm)} & \multicolumn{2}{c|}{\cellcolor[HTML]{9B9B9B}Koordinat Terukur (cm)} & \cellcolor[HTML]{9B9B9B}                            \\ \cline{2-5}
+ 		\rowcolor[HTML]{9B9B9B} 
+ 		\multirow{-2}{*}{\cellcolor[HTML]{9B9B9B}No} & X                                & Y                                & X                                & Y                                & \multirow{-2}{*}{\cellcolor[HTML]{9B9B9B}Error} \\ \hline
+ 		1                                            & 1                                & 0                                &                                  &                                  &                                                     \\ \hline
+ 		2                                            &                                  & 0                                &                                  &                                  &                                                     \\ \hline
+ 		3                                            &                                  & 0                                &                                  &                                  &                                                     \\ \hline
+ 		4                                            &                                  & 0                                &                                  &                                  &                                                     \\ \hline
+ 		5                                            &                                  & 0                                &                                  &                                  &                                                     \\ \hline
+ 		6                                            &                                  & 0                                &                                  &                                  &                                                     \\ \hline
+ 		7                                            &                                  & 0                                &                                  &                                  &                                                     \\ \hline
+ 		8                                            &                                  & 0                                &                                  &                                  &                                                     \\ \hline
+ 		9                                            &                                  & 0                                &                                  &                                  &                                                     \\ \hline
+ 		10                                           &                                  & 0                                &                                  &                                  &                                                     \\ \hline
+ 		11                                           &                                  & 0                                &                                  &                                  &                                                     \\ \hline
+ 		12                                           &                                  & 0                                &                                  &                                  &                                                     \\ \hline
+ 		13                                           &                                  & 0                                &                                  &                                  &                                                     \\ \hline
+ 		14                                           &                                  & 0                                &                                  &                                  &                                                     \\ \hline
+ 		15                                           &                                  & 0                                &                                  &                                  &                                                     \\ \hline
+ 		16                                           &                                  & 0                                &                                  &                                  &                                                     \\ \hline
+ 		17                                           &                                  & 0                                &                                  &                                  &                                                     \\ \hline
+ 		18                                           &                                  & 0                                &                                  &                                  &                                                     \\ \hline
+ 		19                                           &                                  & 0                                &                                  &                                  &                                                     \\ \hline
+ 		20                                           &                                  & 0                                &                                  &                                  &                                                     \\ \hline
+ 		21                                           &                                  & 0                                &                                  &                                  &                                                     \\ \hline
+ 		22                                           &                                  & 0                                &                                  &                                  &                                                     \\ \hline
+ 		23                                           &                                  & 0                                &                                  &                                  &                                                     \\ \hline
+ 		24                                           &                                  & 0                                &                                  &                                  &                                                     \\ \hline
+ 		25                                           &                                  & 0                                &                                  &                                  &                                                     \\ \hline
+ 		26                                           &                                  & 0                                &                                  &                                  &                                                     \\ \hline
+ 		27                                           &                                  & 0                                &                                  &                                  &                                                     \\ \hline
+ 		28                                           &                                  & 0                                &                                  &                                  &                                                     \\ \hline
+ 		29                                           &                                  & 0                                &                                  &                                  &                                                     \\ \hline
+ 		30                                           &                                  & 0                                &                                  &                                  &                                                     \\ \hline
+ 		31                                           &                                  & 0                                &                                  &                                  &                                                     \\ \hline
+ 		32                                           &                                  & 0                                &                                  &                                  &                                                     \\ \hline
+ 		33                                           &                                  & 0                                &                                  &                                  &                                                     \\ \hline
+ 		34                                           &                                  & 0                                &                                  &                                  &                                                     \\ \hline
+ 		35                                           &                                  & 0                                &                                  &                                  &                                                     \\ \hline
+ 		36                                           &                                  & 0                                &                                  &                                  &                                                     \\ \hline
+ 		37                                           &                                  & 0                                &                                  &                                  &                                                     \\ \hline
+ 		38                                           &                                  & 0                                &                                  &                                  &                                                     \\ \hline
+ 		39                                           &                                  & 0                                &                                  &                                  &                                                     \\ \hline
+ 		40                                           &                                  & 0                                &                                  &                                  &                                                     \\ \hline
  	\end{tabular}
  	
  \end{table} 
@@ -213,25 +285,56 @@ Pengujian koordinat $y$ dilakukan untuk mengetahui batas minimal dan batas maksi
 Dari hasil pengujian yang ditampilkan pada Tabel \ref{tbl.koordinaty} dan juga Gambar \ref{pic.koordinaty} terlihat bahwa posisi \textit{end-effector} yang dihasilkan pada robot SCARA dibandingkan dengan data sesuai perhitungan kinematika memiliki sedikit perbedaan pada beberapa data. Perbedaan data ini dapat ditolerasi karena dengan \textit{sampling} koordinat $y$ yang diuji hanya kurang dari lima persen nilai data yang berbeda. Pada hasil yang ditunjukkan diketahui bahwa posisi \textit{end-effector} memiliki batas minimum dan juga maksimum. Batas minimum posisi \textit{end-effector} pada sumbu $x$ yaitu ? cm dari titik pusat dan batas maksimum posisi \textit{end-effector} pada posisi sumbu $y$ adalah ? cm yang merupakan panjang dari lengan \textit{shoulder} dan juga lengan \textit{elbow}. 
 
 \subsubsection{Pengujian \textit{Joint Shoulder}}
-Pengujian \textit{joint shoulder} dilakukan dengan membandingkan nilai sudut yang dihasilkan oleh perhitungan kinematika yang ada pada program Processing IDE dengan sudut yang dihasilkan dalam aktual robot SCARA. Pengujian dilakukan dengan cara memberikan sebuah posisi koordinat $x$ dan $y$ dengan nilai yang bervariasi. Nilai tersebut dimasukkan ke dalam sebuah perhitungan kinematika balik yang ada pada program Processing IDE sesuai dengan persamaan pada bab sebelumnya. Hasil yang dihasilkan oleh perhitungan merupakan nilai sudut dari \textit{joint shoulder} dan juga \textit{elbow}. Perhitungan aktual dilakukan dengan cara mengukur sudut pada setiap \textit{joint} menggunakan bantuan busur atau \textit{software} sensor kemiringan yang di-\textit{install} pada smartphone. Tabel \ref{tbl.jointshoudler} merupakan hasil pengujian dari \textit{joint shoulder} berdasarkan \textit{sampling} posisi yang diambil. Gambar \ref{pic.jointshoulder} merupakan grafik hubungan dari sudut aktual dan sudut berdasarkan perhitungan kinematika. 
+Pengujian dilakukan dengan cara memberikan sebuah posisi koordinat $x$ dan $y$ dengan nilai yang bervariasi. Nilai tersebut dimasukkan ke dalam sebuah perhitungan kinematika balik yang ada pada program Processing IDE sesuai dengan persamaan pada bab sebelumnya. Hasil yang dihasilkan oleh perhitungan merupakan nilai sudut dari \textit{joint shoulder} dan juga \textit{elbow}. Perhitungan aktual dilakukan dengan cara mengukur sudut pada setiap \textit{joint} menggunakan bantuan busur atau \textit{software} sensor kemiringan yang di-\textit{install} pada smartphone. Tabel \ref{tbl.jointshoudler} merupakan hasil pengujian dari \textit{joint shoulder} berdasarkan \textit{sampling} posisi yang diambil. Gambar \ref{pic.jointshoulder} merupakan grafik hubungan dari sudut aktual dan sudut berdasarkan perhitungan kinematika. 
 
-\begin{table}[H]
+\begin{table}[]
 	\centering
 	\caption{Hasil Pengujian \textit{Joint Shoulder}}
 	\label{tbl.jointshoulder}
-	\begin{tabular}{|c|l|}
+	\begin{tabular}{|c|c|c|c|}
 		\hline
 		\rowcolor[HTML]{9B9B9B} 
-		
-		No & \multicolumn{1}{c|}{\cellcolor[HTML]{9B9B9B}Keterangan} \\ \hline
-		1  & Robot Lengan SCARA                                      \\ \hline
-		2  & Box Panel                                               \\ \hline
-		3  & Arduino Mega 2560                                       \\ \hline
-		4  & Personal Computer                                       \\ \hline
-		5  & GUI Processing IDE                                      \\ \hline
-		6  & Workspace Robot SCARA                                   \\ \hline
-		7  & Kompresor                                               \\ \hline
-		8  & Objek                                                   \\ \hline
+		No & \begin{tabular}[c]{@{}c@{}}Sudut Hasil Perhitungan \\ Kinematika Balik($\deg$)\end{tabular} & Sudut Aktual ($\deg$)& Error \\ \hline
+		1  &                                                                                     &              &       \\ \hline
+		2  &                                                                                     &              &       \\ \hline
+		3  &                                                                                     &              &       \\ \hline
+		4  &                                                                                     &              &       \\ \hline
+		5  &                                                                                     &              &       \\ \hline
+		6  &                                                                                     &              &       \\ \hline
+		7  &                                                                                     &              &       \\ \hline
+		8  &                                                                                     &              &       \\ \hline
+		9  &                                                                                     &              &       \\ \hline
+		10 &                                                                                     &              &       \\ \hline
+		11 &                                                                                     &              &       \\ \hline
+		12 &                                                                                     &              &       \\ \hline
+		13 &                                                                                     &              &       \\ \hline
+		14 &                                                                                     &              &       \\ \hline
+		15 &                                                                                     &              &       \\ \hline
+		16 &                                                                                     &              &       \\ \hline
+		17 &                                                                                     &              &       \\ \hline
+		18 &                                                                                     &              &       \\ \hline
+		19 &                                                                                     &              &       \\ \hline
+		20 &                                                                                     &              &       \\ \hline
+		21 &                                                                                     &              &       \\ \hline
+		22 &                                                                                     &              &       \\ \hline
+		23 &                                                                                     &              &       \\ \hline
+		24 &                                                                                     &              &       \\ \hline
+		25 &                                                                                     &              &       \\ \hline
+		26 &                                                                                     &              &       \\ \hline
+		27 &                                                                                     &              &       \\ \hline
+		28 &                                                                                     &              &       \\ \hline
+		29 &                                                                                     &              &       \\ \hline
+		30 &                                                                                     &              &       \\ \hline
+		31 &                                                                                     &              &       \\ \hline
+		32 &                                                                                     &              &       \\ \hline
+		33 &                                                                                     &              &       \\ \hline
+		34 &                                                                                     &              &       \\ \hline
+		35 &                                                                                     &              &       \\ \hline
+		36 &                                                                                     &              &       \\ \hline
+		37 &                                                                                     &              &       \\ \hline
+		38 &                                                                                     &              &       \\ \hline
+		39 &                                                                                     &              &       \\ \hline
+		40 &                                                                                     &              &       \\ \hline
 	\end{tabular}
 	
 \end{table} 
@@ -248,23 +351,54 @@ Pada hasil yang ditunjukkan oleh Tabel \ref{tbl.jointshoulder} dan Gambar \ref{p
  \subsubsection{Pengujian \textit{Joint Elbow}}
  Pengujian \textit{joint elbow} dilakukan dengan membandingkan nilai sudut yang dihasilkan oleh perhitungan kinematika yang ada pada program Processing IDE dengan sudut yang dihasilkan dalam aktual robot SCARA. Pengujian dilakukan dengan cara memberikan sebuah posisi koordinat $x$ dan $y$ dengan nilai yang bervariasi. Nilai tersebut dimasukkan ke dalam sebuah perhitungan kinematika balik yang ada pada program Processing IDE. Hasil yang dihasilkan oleh perhitungan merupakan nilai sudut dari \textit{joint shoulder} dan juga \textit{elbow}. Perhitungan aktual dilakukan dengan cara mengukur sudut pada setiap \textit{joint} menggunakan bantuan busur atau \textit{software} sensor kemiringan yang di-\textit{install} pada smartphone. Tabel \ref{tbl.jointelbow} merupakan hasil pengujian dari \textit{joint elbow} berdasarkan \textit{sampling} posisi yang diambil. Gambar \ref{pic.jointelbow} merupakan grafik hubungan dari sudut aktual dan sudut berdasarkan perhitungan kinematika. 
  
- \begin{table}[H]
+ \begin{table}[]
  	\centering
  	\caption{Hasil Pengujian \textit{Joint Elbow}}
  	\label{tbl.jointelbow}
- 	\begin{tabular}{|c|l|}
+ 	\begin{tabular}{|c|c|c|c|}
  		\hline
  		\rowcolor[HTML]{9B9B9B} 
- 		
- 		No & \multicolumn{1}{c|}{\cellcolor[HTML]{9B9B9B}Keterangan} \\ \hline
- 		1  & Robot Lengan SCARA                                      \\ \hline
- 		2  & Box Panel                                               \\ \hline
- 		3  & Arduino Mega 2560                                       \\ \hline
- 		4  & Personal Computer                                       \\ \hline
- 		5  & GUI Processing IDE                                      \\ \hline
- 		6  & Workspace Robot SCARA                                   \\ \hline
- 		7  & Kompresor                                               \\ \hline
- 		8  & Objek                                                   \\ \hline
+ 		No & \begin{tabular}[c]{@{}c@{}}Sudut Hasil Perhitungan \\ Kinematika Balik($\deg$)\end{tabular} & Sudut Aktual ($\deg$)& Error \\ \hline
+ 		1  &                                                                                     &              &       \\ \hline
+ 		2  &                                                                                     &              &       \\ \hline
+ 		3  &                                                                                     &              &       \\ \hline
+ 		4  &                                                                                     &              &       \\ \hline
+ 		5  &                                                                                     &              &       \\ \hline
+ 		6  &                                                                                     &              &       \\ \hline
+ 		7  &                                                                                     &              &       \\ \hline
+ 		8  &                                                                                     &              &       \\ \hline
+ 		9  &                                                                                     &              &       \\ \hline
+ 		10 &                                                                                     &              &       \\ \hline
+ 		11 &                                                                                     &              &       \\ \hline
+ 		12 &                                                                                     &              &       \\ \hline
+ 		13 &                                                                                     &              &       \\ \hline
+ 		14 &                                                                                     &              &       \\ \hline
+ 		15 &                                                                                     &              &       \\ \hline
+ 		16 &                                                                                     &              &       \\ \hline
+ 		17 &                                                                                     &              &       \\ \hline
+ 		18 &                                                                                     &              &       \\ \hline
+ 		19 &                                                                                     &              &       \\ \hline
+ 		20 &                                                                                     &              &       \\ \hline
+ 		21 &                                                                                     &              &       \\ \hline
+ 		22 &                                                                                     &              &       \\ \hline
+ 		23 &                                                                                     &              &       \\ \hline
+ 		24 &                                                                                     &              &       \\ \hline
+ 		25 &                                                                                     &              &       \\ \hline
+ 		26 &                                                                                     &              &       \\ \hline
+ 		27 &                                                                                     &              &       \\ \hline
+ 		28 &                                                                                     &              &       \\ \hline
+ 		29 &                                                                                     &              &       \\ \hline
+ 		30 &                                                                                     &              &       \\ \hline
+ 		31 &                                                                                     &              &       \\ \hline
+ 		32 &                                                                                     &              &       \\ \hline
+ 		33 &                                                                                     &              &       \\ \hline
+ 		34 &                                                                                     &              &       \\ \hline
+ 		35 &                                                                                     &              &       \\ \hline
+ 		36 &                                                                                     &              &       \\ \hline
+ 		37 &                                                                                     &              &       \\ \hline
+ 		38 &                                                                                     &              &       \\ \hline
+ 		39 &                                                                                     &              &       \\ \hline
+ 		40 &                                                                                     &              &       \\ \hline
  	\end{tabular}
  	
  \end{table} 
@@ -305,25 +439,59 @@ Setelah semua komponen sistem yang diuji dapat bekerja dengan baik, pengujian se
 \subsection{Pengujian Akurasi Robot Lengan}
 Pada pengujian akurasi robot lengan dilakukan pengujian dengan memberikan posisi koordinat $x$ dan $y$ dan melihat kembali posisi $x$ dan $y$ secara aktual, melihat besar sudut pada masing-masing joint dengan perbandingan perhitungan kinematika. Pengujian akurasi robot lengan ini akan menghasilkan sebuah hasil secara luas dan dapat ditarik untuk sebuah kesimpulan yang menentukan robot SCARA dapat bekerja baik atau buruk secara keseluruhan. Tabel \ref{tbl.akurasikeseluruhan} merupakan hasil dari pengujian akurasi robot lengan secara keseluruhan. Gambar \ref{pic.akurasikeseluruhan} merupakan grafik dari hasil pengujian akurasi robot lengan secara keseluruhan.
 
-\begin{table}[H]
-	\centering
+\begin{table}[]
+	
 	\caption{Hasil Pengujian Akurasi Robot Secara Keseluruhan}
 	\label{tbl.akurasikeseluruhan}
-	\begin{tabular}{|c|l|}
+	\begin{tabular}{|l|l|l|l|l|l|l|l|l|}
 		\hline
 		\rowcolor[HTML]{9B9B9B} 
-		
-		No & \multicolumn{1}{c|}{\cellcolor[HTML]{9B9B9B}Keterangan} \\ \hline
-		1  & Robot Lengan SCARA                                      \\ \hline
-		2  & Box Panel                                               \\ \hline
-		3  & Arduino Mega 2560                                       \\ \hline
-		4  & Personal Computer                                       \\ \hline
-		5  & GUI Processing IDE                                      \\ \hline
-		6  & Workspace Robot SCARA                                   \\ \hline
-		7  & Kompresor                                               \\ \hline
-		8  & Objek                                                   \\ \hline
+		\multicolumn{2}{|c|}{\cellcolor[HTML]{9B9B9B}Posisi (X,Y)} & \multicolumn{2}{c|}{\cellcolor[HTML]{9B9B9B}Shoulder}        & \multicolumn{2}{c|}{\cellcolor[HTML]{9B9B9B}Elbow}           & \multicolumn{2}{c|}{\cellcolor[HTML]{9B9B9B}End-Effector}    & \cellcolor[HTML]{9B9B9B}                        \\ \cline{1-8}
+		\rowcolor[HTML]{9B9B9B} 
+		Input                       & Output                       & \multicolumn{1}{c|}{\cellcolor[HTML]{9B9B9B}Hasil} & Terukur & \multicolumn{1}{c|}{\cellcolor[HTML]{9B9B9B}Hasil} & Terukur & \multicolumn{1}{c|}{\cellcolor[HTML]{9B9B9B}Hasil} & Terukur & \multirow{-2}{*}{\cellcolor[HTML]{9B9B9B}Error} \\ \hline
+		&                              &                                                    &         &                                                    &         &                                                    &         &                                                 \\ \hline
+		&                              &                                                    &         &                                                    &         &                                                    &         &                                                 \\ \hline
+		&                              &                                                    &         &                                                    &         &                                                    &         &                                                 \\ \hline
+		&                              &                                                    &         &                                                    &         &                                                    &         &                                                 \\ \hline
+		&                              &                                                    &         &                                                    &         &                                                    &         &                                                 \\ \hline
+		&                              &                                                    &         &                                                    &         &                                                    &         &                                                 \\ \hline
+		&                              &                                                    &         &                                                    &         &                                                    &         &                                                 \\ \hline
+		&                              &                                                    &         &                                                    &         &                                                    &         &                                                 \\ \hline
+		&                              &                                                    &         &                                                    &         &                                                    &         &                                                 \\ \hline
+		&                              &                                                    &         &                                                    &         &                                                    &         &                                                 \\ \hline
+		&                              &                                                    &         &                                                    &         &                                                    &         &                                                 \\ \hline
+		&                              &                                                    &         &                                                    &         &                                                    &         &                                                 \\ \hline
+		&                              &                                                    &         &                                                    &         &                                                    &         &                                                 \\ \hline
+		&                              &                                                    &         &                                                    &         &                                                    &         &                                                 \\ \hline
+		&                              &                                                    &         &                                                    &         &                                                    &         &                                                 \\ \hline
+		&                              &                                                    &         &                                                    &         &                                                    &         &                                                 \\ \hline
+		&                              &                                                    &         &                                                    &         &                                                    &         &                                                 \\ \hline
+		&                              &                                                    &         &                                                    &         &                                                    &         &                                                 \\ \hline
+		&                              &                                                    &         &                                                    &         &                                                    &         &                                                 \\ \hline
+		&                              &                                                    &         &                                                    &         &                                                    &         &                                                 \\ \hline
+		&                              &                                                    &         &                                                    &         &                                                    &         &                                                 \\ \hline
+		&                              &                                                    &         &                                                    &         &                                                    &         &                                                 \\ \hline
+		&                              &                                                    &         &                                                    &         &                                                    &         &                                                 \\ \hline
+		&                              &                                                    &         &                                                    &         &                                                    &         &                                                 \\ \hline
+		&                              &                                                    &         &                                                    &         &                                                    &         &                                                 \\ \hline
+		&                              &                                                    &         &                                                    &         &                                                    &         &                                                 \\ \hline
+		&                              &                                                    &         &                                                    &         &                                                    &         &                                                 \\ \hline
+		&                              &                                                    &         &                                                    &         &                                                    &         &                                                 \\ \hline
+		&                              &                                                    &         &                                                    &         &                                                    &         &                                                 \\ \hline
+		&                              &                                                    &         &                                                    &         &                                                    &         &                                                 \\ \hline
+		&                              &                                                    &         &                                                    &         &                                                    &         &                                                 \\ \hline
+		&                              &                                                    &         &                                                    &         &                                                    &         &                                                 \\ \hline
+		&                              &                                                    &         &                                                    &         &                                                    &         &                                                 \\ \hline
+		&                              &                                                    &         &                                                    &         &                                                    &         &                                                 \\ \hline
+		&                              &                                                    &         &                                                    &         &                                                    &         &                                                 \\ \hline
+		&                              &                                                    &         &                                                    &         &                                                    &         &                                                 \\ \hline
+		&                              &                                                    &         &                                                    &         &                                                    &         &                                                 \\ \hline
+		&                              &                                                    &         &                                                    &         &                                                    &         &                                                 \\ \hline
+		&                              &                                                    &         &                                                    &         &                                                    &         &                                                 \\ \hline
+		&                              &                                                    &         &                                                    &         &                                                    &         &                                                 \\ \hline
+		&                              &                                                    &         &                                                    &         &                                                    &         &                                                 \\ \hline
+		&                              &                                                    &         &                                                    &         &                                                    &         & 1                                               \\ \hline
 	\end{tabular}
-	
 \end{table} 
 \begin{figure}[H]
 	\centering

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7050 64-bit) (preloaded format=pdflatex 2019.7.18)  21 DEC 2019 18:55
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7050 64-bit) (preloaded format=pdflatex 2019.7.18)  21 DEC 2019 20:11
 entering extended mode
 **./Laporan_KP.tex
 (Laporan_KP.tex
@@ -1177,65 +1177,99 @@ Overfull \hbox (6.93462pt too wide) in paragraph at lines 56--75
 LaTeX Warning: Reference `tbl.potensio' on page 48 undefined on input line 81.
 
 [48] [49]
-File: gambar/controlp5.jpg Graphic file (type jpg)
-<use gambar/controlp5.jpg>
-Package pdftex.def Info: gambar/controlp5.jpg  used on input line 176.
-(pdftex.def)             Requested size: 227.62204pt x 182.69733pt.
- [50] [51]
-File: gambar/controlp5.jpg Graphic file (type jpg)
-<use gambar/controlp5.jpg>
-Package pdftex.def Info: gambar/controlp5.jpg  used on input line 207.
-(pdftex.def)             Requested size: 227.62204pt x 182.69733pt.
- [52]
 
-LaTeX Warning: Reference `tbl.jointshoudler' on page 53 undefined on input line
- 216.
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `tbp') on input line 161.
+
+
+LaTeX Warning: Float too large for page by 24.33847pt on input line 212.
 
 File: gambar/controlp5.jpg Graphic file (type jpg)
 <use gambar/controlp5.jpg>
-Package pdftex.def Info: gambar/controlp5.jpg  used on input line 240.
+Package pdftex.def Info: gambar/controlp5.jpg  used on input line 215.
 (pdftex.def)             Requested size: 227.62204pt x 182.69733pt.
-[53]
+[50] [51]
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `tbp') on input line 224.
+
+
+LaTeX Warning: Float too large for page by 24.33847pt on input line 276.
+
 File: gambar/controlp5.jpg Graphic file (type jpg)
 <use gambar/controlp5.jpg>
-Package pdftex.def Info: gambar/controlp5.jpg  used on input line 273.
+Package pdftex.def Info: gambar/controlp5.jpg  used on input line 279.
 (pdftex.def)             Requested size: 227.62204pt x 182.69733pt.
- [54]
+[52] [53]
+
+LaTeX Warning: Reference `tbl.jointshoudler' on page 54 undefined on input line
+ 288.
+
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `tbp') on input line 290.
+
+
+LaTeX Warning: Float too large for page by 24.33847pt on input line 340.
+
 File: gambar/controlp5.jpg Graphic file (type jpg)
 <use gambar/controlp5.jpg>
-Package pdftex.def Info: gambar/controlp5.jpg  used on input line 284.
+Package pdftex.def Info: gambar/controlp5.jpg  used on input line 343.
+(pdftex.def)             Requested size: 227.62204pt x 182.69733pt.
+[54] [55]
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `tbp') on input line 354.
+
+
+LaTeX Warning: Float too large for page by 24.33847pt on input line 404.
+
+File: gambar/controlp5.jpg Graphic file (type jpg)
+<use gambar/controlp5.jpg>
+Package pdftex.def Info: gambar/controlp5.jpg  used on input line 407.
+(pdftex.def)             Requested size: 227.62204pt x 182.69733pt.
+[56] [57]
+File: gambar/controlp5.jpg Graphic file (type jpg)
+<use gambar/controlp5.jpg>
+Package pdftex.def Info: gambar/controlp5.jpg  used on input line 418.
 (pdftex.def)             Requested size: 227.62204pt x 182.69733pt.
 
-Overfull \hbox (1.52719pt too wide) in paragraph at lines 281--287
+Overfull \hbox (1.52719pt too wide) in paragraph at lines 415--421
 []\T1/ptm/m/n/12 Pengujian GUI di-la-kuk-an un-tuk mem-ban-dingk-an po-si-si da
 -ri ak-tu-al ro-bot SCA-
  []
 
-[55]
 File: gambar/controlp5.jpg Graphic file (type jpg)
 <use gambar/controlp5.jpg>
-Package pdftex.def Info: gambar/controlp5.jpg  used on input line 290.
+Package pdftex.def Info: gambar/controlp5.jpg  used on input line 424.
+(pdftex.def)             Requested size: 227.62204pt x 182.69733pt.
+[58]
+File: gambar/controlp5.jpg Graphic file (type jpg)
+<use gambar/controlp5.jpg>
+Package pdftex.def Info: gambar/controlp5.jpg  used on input line 430.
+(pdftex.def)             Requested size: 227.62204pt x 182.69733pt.
+ [59] [60]
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `tbp') on input line 442.
+
+
+LaTeX Warning: Float too large for page by 54.13843pt on input line 495.
+
+File: gambar/controlp5.jpg Graphic file (type jpg)
+<use gambar/controlp5.jpg>
+Package pdftex.def Info: gambar/controlp5.jpg  used on input line 498.
 (pdftex.def)             Requested size: 227.62204pt x 182.69733pt.
 File: gambar/controlp5.jpg Graphic file (type jpg)
 <use gambar/controlp5.jpg>
-Package pdftex.def Info: gambar/controlp5.jpg  used on input line 296.
+Package pdftex.def Info: gambar/controlp5.jpg  used on input line 512.
 (pdftex.def)             Requested size: 227.62204pt x 182.69733pt.
- [56] [57]
-File: gambar/controlp5.jpg Graphic file (type jpg)
-<use gambar/controlp5.jpg>
-Package pdftex.def Info: gambar/controlp5.jpg  used on input line 330.
-(pdftex.def)             Requested size: 227.62204pt x 182.69733pt.
- [58]
-File: gambar/controlp5.jpg Graphic file (type jpg)
-<use gambar/controlp5.jpg>
-Package pdftex.def Info: gambar/controlp5.jpg  used on input line 344.
-(pdftex.def)             Requested size: 227.62204pt x 182.69733pt.
-) [59]
+[61] [62]) [63]
 \openout2 = `BAB_5.aux'.
 
  (BAB_5.tex
 BAB V.
-) [60
+) [64
 
 
 
@@ -1245,7 +1279,7 @@ LaTeX Warning: Empty `thebibliography' environment on input line 24.
 
 )
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 108.
- [61
+ [65
 
 
 ]
@@ -1266,9 +1300,9 @@ LaTeX Warning: There were multiply-defined labels.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 108.
  ) 
 Here is how much of TeX's memory you used:
- 10291 strings out of 492895
- 156286 string characters out of 3124202
- 270277 words of memory out of 3000000
+ 10295 strings out of 492895
+ 156314 string characters out of 3124202
+ 284271 words of memory out of 3000000
  13693 multiletter control sequences out of 15000+200000
  35368 words of font info for 57 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -1287,9 +1321,9 @@ fb><C:/Users/IVAN/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/times/utmbi
 8a.pfb><C:/Users/IVAN/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/times/u
 tmr8a.pfb><C:/Users/IVAN/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/time
 s/utmri8a.pfb>
-Output written on Laporan_KP.pdf (71 pages, 1697070 bytes).
+Output written on Laporan_KP.pdf (75 pages, 1707689 bytes).
 PDF statistics:
- 1061 PDF objects out of 1200 (max. 8388607)
- 263 named destinations out of 1000 (max. 500000)
+ 1080 PDF objects out of 1200 (max. 8388607)
+ 267 named destinations out of 1000 (max. 500000)
  663 words of extra memory for PDF output out of 10000 (max. 10000000)
 
