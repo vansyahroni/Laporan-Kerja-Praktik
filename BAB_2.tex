@@ -172,24 +172,21 @@ Arduino Mega 2560 memuat semua yang dibutuhkan untuk mendukung kerja dari sebuah
 	\centering
 	\caption{ Spesifikasi Arduino Mega 2560 }
 	\label{tbl.arduinomega}
-	\resizebox{14cm}{!}{%
-		\begin{tabular}{|l|l|}
+	\begin{tabular}{|l|l|}
 		\hline
-		Mikrokontroler     & Atmega2560$$\hspace{2cm} 		\\ \hline
-		Tegangan operasional     & 5 V$$  				\\ \hline
-		Tegangan masukan  & 5-12 V$$  		\\ \hline
-		Pin digital I/O       & 54 (15 pin untuk keluaran PWM) $$   \\\hline
-		Pin analog masukan     & 16$$ 		\\ \hline
-		Arus DC per Pin I/O  & 20 mA $$   				\\ \hline
-		Arus DC untuk Pin 3.3 V & 50 mA $$  				\\ \hline
-		Memori flash    & 256 KB $$ 		\\ \hline
-		Kecepatan clock & 16 MHz $$   				\\ \hline
-		Dimensi & 101.52 x 53.3 mm $$  				\\ \hline
-		
-		\end{tabular}%
-}
+		\rowcolor[HTML]{9B9B9B} 
+		\multicolumn{1}{|c|}{\cellcolor[HTML]{9B9B9B}Keterangan} & \multicolumn{1}{c|}{\cellcolor[HTML]{9B9B9B}Nilai} \\ \hline
+		Mikrokontroler                                           & Atmega2560                                         \\ \hline
+		Tegangan Operasional                                     & 5 Volt                                             \\ \hline
+		Tegangan Masukan                                         & 5-12 Volt                                          \\ \hline
+		Pin Digital I/O                                          & 54 Buah                                            \\ \hline
+		Pin PWM                                                  & 15 Buah                                            \\ \hline
+		Arus I/O                                                 & 20 mA                                              \\ \hline
+		Memori Flash                                             & 256 KB                                             \\ \hline
+		Kecepatan Clock                                          & 16 Mhz                                             \\ \hline
+		Dimensi                                                  & 101.52 x 53.3 mm                                   \\ \hline
+	\end{tabular}
 \end{table}
-
 \section{\textit{Driver} Motor H-\textit{Bridge} EMS 30A}
 \textit{Driver} Motor H-\textit{Bridge} EMS 30A berfungsi sebagai pengontrol dari setiap pergerakan dari motor DC. Pergerakan seperti kecepatan, arah putar serta lamanya pergerakan motor DC dapat dikontrol oleh sebuah \textit{Driver} Motor H-\textit{Bridge} EMS 30A.Umunya \textit{driver} motor memiliki beberapa jenis tergantung dari spesifikasi dari motor DC yang digunakan. Salah satu jenis \textit{driver} motor adalah \textit{Driver} Motor  H-\textit{Bridge} EMS 30A. Gambar \ref{pic.drivermotor} merupakan bentuk fisik dari \textit{Driver} Motor H-\textit{Bridge} EMS 30A.
 
@@ -201,17 +198,20 @@ Arduino Mega 2560 memuat semua yang dibutuhkan untuk mendukung kerja dari sebuah
 	\end{figure}
 
 \textit{Driver} Motor EMS 30A H-\textit{Bridge} merupakan \textit{driver} motor yang dapat mengoperasikan sebuah Motor DC dengan batasan arus hingga 30 Ampere. Driver ini memiliki 10 buah pin data yang dapat dihubungkan dengan sebuah mikrokontroler. Tabel \ref{tbl.pindrivermotor} merupakan alokasi pin pada \textit{Driver} Motor H-\textit{Bridge} EMS 30A..
+
 % Please add the following required packages to your document preamble:
+% \usepackage[table,xcdraw]{xcolor}
+% If you use beamer only pass "xcolor=table" option, i.e. \documentclass[xcolor=table]{beamer}
 % \usepackage[normalem]{ulem}
 % \useunder{\uline}{\ul}{}
 \begin{table}[H]
 		\centering
 	\caption{ Pin pada \textit{Driver} EMS 30A H-\textit{Bridge} }
 	\label{tbl.pindrivermotor}
-	\resizebox{14cm}{!}{%
 	\begin{tabular}{|c|c|c|l|}
 		\hline
-		Pin  & Nama & I/O & \multicolumn{1}{c|}{Fungsi}                                                                                                                                                 \\ \hline
+		\rowcolor[HTML]{9B9B9B} 
+		Pin  & Nama & I/O & \multicolumn{1}{c|}{\cellcolor[HTML]{9B9B9B}Fungsi}                                                                                                                         \\ \hline
 		1    & MIN1 & I   & Pin input untuk menentukan output MOUT1                                                                                                                                     \\ \hline
 		2    & MIN2 & I   & Pin input untuk menentukan output MOUT2                                                                                                                                     \\ \hline
 		3    & MEN1 & I/O & \begin{tabular}[c]{@{}l@{}}Pin enable untuk output MOUT1 \\ diberi logika HIGH untuk mengaktifkan half H-Bridge 1, \\ diberi logika LOW untuk menonaktifkannya\end{tabular} \\ \hline
@@ -220,9 +220,8 @@ Arduino Mega 2560 memuat semua yang dibutuhkan untuk mendukung kerja dari sebuah
 		6    & MPWM & I   & Pin input untuk mengatur kerja modul H-Bridge secara PWM                                                                                                                    \\ \hline
 		7,9  & VCC  & -   & Terhubung ke catu daya untuk input (5 Volt)                                                                                                                                 \\ \hline
 		8,10 & PGND & 0   & Titik referensi untuk caru daya input                                                                                                                                       \\ \hline
-	\end{tabular}}
+	\end{tabular}
 \end{table}
-
 \section{Processing \textit{Integrated Development Environment} (IDE)}
 Processing IDE adalah pemrograman sederhana yang diciptakan untuk pengembangan aplikasi yang berorientasi visual atau pencitraan dengan penekanan pada animasi dan memberi pengguna umpan balik melalui interaksi antarmuka. Para \textit{developer} Processing IDE ini menginginkan sebuah cara untuk "membuat sketsa" gagasan dalam bentuk kode. Karena pemrograman telah berkembang selama beberapa dekade terakhir. Processing IDE telah mulai digunakan untuk pekerjaan tingkat produksi yang lebih maju. Awalnya dibangun sebagai ekstensi khusus \textit{domain} Java yang ditargetkan untuk seniman dan desainer, Processing IDE telah berkembang menjadi alat desain dan prototipe lengkap dan penuh yang digunakan untuk pekerjaan instalasi skala besar, grafis gerak, dan visualisasi data yang rumit. Gambar \ref{pic.processingide} merupakan tampilan pada Processing IDE.
 	\begin{figure}[H]
@@ -242,23 +241,27 @@ Ukuran sebuah objek pada processing IDE diatur menggunakan sebuah \textit{syntax
 \subsubsection{Transformasi Bentuk dalam Processing IDE }
 Transformasi pada Processing IDE digunakan untuk memindahkan, memutar atau, mengecilkan atau membesarkan suatu objek dan perpindahannya dapat diatur dengan parameter-parameter tertentu di dalam Processing IDE. Transformasi adalah dasar dari pemrograman Processing IDE. Tabel \ref{tbl.syntxtransformasi}  adalah adalah contoh penulisan \textit{syntax} dari Transformasi. 
 
+% Please add the following required packages to your document preamble:
+% \usepackage[table,xcdraw]{xcolor}
+% If you use beamer only pass "xcolor=table" option, i.e. \documentclass[xcolor=table]{beamer}
 \begin{table}[H]
-	\centering
+		\centering
 	\caption{ \textit{Syntax} Transformasi}
 	\label{tbl.syntxtransformasi}
 	\begin{tabular}{|c|l|l|}
 		\hline
-		No & \multicolumn{1}{c|}{\textit{Syntax}} & \multicolumn{1}{c|}{Keterangan}                                                            \\ \hline
-		1  & Translate(x,y)                       & \begin{tabular}[c]{@{}l@{}}x = transisi kiri/kanan \\ y = transisi atas/bawah\end{tabular} \\ \hline
-		2  & Rotate(angle)                        & angle=besar sudut rotasi(radian)                                                            \\ \hline
-		3  & RotateX(angle)                       & angle=besar sudut rotasi(radian)                                                           \\ \hline
-		4  & RotateY(angle)                       & angle=besar sudut rotasi(radian)                                                           \\ \hline
-		5  & Rotatez(angle)                       & angle=besar sudut rotasi(radian)                                                           \\ \hline
-		6  & Scale(S)                             & s = besar pengecilan pembesaran                                                         \\ \hline
+		\rowcolor[HTML]{9B9B9B} 
+		No & \multicolumn{1}{c|}{\cellcolor[HTML]{9B9B9B}Syntax} & \multicolumn{1}{c|}{\cellcolor[HTML]{9B9B9B}Keterangan}                                    \\ \hline
+		1  & Translate(x,y)                                      & \begin{tabular}[c]{@{}l@{}}x = transisi kiri/kanan \\ y = transisi atas/bawah\end{tabular} \\ \hline
+		2  & Rotate(angle)                                       & angle=besar sudut rotasi(radian)                                                           \\ \hline
+		3  & RotateX(angle)                                      & angle=besar sudut rotasi(radian)                                                           \\ \hline
+		4  & RotateY(angle)                                      & angle=besar sudut rotasi(radian)                                                           \\ \hline
+		5  & Rotatez(angle)                                      & angle=besar sudut rotasi(radian)                                                           \\ \hline
+		6  & Scale(S)                                            & s = besar pengecilan pembesaran                                                            \\ \hline
 	\end{tabular}
 \end{table}
-\subsubsection{Shape}
-Shape adalah \textit{syntax} pada Processing IDE yang berfungsi untuk membuat berbagai macam bentuk, seperti persegi panjang, lingkaran, garis, dan bentuk lainnya yang dapat diatur ukurannya dengan parameter-parameter tertentu. Tabel \ref{tbl.syntxshape} merupakan contoh dari beberapa \textit{syntax} shape. 
+\subsubsection{\textit{Shape}}
+\textit{Shape} adalah \textit{syntax} pada Processing IDE yang berfungsi untuk membuat berbagai macam bentuk, seperti persegi panjang, lingkaran, garis, dan bentuk lainnya yang dapat diatur ukurannya dengan parameter-parameter tertentu. Tabel \ref{tbl.syntxshape} merupakan contoh dari beberapa \textit{syntax} shape. 
 \begin{table}[H]
 	\centering
 	\caption{\textit{Syntax} Shape}
@@ -266,6 +269,7 @@ Shape adalah \textit{syntax} pada Processing IDE yang berfungsi untuk membuat be
 	\resizebox{14cm}{!}{%
 	\begin{tabular}{|l|l|l|l|}
 		\hline
+		\rowcolor[HTML]{9B9B9B} 
 		
 		No & Sytax                          & Bentuk & Keterangan                                                                                                                                                                                    \\ \hline
 		1  & ellipse(a,b,c,d)               &  	\centering \includegraphics[width=3cm]{gambar/bulat.png} 
@@ -277,14 +281,15 @@ Shape adalah \textit{syntax} pada Processing IDE yang berfungsi untuk membuat be
 	\end{tabular}}
 \end{table}
 
-\subsubsection{Akses Koordinat Mouse }
+\subsubsection{Akses Koordinat \textit{Mouse} }
 Processing IDE mempunyai fungsi khusus yaitu dapat melacak posisi mouse baik secara vertical maupun horizontal. Namun, Processing IDE hanya dapat melacak posisi mouse saat sketch dijalankan saja. Nilai default mouseX dan mouseY adalah 0, jadi 0 akan dikembalikan sampai mouse bergerak di depan jendela sketsa. Setelah mouse bergerak menjauh dari jendela, mouseX akan terus melaporkan posisi terakhirnya. Tabel \ref{tbl.koordinatmouse}  merupakan contoh penulisan \textit{syntax} dari mouse. 
 \begin{table}[H]
 		\centering
-	\caption{\textit{Syntax} Koordinat Mouse}
+	\caption{\textit{Syntax} Koordinat \textit{Mouse}}
 	\label{tbl.koordinatmouse}
 	\begin{tabular}{|c|l|l|}
 		\hline
+		\rowcolor[HTML]{9B9B9B} 
 		No & \multicolumn{1}{c|}{\textit{Syntax}} & \multicolumn{1}{c|}{Keterangan}                                                                                                 \\ \hline
 		1  & mouseX                               & \begin{tabular}[c]{@{}l@{}}Variabel sistem X memiliki nilai dari \\ koordinat horizontal mouse secara real time\end{tabular}    \\ \hline
 		2  & mouseY                               & \begin{tabular}[c]{@{}l@{}}Variabel sistem Y memiliki nilai dari koordinat \\ horizontal mouse secara real time.\end{tabular}   \\ \hline
@@ -318,19 +323,23 @@ ControlP5 adalah \textit{library} yang berfungsi sebagai pengontrol untuk membua
 	\label{pic.controlp5}
 \end{figure}
 Setiap \textit{tools} yang ada pada ControlP5 memiliki fungsi yang berbeda-beda sesuai dengan kegunaannya. ControlP5 dapat dipakai atau saling dikombinasikan agar memudahkan dan memaksimalkan dari GUI yang telah dibuat. ControlP5 nantinya akan bekerja sesuai dengan program yang sudah dimasukkan. Pada Tabel \ref{tbl.toolscontrolp5} merupakan beberapa fungsi dari \textit{tools} yang ada pada ControlP5.
+% Please add the following required packages to your document preamble:
+% \usepackage[table,xcdraw]{xcolor}
+% If you use beamer only pass "xcolor=table" option, i.e. \documentclass[xcolor=table]{beamer}
 \begin{table}[H]
-		\centering
-	\caption{Fungsi \textit{Tools} ControlP5}
+	\centering
 	\label{tbl.toolscontrolp5}
-	\resizebox{14cm}{!}{%
-	\begin{tabular}{|c|l|l|l|}
+	\caption{ Fungsi dari \textit{tools} ControlP5}
+	\begin{tabular}{|c|l|l|}
 		\hline
-		1 & Bang      & Memicu sebuah tindakan ketika ditekan                                                                               & controlP5.addBang("bang1");           \\ \hline
-		2 & Button    & Memicu sebuah tindakan ketika sudah dilepas                                                                         & controlP5.addButton("button1");       \\ \hline
-		3 & Toggle    & \begin{tabular}[c]{@{}l@{}}Memiliki dua status. \\ TRUE meiliki nilai 1 dan FALSE memiliki nilai 0\end{tabular}     & controlP5.addToggle("toggle1")        \\ \hline
-		4 & Slider    & \begin{tabular}[c]{@{}l@{}}Mengatur nilai dengan cara menggeser \\ secara horisontal maupun vertikal\end{tabular}   & controlP5.addSlider("slider2");       \\ \hline
-		5 & Knob      & Mengatur sebuah nilai dengan tombol putaran 360°                                                                    & controlP5.addKnob("knob1");           \\ \hline
-		6 & NumberBox & \begin{tabular}[c]{@{}l@{}}Kotak yang menampilkan angka dan \\ dapat diubah dengan klik di dalam kotak\end{tabular} & controlP5.addNumberbox("numberbox1"); \\ \hline
-	\end{tabular}}
+		\rowcolor[HTML]{9B9B9B} 
+		No & \multicolumn{1}{c|}{\cellcolor[HTML]{9B9B9B}ControlP5} & \multicolumn{1}{c|}{\cellcolor[HTML]{9B9B9B}Fungsi}                                                                                                                                                 \\ \hline
+		\rowcolor[HTML]{FFFFFF} 
+		1  & Bang                                                   & \begin{tabular}[c]{@{}l@{}}Memicu sebuah tindakan ketika ditekan\\ controlP5.addBang("bang1");\end{tabular}                                                                                         \\ \hline
+		2  & Button                                                 & \begin{tabular}[c]{@{}l@{}}Memicu sebuah tindakan ketika sudah dilepas\\ controlP5.addButton("button1");\end{tabular}                                                                               \\ \hline
+		3  & Toggle                                                 & \begin{tabular}[c]{@{}l@{}}\begin{tabular}[c]{@{}l@{}}Memiliki dua status. \\ TRUE meiliki nilai 1 dan FALSE memiliki nilai 0\end{tabular}\\ controlP5.addToggle("toggle1")\end{tabular}            \\ \hline
+		4  & Slider                                                 & \begin{tabular}[c]{@{}l@{}}\begin{tabular}[c]{@{}l@{}}Mengatur nilai dengan cara menggeser \\ secara horisontal maupun vertikal\end{tabular}\\ controlP5.addSlider("slider2");\end{tabular}         \\ \hline
+		5  & Knob                                                   & \begin{tabular}[c]{@{}l@{}}Mengatur sebuah nilai dengan tombol putaran 360°\\ controlP5.addKnob("knob1");\end{tabular}                                                                              \\ \hline
+		6  & NumberBox                                              & \begin{tabular}[c]{@{}l@{}}\begin{tabular}[c]{@{}l@{}}Kotak yang menampilkan angka dan \\ dapat diubah dengan klik di dalam kotak\end{tabular}\\ controlP5.addNumberbox("numberbox1");\end{tabular} \\ \hline
+	\end{tabular}
 \end{table}
-

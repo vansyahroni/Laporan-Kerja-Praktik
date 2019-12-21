@@ -35,13 +35,13 @@
 \contentsline {section}{\numberline {2.3}Motor DC}{13}{section.2.3}% 
 \contentsline {section}{\numberline {2.4}Regulator}{15}{section.2.4}% 
 \contentsline {section}{\numberline {2.5}Arduino Mega 2560}{15}{section.2.5}% 
-\contentsline {section}{\numberline {2.6}\textit {Driver} Motor H-\textit {Bridge} EMS 30A}{17}{section.2.6}% 
+\contentsline {section}{\numberline {2.6}\textit {Driver} Motor H-\textit {Bridge} EMS 30A}{16}{section.2.6}% 
 \contentsline {section}{\numberline {2.7}Processing \textit {Integrated Development Environment} (IDE)}{18}{section.2.7}% 
 \contentsline {subsection}{\numberline {2.7.1}\textit {Syntax} dalam Processing IDE }{18}{subsection.2.7.1}% 
 \contentsline {subsubsection}{\numberline {2.7.1.1}Mengatur Ukuran}{18}{subsubsection.2.7.1.1}% 
 \contentsline {subsubsection}{\numberline {2.7.1.2}Transformasi Bentuk dalam Processing IDE }{19}{subsubsection.2.7.1.2}% 
-\contentsline {subsubsection}{\numberline {2.7.1.3}Shape}{19}{subsubsection.2.7.1.3}% 
-\contentsline {subsubsection}{\numberline {2.7.1.4}Akses Koordinat Mouse }{20}{subsubsection.2.7.1.4}% 
+\contentsline {subsubsection}{\numberline {2.7.1.3}\textit {Shape}}{19}{subsubsection.2.7.1.3}% 
+\contentsline {subsubsection}{\numberline {2.7.1.4}Akses Koordinat \textit {Mouse} }{20}{subsubsection.2.7.1.4}% 
 \contentsline {subsubsection}{\numberline {2.7.1.5} \textit {Compile Sketch} }{21}{subsubsection.2.7.1.5}% 
 \contentsline {subsection}{\numberline {2.7.2} \textit {Library} untuk Processing IDE }{21}{subsection.2.7.2}% 
 \contentsline {subsubsection}{\numberline {2.7.2.1} Memuat Huruf (\textit {Font}) pada Processing IDE }{21}{subsubsection.2.7.2.1}% 
@@ -50,29 +50,29 @@
 \contentsline {section}{\numberline {3.1} Diagram Blok Sistem }{24}{section.3.1}% 
 \contentsline {section}{\numberline {3.2} Perancangan Perangkat Keras }{25}{section.3.2}% 
 \contentsline {subsection}{\numberline {3.2.1} Sistem Mekanis }{25}{subsection.3.2.1}% 
-\contentsline {subsection}{\numberline {3.2.2}Rangkaian Elektronika}{31}{subsection.3.2.2}% 
-\contentsline {subsubsection}{\numberline {3.2.2.1}Rangkaian Motor DC}{31}{subsubsection.3.2.2.1}% 
+\contentsline {subsection}{\numberline {3.2.2}Rangkaian Elektronika}{32}{subsection.3.2.2}% 
+\contentsline {subsubsection}{\numberline {3.2.2.1}Rangkaian Motor DC}{32}{subsubsection.3.2.2.1}% 
 \contentsline {subsubsection}{\numberline {3.2.2.2}Rangkaian \textit {Valve Pneumatic}}{33}{subsubsection.3.2.2.2}% 
 \contentsline {subsubsection}{\numberline {3.2.2.3}Rangkaian Minimum Sistem Arduino}{34}{subsubsection.3.2.2.3}% 
-\contentsline {subsubsection}{\numberline {3.2.2.4}Rangkaian Catu Daya}{35}{subsubsection.3.2.2.4}% 
-\contentsline {section}{\numberline {3.3}Perancangan Perangkat Lunak}{36}{section.3.3}% 
-\contentsline {subsection}{\numberline {3.3.1}ControlP5}{37}{subsection.3.3.1}% 
-\contentsline {subsection}{\numberline {3.3.2}\textit {Shape}}{38}{subsection.3.3.2}% 
-\contentsline {section}{\numberline {3.4}Sistem Kinematika}{38}{section.3.4}% 
-\contentsline {subsection}{\numberline {3.4.1}Prinsip Kerja Kinematika Maju}{39}{subsection.3.4.1}% 
-\contentsline {subsection}{\numberline {3.4.2}Prinsip Kerja Kinematika Balik}{39}{subsection.3.4.2}% 
-\contentsline {section}{\numberline {3.5}Perancangan Sistem Keseluruhan}{42}{section.3.5}% 
-\contentsline {chapter}{\numberline {IV}PENGUJIAN DAN PEMBAHASAN}{44}{chapter.4}% 
-\contentsline {section}{\numberline {4.1}Pengujian Fungsional}{44}{section.4.1}% 
-\contentsline {subsection}{\numberline {4.1.1}Pengujian DC - to - DC Converter}{45}{subsection.4.1.1}% 
-\contentsline {subsection}{\numberline {4.1.2}Pengujian Motor DC}{45}{subsection.4.1.2}% 
-\contentsline {subsection}{\numberline {4.1.3}Pengujian \textit {Driver} Motor H \IeC {\textendash } \textit {Bridge}}{46}{subsection.4.1.3}% 
-\contentsline {subsection}{\numberline {4.1.4}Pengujian Nilai\textit { Analog Potensiometer}}{47}{subsection.4.1.4}% 
+\contentsline {subsubsection}{\numberline {3.2.2.4}Rangkaian Catu Daya}{36}{subsubsection.3.2.2.4}% 
+\contentsline {section}{\numberline {3.3}Perancangan Perangkat Lunak}{37}{section.3.3}% 
+\contentsline {subsection}{\numberline {3.3.1}ControlP5}{38}{subsection.3.3.1}% 
+\contentsline {subsection}{\numberline {3.3.2}\textit {Shape}}{39}{subsection.3.3.2}% 
+\contentsline {section}{\numberline {3.4}Sistem Kinematika}{39}{section.3.4}% 
+\contentsline {subsection}{\numberline {3.4.1}Prinsip Kerja Kinematika Maju}{40}{subsection.3.4.1}% 
+\contentsline {subsection}{\numberline {3.4.2}Prinsip Kerja Kinematika Balik}{40}{subsection.3.4.2}% 
+\contentsline {section}{\numberline {3.5}Perancangan Sistem Keseluruhan}{43}{section.3.5}% 
+\contentsline {chapter}{\numberline {IV}PENGUJIAN DAN PEMBAHASAN}{45}{chapter.4}% 
+\contentsline {section}{\numberline {4.1}Pengujian Fungsional}{45}{section.4.1}% 
+\contentsline {subsection}{\numberline {4.1.1}Pengujian DC - to - DC Converter}{46}{subsection.4.1.1}% 
+\contentsline {subsection}{\numberline {4.1.2}Pengujian Motor DC}{46}{subsection.4.1.2}% 
+\contentsline {subsection}{\numberline {4.1.3}Pengujian \textit {Driver} Motor H \IeC {\textendash } \textit {Bridge}}{47}{subsection.4.1.3}% 
+\contentsline {subsection}{\numberline {4.1.4}Pengujian Nilai\textit { Analog Potensiometer}}{48}{subsection.4.1.4}% 
 \contentsline {subsection}{\numberline {4.1.5}Pengujian Rangkaian \textit {Switching Valve Pneumatic}}{49}{subsection.4.1.5}% 
-\contentsline {subsection}{\numberline {4.1.6}Pengujian Kinematika Maju}{49}{subsection.4.1.6}% 
-\contentsline {subsection}{\numberline {4.1.7}Pengujian Kinematika Balik}{49}{subsection.4.1.7}% 
+\contentsline {subsection}{\numberline {4.1.6}Pengujian Kinematika Maju}{50}{subsection.4.1.6}% 
+\contentsline {subsection}{\numberline {4.1.7}Pengujian Kinematika Balik}{50}{subsection.4.1.7}% 
 \contentsline {subsubsection}{\numberline {4.1.7.1}Pengujian Koordinat X}{50}{subsubsection.4.1.7.1}% 
-\contentsline {subsubsection}{\numberline {4.1.7.2}Pengujian Koordinat Y}{51}{subsubsection.4.1.7.2}% 
+\contentsline {subsubsection}{\numberline {4.1.7.2}Pengujian Koordinat Y}{52}{subsubsection.4.1.7.2}% 
 \contentsline {subsubsection}{\numberline {4.1.7.3}Pengujian \textit {Joint Shoulder}}{53}{subsubsection.4.1.7.3}% 
 \contentsline {subsubsection}{\numberline {4.1.7.4}Pengujian \textit {Joint Elbow}}{54}{subsubsection.4.1.7.4}% 
 \contentsline {subsection}{\numberline {4.1.8}Pengujian GUI}{56}{subsection.4.1.8}% 

@@ -33,20 +33,20 @@
 \contentsline {figure}{\numberline {3.4}{\ignorespaces Box Panel Robot SCARA\relax }}{27}{figure.caption.38}% 
 \contentsline {figure}{\numberline {3.5}{\ignorespaces Motor DC dengan \textit {Potensiometer}\relax }}{28}{figure.caption.40}% 
 \contentsline {figure}{\numberline {3.6}{\ignorespaces \textit {End-Effector} Robot SCARA\relax }}{29}{figure.caption.41}% 
-\contentsline {figure}{\numberline {3.7}{\ignorespaces Bentuk Fisik \textit {Pneumatic}\relax }}{29}{figure.caption.42}% 
+\contentsline {figure}{\numberline {3.7}{\ignorespaces Bentuk Fisik \textit {Pneumatic}\relax }}{30}{figure.caption.42}% 
 \contentsline {figure}{\numberline {3.8}{\ignorespaces Bentuk Fisik Kompresor\relax }}{30}{figure.caption.43}% 
-\contentsline {figure}{\numberline {3.9}{\ignorespaces Rancangan Tampak Samping\relax }}{30}{figure.caption.44}% 
+\contentsline {figure}{\numberline {3.9}{\ignorespaces Rancangan Tampak Samping\relax }}{31}{figure.caption.44}% 
 \contentsline {figure}{\numberline {3.10}{\ignorespaces Rancangan Tampak Atas\relax }}{31}{figure.caption.45}% 
-\contentsline {figure}{\numberline {3.11}{\ignorespaces Dimensi Robot\relax }}{31}{figure.caption.46}% 
-\contentsline {figure}{\numberline {3.12}{\ignorespaces Rangkaian Utama \textit {Driver} Motor EMS 30A H-\textit {Bridge}\relax }}{32}{figure.caption.47}% 
-\contentsline {figure}{\numberline {3.13}{\ignorespaces Rangkaian Arduino antara \textit {Driver} Motor dan Motor DC\relax }}{32}{figure.caption.48}% 
-\contentsline {figure}{\numberline {3.14}{\ignorespaces Bentuk Fisik dari \textit {Valve Pneumatic}\relax }}{33}{figure.caption.49}% 
-\contentsline {figure}{\numberline {3.15}{\ignorespaces Rangkaian \textit {Valve Pneumatic} dengan Rangkaian TIP31\relax }}{33}{figure.caption.50}% 
-\contentsline {figure}{\numberline {3.16}{\ignorespaces Rangkaian Minimum Sistem Arduino\relax }}{34}{figure.caption.51}% 
-\contentsline {figure}{\numberline {3.17}{\ignorespaces Rangkaian Catu Daya\relax }}{36}{figure.caption.53}% 
-\contentsline {figure}{\numberline {3.18}{\ignorespaces Tampilan GUI Sistem Kinematika Robot SCARA\relax }}{37}{figure.caption.54}% 
-\contentsline {figure}{\numberline {3.19}{\ignorespaces Trigonometeri Sisi Atas\relax }}{40}{figure.caption.56}% 
-\contentsline {figure}{\numberline {3.20}{\ignorespaces Sistem Secara Keseluruhan\relax }}{42}{figure.caption.57}% 
+\contentsline {figure}{\numberline {3.11}{\ignorespaces Dimensi Robot\relax }}{32}{figure.caption.46}% 
+\contentsline {figure}{\numberline {3.12}{\ignorespaces Rangkaian Utama \textit {Driver} Motor EMS 30A H-\textit {Bridge}\relax }}{33}{figure.caption.47}% 
+\contentsline {figure}{\numberline {3.13}{\ignorespaces Rangkaian Arduino antara \textit {Driver} Motor dan Motor DC\relax }}{33}{figure.caption.48}% 
+\contentsline {figure}{\numberline {3.14}{\ignorespaces Bentuk Fisik dari \textit {Valve Pneumatic}\relax }}{34}{figure.caption.49}% 
+\contentsline {figure}{\numberline {3.15}{\ignorespaces Rangkaian \textit {Valve Pneumatic} dengan Rangkaian TIP31\relax }}{34}{figure.caption.50}% 
+\contentsline {figure}{\numberline {3.16}{\ignorespaces Rangkaian Minimum Sistem Arduino\relax }}{35}{figure.caption.51}% 
+\contentsline {figure}{\numberline {3.17}{\ignorespaces Rangkaian Catu Daya\relax }}{37}{figure.caption.53}% 
+\contentsline {figure}{\numberline {3.18}{\ignorespaces Tampilan GUI Sistem Kinematika Robot SCARA\relax }}{38}{figure.caption.54}% 
+\contentsline {figure}{\numberline {3.19}{\ignorespaces Trigonometeri Sisi Atas\relax }}{41}{figure.caption.56}% 
+\contentsline {figure}{\numberline {3.20}{\ignorespaces Sistem Secara Keseluruhan\relax }}{43}{figure.caption.57}% 
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {4.1}{\ignorespaces Grafik Pengujian Koordinat X\relax }}{51}{figure.caption.66}% 
 \contentsline {figure}{\numberline {4.2}{\ignorespaces Grafik Pengujian Koordinat Y\relax }}{52}{figure.caption.68}% 

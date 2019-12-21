@@ -14,46 +14,35 @@ Pengujian DC – to – DC \textit{converter} dilakukan untuk mengetahui teganga
 	\centering
 	\caption{Hasil Tegangan Keluaran Dari Tegangan DC-DC Converter}
 	\label{tbl.dctodc}
-	\begin{tabular}{|c|l|}
+	\begin{tabular}{|c|c|c|c|}
 		\hline
 		\rowcolor[HTML]{9B9B9B} 
-		No & \multicolumn{1}{c|}{\cellcolor[HTML]{9B9B9B}Keterangan} \\ \hline
-		1  & Robot Lengan SCARA                                      \\ \hline
-		2  & Box Panel                                               \\ \hline
-		3  & Arduino Mega 2560                                       \\ \hline
-		4  & Personal Computer                                       \\ \hline
-		5  & GUI Processing IDE                                      \\ \hline
-		6  & Workspace Robot SCARA                                   \\ \hline
-		7  & Kompresor                                               \\ \hline
-		8  & Objek                                                   \\ \hline
+		No & \begin{tabular}[c]{@{}c@{}}Tegangan \\ Masukan (V)\end{tabular} & \begin{tabular}[c]{@{}c@{}}Tegangan Keluaran \\ Buck Converter (12 V)\end{tabular} & \begin{tabular}[c]{@{}c@{}}Tegangan Keluaran \\ Buck Converter (5 V)\end{tabular} \\ \hline
+		1  & 12                                                              & 12.1                                                                               & 4.9                                                                               \\ \hline
+		2  & 14                                                              & 12.1                                                                               & 4.9                                                                               \\ \hline
+		3  & 16                                                              & 12.1                                                                               & 4.9                                                                               \\ \hline
+		4  & 18                                                              & 12.1                                                                               & 4.9                                                                               \\ \hline
+		5  & 20                                                              & 12.1                                                                               & 4.9                                                                               \\ \hline
 	\end{tabular}
-	
 \end{table} 
 
 Pada hasil yang ditunjukkan oleh Tabel \ref{tbl.dctodc} terlihat bahwa nilai tegangan telah sesuai dengan yang dibutuhkan. Pada saat mengubah besar tegangan keluaran yang dilakukan oleh Regulator \textit{Buck} LM2596 dilakukan dengan cara memutar \textit{potensiometer} yang terdapat pada Regulator \textit{Buck}. Diputar searah dengan jarum jam sesuai hingga pada teganangan yang diinginkan.
 \subsection{Pengujian Motor DC}
 Pengujian motor DC dilakukan untuk mengetahui apakah motor DC dalam keaadaan baik atau tidak. Pengujian dilakukan dengan memberikan tegangan kerja pada motor DC yang ada pada \textit{shoulder}, \textit{elbow}, dan juga \textit{end-effector} yang nantinya diukur arus yang dihasilkan pada masing-masing motor DC. Tabel \ref{tbl.motordc} merupakan hasil dari pengujian pada masing-masing motor DC.
 
-\begin{table}[H]
-	\centering
-	\caption{Hasil Tegangan Keluaran Dari Tegangan DC-DC \textit{Converter}}
-	
-	\begin{tabular}{|c|l|}
+\begin{table}[h]
+		\centering
+	\caption{Hasil Pengujian Motor DC}
+	\label{tbl.motordc}
+	\begin{tabular}{|c|c|c|c|}
 		\hline
 		\rowcolor[HTML]{9B9B9B} 
-		\label{tbl.motordc}
-		No & \multicolumn{1}{c|}{\cellcolor[HTML]{9B9B9B}Keterangan} \\ \hline
-		1  & Robot Lengan SCARA                                      \\ \hline
-		2  & Box Panel                                               \\ \hline
-		3  & Arduino Mega 2560                                       \\ \hline
-		4  & Personal Computer                                       \\ \hline
-		5  & GUI Processing IDE                                      \\ \hline
-		6  & Workspace Robot SCARA                                   \\ \hline
-		7  & Kompresor                                               \\ \hline
-		8  & Objek                                                   \\ \hline
+		No & \textit{Joint}        & Tegangan(V) & Arus(mA) \\ \hline
+		1  & \textit{Shoulder}     & 12.1        &          \\ \hline
+		2  & \textit{Elbow}        & 12.1        &          \\ \hline
+		3  & \textit{End-Effector} & 12.1        &          \\ \hline
 	\end{tabular}
-	
-\end{table} 
+\end{table}
 
 Pada hasil yang ditunjukkan oleh tabel \ref{tbl.motordc} menujukkan bahwa setiap motor DC mempunyai nilai arus yang berbeda-beda. Motor DC yang terletak pada \textit{end-effcetor} merupakan motor DC yang menghasilkan arus paling besar. Hal ini disebabkan karena motor DC yang terpasang pada \textit{end-effector} dibantu dengan bantuan \textit{belt} untuk menyalurkan putaran pada\textit{ end-effector}. Dengan begitu penggunaan \textit{belt} pada motor DC ini menyebabkan beban yang dikerjakan oleh motor DC pada \textit{end-effector} menjadi lebih besar dari pada motor DC yang lain yang langsung menggerakkan pada masing-masing \textit{joint}. Secara keseluruhan motor DC dapat dioperasikan dan masih dalam keadaan baik.
 
@@ -63,20 +52,26 @@ Pengujian \textit{Driver} Motor\textit{ H –} \textit{bridge} dilakukan untuk m
 	\centering
 	\caption{Hasil Pengujian \textit{Driver} Motor H-\textit{Bridge}}
 		\label{tbl.drivermotor}
-	\begin{tabular}{|c|l|}
-		\hline
-		\rowcolor[HTML]{9B9B9B} 
-	
-		No & \multicolumn{1}{c|}{\cellcolor[HTML]{9B9B9B}Keterangan} \\ \hline
-		1  & Robot Lengan SCARA                                      \\ \hline
-		2  & Box Panel                                               \\ \hline
-		3  & Arduino Mega 2560                                       \\ \hline
-		4  & Personal Computer                                       \\ \hline
-		5  & GUI Processing IDE                                      \\ \hline
-		6  & Workspace Robot SCARA                                   \\ \hline
-		7  & Kompresor                                               \\ \hline
-		8  & Objek                                                   \\ \hline
-	\end{tabular}
+		
+		\begin{tabular}{|c|c|c|c|l|l|}
+			\hline
+			\rowcolor[HTML]{9B9B9B} 
+			\cellcolor[HTML]{9B9B9B}                     & \cellcolor[HTML]{9B9B9B}                                 & \multicolumn{2}{c|}{\cellcolor[HTML]{9B9B9B}Sinyal Arduino} & \multicolumn{1}{c|}{\cellcolor[HTML]{9B9B9B}}                          & \multicolumn{1}{c|}{\cellcolor[HTML]{9B9B9B}}                            \\ \cline{3-4}
+			\rowcolor[HTML]{9B9B9B} 
+			\multirow{-2}{*}{\cellcolor[HTML]{9B9B9B}No} & \multirow{-2}{*}{\cellcolor[HTML]{9B9B9B}\textit{Joint}} & MEN1                         & MEN2                         & \multicolumn{1}{c|}{\multirow{-2}{*}{\cellcolor[HTML]{9B9B9B}Kondisi}} & \multicolumn{1}{c|}{\multirow{-2}{*}{\cellcolor[HTML]{9B9B9B}Arus (mA)}} \\ \hline
+			&                                                          & HIGH                         & HIGH                         & Tidak berputar                                                         &                                                                          \\ \cline{3-6} 
+			&                                                          & HIGH                         & LOW                          & Berputar searah putaran jam                                            &                                                                          \\ \cline{3-6} 
+			&                                                          & LOW                          & HIGH                         & Berputar berlawanan arah jam                                           &                                                                          \\ \cline{3-6} 
+			\multirow{-4}{*}{1}                          & \multirow{-4}{*}{\textit{Shoulder}}                      & LOW                          & LOW                          & Tidak berputar                                                         &                                                                          \\ \hline
+			&                                                          & HIGH                         & HIGH                         & Tidak berputar                                                         &                                                                          \\ \cline{3-6} 
+			&                                                          & HIGH                         & LOW                          & Berputar searah putaran jam                                            &                                                                          \\ \cline{3-6} 
+			&                                                          & LOW                          & HIGH                         & Berputar berlawanan arah jam                                           &                                                                          \\ \cline{3-6} 
+			\multirow{-4}{*}{2}                          & \multirow{-4}{*}{\textit{Elbow}}                         & LOW                          & LOW                          & Tidak berputar                                                         &                                                                          \\ \hline
+			&                                                          & HIGH                         & HIGH                         & Tidak berputar                                                         &                                                                          \\ \cline{3-6} 
+			&                                                          & HIGH                         & LOW                          & Berputar searah putaran jam                                            &                                                                          \\ \cline{3-6} 
+			&                                                          & LOW                          & HIGH                         & Berputar berlawanan arah jam                                           &                                                                          \\ \cline{3-6} 
+			\multirow{-4}{*}{3}                          & \multirow{-4}{*}{\textit{End-Effector}}                  & LOW                          & LOW                          & Tidak berputar                                                         &                                                                          \\ \hline
+		\end{tabular}
 	
 \end{table} 
 
@@ -89,21 +84,18 @@ Pengujian nilai \textit{analog potensiometer} berfungsi untuk mengetahui apakah 
 	\centering
 	\caption{Hasil Pengujian \textit{Potensiometer}}
 	\label{tbl.potensiometer}
-	\begin{tabular}{|c|l|}
+	\begin{tabular}{|c|c|c|c|c|c|c|c|}
 		\hline
 		\rowcolor[HTML]{9B9B9B} 
-		
-		No & \multicolumn{1}{c|}{\cellcolor[HTML]{9B9B9B}Keterangan} \\ \hline
-		1  & Robot Lengan SCARA                                      \\ \hline
-		2  & Box Panel                                               \\ \hline
-		3  & Arduino Mega 2560                                       \\ \hline
-		4  & Personal Computer                                       \\ \hline
-		5  & GUI Processing IDE                                      \\ \hline
-		6  & Workspace Robot SCARA                                   \\ \hline
-		7  & Kompresor                                               \\ \hline
-		8  & Objek                                                   \\ \hline
+		\cellcolor[HTML]{9B9B9B}                     & \cellcolor[HTML]{9B9B9B}                            & \multicolumn{2}{c|}{\cellcolor[HTML]{9B9B9B}Joint Shoulder} & \multicolumn{2}{c|}{\cellcolor[HTML]{9B9B9B}Joint Elbow} & \multicolumn{2}{c|}{\cellcolor[HTML]{9B9B9B}End-effector} \\ \cline{3-8} 
+		\rowcolor[HTML]{9B9B9B} 
+		\multirow{-2}{*}{\cellcolor[HTML]{9B9B9B}No} & \multirow{-2}{*}{\cellcolor[HTML]{9B9B9B}Pengujian} & Max                          & Min                          & Max                         & Min                        & Max                         & Min                         \\ \hline
+		1                                            & Pengujian Ke-1                                      &                              &                              &                             &                            &                             &                             \\ \hline
+		2                                            & Pengujian Ke-2                                      &                              &                              &                             &                            &                             &                             \\ \hline
+		3                                            & Pengujian Ke-3                                      &                              &                              &                             &                            &                             &                             \\ \hline
+		4                                            & Pengujian Ke-4                                      &                              &                              &                             &                            &                             &                             \\ \hline
+		5                                            & Pengujian Ke-5                                      &                              &                              &                             &                            &                             &                             \\ \hline
 	\end{tabular}
-	
 \end{table} 
 
 Pada hasil pengujian yang ditunjukkan oleh Tabel \ref{tbl.potensiometer} terlihat bahwa pada saat nilai-nilai tertentu, \textit{potensiometer}  mengirimkan nilai data analog yang berubah-ubah. Hal tersebut dipengaruhi oleh pembacaan \textit{potensiometer} yang belum stabil. Untuk membuat data analog yang dikirimkan oleh \textit{potensiometer} menjadi lebih stabil maka pada program arduino ditambahkan program \textit{moving avarage}. \textit{Moving avarage} berfungi untuk membuat rata-rata nilai dari hasil data pembacaan nilai data pada \textit{potensiometer} yang menyebabkan nilai menjadi lebih stabil. Tabel \ref{tbl.potensiometer2} merupakan hasil pengujian nilai data analog \textit{potensiometer} setelah dilakukan \textit{moving avarage.}
@@ -112,19 +104,17 @@ Pada hasil pengujian yang ditunjukkan oleh Tabel \ref{tbl.potensiometer} terliha
 	\centering
 	\caption{Hasil Pengujian \textit{Potensiometer} Menggunakan Program \textit{Moving Avarage}}
 	\label{tbl.potensiometer2}
-	\begin{tabular}{|c|l|}
+	\begin{tabular}{|c|c|c|c|c|c|c|c|}
 		\hline
 		\rowcolor[HTML]{9B9B9B} 
-		
-		No & \multicolumn{1}{c|}{\cellcolor[HTML]{9B9B9B}Keterangan} \\ \hline
-		1  & Robot Lengan SCARA                                      \\ \hline
-		2  & Box Panel                                               \\ \hline
-		3  & Arduino Mega 2560                                       \\ \hline
-		4  & Personal Computer                                       \\ \hline
-		5  & GUI Processing IDE                                      \\ \hline
-		6  & Workspace Robot SCARA                                   \\ \hline
-		7  & Kompresor                                               \\ \hline
-		8  & Objek                                                   \\ \hline
+		\cellcolor[HTML]{9B9B9B}                     & \cellcolor[HTML]{9B9B9B}                            & \multicolumn{2}{c|}{\cellcolor[HTML]{9B9B9B}Joint Shoulder} & \multicolumn{2}{c|}{\cellcolor[HTML]{9B9B9B}Joint Elbow} & \multicolumn{2}{c|}{\cellcolor[HTML]{9B9B9B}End-effector} \\ \cline{3-8} 
+		\rowcolor[HTML]{9B9B9B} 
+		\multirow{-2}{*}{\cellcolor[HTML]{9B9B9B}No} & \multirow{-2}{*}{\cellcolor[HTML]{9B9B9B}Pengujian} & Max                          & Min                          & Max                         & Min                        & Max                         & Min                         \\ \hline
+		1                                            & Pengujian Ke-1                                      &                              &                              &                             &                            &                             &                             \\ \hline
+		2                                            & Pengujian Ke-2                                      &                              &                              &                             &                            &                             &                             \\ \hline
+		3                                            & Pengujian Ke-3                                      &                              &                              &                             &                            &                             &                             \\ \hline
+		4                                            & Pengujian Ke-4                                      &                              &                              &                             &                            &                             &                             \\ \hline
+		5                                            & Pengujian Ke-5                                      &                              &                              &                             &                            &                             &                             \\ \hline
 	\end{tabular}
 	
 \end{table} 
@@ -137,19 +127,12 @@ Pengujian rangkaian \textit{switching} berfungsi untuk mengetahui apakah rangkai
 	\centering
 	\caption{Hasil Pengujian Rangkaian \textit{Switching Vavle Pnemuatic}}
 	\label{tbl.rangkaiantip}
-	\begin{tabular}{|c|l|}
+	\begin{tabular}{|l|c|c|l|}
 		\hline
 		\rowcolor[HTML]{9B9B9B} 
-		
-		No & \multicolumn{1}{c|}{\cellcolor[HTML]{9B9B9B}Keterangan} \\ \hline
-		1  & Robot Lengan SCARA                                      \\ \hline
-		2  & Box Panel                                               \\ \hline
-		3  & Arduino Mega 2560                                       \\ \hline
-		4  & Personal Computer                                       \\ \hline
-		5  & GUI Processing IDE                                      \\ \hline
-		6  & Workspace Robot SCARA                                   \\ \hline
-		7  & Kompresor                                               \\ \hline
-		8  & Objek                                                   \\ \hline
+		No                  & Sinyal dari Arduino & Tegangan \textit{Valve Pneumatic} & \multicolumn{1}{c|}{\cellcolor[HTML]{9B9B9B}Kondisi} \\ \hline
+		& HIGH                & 24 Volt                  & Valve bekerja                                        \\ \cline{2-4} 
+		\multirow{-2}{*}{1} & LOW                 & 0 Volt                   & Valve tidak bekerja                                  \\ \hline
 	\end{tabular}
 	
 \end{table} 

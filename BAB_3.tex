@@ -34,22 +34,23 @@ Sistem mekanika dari robot lengan bergantung dari konfigurasi robot lengan. Konf
 \end{figure}
 Robot SCARA merupakan robot yang meiliki tiga buah derajar kebebasan (DOF) yang terletak pada \textit{shoulder}, \textit{elbow}, dan pada \textit{end-effector}. Seluruh derajat kebebasan menggunakan sebuah motor DC yang didalamnya terdapat\textit{ gear box} untuk motor DC yang ada pada \textit{shoulder} dan \textit{elbow} untuk melakukan pergerakan. Sedangkan motor DC pada \textit{end-effector} dibantu oleh sebuah \textit{belt} untuk menyalurkan putaran dari motor yang terletak pada \textit{shoulder}. Pergerakan pada masing-masing \textit{joint} memiliki jangkauan maksimum yang berbeda-beda. Jangkauan juga dipengaruhi oleh panjangnya lengan yang dimiliki oleh robot SCARA tersebut. Tabel \ref{tbl.spesifikasiscara} merupakan spesifikasi dari robot SCARA yang digunakan.
 
-
-\begin{table}[H]
-	\centering
+\begin{table}[h]
+		\centering
 	\caption{Spesifikasi Robot SCARA}
 	\label{tbl.spesifikasiscara}
-		\begin{tabular}{|l|l|}
-			\hline
-			Main arm length      & 360 mm		\\ \hline
-			Fore arm length      & 290 mm  				\\ \hline
-			Shoulder movement    & 180 °  		\\ \hline
-			Elbow movement       & 200 °   		\\ \hline
-			Wrist rotation       & 360 ° 		\\ \hline
-			Up \& down movement  & 150 mm   				\\ \hline
-			Maximum tip velocity & 3.0 kg  				\\ \hline
-		\end{tabular} 
-	\end{table}
+	\begin{tabular}{|c|l|l|}
+		\hline
+		\rowcolor[HTML]{9B9B9B} 
+		No & \multicolumn{1}{c|}{\cellcolor[HTML]{9B9B9B}Keterangan} & \multicolumn{1}{c|}{\cellcolor[HTML]{9B9B9B}Nilai} \\ \hline
+		1  & \cellcolor[HTML]{FFFFFF}Main arm length                 & \cellcolor[HTML]{FFFFFF}360 mm                     \\ \hline
+		2  & Fore arm length                                         & 290 mm                                             \\ \hline
+		3  & Shoulder movement                                       & 180 °                                              \\ \hline
+		4  & Elbow movement                                          & 200 °                                              \\ \hline
+		5  & Wrist rotation                                          & 360 °                                              \\ \hline
+		6  & Up \& down movement                                     & 150 mm                                             \\ \hline
+		7  & Maximum tip velocity                                    & 3.0 kg                                             \\ \hline
+	\end{tabular}
+\end{table}
 Desain pada\textit{ arm manipulator robot} SCARA berbahan besi dengan tebal 2 mm dengan tiga derajat kebebasan yang meliputi bagian \textit{shoulder}, \textit{elbow} serta \textit{end-effector}. Desain robot SCARA terbagi menjadi dua bagian. Bagian utama adalah \textit{box} panel yang berisi sistem elektronis utama dan pada bagian yang lain merupakan lengan dari robot SCARA sendiri. Terdapat juga tiga buah saluran udara yang berfungsi untuk mentransformasikan tekanan udara untuk pergerakan vertikal dari \textit{end-effector} yang berasal dari sebuah kompresor.  Dalam komunikasinya dengan komputer personal, robot SCARA dihubungkan dengan konektor USB. Gambar \ref{pic.boxpanel} merupakan bentuk fisik dari box panel pada Robot SCARA.
 \begin{figure}[H]
 	\centering
@@ -67,6 +68,8 @@ Pada \textit{arm manipulator robot} SCARA menggunakan penggerak berupa motor DC 
 	\resizebox{15cm}{!}{%
 		\begin{tabular}{|l|l|}
 			\hline
+			\rowcolor[HTML]{9B9B9B} 
+			\multicolumn{1}{c|}{\cellcolor[HTML]{9B9B9B}Keterangan}		& \multicolumn{1}{c|}{\cellcolor[HTML]{9B9B9B}Nilai}			\\ \hline
 			Moments of inertia of the main arm ($J_{1}$)    							& $0.0980kgm^{2}$ 				\\ \hline
 			Moments of inertia of the fore arm ($J_{2}$)    							& $0.0115 kgm^{2}$ 				\\ \hline
 			Masses of the main arm	($m_{1}$)											& $1.90kg$   					\\ \hline
