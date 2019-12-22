@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7050 64-bit) (preloaded format=pdflatex 2019.7.18)  21 DEC 2019 20:11
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7050 64-bit) (preloaded format=pdflatex 2019.7.18)  22 DEC 2019 14:55
 entering extended mode
 **./Laporan_KP.tex
 (Laporan_KP.tex
@@ -895,24 +895,24 @@ File: gambar/end_effector.jpg Graphic file (type jpg)
 <use gambar/end_effector.jpg>
 Package pdftex.def Info: gambar/end_effector.jpg  used on input line 90.
 (pdftex.def)             Requested size: 170.71652pt x 184.94609pt.
-<gambar/kinematika_diagram.png, id=576, 463.7325pt x 162.6075pt>
+<gambar/kinematika_diagram.png, id=576, 463.9734pt x 163.5711pt>
 File: gambar/kinematika_diagram.png Graphic file (type png)
 <use gambar/kinematika_diagram.png>
 Package pdftex.def Info: gambar/kinematika_diagram.png  used on input line 102.
 
-(pdftex.def)             Requested size: 341.43306pt x 119.72473pt.
+(pdftex.def)             Requested size: 341.43306pt x 120.36931pt.
  [11 <./gambar/wirst.jpg> <./gambar/end_effector.jpg>]
-<gambar/Kinematika_maju.png, id=582, 388.45125pt x 122.4575pt>
+<gambar/Kinematika_maju.png, id=582, 418.4433pt x 99.7326pt>
 File: gambar/Kinematika_maju.png Graphic file (type png)
 <use gambar/Kinematika_maju.png>
 Package pdftex.def Info: gambar/Kinematika_maju.png  used on input line 111.
-(pdftex.def)             Requested size: 341.43306pt x 107.63773pt.
+(pdftex.def)             Requested size: 341.43306pt x 81.37798pt.
  [12 <./gambar/kinematika_diagram.png> <./gambar/Kinematika_maju.png>]
-<gambar/kinematika_balik.png, id=590, 388.45125pt x 122.4575pt>
+<gambar/kinematika_balik.png, id=590, 418.4433pt x 99.7326pt>
 File: gambar/kinematika_balik.png Graphic file (type png)
 <use gambar/kinematika_balik.png>
 Package pdftex.def Info: gambar/kinematika_balik.png  used on input line 124.
-(pdftex.def)             Requested size: 284.52756pt x 89.69778pt.
+(pdftex.def)             Requested size: 284.52756pt x 67.81421pt.
 
 
 LaTeX Warning: Reference `[pic.motordc' on page 13 undefined on input line 130.
@@ -945,13 +945,13 @@ File: gambar/arduino_mega.jpg Graphic file (type jpg)
 <use gambar/arduino_mega.jpg>
 Package pdftex.def Info: gambar/arduino_mega.jpg  used on input line 165.
 (pdftex.def)             Requested size: 142.26378pt x 68.998pt.
-[15 <./gambar/lm2596.jpg>] [16 <./gambar/arduino_mega.jpg>]
-<gambar/driver_motor.jpg, id=617, 469.755pt x 342.5297pt>
+[15 <./gambar/lm2596.jpg>]
+<gambar/driver_motor.jpg, id=613, 469.755pt x 342.5297pt>
 File: gambar/driver_motor.jpg Graphic file (type jpg)
 <use gambar/driver_motor.jpg>
 Package pdftex.def Info: gambar/driver_motor.jpg  used on input line 195.
 (pdftex.def)             Requested size: 142.26378pt x 103.73184pt.
-
+ [16 <./gambar/arduino_mega.jpg>]
 Overfull \hbox (36.36311pt too wide) in paragraph at lines 211--224
  [][] 
  []
@@ -962,41 +962,41 @@ File: gambar/processing_view.png Graphic file (type png)
 Package pdftex.def Info: gambar/processing_view.png  used on input line 229.
 (pdftex.def)             Requested size: 341.43306pt x 223.79207pt.
 [17 <./gambar/driver_motor.jpg>] [18 <./gambar/processing_view.png>]
-<gambar/bulat.png, id=633, 79.04532pt x 63.98906pt>
+<gambar/bulat.png, id=633, 142.6128pt x 142.6128pt>
 File: gambar/bulat.png Graphic file (type png)
 <use gambar/bulat.png>
 Package pdftex.def Info: gambar/bulat.png  used on input line 281.
-(pdftex.def)             Requested size: 85.35826pt x 69.1042pt.
-<gambar/busur.png, id=634, 79.04532pt x 76.78688pt>
+(pdftex.def)             Requested size: 85.35826pt x 85.35942pt.
+<gambar/busur.png, id=634, 142.3719pt x 142.6128pt>
 File: gambar/busur.png Graphic file (type png)
 <use gambar/busur.png>
 Package pdftex.def Info: gambar/busur.png  used on input line 281.
-(pdftex.def)             Requested size: 85.35826pt x 82.92506pt.
-<gambar/garis.png, id=635, 65.49469pt x 41.4047pt>
+(pdftex.def)             Requested size: 85.35826pt x 85.50522pt.
+<gambar/garis.png, id=635, 142.3719pt x 142.6128pt>
 File: gambar/garis.png Graphic file (type png)
 <use gambar/garis.png>
 Package pdftex.def Info: gambar/garis.png  used on input line 281.
-(pdftex.def)             Requested size: 85.35826pt x 53.96379pt.
-<gambar/point.png, id=636, 10.53937pt x 9.78656pt>
+(pdftex.def)             Requested size: 85.35826pt x 85.50522pt.
+<gambar/point.png, id=636, 142.3719pt x 142.6128pt>
 File: gambar/point.png Graphic file (type png)
 <use gambar/point.png>
 Package pdftex.def Info: gambar/point.png  used on input line 281.
-(pdftex.def)             Requested size: 14.22636pt x 13.21053pt.
-<gambar/kotak.png, id=637, 81.30376pt x 60.97781pt>
+(pdftex.def)             Requested size: 85.35826pt x 85.50522pt.
+<gambar/kotak.png, id=637, 142.3719pt x 142.6128pt>
 File: gambar/kotak.png Graphic file (type png)
 <use gambar/kotak.png>
 Package pdftex.def Info: gambar/kotak.png  used on input line 281.
-(pdftex.def)             Requested size: 85.35826pt x 64.02391pt.
+(pdftex.def)             Requested size: 85.35826pt x 85.50522pt.
  [19]
 [20 <./gambar/bulat.png> <./gambar/busur.png> <./gambar/garis.png> <./gambar/po
 int.png> <./gambar/kotak.png>]
-<gambar/compile.jpg, id=656, 170.13562pt x 123.46124pt>
+<gambar/compile.jpg, id=655, 170.13562pt x 123.46124pt>
 File: gambar/compile.jpg Graphic file (type jpg)
 <use gambar/compile.jpg>
 Package pdftex.def Info: gambar/compile.jpg  used on input line 307.
 (pdftex.def)             Requested size: 142.26378pt x 103.2414pt.
  [21 <./gambar/compile.jpg>]
-<gambar/controlp5.jpg, id=665, 381.425pt x 306.14375pt>
+<gambar/controlp5.jpg, id=664, 381.425pt x 306.14375pt>
 File: gambar/controlp5.jpg Graphic file (type jpg)
 <use gambar/controlp5.jpg>
 Package pdftex.def Info: gambar/controlp5.jpg  used on input line 321.
@@ -1014,7 +1014,8 @@ LaTeX Font Info:    Try loading font information for TS1+ptm on input line 342.
 
 ("C:\Users\IVAN\AppData\Local\Programs\MiKTeX 2.9\tex/latex/psnfss\ts1ptm.fd"
 File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
-)) [22 <./gambar/controlp5.jpg>] [23]
+)
+[22 <./gambar/controlp5.jpg>]) [23]
 \openout2 = `BAB_3.aux'.
 
  (BAB_3.tex
@@ -1142,11 +1143,12 @@ File: gambar/catudaya_bb.png Graphic file (type png)
 Package pdftex.def Info: gambar/catudaya_bb.png  used on input line 220.
 (pdftex.def)             Requested size: 284.52756pt x 180.56483pt.
  [37 <./gambar/catudaya_bb.png>] [38] [39]
-File: gambar/catudaya_bb.png Graphic file (type png)
-<use gambar/catudaya_bb.png>
-Package pdftex.def Info: gambar/catudaya_bb.png  used on input line 281.
-(pdftex.def)             Requested size: 227.62204pt x 144.4455pt.
- [40] [41]
+<gambar/scara_atas.png, id=796, 333.4056pt x 205.2468pt>
+File: gambar/scara_atas.png Graphic file (type png)
+<use gambar/scara_atas.png>
+Package pdftex.def Info: gambar/scara_atas.png  used on input line 281.
+(pdftex.def)             Requested size: 341.43306pt x 210.20706pt.
+ [40] [41 <./gambar/scara_atas.png>]
 Overfull \hbox (12.75954pt too wide) in paragraph at lines 316--317
 []\T1/ptm/m/n/12 Pada per-sa-ma-an []3.5[] be-be-ra-pa da-pat di-u-bah se-su-ai
  de-ngan hu-kum \T1/ptm/m/it/12 co-si-nus $[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 
@@ -1300,10 +1302,10 @@ LaTeX Warning: There were multiply-defined labels.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 108.
  ) 
 Here is how much of TeX's memory you used:
- 10295 strings out of 492895
- 156314 string characters out of 3124202
+ 10300 strings out of 492895
+ 156431 string characters out of 3124202
  284271 words of memory out of 3000000
- 13693 multiletter control sequences out of 15000+200000
+ 13697 multiletter control sequences out of 15000+200000
  35368 words of font info for 57 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  36i,24n,41p,1354b,470s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -1321,9 +1323,9 @@ fb><C:/Users/IVAN/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/times/utmbi
 8a.pfb><C:/Users/IVAN/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/times/u
 tmr8a.pfb><C:/Users/IVAN/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/time
 s/utmri8a.pfb>
-Output written on Laporan_KP.pdf (75 pages, 1707689 bytes).
+Output written on Laporan_KP.pdf (75 pages, 2064424 bytes).
 PDF statistics:
- 1080 PDF objects out of 1200 (max. 8388607)
+ 1082 PDF objects out of 1200 (max. 8388607)
  267 named destinations out of 1000 (max. 500000)
- 663 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 668 words of extra memory for PDF output out of 10000 (max. 10000000)
 
