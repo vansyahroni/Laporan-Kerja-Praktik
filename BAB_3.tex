@@ -116,21 +116,21 @@ Kompresor yang digunakan untuk menghasilkan sebuah tekanan udara merupakan sebua
 Rancangan robot secara keseluruhan ditampilan pada Gambar \ref{pic.scarasamping} yang merupakan rancangan tampak samping, Gambar \ref{pic.scaraatas} merupakan rancangan tampak atas dan Gambar \ref{pic.scaradimensi} merupakan rancangan dimensi robot. 
 \begin{figure}[H]
 	\centering
-	\includegraphics[height=6cm]{gambar/penuamticsementara.jpg}
+	\includegraphics[height=7.5cm]{gambar/samping.png}
 	\caption{Rancangan Tampak Samping}
 	\label{pic.scarasamping}
 \end{figure}
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[height=6cm]{gambar/scaraatass.png}
+	\includegraphics[height=7.5cm]{gambar/scaraatass.png}
 	\caption{Rancangan Tampak Atas}
 	\label{pic.scaraatas}
 \end{figure}
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[height=6cm]{gambar/penuamticsementara.jpg}
+	\includegraphics[height=7.5cm]{gambar/scaradimensi.png}
 	\caption{Dimensi Robot}
 	\label{pic.scaradimensi}
 \end{figure}
@@ -217,7 +217,7 @@ Rangkaian catu daya merupakan hal yang sangat penting dalam sebuah sistem. Pada 
 Perangkat lunak yang digunakan merupakan \textit{software} Processing IDE. Processing IDE diprogram agar menghasilkan sebuah GUI yang cocok sesuai dengan fungsi robot SCARA. Di dalam GUI terdapat dua bagian yang diantaranaya merupakan bagian kontrol, dan bagian \textit{display}. Pada bagian kontrol pada GUI berfungsi untuk mengkontrol mulai dari pergerakan dan posisi dari robot SCARA. Sedangkan pada bagian penampil, GUI menampilkan nilai dari sudut, posisi, serta animasi terkait robot SCARA. Gambar \ref{pic.gui} merupakan tampilan dari GUI secara keseluruhan. Tabel \ref{tbl.gui} menyajikan setiap komponen yang ditampilan di dalam GUI processing IDE.
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=10cm ]{gambar/catudaya_bb.png}
+	\includegraphics[width=15cm ]{gambar/GUI.png}
 	\caption{Tampilan GUI Sistem Kinematika Robot SCARA}
 	\label{pic.gui}
 \end{figure}
@@ -289,22 +289,22 @@ Pada robot SCARA, sudut dari \textit{joint} yang dicari merupakan \textit{joint}
 \begin{enumerate}
 	\item Dengan menggunakan hukum \textit{cosinus}, didapatkan sebuah persamaan \ref{cosinus1}
 	\begin{equation}
-	(x^2+y^2)=l_{1}^2+l_{1}^2-2l_{2}l_{2}cos(180-\theta_{2})
+	(x^2+y^2)=l_{1}^2+l_{1}^2-2l_{1}l_{2}cos(180-\theta_{2})
 	\label{cosinus1}
 	\end{equation}
 	\item Pada persamaan \ref{cosinus2} terdapat $\cos$ yang dapat diubah sesuai dengan prinsip dari hukum \textit{cosinus} menjadi seperti pada persamaan \ref{cosinus2}
 	\begin{equation}
-	(x^2+y^2)=l_{1}^2l_{2}^2+2l_{2}l_{2}cos(\theta_{2})
+	(x^2+y^2)=l_{1}^2l_{2}^2+2l_{1}l_{2}cos(\theta_{2})
 	\label{cosinus2}
 	\end{equation}
 	\item Inti persamaan akan mencari sebuah nilai dari $\theta_{2}$, maka untuk memmudahkannya maka persamaan menjadi seperti pada persamaan \ref{cosinus3}
 	\begin{equation}
-	cos(\theta_{2})=\frac{x^2+y^2-l_{1}^2-l_{2}^2}{2_{1}l_{2}}
+	cos(\theta_{2})=\frac{x^2+y^2-l_{1}^2-l_{2}^2}{2L_{1}l_{2}}
 	\label{cosinus3}
 	\end{equation}
 	\item Nilai dari $\theta_{2}$ dapat dengan mudah diketahui dengan melanjutkan seperti pada persamaan \ref{cosinus4}
 	\begin{equation}
-	\theta_{2}=arccos(\frac{x^2+y^2-l_{1}^2-l_{2}^2}{2_{1}l_{2}})
+	\theta_{2}=arccos(\frac{x^2+y^2-l_{1}^2-l_{2}^2}{2l_{1}l_{2}})
 		\label{cosinus4}
 	\end{equation}
 	Dengan persamaan \ref{cosinus4} maka nilai dari $\theta_{2}$ atau sudut dari \textit{elbow} dapat diketahui dengan cara memasukkan nilai posisi $x$, posisi $y$ serta panjang dari \textit{shoulder} dan \textit{elbow} ke dalam persamaan. Nilai posisi $x$ dan posisi $y$ merupakan posisi akhir dari \textit{end-effector}. 
