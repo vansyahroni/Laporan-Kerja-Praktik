@@ -32,7 +32,7 @@ Sistem mekanika dari robot lengan bergantung dari konfigurasi robot lengan. Konf
 	\caption{Bentuk Fisik Robot SCARA}
 	\label{pic.fisikscara}
 \end{figure}
-Robot SCARA merupakan robot yang meiliki tiga buah derajar kebebasan (DOF) yang terletak pada \textit{shoulder}, \textit{elbow}, dan pada \textit{end-effector}. Seluruh derajat kebebasan menggunakan sebuah motor DC yang didalamnya terdapat\textit{ gear box} untuk motor DC yang ada pada \textit{shoulder} dan \textit{elbow} untuk melakukan pergerakan. Sedangkan motor DC pada \textit{end-effector} dibantu oleh sebuah \textit{belt} untuk menyalurkan putaran dari motor yang terletak pada \textit{shoulder}. Pergerakan pada masing-masing \textit{joint} memiliki jangkauan maksimum yang berbeda-beda. Jangkauan juga dipengaruhi oleh panjangnya lengan yang dimiliki oleh robot SCARA tersebut. Tabel \ref{tbl.spesifikasiscara} merupakan spesifikasi dari robot SCARA yang digunakan.
+Robot SCARA merupakan robot yang meiliki tiga buah derajar kebebasan (DOF) yang terletak pada \textit{shoulder}, \textit{elbow}, dan pada \textit{end-effector}. Seluruh derajat kebebasan menggunakan sebuah motor DC yang didalamnya terdapat\textit{ gear box} untuk motor DC yang ada pada \textit{shoulder} dan \textit{elbow} untuk melakukan pergerakan. Sedangkan motor DC pada \textit{end-effector} dibantu oleh sebuah \textit{belt} untuk menyalurkan putaran dari motor yang terletak pada \textit{shoulder}. Pergerakan pada masing-masing \textit{joint} memiliki jangkauan maksimum yang berbeda-beda. Jangkauan juga dipengaruhi oleh panjangnya lengan yang dimiliki oleh robot SCARA tersebut. Tabel \ref{tbl.spesifikasiscara} merupakan spesifikasi dari robot SCARA yang digunakan\cite{bulet}.
 
 \begin{table}[h]
 		\centering
@@ -54,7 +54,7 @@ Robot SCARA merupakan robot yang meiliki tiga buah derajar kebebasan (DOF) yang 
 Desain pada\textit{ arm manipulator robot} SCARA berbahan besi dengan tebal 2 mm dengan tiga derajat kebebasan yang meliputi bagian \textit{shoulder}, \textit{elbow} serta \textit{end-effector}. Desain robot SCARA terbagi menjadi dua bagian. Bagian utama adalah \textit{box} panel yang berisi sistem elektronis utama dan pada bagian yang lain merupakan lengan dari robot SCARA sendiri. Terdapat juga tiga buah saluran udara yang berfungsi untuk mentransformasikan tekanan udara untuk pergerakan vertikal dari \textit{end-effector} yang berasal dari sebuah kompresor.  Dalam komunikasinya dengan komputer personal, robot SCARA dihubungkan dengan konektor USB. Gambar \ref{pic.boxpanel} merupakan bentuk fisik dari box panel pada Robot SCARA.
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=5cm]{gambar/potsementara.jpg}
+	\includegraphics[width=7.5cm]{gambar/boxpanel.png}
 	\caption{Box Panel Robot SCARA}
 	\label{pic.boxpanel}
 \end{figure}
@@ -101,14 +101,14 @@ Pada bagian \textit{end-effetor} menggunakan pergerakan translasi. Pergerakan tr
 Semua pergerakan pada \textit{end-effector} ditenagai oleh sebuah tekanan udara yang bersumber dari sebuah kompresor. Tekanan udara diaplikasikan pada sebuah \textit{pneumatic} dengan sistem kerja translasi yang dapat menyebabkan sebuah objek dapat bergerak pada sebuah garis lurus. Gambar \ref{pic.pneumatic} merupakan bentuk fisik dari \textit{pneumatic} yang digunakan pada robot SCARA. 
 \begin{figure}[H]
 	\centering
-	\includegraphics[height=6cm]{gambar/penuamticsementara.jpg}
+	\includegraphics[width=12cm]{gambar/pneumatic.png}
 	\caption{Bentuk Fisik \textit{Pneumatic}}
 	\label{pic.pneumatic}
 \end{figure}
 Kompresor yang digunakan untuk menghasilkan sebuah tekanan udara merupakan sebuah kompresor listrik dengan kapasitas 8 bar. Kompresor ini dioperasikan menggunakan sumber tegangan AC 220 Volt. Ketika kapasitas udara sudah terpenuhi kompresor ini dapat digunakan tanpa menggunakan sumber tegangan tetapi hanya sebatas kapasitas udara yang disimpan. Gambar \ref{pic.kompresor} merupakan bentuk fisik dari kompresor yang digunakan.
 \begin{figure}[H]
 	\centering
-	\includegraphics[height=6cm]{gambar/penuamticsementara.jpg}
+	\includegraphics[height=6cm]{gambar/kompresor.png}
 	\caption{Bentuk Fisik Kompresor}
 	\label{pic.kompresor}
 \end{figure}
@@ -226,16 +226,22 @@ Perangkat lunak yang digunakan merupakan \textit{software} Processing IDE. Proce
 	\centering
 	\caption{Keterangan Tampilan pada GUI Robot SCARA}
 	\label{tbl.gui}
-	\begin{tabular}{|c|c|l|}
+	\small
+	\begin{tabular}{|c|l|l|}
 		\hline
 		\rowcolor[HTML]{9B9B9B} 
-		No & \begin{tabular}[c]{@{}c@{}}Pin Arduino\\   Mega 2560\end{tabular} & \multicolumn{1}{c|}{\cellcolor[HTML]{9B9B9B}Fungsi} \\ \hline
-		1  & A1                                                                & Feedback potensiometer shoulder                     \\ \hline
-		2  & A2                                                                & Feedback potensiometer elbow                        \\ \hline
-		3  & A3                                                                & Feedback potensiometer end-effector                 \\ \hline
-		4  & D16, D18                                                          & Kontrol aktif driver motor shoulder                 \\ \hline
-		4  & D20, D22                                                          & Kontrol driver motor shoulder                       \\ \hline
-	
+		No & \begin{tabular}[c]{@{}c@{}}Nama\end{tabular} & \multicolumn{1}{c|}{\cellcolor[HTML]{9B9B9B}Fungsi} \\ \hline
+		1  & Port COM& Memilih \textit{hardware} yang akan dihubungkan                     \\ \hline
+		2  & Kelompok Kontrol& Terdari berbagai jenis kontrol dalam satu kelompok                        \\ \hline
+		3  & \textit{Textfield Control}& Memasukkan nilai sudut secara  langsung                 \\ \hline
+		4  & \textit{ Slide Control}& Memasukkan nilai sudut dengan model geser                 \\ \hline
+		5  & \textit{Bang Control}& Memasukkan nilai data saat mulai ditekan                  \\ \hline
+		6  & \textit{Workspace}& Ruang kerja robot SCARA                  \\ \hline
+		7  & \textit{3D Shape} tampak atas& Menanmpilkan pergerakan robot SCARA tampak atas          \\ \hline
+		8  & Kelompok Hasil & Menampilkan data-data terkait pergerakan robot SCARA                  \\ \hline
+		9  & \textit{3D Shape} tampak samping &  Menanmpilkan pergerakan robot SCARA tampak samping                 \\ \hline
+		10  & Judul & Judul dari GUI                  \\ \hline
+		11  & \textit{Toggle Control}& Memasukkan nilai data(ON/OFF)                \\ \hline
 	\end{tabular}
 \end{table}
 
@@ -275,7 +281,7 @@ Metode Denavit-Hartenberg merupakan metode yang menggabungkan proses perhitungan
 Kinematika balik adalah perhitungan untuk mencari variabel sudut (\textit{joint}) robot dalam menentukan posisi dan orientasi dari \textit{end-effector}. Dalam menentukan koordinat \textit{end-effector}, kinematika balik harus disesuaikan dengan batas area kerja \textit{(workspace)} dari jangkauan robot. Penyelesaian kinematika balik ini dapat diselesaikan dengan menggunakan persamaan kinematika balik yang di dalamnya menggunakan hukum \textit{phytagoras} dan aturan \textit{cosinus}. 
 Secara garis besar metode \textit{inverse kinematic} akan mencari nilai-nilai parameter yang harus diberikan kepada setiap aktuator untuk mencapai tujuan akhir. Untuk mendapatkan nilai-nilai parameter tersebut, robot harus mengetahui terlebih dahulu manipulator yang dimilikinya, baik ukuran maupun jumlah aktuator serta derajat kebebasan yang ada. Kemudian, robot harus ditanamkan rumus-rumus yang didapat dari berbagai model perhitungan, baik dari segi analisa grafik langsung maupun menggunakan metode-metode dari berbagai penelitian. 
 
-Analisis persamaan kinematik dapat diselesaikan dengan cara yang paling dasar yaitu menggunakan trigonometri dengan bantuan grafik. Pada penelitian ini karena menggunakan sebuah GUI yang didalamnya terdapat animasi dari bentuk fisik robot SCARA maka koordinat didapat dari Processing IDE. Robot SCARA yang terdapat di dalam Processing IDE menggunakan skala tertentu agar tetap sesuai dari dimensi aslinya. Penyelesaian kinematika dalam robot SCARA cukup diselesaiakan menggunakan satu sisi, yaitu sisi atas (\textit{top view}) dari struktur robot lengan. Pada sisi atas derajat sudut \textit{joint} \textit{shoulder}, dan sudut \textit{joint elbow} dapat ditemukan. Gambar \ref{pic.perskinematikabalik} merupakan gambaran untuk mendapatkan sebuah persamaan yang akan menghasilkan nilai sudut pada setiap \textit{joint.}
+Analisis persamaan kinematik dapat diselesaikan dengan cara yang paling dasar yaitu menggunakan trigonometri dengan bantuan grafik. Pada penelitian ini karena menggunakan sebuah GUI yang didalamnya terdapat animasi dari bentuk fisik robot SCARA maka koordinat didapat dari Processing IDE. Robot SCARA yang terdapat di dalam Processing IDE menggunakan skala tertentu agar tetap sesuai dari dimensi aslinya. Penyelesaian kinematika dalam robot SCARA cukup diselesaiakan menggunakan satu sisi, yaitu sisi atas (\textit{top view}) dari struktur robot lengan. Pada sisi atas derajat sudut \textit{joint} \textit{shoulder}, dan sudut \textit{joint elbow} dapat ditemukan. Gambar \ref{pic.perskinematikabalik} merupakan gambaran untuk mendapatkan sebuah persamaan yang akan menghasilkan nilai sudut pada setiap \textit{joint.\cite{koker}}
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=12cm]{gambar/scara_atas.png}
@@ -284,7 +290,7 @@ Analisis persamaan kinematik dapat diselesaikan dengan cara yang paling dasar ya
 \end{figure}
  
  
-Pada robot SCARA, sudut dari \textit{joint} yang dicari merupakan \textit{joint} dari \textit{shoulder} dan juga \textit{elbow.} Kedua \textit{joint} tersebut dapat ditemukan dengan melalui persamaan \textit{pythagoras} dan juga hukum \textit{cosinus}. Pada Gambar \ref{pic.perskinematikabalik} terlihat bahwa sudut \textit{shoulder} merupakan besar sudut diantara lengan \textit{shoulder} dan juga sumbu $x$ dan sudut \textit{elbow} merupakan besar sudut antara lengan \textit{elbow} dengan garis bantu dari lengan \textit{shoulder}. Keduanya dapat ditentukan besar nilainya melalui beberapa pesamaan dari \textit{cosinus} dan juga hukum \textit{pyhtagoras}. $l_{1}$ merupakan panjang lengan \textit{shoulder} dan $l_{2}$ merupakan panjang lengan dari \textit{elbow}. Serta $\theta_{1}$ merupakan sudut dari \textit{shoulder} dan $\theta_{2}$ merupakan sudut dari \textit{elbow}.  
+Pada robot SCARA, sudut dari \textit{joint} yang dicari merupakan \textit{joint} dari \textit{shoulder} dan juga \textit{elbow.} Kedua \textit{joint} tersebut dapat ditemukan dengan melalui persamaan \textit{pythagoras} dan juga hukum \textit{cosinus}. Pada Gambar \ref{pic.perskinematikabalik} terlihat bahwa sudut \textit{shoulder} merupakan besar sudut diantara lengan \textit{shoulder} dan juga sumbu $x$ dan sudut \textit{elbow} merupakan besar sudut antara lengan \textit{elbow} dengan garis bantu dari lengan \textit{shoulder}. Keduanya dapat ditentukan besar nilainya melalui beberapa pesamaan dari \textit{cosinus} dan juga hukum \textit{pyhtagoras}. $l_{1}$ merupakan panjang lengan \textit{shoulder} dan $l_{2}$ merupakan panjang lengan dari \textit{elbow}. Serta $\theta_{1}$ merupakan sudut dari \textit{shoulder} dan $\theta_{2}$ merupakan sudut dari \textit{elbow}\cite{victor}.  
 
 \begin{enumerate}
 	\item Dengan menggunakan hukum \textit{cosinus}, didapatkan sebuah persamaan \ref{cosinus1}
@@ -332,7 +338,7 @@ Dalam penelitian kinematika robot SCARA ini, segala perhitungan kinematika dilak
 Rancangan sistem keseluruhan merupakan gabungan dari perancangan perangkat keras dan perangkat lunak yang diintegrsikan sesuai dengan diagram blok sistem. Gambar \ref{pic.sistemkeseluruhan} adalah gambaran tentang perancangan sistem secara keseluruhan. Tabel \ref{tbl.sistemkeseluruhan}  menunjukkan keterangan setiap komponen yang ada di dalam sistem keseluruhan \textit{arm manipulator} robot SCARA. 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=8cm]{gambar/catudaya_bb.png}
+	\includegraphics[width=12cm]{gambar/sistem_keseluruhan.png}
 	\caption{Sistem Secara Keseluruhan}
 	\label{pic.sistemkeseluruhan}
 \end{figure}
@@ -345,14 +351,12 @@ Rancangan sistem keseluruhan merupakan gabungan dari perancangan perangkat keras
 			\hline
 			\rowcolor[HTML]{9B9B9B} 
 			No & \multicolumn{1}{c|}{\cellcolor[HTML]{9B9B9B}Keterangan} \\ \hline
-			1  & Robot Lengan SCARA                                      \\ \hline
-			2  & Box Panel                                               \\ \hline
-			3  & Arduino Mega 2560                                       \\ \hline
-			4  & Personal Computer                                       \\ \hline
-			5  & GUI Processing IDE                                      \\ \hline
-			6  & Workspace Robot SCARA                                   \\ \hline
-			7  & Kompresor                                               \\ \hline
-			8  & Objek                                                   \\ \hline
+			1  & Object                                    \\ \hline
+			2  & \textit{Workspace}                                              \\ \hline
+			3  & Box Panel                                        \\ \hline
+			4  & GUI Processing IDE                                       \\ \hline
+			5  & Robot Lengan SCARA                                     \\ \hline
+	
 		\end{tabular}
 
 \end{table}

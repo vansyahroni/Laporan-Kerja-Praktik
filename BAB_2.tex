@@ -3,12 +3,12 @@
 
 \section{Gambaran Umum Robot Lengan}
 
-Robot adalah adalah sebuah alat yang terdiri dari gabungan mekanik dan elektronik yang dapat melakukan tugas fisik, baik menggunakan pengawasan, kendali manusia maupun secara otomatis. Robot dapat melakukan suatu tugas secara berulang tanpa merasa lelah sehingga robot banyak digunakan dalam dunia industri khususnya pada bidang produksi. Salah satu jenis robot yang sering digunakan dalam bidang produksi adalah sistem lengan robot.
+Robot adalah adalah sebuah alat yang terdiri dari gabungan mekanik dan elektronik yang dapat melakukan tugas fisik, baik menggunakan pengawasan, kendali manusia maupun secara otomatis. Robot dapat melakukan suatu tugas secara berulang tanpa merasa lelah sehingga robot banyak digunakan dalam dunia industri khususnya pada bidang produksi. Salah satu jenis robot yang sering digunakan dalam bidang produksi adalah sistem lengan robot\cite{Pandu}.
 
 Robot lengan adalah robot yang memiliki bentuk fisik seperti halnya lengan pada manusia dan memiliki derajat kebebasan (\emph{Degre of Freedom}) tertentu bergantung pada jumlah sendi yang digunakan. Robot lengan pada bidang industri biasa digunakan sebagai aktuator untuk mengambil dan meletakkan suatu objek secara terus menerus.
 	
 
-Pada umumnya struktur robot lengan terdiri dari beberapa bagian.  Bagian utama dari robot lengan adalah struktur mekanik ({\textit{Manipulator}}) yang merupakan susunan kerangka yang tidak dapat digerakkan (\emph{Rigid}) dan lengan (\emph{Link}) yang satu sama lain terhubung oleh sendi (\emph {joint}). Dengan adanya \emph{joint} yang menghubungkan dua \emph{link} menjadi satu kesatuan sehingga \emph{joint} membentuk satu derajat kebebasan. Jika diibaratkan dengan tubuh manusia, \emph{link} adalah tulang sedangkan \emph{joint} adalah sendi-sendinya. \emph{Joint} memiliki dua pergerakan, yaitu pergerakan \emph{revolute joint} (gerak berputar) dan \emph{prismatic joint} (gerak bergeser). Gambar \ref{pic.jenisjoint} merupakan jenis-jenis dari \textit{joint}.
+Pada umumnya struktur robot lengan terdiri dari beberapa bagian.  Bagian utama dari robot lengan adalah struktur mekanik ({\textit{Manipulator}}) yang merupakan susunan kerangka yang tidak dapat digerakkan (\emph{Rigid}) dan lengan (\emph{Link}) yang satu sama lain terhubung oleh sendi (\emph {joint}). Dengan adanya \emph{joint} yang menghubungkan dua \emph{link} menjadi satu kesatuan sehingga \emph{joint} membentuk satu derajat kebebasan. Jika diibaratkan dengan tubuh manusia, \emph{link} adalah tulang sedangkan \emph{joint} adalah sendi-sendinya. \emph{Joint} memiliki dua pergerakan, yaitu pergerakan \emph{revolute joint} (gerak berputar) dan \emph{prismatic joint} (gerak bergeser)\cite{mahmud2012}. Gambar \ref{pic.jenisjoint} merupakan jenis-jenis dari \textit{joint}.
 
 	\begin{figure}[H]
 	\centering
@@ -19,7 +19,7 @@ Pada umumnya struktur robot lengan terdiri dari beberapa bagian.  Bagian utama d
 
 
 \subsection{\emph{Degress of Freedom }}
-\emph{Degress of Freedom} (DOF) merupakan sebuah konfigurasi yang dapat meminimalkan spesifikasi dengan menggunakan parameter yang dapat menyatakan posisi suatu sistem pada setiap saat. Umumnya robot lengan mempunyai paling sedikit enam independen derajat kebebasan, tiga derajat kebebasan untuk translasi dan tiga derajat kebebasan untuk rotasi. Robot lengan paling tidak memiliki tiga derajat kebebasan untuk dapat memiliki \emph{workspace} yang cukup. \emph{Workspace} dari sebuah robot lengan merupakan total volume yang dapat dijangkau oleh \emph{end-effector} dari pergerakan semua \emph{joint}-nya dari titik minimum hingga maksimum. 
+\emph{Degress of Freedom} (DOF) merupakan sebuah konfigurasi yang dapat meminimalkan spesifikasi dengan menggunakan parameter yang dapat menyatakan posisi suatu sistem pada setiap saat. Umumnya robot lengan mempunyai paling sedikit enam independen derajat kebebasan, tiga derajat kebebasan untuk translasi dan tiga derajat kebebasan untuk rotasi. Robot lengan paling tidak memiliki tiga derajat kebebasan untuk dapat memiliki \emph{workspace} yang cukup. \emph{Workspace} dari sebuah robot lengan merupakan total volume yang dapat dijangkau oleh \emph{end-effector} dari pergerakan semua \emph{joint}-nya dari titik minimum hingga maksimum\cite{Spong2006}. 
 
 \subsection{Konfigurasi Robot Lengan}
 Pada dasarnya berbagai jenis dari robot lengan dapat dibedakan dari konfigurasinya. Konfigurasi robot lengan merupakan perpaduan antara pergerakan \emph{joint} yang dimiliki oleh robot lengan. Konfigurasi ini memiliki tipe yang berbeda-beda sehingga \emph {workspace} yang dimiliki pada tiap robot lengan pasti berbeda.
@@ -29,7 +29,7 @@ Pada dasarnya berbagai jenis dari robot lengan dapat dibedakan dari konfigurasin
 	\begin{figure}[H]
 	\centering
 	\includegraphics[width=8cm]{gambar/articulated.jpg}
-	\caption{Struktur dari Konfigurasi  \textit{Articulated}}
+	\caption{Struktur dari Konfigurasi  \textit{Articulated}\cite{Spong2006}}
 	\label{pic.articulated}
 \end{figure}
 \subsubsection{Konfigurasi \textit{Spherical} (\textit{Revolute – Revolute – Prismatic})} 
@@ -38,7 +38,7 @@ Konfigurasi \textit{Spherical} merupakan konfigurasi yang mempunyai dua buah \te
 	\begin{figure}[H]
 	\centering
 	\includegraphics[width=8cm]{gambar/spherical.jpg}
-	\caption{Struktur dari Konfigurasi \textit{Sperical}}
+	\caption{Struktur dari Konfigurasi \textit{Sperical}\cite{Spong2006}}
 	\label{pic.spherical}
 \end{figure}
 
@@ -49,7 +49,7 @@ Konfigurasi \textit{Selective Compliant Articulated Robot for Assembly} (SCARA) 
 	\begin{figure}[H]
 	\centering
 	\includegraphics[width=8cm]{gambar/scara.jpg}
-	\caption{Struktur dari Konfigurasi SCARA}
+	\caption{Struktur dari Konfigurasi SCARA\cite{Spong2006}}
 	\label{pic.scara}
 \end{figure}
 
@@ -59,7 +59,7 @@ Konfigurasi \textit{Cylindrical} merupakan konfigurasi yang mempunyai satu buah 
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=5cm]{gambar/cylindrical.jpg}
-	\caption{Struktur dari Konfigurasi \textit{Cylindrical}}
+	\caption{Struktur dari Konfigurasi \textit{Cylindrical}\cite{Spong2006}}
 	\label{pic.cylindrical}
 \end{figure}
 \subsubsection{Konfigurasi \textit{Cartesian} (\textit{Prismatic – Prismatic – Prismatic})  } 
@@ -69,7 +69,7 @@ Konfigurasi \textit{Cartesian} mempunyai tiga buah \textit{joint prismatic}. Var
 	\begin{figure}[H]
 	\centering
 	\includegraphics[width=6cm]{gambar/cartesian.jpg}
-	\caption{Struktur dari Konfigurasi \textit{Cartesian}}
+	\caption{Struktur dari Konfigurasi \textit{Cartesian}\cite{Spong2006}}
 	\label{pic.cartesian}
 \end{figure}
 
@@ -79,7 +79,7 @@ Konfigurasi \textit{Cartesian} mempunyai tiga buah \textit{joint prismatic}. Var
 	\begin{figure}[H]
 	\centering
 	\includegraphics[width=5cm]{gambar/wirst.jpg}
-	\caption{Struktur dari \textit{Joint Spherical Wrist}}
+	\caption{Struktur dari \textit{Joint Spherical Wrist}\cite{Spong2006}}
 	\label{pic.sphericalwirst}
 \end{figure}
 
@@ -88,7 +88,7 @@ Konfigurasi \textit{Cartesian} mempunyai tiga buah \textit{joint prismatic}. Var
 	\begin{figure}[H]
 	\centering
 	\includegraphics[width=6cm]{gambar/end_effector.jpg}
-	\caption{Struktur \textit{End-Effector}}
+	\caption{Struktur \textit{End-Effector}\cite{Spong2006}}
 	\label{pic.endeffector}
 	\end{figure}
 
@@ -96,7 +96,7 @@ Konfigurasi \textit{Cartesian} mempunyai tiga buah \textit{joint prismatic}. Var
 \section{Kinematika}
 Kinematika merupakan pembelajaran pergerakan tubuh robot tanpa memperhitungkan gaya, torsi maupun momen tertentu yang menyebabkan pergerakan. Terdapat berbagai jenis pergerakan dari kinematika yang tergantung dari tujuan dari setiap robot. Kinematika yang dijelaskan pada penelitian ini adalah kinematika yang khusus mempelajari dan menganalisa pergerakan robot lengan.  
 
-Pada kinematika robot terdapat dua buah pembahasan kinematika. Pembahasan pertama adalah kinematika maju yang merupakan proses menghitung orientasi dan posisi dari\textit{ end-effector} berdasarkan nilai sudut pada masing-masing \textit{joint}.  Sedangkan kinematika balik sebaliknya dari kinematika maju, diberikan posisi \textit{end-effector} dimana dicari  besaran sudut yang harus diubah untuk tiap \textit{joint} dalam mencapai posisi \textit{end-effector} tersebut. Gambar \ref{pic.diagram.kinematika} merupakan diagram blok sederhana dari pemodelan kinematika.
+Pada kinematika robot terdapat dua buah pembahasan kinematika. Pembahasan pertama adalah kinematika maju yang merupakan proses menghitung orientasi dan posisi dari\textit{ end-effector} berdasarkan nilai sudut pada masing-masing \textit{joint}.  Sedangkan kinematika balik sebaliknya dari kinematika maju, diberikan posisi \textit{end-effector} dimana dicari  besaran sudut yang harus diubah untuk tiap \textit{joint} dalam mencapai posisi \textit{end-effector} tersebut\cite{beni}. Gambar \ref{pic.diagram.kinematika} merupakan diagram blok sederhana dari pemodelan kinematika.
 	\begin{figure}[H]
 	\centering
 	\includegraphics[width=12cm]{gambar/kinematika_diagram.png}
@@ -105,7 +105,7 @@ Pada kinematika robot terdapat dua buah pembahasan kinematika. Pembahasan pertam
 \end{figure}
 
 \subsection{Kinematika Maju}
-Kinematika maju atau biasa disebut \textit{forward kinematics} merupakan kinematika untuk mendapatkan hasil akhir berupa koordinat posisi ($x, y, z$) dengan diketahuinya variabel sudut pada setiap \textit{joint} dari lengan robot.  Variabel sudut tersebut kemudian dilakukan perhitungan satu sama lain hingga pada akhirnya akan mendapatkan koordinat $x$, koordinat $y$, dan koordinat $z$. Gambar \ref{pic.kinematikamaju} merupakan proses dari kinematika maju.
+Kinematika maju atau biasa disebut \textit{forward kinematics} merupakan kinematika untuk mendapatkan hasil akhir berupa koordinat posisi ($x, y, z$) dengan diketahuinya variabel sudut pada setiap \textit{joint} dari lengan robot.  Variabel sudut tersebut kemudian dilakukan perhitungan satu sama lain hingga pada akhirnya akan mendapatkan koordinat $x$, koordinat $y$, dan koordinat $z$\cite{alasar}. Gambar \ref{pic.kinematikamaju} merupakan proses dari kinematika maju.
 	\begin{figure}[H]
 	\centering
 	\includegraphics[width=12cm]{gambar/Kinematika_maju.png}
@@ -115,9 +115,9 @@ Kinematika maju atau biasa disebut \textit{forward kinematics} merupakan kinemat
 
 
 \subsection{Kinematika Balik}
-Kinematika balik (\textit{inverse kinematics}) digunakan untuk mencari variabel sudut (\textit{joint}) robot dalam menentukan posisi dan orientasi dari \textit{end-effector}. Dalam menentukan koordinat \textit{end-effector}, kinematika balik mengacu pada penggunaan persamaan kinematika robot untuk menentukan parameter bersama yang memberikan posisi yang diinginkan pada posisi akhir atau \textit{end-effector}.  Dalam pergerakannya, robot dimodelkan dalam bentuk persamaan kinematika. Persamaan ini menentukan konfigurasi robot dalam hal parameter untuk setiap aktuator. Kinematika maju menggunakan parameter untuk menghitung konfigurasi robot, dan kinematika balik membalikkan perhitungan ini untuk menentukan parameter bersama dalam mencapai konfigurasi yang diinginkan. 
+Kinematika balik (\textit{inverse kinematics}) digunakan untuk mencari variabel sudut (\textit{joint}) robot dalam menentukan posisi dan orientasi dari \textit{end-effector}. Dalam menentukan koordinat \textit{end-effector}, kinematika balik mengacu pada penggunaan persamaan kinematika robot untuk menentukan parameter bersama yang memberikan posisi yang diinginkan pada posisi akhir atau \textit{end-effector}.  Dalam pergerakannya, robot dimodelkan dalam bentuk persamaan kinematika. Persamaan ini menentukan konfigurasi robot dalam hal parameter untuk setiap aktuator. Kinematika maju menggunakan parameter untuk menghitung konfigurasi robot, dan kinematika balik membalikkan perhitungan ini untuk menentukan parameter bersama dalam mencapai konfigurasi yang diinginkan\cite{cahyono2015}. 
 
-Secara garis besar metode kinematika balik mencari nilai-nilai parameter yang harus diberikan kepada setiap aktuator untuk mencapai tujuan akhir. Untuk mendapatkan nilai-nilai parameter tersebut, robot harus mengetahui terlebih dahulu manipulator yang dimilikinya, baik ukuran maupun jumlah aktuator serta derajat kebebasan yang ada. Kemudian robot harus ditanamkan rumus-rumus yang didapat dari berbagai model perhitungan, baik dari segi analisa grafik langsung maupun menggunakan metode-metode dari berbagai penelitian. Gambar \ref{pic.kinematikabalik} merupakan proses dari kinematika balik.
+Secara garis besar metode kinematika balik mencari nilai-nilai parameter yang harus diberikan kepada setiap aktuator untuk mencapai tujuan akhir. Untuk mendapatkan nilai-nilai parameter tersebut, robot harus mengetahui terlebih dahulu manipulator yang dimilikinya, baik ukuran maupun jumlah aktuator serta derajat kebebasan yang ada. Kemudian robot harus ditanamkan rumus-rumus yang didapat dari berbagai model perhitungan, baik dari segi analisa grafik langsung maupun menggunakan metode-metode dari berbagai penelitian\cite{cahyono2}. Gambar \ref{pic.kinematikabalik} merupakan proses dari kinematika balik.
 
 	\begin{figure}[H]
 	\centering
@@ -127,7 +127,7 @@ Secara garis besar metode kinematika balik mencari nilai-nilai parameter yang ha
 \end{figure}
 
 \section{Motor DC}
-Motor DC adalah motor listrik yang memerlukan suplai tegangan arus searah pada kumparan medan untuk diubah menjadi energi gerak mekanik. Motor DC mempunyai dua bagian utama, yaitu stator dan rotor. Stator merupakan bagian yang tidak berputar dan rotor merupakan bagian yang berputar dan merupakan kumparan jangkar. Motor DC menghasilkan jumlah putaran dalam setiap satuan waktu yang biasanya dihitung setiap satuan menit (\textit{rotations per minute}) dan dapat diatur arah putaranya searah jarum jam (\textit{clock wise}) atau berkebalikan dengan arah jarum jam (\textit{counter clock wise}) bergantung dengan kutub atau polaritas dari catu daya yang diberikan pada motor DC. Gambar \ref{[pic.motordc} merupakan bentuk fisik dari motor DC.
+Motor DC adalah motor listrik yang memerlukan suplai tegangan arus searah pada kumparan medan untuk diubah menjadi energi gerak mekanik. Motor DC mempunyai dua bagian utama, yaitu stator dan rotor. Stator merupakan bagian yang tidak berputar dan rotor merupakan bagian yang berputar dan merupakan kumparan jangkar. Motor DC menghasilkan jumlah putaran dalam setiap satuan waktu yang biasanya dihitung setiap satuan menit (\textit{rotations per minute}) dan dapat diatur arah putaranya searah jarum jam (\textit{clock wise}) atau berkebalikan dengan arah jarum jam (\textit{counter clock wise}) bergantung dengan kutub atau polaritas dari catu daya yang diberikan pada motor DC \cite{dickson}. Gambar \ref{pic.motordc} merupakan bentuk fisik dari motor DC.
 	\begin{figure}[H]
 	\centering
 	\includegraphics[width=4cm]{gambar/motorDC.jpeg}
@@ -135,7 +135,7 @@ Motor DC adalah motor listrik yang memerlukan suplai tegangan arus searah pada k
 	\label{pic.motordc}
 \end{figure}
 
-Motor DC dapat bergerak karena adanya elektromagnet. Saat kumparan diberi arus listrik, permukaan kumparan yang bersifat utara akan bergerak menghadap ke magnet yang berkutub selatan dan kumparan yang bersifat selatan akan bergerak menghadap ke utara magnet. Pada saat ini, kerena kedua kutub saling menyebabkan pergerakan kumparan berhenti. Untuk menggerakannya lagi tepat pada saat kutub kumparan berhadapan dengan kutub magnet, arah arus pada kumparan dibalik. Dengan demikian, kutub utara kumparan akan berubah menjadi kutub selatan dan kutub selatannya akan berubah menjadi kutub utara.  
+Motor DC dapat bergerak karena adanya elektromagnet. Saat kumparan diberi arus listrik, permukaan kumparan yang bersifat utara akan bergerak menghadap ke magnet yang berkutub selatan dan kumparan yang bersifat selatan akan bergerak menghadap ke utara magnet. Pada saat ini, kerena kedua kutub saling menyebabkan pergerakan kumparan berhenti. Untuk menggerakannya lagi tepat pada saat kutub kumparan berhadapan dengan kutub magnet, arah arus pada kumparan dibalik. Dengan demikian, kutub utara kumparan akan berubah menjadi kutub selatan dan kutub selatannya akan berubah menjadi kutub utara\cite{otomotif}.  
 
 Pada saat perubahan kutub tersebut terjadi, kutub selatan kumparan akan berhadapan dengan kutub selatan magnet dan kutub utara kumparan akan berhadapan dengan kutub utara magnet. Karena kutubnya sama, maka akan terjadi tolak menolak sehingga kumparan bergerak memutar hingga utara kumparan berhadapan dengan selatan magnet dan selatan kumparan berhadapan dengan utara magnet. Siklus ini akan berulang-ulang hingga arus listrik pada kumparan diputuskan. Gambar \ref{pic.motordcprinsipkerja} merupakan prinsip kerja dari motor DC.
 	\begin{figure}[H]
@@ -147,27 +147,27 @@ Pada saat perubahan kutub tersebut terjadi, kutub selatan kumparan akan berhadap
 
 
 \section{Regulator}
-Dalam suatu rangkaian elektronika dibutuhkan suatu sumber tegangan yang stabil dan sesuai dengan nilai yang dibutuhkan oleh komponen. Untuk memenuhi kebutuhan tersebut digunakanlah sebuah rangkaian regulator. Rangkaian regulator berfungsi untuk mengatur atau menghasilkan nilai tegangan pada nilai tertentu dari suatu tegangan masukan. Regulator dapat mempertahankan nilai tegangan yang keluar tanpa dipengaruhi besar arus yang dikeluarkannya. Regulator tegangan mempunyai banyak jenisnya, salah satunya adalah regulator \textit{switching}.
+Dalam suatu rangkaian elektronika dibutuhkan suatu sumber tegangan yang stabil dan sesuai dengan nilai yang dibutuhkan oleh komponen. Untuk memenuhi kebutuhan tersebut digunakanlah sebuah rangkaian regulator. Rangkaian regulator berfungsi untuk mengatur atau menghasilkan nilai tegangan pada nilai tertentu dari suatu tegangan masukan. Regulator dapat mempertahankan nilai tegangan yang keluar tanpa dipengaruhi besar arus yang dikeluarkannya. Regulator tegangan mempunyai banyak jenisnya, salah satunya adalah regulator \textit{switching}\cite{sitohang2018}.
 
-Regulator \textit{switching} mengatur besarnya nilai tegangan keluaran dengan mensaklar (ON/OFF) tegangan masukan dengan frekuensi berbeda – beda. Kelebihan dari regulator \textit{switching} adalah mempunyai disipasi daya yang terjadi lebih kecil dibandingkan dengan regulator linear. Sedangkan kekurangannya yaitu tegangan keluaranya akan berbentuk gelombang akibat adanya proses \textit{switching}. Oleh karena itu, regulator jenis ini umumnya membutuhkan induktor, kapasitor, dan dioda untuk memperhalus tegangan keluaran. Regulator \textit{switching} ada dua jenis yaitu regulator \textit{Buck} dan regulator \textit{Boost}. Regulator \textit{Buck} untuk menghasilkan nilai tegangan keluaran yang lebih kecil dari tegangan masukannya. Sedangkan Regulator \textit{Boost} untuk menghasilkan nilai tegangan yang lebih besar dari tegangan masukannya. Salah satu jenis dari regulator \textit{Buck} adalah LM2596 . Gambar \ref{pic.lm2596} merupakan bentuk fisik dari regulator \textit{Buck} LM2596.
+Regulator \textit{switching} mengatur besarnya nilai tegangan keluaran dengan mensaklar (ON/OFF) tegangan masukan dengan frekuensi berbeda – beda. Kelebihan dari regulator \textit{switching} adalah mempunyai disipasi daya yang terjadi lebih kecil dibandingkan dengan regulator linear. Sedangkan kekurangannya yaitu tegangan keluaranya akan berbentuk gelombang akibat adanya proses \textit{switching}. Oleh karena itu, regulator jenis ini umumnya membutuhkan induktor, kapasitor, dan dioda untuk memperhalus tegangan keluaran. Regulator \textit{switching} ada dua jenis yaitu regulator \textit{Buck} dan regulator \textit{Boost}. Regulator \textit{Buck} untuk menghasilkan nilai tegangan keluaran yang lebih kecil dari tegangan masukannya. Sedangkan Regulator \textit{Boost} untuk menghasilkan nilai tegangan yang lebih besar dari tegangan masukannya. Salah satu jenis dari regulator \textit{Buck} adalah LM2596 . Gambar \ref{pic.lm2596} merupakan bentuk fisik dari regulator \textit{Buck} LM2596\cite{semiconductor2008}.
 
 	\begin{figure}[H]
 	\centering
 	\includegraphics[width=7cm]{gambar/lm2596.jpg}
-	\caption{Regulator \textit{Buck} LM2596}
+	\caption{Regulator \textit{Buck} LM2596\cite{Minikits}}
 	\label{pic.lm2596}
 \end{figure}
 
 \section{Arduino Mega 2560}
-Arduino Mega 2560  merupakan papan pengembangan dari mikrokontroler yang menggunakan basis Arduino serta menggunakan microchip AT 2560. Arduino  memiliki pin \textit{input} dan \textit{output} dengan jumlah yang cukup banyak, yaitu sejumlah 54 buah pin \textit{input} dan \textit{output} yang 15 diantaranya merupakan pin \textit{Pulse With Modulation} (PWM), 16 diantaranya merupakan pin \textit{analog input}, dan terdapat empat pin yang digunakan sebagai UART (\textit{Serial port hardware}). Arduino ini sudah dilengkapi dengan \textit{oscillator} sebesar 16Mhz, sebuah \textit{port} USB, \textit{power jack} DC, ICSP \textit{header} serta tombol reset. Gambar \ref{pic.arduinomega} merupakan bentuk fisik dari Arduino Mega 2560.
+Arduino Mega 2560  merupakan papan pengembangan dari mikrokontroler yang menggunakan basis Arduino serta menggunakan microchip AT 2560. Arduino  memiliki pin \textit{input} dan \textit{output} dengan jumlah yang cukup banyak, yaitu sejumlah 54 buah pin \textit{input} dan \textit{output} yang 15 diantaranya merupakan pin \textit{Pulse With Modulation} (PWM), 16 diantaranya merupakan pin \textit{analog input}, dan terdapat empat pin yang digunakan sebagai UART (\textit{Serial port hardware}). Arduino ini sudah dilengkapi dengan \textit{oscillator} sebesar 16Mhz, sebuah \textit{port} USB, \textit{power jack} DC, ICSP \textit{header} serta tombol reset\cite{arduino}. Gambar \ref{pic.arduinomega} merupakan bentuk fisik dari Arduino Mega 2560.
 	\begin{figure}[H]
 	\centering
 	\includegraphics[width=5cm]{gambar/arduino_mega.jpg}
-	\caption{Arduino Mega 2560}
+	\caption{Arduino Mega 2560\cite{arduino}}
 	\label{pic.arudinomega}
 	\end{figure}
 
-Arduino Mega 2560 memuat semua yang dibutuhkan untuk mendukung kerja dari sebuah mikrokontroler. Arduino Mega 2560 dapat dengan mudah dioperasikan untuk pengaplikasian ke sebuah sistem kerja karena dapat dihubungkan dengan kabel USB sebagai komunikasinya. Untuk dayanya, Arduino Mega 2560 dapat dihidupkan melalui konektor DC yang dipunyainya dengan diberi tegangan DC, atau baterai dengan nilai tegangan sesuai dengan spesifikasi pada Arduino Mega tersebut. Tabel \ref{tbl.arduinomega} merupakan spesifikasi dari Arduino Mega 2560.
+Arduino Mega 2560 memuat semua yang dibutuhkan untuk mendukung kerja dari sebuah mikrokontroler. Arduino Mega 2560 dapat dengan mudah dioperasikan untuk pengaplikasian ke sebuah sistem kerja karena dapat dihubungkan dengan kabel USB sebagai komunikasinya. Untuk dayanya, Arduino Mega 2560 dapat dihidupkan melalui konektor DC yang dipunyainya dengan diberi tegangan DC, atau baterai dengan nilai tegangan sesuai dengan spesifikasi pada Arduino Mega tersebut. Tabel \ref{tbl.arduinomega} merupakan spesifikasi dari Arduino Mega 2560\cite{arduino2}.
 \begin{table}[H]
 	\centering
 	\caption{ Spesifikasi Arduino Mega 2560 }
@@ -223,7 +223,7 @@ Arduino Mega 2560 memuat semua yang dibutuhkan untuk mendukung kerja dari sebuah
 	\end{tabular}
 \end{table}
 \section{Processing \textit{Integrated Development Environment} (IDE)}
-Processing IDE adalah pemrograman sederhana yang diciptakan untuk pengembangan aplikasi yang berorientasi visual atau pencitraan dengan penekanan pada animasi dan memberi pengguna umpan balik melalui interaksi antarmuka. Para \textit{developer} Processing IDE ini menginginkan sebuah cara untuk "membuat sketsa" gagasan dalam bentuk kode. Karena pemrograman telah berkembang selama beberapa dekade terakhir. Processing IDE telah mulai digunakan untuk pekerjaan tingkat produksi yang lebih maju. Awalnya dibangun sebagai ekstensi khusus \textit{domain} Java yang ditargetkan untuk seniman dan desainer, Processing IDE telah berkembang menjadi alat desain dan prototipe lengkap dan penuh yang digunakan untuk pekerjaan instalasi skala besar, grafis gerak, dan visualisasi data yang rumit. Gambar \ref{pic.processingide} merupakan tampilan pada Processing IDE.
+Processing IDE adalah pemrograman sederhana yang diciptakan untuk pengembangan aplikasi yang berorientasi visual atau pencitraan dengan penekanan pada animasi dan memberi pengguna umpan balik melalui interaksi antarmuka. Para \textit{developer} Processing IDE ini menginginkan sebuah cara untuk "membuat sketsa" gagasan dalam bentuk kode. Karena pemrograman telah berkembang selama beberapa dekade terakhir. Processing IDE telah mulai digunakan untuk pekerjaan tingkat produksi yang lebih maju. Awalnya dibangun sebagai ekstensi khusus \textit{domain} Java yang ditargetkan untuk seniman dan desainer, Processing IDE telah berkembang menjadi alat desain dan prototipe lengkap dan penuh yang digunakan untuk pekerjaan instalasi skala besar, grafis gerak, dan visualisasi data yang rumit. Gambar \ref{pic.processingide} merupakan tampilan pada Processing IDE \cite{aku2012} .
 	\begin{figure}[H]
 	\centering
 	\includegraphics[width=12cm]{gambar/processing_view.png}
