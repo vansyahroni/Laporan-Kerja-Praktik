@@ -77,8 +77,8 @@
 \contentsline {subsubsection}{\numberline {4.1.6.5}Pengujian \textit {Joint Elbow}}{59}{subsubsection.4.1.6.5}% 
 \contentsline {section}{\numberline {4.2}Pengujian Keseluruhan}{61}{section.4.2}% 
 \contentsline {subsection}{\numberline {4.2.1}Pengujian Akurasi Robot Lengan}{61}{subsection.4.2.1}% 
-\contentsline {subsection}{\numberline {4.2.2}Pengujian Simulasi Robot Lengan}{62}{subsection.4.2.2}% 
+\contentsline {subsection}{\numberline {4.2.2}Pengujian Simulasi Robot Lengan}{63}{subsection.4.2.2}% 
 \contentsline {chapter}{\numberline {V}PENUTUP}{65}{chapter.5}% 
 \contentsline {section}{\numberline {5.1}Kesimpulan}{65}{section.5.1}% 
 \contentsline {section}{\numberline {5.2}Saran}{65}{section.5.2}% 
-\contentsline {chapter}{DAFTAR PUSTAKA}{67}{chapter*.77}% 
+\contentsline {chapter}{DAFTAR PUSTAKA}{67}{chapter*.76}% 

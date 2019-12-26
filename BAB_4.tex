@@ -214,7 +214,7 @@ Dalam pengujian ini, pengujian terdiri dari pengujian posisi koordinat posisi \t
  	\end{table}
 	\begin{figure}[H]
 	\centering
-	\includegraphics[width=8cm]{gambar/controlp5.jpg}
+	\includegraphics[width=10cm]{gambar/pic_koordinatx.jpg}
 	\caption{Grafik Pengujian Koordinat X}
 	\label{pic.koordinatx}
 \end{figure}
@@ -277,7 +277,7 @@ Pengujian koordinat $y$ dilakukan untuk mengetahui batas minimal dan batas maksi
  \end{table} 
  \begin{figure}[H]
  	\centering
- 	\includegraphics[width=8cm]{gambar/controlp5.jpg}
+ 	\includegraphics[width=10cm]{gambar/pic_koordinaty.jpg}
  	\caption{Grafik Pengujian Koordinat Y}
  	\label{pic.koordinaty}
  \end{figure}
@@ -356,7 +356,7 @@ Pengujian dilakukan dengan cara memberikan sebuah posisi koordinat $x$ dan $y$ d
 \end{table} 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=8cm]{gambar/controlp5.jpg}
+	\includegraphics[width=10cm]{gambar/pic_jointshoulder.jpg}
 	\caption{Grafik Pengujian \textit{Joint Shoulder}}
 	\label{pic.jointshoulder}
 \end{figure}
@@ -427,13 +427,13 @@ Pada hasil yang ditunjukkan oleh Tabel \ref{tbl.jointshoulder} dan Gambar \ref{p
  \end{table} 
  \begin{figure}[H]
  	\centering
- 	\includegraphics[width=8cm]{gambar/controlp5.jpg}
+ 	\includegraphics[width=10cm]{gambar/pic_jointelbow.jpg}
  	\caption{Grafik Pengujian \textit{Joint Elbow}}
  	\label{pic.jointelbow}
  \end{figure}
  
  Pada hasil yang ditunjukkan oleh Tabel \ref{tbl.jointelbow} dan Gambar \ref{pic.jointelbow} terlihat bahwa secara keseleuruhan nilai sudut yang dihasilkan oleh aktual pada robot SCARA dibandingkan dengan perhitungan kinematika oleh Processing IDE tidak begitu terdapat perbedaan. Terlihat bahwa nilai error
- memiliki nilai minimum 0 persen dan nilai maksimum 12,5 persen. Persentase error didapat dari data yang tidak sesuai dibagi oleh keleluruhan data yang diuji coba. Nilai tersebut dapat ditoleransi dan pengujian sudut \textit{joint elbow} dapat dikatakan baik karena rata-rata error tidak melebihi batas toleransi.
+ memiliki nilai minimum 0 persen dan nilai maksimum 12,5 persen. Persentase error didapat dari data yang tidak sesuai dibagi oleh keleluruhan data yang diuji coba. 
 % \subsection{Pengujian GUI}
 % Pengujian GUI dilakukan untuk membandingkan posisi dari aktual robot SCARA dengan posisi yang ada pada Processing IDE. Pengujian dilakukan dengan memberikan \textit{sampling} posisi yang kemudian dilihat posisi dari robot secara aktual maupun Processing IDE. Gambar \ref{pic.pengujiangui1}, Gambar \ref{pic.pengujiangui2}, dan Gambar \ref{pic.pengujiangui3} merupakan hasil \textit{sampling} perbandingan posisi dari robot SCARA secara aktual dan secara animasi.
 %  \begin{figure}[H]
@@ -462,11 +462,12 @@ Setelah semua komponen sistem yang diuji dapat bekerja dengan baik, pengujian se
 \subsection{Pengujian Akurasi Robot Lengan}
 Pada pengujian akurasi robot lengan dilakukan pengujian dengan memberikan posisi koordinat $x$ dan $y$ dan melihat kembali posisi $x$ dan $y$ secara aktual, melihat besar sudut pada masing-masing joint dengan perbandingan perhitungan kinematika. Pengujian akurasi robot lengan ini akan menghasilkan sebuah hasil secara luas dan dapat ditarik untuk sebuah kesimpulan yang menentukan robot SCARA dapat bekerja baik atau buruk secara keseluruhan. Tabel \ref{tbl.akurasikeseluruhan} merupakan hasil dari pengujian akurasi robot lengan secara keseluruhan. Gambar \ref{pic.akurasikeseluruhan} merupakan grafik dari hasil pengujian akurasi robot lengan secara keseluruhan.
 
-\begin{table}[]
+\begin{table}[H]
 	\small
 	\small
 	\caption{Hasil Pengujian Akurasi Robot Secara Keseluruhan}
 	\label{tbl.akurasikeseluruhan}
+	\resizebox{\textwidth}{!}{%
 	\begin{tabular}{|
 			>{\columncolor[HTML]{F8FF00}}c |
 			>{\columncolor[HTML]{F8FF00}}c |
@@ -525,11 +526,11 @@ Pada pengujian akurasi robot lengan dilakukan pengujian dengan memberikan posisi
 			76                        & 0                         & 75                        & 2                         & Error                                              & 0                                               & 2,0                                               & Error                                              & 0                                               & 2                                                 & Error                                              & Error                                                                                               \\ \hline
 			\multicolumn{4}{|c|}{\cellcolor[HTML]{9B9B9B}TOTAL}                                                           & \cellcolor[HTML]{9B9B9B}408,67                     & \multicolumn{2}{c|}{\cellcolor[HTML]{9B9B9B}}                                                       & \cellcolor[HTML]{9B9B9B}84,67                      & \multicolumn{2}{c|}{\cellcolor[HTML]{9B9B9B}}                                                       & \cellcolor[HTML]{9B9B9B}46,54                      & \cellcolor[HTML]{9B9B9B}179,96                                                                      \\ \hline
 			\multicolumn{4}{|c|}{\cellcolor[HTML]{9B9B9B}RATA-RATA}                                                       & \cellcolor[HTML]{9B9B9B}10,48                      & \multicolumn{2}{c|}{\cellcolor[HTML]{9B9B9B}}                                                       & \cellcolor[HTML]{9B9B9B}2,17                       & \multicolumn{2}{c|}{\cellcolor[HTML]{9B9B9B}}                                                       & \cellcolor[HTML]{9B9B9B}1,19                       & \cellcolor[HTML]{9B9B9B}4,61                                                                        \\ \hline
-		\end{tabular}
+		\end{tabular}}
 \end{table} 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=8cm]{gambar/controlp5.jpg}
+	\includegraphics[width=10cm]{gambar/pic_errortotal.jpg}
 	\caption{Grafik Pengujian Akurasi Robot Secara Keseluruhan}
 	\label{pic.akurasikeseluruhan}
 \end{figure}
@@ -540,13 +541,14 @@ Pada pengujian ini, dilakukan serangkaian simulasi robot lengan untuk melakukan 
 
 Pertama, robot SCARA berada posisi normal yang berarti pada posisi lurus searah dengan sumbu $y$. Robot SCARA akan mulai bergerak pada saat nilai data pada Processing IDE telah didapatkan dan kemudian dikirimkan ke Arduino Mega 2560. Proses pemilihan data pada Processing IDE dilalui pada sebuah GUI yang telah dibuat sesuai dengan fungsi dari robot SCARA. Pada GUI terdapat beberapa pilihan dalam memberikan sebuah nilai masukan. 
 
-Kedua, robot SCARA akan mulai bergerak menuju posisi seperti data yang dimasukkan dan kemudian berhenti pada posisi tersebut dan mengambil objek yang dibawa oleh \textit{end-effector} pada posisi akhir.  Pergerakan \textit{end-effector} ditenagai oleh tekanan udara pada sebuah kompresor yang dikontrol oleh\textit{ valve pneumatic} yang diotaki oleh TIP31. Posisi akhir merupakan posisi dimana semua objek dikumpulkan. Setelah melakukan satu pekerjaan tersebut, robot SCARA kembali pada posisi normal dan menunggu data yang diberikan kembali oleh Processing IDE.  Gambar \ref{pic.simulasiakhir} merupakan simulasi robot lengan SCARA menggunakan masukan pada GUI yang telah dibuat.
- \begin{figure}[H]
- 	\centering
- 	\includegraphics[width=8cm]{gambar/controlp5.jpg}
- 	\caption{Simulasi Robot Lengan Menggunakan GUI }
- 	\label{pic.simulasiakhir}
- \end{figure}
+Kedua, robot SCARA akan mulai bergerak menuju posisi seperti data yang dimasukkan dan kemudian berhenti pada posisi tersebut dan mengambil objek yang dibawa oleh \textit{end-effector} pada posisi akhir.  Pergerakan \textit{end-effector} ditenagai oleh tekanan udara pada sebuah kompresor yang dikontrol oleh\textit{ valve pneumatic} yang diotaki oleh TIP31. Posisi akhir merupakan posisi dimana semua objek dikumpulkan. Setelah melakukan satu pekerjaan tersebut, robot SCARA kembali pada posisi normal dan menunggu data yang diberikan kembali oleh Processing IDE.  
+%Gambar \ref{pic.simulasiakhir} merupakan simulasi robot lengan SCARA menggunakan masukan pada GUI yang telah dibuat.
+% \begin{figure}[H]
+% 	\centering
+% 	\includegraphics[width=10cm]{gambar/controlp5.jpg}
+% 	\caption{Simulasi Robot Lengan Menggunakan GUI }
+% 	\label{pic.simulasiakhir}
+% \end{figure}
 
 
 
